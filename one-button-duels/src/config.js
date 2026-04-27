@@ -3,92 +3,106 @@
 var Config = {
   // Canvas
   canvasW: 400,
-  canvasH: 400,
+  canvasH: 480,
 
   // Match
-  roundsToWin: 3,               // first to 3 round wins
-  hpPerRound: 3,                // HP each fighter starts with
-  exchangeDamage: 1,            // damage per winning exchange
+  roundsToWin: 3,
+  hpPerRound: 3,
+  exchangeDamage: 1,
 
-  // Timing bar
-  barSpeed: 2.0,                // cycles per second (base)
-  barSpeedIncrease: 0.3,        // speed increase per round
-  barMaxSpeed: 5.0,
-  barWidth: 140,
-  barHeight: 12,
-  barY: 320,                    // y position of timing bars
+  // Actions
+  actions: ['STRIKE', 'PARRY', 'DODGE'],
+  actionColors: { STRIKE: '#ff4444', PARRY: '#44aaff', DODGE: '#44ff66' },
+  actionIcons: { STRIKE: 'ATK', PARRY: 'DEF', DODGE: 'EVD' },
+  actionKeys: { STRIKE: '1', PARRY: '2', DODGE: '3' },
 
-  // Zones — proportional widths (must sum to 1.0)
-  zones: [
-    { name: 'STRIKE', color: '#ff4444', width: 0.34 },
-    { name: 'PARRY',  color: '#44aaff', width: 0.33 },
-    { name: 'DODGE',  color: '#44ff66', width: 0.33 },
-  ],
-
-  // Combat resolution: winner[attacker][defender]
-  // 'win' = attacker wins, 'lose' = defender wins, 'draw' = tie
+  // Combat resolution: resolution[player][ai]
+  // 'win' = player wins, 'lose' = ai wins, 'draw' = tie
   resolution: {
     STRIKE: { STRIKE: 'draw', PARRY: 'lose',  DODGE: 'win'  },
     PARRY:  { STRIKE: 'win',  PARRY: 'draw',  DODGE: 'lose' },
     DODGE:  { STRIKE: 'lose', PARRY: 'win',   DODGE: 'draw' },
   },
 
-  // Lock-in timing
-  lockTimeout: 3.0,             // seconds before AI takes over
-  resolveDelay: 0.6,            // pause before showing result
-  resultDisplayTime: 1.5,       // how long to show exchange result
-  roundEndDelay: 1.5,           // pause after round ends
-  matchEndDelay: 2.0,           // pause after match ends
+  // Timing
+  chooseTime: 5.0,           // seconds to pick an action (auto-random if timeout)
+  resolveDelay: 0.8,         // dramatic pause before reveal
+  resultDisplayTime: 1.8,    // show result before next exchange
+  roundEndDelay: 1.5,
+  matchEndDelay: 2.0,
+  countdownTick: 1.0,        // tick sound in last 3 seconds
+
+  // AI personality — shifts over rounds to keep it interesting
+  // AI picks based on weighted probabilities, NO cheating (doesn't see player choice)
+  aiPersonalities: [
+    { name: 'Balanced',    weights: { STRIKE: 0.34, PARRY: 0.33, DODGE: 0.33 } },
+    { name: 'Aggressive',  weights: { STRIKE: 0.55, PARRY: 0.25, DODGE: 0.20 } },
+    { name: 'Defensive',   weights: { STRIKE: 0.20, PARRY: 0.55, DODGE: 0.25 } },
+    { name: 'Evasive',     weights: { STRIKE: 0.25, PARRY: 0.20, DODGE: 0.55 } },
+  ],
+
+  // AI adapts: after losing 2 exchanges in a row, shifts personality
+  aiAdaptThreshold: 2,
+
+  // Canvas
+  canvasW: 400,
+  canvasH: 560,
 
   // Fighters
   fighterW: 32,
   fighterH: 48,
-  fighterY: 200,                // vertical center of fighters
-  p1X: 100,                     // P1 base x position
-  p2X: 300,                     // P2 base x position
-  lungeDistance: 30,             // how far strike lunges forward
-  dodgeDistance: 25,             // how far dodge moves back
+  fighterY: 220,
+  playerX: 100,
+  aiX: 300,
+  lungeDistance: 30,
+  dodgeDistance: 25,
 
   // Animation
-  animDuration: 0.4,            // action animation length
-  shakeIntensity: 4,            // screen shake pixels
-  shakeDuration: 0.3,           // screen shake time
+  animDuration: 0.5,
+  shakeIntensity: 5,
+  shakeDuration: 0.3,
 
   // Health bar
-  hpBarWidth: 80,
-  hpBarHeight: 8,
-  hpBarY: 140,                  // y position above fighters
-  hpBarP1X: 60,
-  hpBarP2X: 260,
+  hpBarWidth: 90,
+  hpBarHeight: 10,
+  hpBarY: 145,
+  hpBarPlayerX: 55,
+  hpBarAIX: 255,
 
-  // AI (single player fallback)
-  aiEnabled: false,
-  aiBias: 0.15,                 // slight bias toward good plays
-  aiMinDelay: 0.4,              // min time before AI locks
-  aiMaxDelay: 1.8,              // max time before AI locks
+  // Result text area (between health bars and fighters)
+  resultY: 175,
+
+  // Action buttons layout
+  btnY: 420,
+  btnW: 100,
+  btnH: 50,
+  btnGap: 16,
+  btnRadius: 8,
+
+  // Timer bar
+  timerBarY: 405,
+  timerBarH: 6,
+
+  // Choose prompt
+  promptY: 390,
 
   // Colors
   bgColor: '#0a0a16',
-  p1Color: '#ff4444',
-  p2Color: '#44aaff',
-  p1ColorDark: '#aa2222',
-  p2ColorDark: '#2266aa',
+  playerColor: '#44aaff',
+  playerColorDark: '#2266aa',
+  aiColor: '#ff4444',
+  aiColorDark: '#aa2222',
   textColor: '#e0e0e0',
   dimColor: '#666666',
   goldColor: '#ffd700',
-  hudBg: '#12121f',
-
-  // Round text
-  roundTextSize: 28,
-  roundTextY: 50,
-
-  // Versus divider
-  vsX: 200,
-  vsY: 200,
+  btnBg: '#1a1a2e',
+  btnBorder: '#2a2a40',
+  btnHover: '#2a2a4a',
+  btnSelected: '#ffd700',
+  btnDisabled: '#111122',
 };
 
 // Derived
 Config.centerX = Config.canvasW / 2;
-Config.centerY = Config.canvasH / 2;
-Config.barP1X = Config.p1X - Config.barWidth / 2;
-Config.barP2X = Config.p2X - Config.barWidth / 2;
+Config.totalBtnW = Config.actions.length * Config.btnW + (Config.actions.length - 1) * Config.btnGap;
+Config.btnStartX = (Config.canvasW - Config.totalBtnW) / 2;

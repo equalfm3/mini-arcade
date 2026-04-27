@@ -1,8 +1,4 @@
-/* One-Button Duels — Renderer Module
-
-   Draws fighters, timing bars, health bars, round info,
-   action animations, and screen effects.
-*/
+/* One-Button Duels — Renderer Module */
 
 var Renderer = (function () {
 
@@ -13,28 +9,16 @@ var Renderer = (function () {
   var bgStars = [];
 
   function reset() {
-    shakeTimer = 0;
-    shakeX = 0;
-    shakeY = 0;
-    flashTimer = 0;
+    shakeTimer = 0; shakeX = 0; shakeY = 0; flashTimer = 0;
     bgStars = [];
     for (var i = 0; i < 40; i++) {
-      bgStars.push({
-        x: Math.random() * Config.canvasW,
-        y: Math.random() * Config.canvasH,
-        size: 0.5 + Math.random() * 1.5,
-        alpha: 0.05 + Math.random() * 0.12,
-      });
+      bgStars.push({ x: Math.random() * Config.canvasW, y: Math.random() * Config.canvasH,
+        size: 0.5 + Math.random() * 1.5, alpha: 0.05 + Math.random() * 0.12 });
     }
   }
 
-  function triggerShake() {
-    shakeTimer = Config.shakeDuration;
-  }
-
-  function triggerFlash() {
-    flashTimer = 0.15;
-  }
+  function triggerShake() { shakeTimer = Config.shakeDuration; }
+  function triggerFlash() { flashTimer = 0.15; }
 
   function updateEffects(dt) {
     if (shakeTimer > 0) {
@@ -42,18 +26,13 @@ var Renderer = (function () {
       var intensity = Config.shakeIntensity * (shakeTimer / Config.shakeDuration);
       shakeX = (Math.random() - 0.5) * 2 * intensity;
       shakeY = (Math.random() - 0.5) * 2 * intensity;
-    } else {
-      shakeX = 0;
-      shakeY = 0;
-    }
+    } else { shakeX = 0; shakeY = 0; }
     if (flashTimer > 0) flashTimer -= dt;
   }
 
-  // --- Background ---
   function drawBackground(ctx, w, h) {
     ctx.fillStyle = Config.bgColor;
     ctx.fillRect(0, 0, w, h);
-
     for (var i = 0; i < bgStars.length; i++) {
       var s = bgStars[i];
       ctx.globalAlpha = s.alpha;
@@ -63,41 +42,26 @@ var Renderer = (function () {
     ctx.globalAlpha = 1;
   }
 
-  // --- Arena floor ---
   function drawArena(ctx, w, h) {
-    // Ground line
     var groundY = Config.fighterY + Config.fighterH / 2 + 10;
-    ctx.strokeStyle = '#2a2a40';
-    ctx.lineWidth = 2;
-    ctx.beginPath();
-    ctx.moveTo(30, groundY);
-    ctx.lineTo(w - 30, groundY);
-    ctx.stroke();
-
-    // VS divider (subtle)
-    ctx.fillStyle = '#1a1a2e';
-    ctx.fillRect(w / 2 - 1, groundY - 80, 2, 80);
+    ctx.strokeStyle = '#2a2a40'; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(30, groundY); ctx.lineTo(w - 30, groundY); ctx.stroke();
+    ctx.fillStyle = '#1a1a2e'; ctx.fillRect(w / 2 - 1, groundY - 80, 2, 80);
   }
 
-  // --- Fighter drawing ---
-  function drawFighter(ctx, fighter, baseX) {
+  function drawFighter(ctx, fighter, baseX, isPlayer) {
     var x = baseX + fighter.offsetX + shakeX;
     var y = Config.fighterY + shakeY;
-    var fw = Config.fighterW;
     var fh = Config.fighterH;
-    var isP1 = fighter.side === 'p1';
-    var color = isP1 ? Config.p1Color : Config.p2Color;
-    var colorDark = isP1 ? Config.p1ColorDark : Config.p2ColorDark;
-    var dir = isP1 ? 1 : -1;
+    var color = isPlayer ? Config.playerColor : Config.aiColor;
+    var colorDark = isPlayer ? Config.playerColorDark : Config.aiColorDark;
+    var dir = isPlayer ? 1 : -1;
 
-    ctx.save();
-    ctx.translate(x, y);
+    ctx.save(); ctx.translate(x, y);
 
-    // Body (block character)
     // Head
     ctx.fillStyle = color;
     ctx.fillRect(-8, -fh / 2, 16, 16);
-    // Eyes
     ctx.fillStyle = '#ffffff';
     ctx.fillRect(-4 + dir * 2, -fh / 2 + 4, 3, 3);
     ctx.fillRect(2 + dir * 2, -fh / 2 + 4, 3, 3);
@@ -112,35 +76,24 @@ var Renderer = (function () {
     // Arms based on state
     ctx.fillStyle = color;
     if (fighter.animState === 'strike') {
-      // Punching arm extended forward
       ctx.fillRect(dir * 10, -fh / 2 + 18, dir * 20, 6);
-      // Fist
       ctx.fillStyle = '#ffffff';
       ctx.fillRect(dir * 28, -fh / 2 + 16, 8, 10);
     } else if (fighter.animState === 'parry') {
-      // Shield/block pose — arms crossed in front
       ctx.fillRect(-6, -fh / 2 + 16, 12, 8);
       ctx.fillStyle = '#aaaacc';
       ctx.fillRect(dir * 4, -fh / 2 + 14, 14, 12);
-      // Shield highlight
-      ctx.fillStyle = '#ccccee';
-      ctx.fillRect(dir * 6, -fh / 2 + 16, 4, 4);
     } else if (fighter.animState === 'dodge') {
-      // Arms back, leaning away
       ctx.fillRect(-dir * 8, -fh / 2 + 20, -dir * 12, 5);
-      ctx.fillRect(-dir * 4, -fh / 2 + 22, -dir * 10, 5);
     } else if (fighter.animState === 'hit') {
-      // Recoiling — arms flailing
       ctx.fillRect(-dir * 6, -fh / 2 + 16, -dir * 14, 5);
-      ctx.fillRect(-dir * 4, -fh / 2 + 24, -dir * 10, 5);
-      // Pain indicator
-      drawStarburst(ctx, dir * -12, -fh / 2 + 10, 6, '#ffd700');
+      ctx.fillStyle = '#ffd700';
+      ctx.fillRect(dir * -12, -fh / 2 + 8, 4, 4);
+      ctx.fillRect(dir * -10, -fh / 2 + 6, 4, 4);
     } else if (fighter.animState === 'win') {
-      // Arms raised in victory
       ctx.fillRect(-12, -fh / 2 + 10, 6, -14);
       ctx.fillRect(6, -fh / 2 + 10, 6, -14);
     } else {
-      // Idle — arms at sides, ready stance
       ctx.fillRect(-14, -fh / 2 + 18, 5, 12);
       ctx.fillRect(9, -fh / 2 + 18, 5, 12);
     }
@@ -150,283 +103,193 @@ var Renderer = (function () {
     ctx.fillRect(-8, -fh / 2 + 34, 6, 14);
     ctx.fillRect(2, -fh / 2 + 34, 6, 14);
 
+    // Label
+    ctx.fillStyle = color;
+    ctx.font = 'bold 10px monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText(isPlayer ? 'YOU' : 'AI', 0, -fh / 2 - 8);
+
     ctx.restore();
   }
 
-  function drawStarburst(ctx, x, y, size, color) {
-    ctx.fillStyle = color;
-    ctx.fillRect(x - size, y - 1, size * 2, 2);
-    ctx.fillRect(x - 1, y - size, 2, size * 2);
-    ctx.fillRect(x - size * 0.7, y - size * 0.7, size * 0.5, size * 0.5);
-    ctx.fillRect(x + size * 0.3, y - size * 0.7, size * 0.5, size * 0.5);
-    ctx.fillRect(x - size * 0.7, y + size * 0.3, size * 0.5, size * 0.5);
-    ctx.fillRect(x + size * 0.3, y + size * 0.3, size * 0.5, size * 0.5);
-  }
-
-  // --- Health bars ---
   function drawHealthBar(ctx, x, y, hp, maxHp, color) {
-    var w = Config.hpBarWidth;
-    var h = Config.hpBarHeight;
-
-    // Background
-    ctx.fillStyle = '#1a1a2e';
-    ctx.fillRect(x, y, w, h);
-    ctx.strokeStyle = '#2a2a40';
-    ctx.lineWidth = 1;
-    ctx.strokeRect(x, y, w, h);
-
-    // Fill
+    var w = Config.hpBarWidth; var h = Config.hpBarHeight;
+    ctx.fillStyle = '#1a1a2e'; ctx.fillRect(x, y, w, h);
+    ctx.strokeStyle = '#2a2a40'; ctx.lineWidth = 1; ctx.strokeRect(x, y, w, h);
     var fillW = (hp / maxHp) * (w - 2);
-    ctx.fillStyle = color;
-    ctx.fillRect(x + 1, y + 1, fillW, h - 2);
-
-    // HP pips
+    ctx.fillStyle = color; ctx.fillRect(x + 1, y + 1, fillW, h - 2);
     for (var i = 1; i < maxHp; i++) {
-      var pipX = x + (i / maxHp) * w;
-      ctx.fillStyle = '#0a0a16';
-      ctx.fillRect(pipX - 0.5, y, 1, h);
+      ctx.fillStyle = '#0a0a16'; ctx.fillRect(x + (i / maxHp) * w - 0.5, y, 1, h);
     }
   }
 
-  // --- Timing bar ---
-  function drawTimingBar(ctx, x, y, cursor, locked, lockedAction, isP1) {
-    var w = Config.barWidth;
-    var h = Config.barHeight;
+  function drawRoundInfo(ctx, w) {
+    ctx.fillStyle = Config.dimColor; ctx.font = '11px monospace'; ctx.textAlign = 'center';
+    ctx.fillText('ROUND ' + Combat.roundNum, w / 2, 22);
 
-    // Draw zones
-    var zoneX = x;
-    for (var i = 0; i < Config.zones.length; i++) {
-      var zone = Config.zones[i];
-      var zw = zone.width * w;
-      ctx.fillStyle = locked ? dimColor(zone.color, 0.3) : zone.color;
-      ctx.globalAlpha = locked ? 0.4 : 0.7;
-      ctx.fillRect(zoneX, y, zw, h);
+    var pipSize = 8; var pipGap = 4;
+    var totalW = Config.roundsToWin * (pipSize + pipGap) - pipGap;
 
-      // Zone label
-      ctx.globalAlpha = locked ? 0.3 : 0.8;
-      ctx.fillStyle = '#ffffff';
-      ctx.font = '7px monospace';
+    // Player pips
+    for (var i = 0; i < Config.roundsToWin; i++) {
+      ctx.fillStyle = i < Combat.playerRoundWins ? Config.playerColor : '#1a1a2e';
+      ctx.fillRect(w / 2 - 50 - totalW + i * (pipSize + pipGap), 30, pipSize, pipSize);
+      ctx.strokeStyle = '#2a2a40'; ctx.lineWidth = 0.5;
+      ctx.strokeRect(w / 2 - 50 - totalW + i * (pipSize + pipGap), 30, pipSize, pipSize);
+    }
+    // AI pips
+    for (var j = 0; j < Config.roundsToWin; j++) {
+      ctx.fillStyle = j < Combat.aiRoundWins ? Config.aiColor : '#1a1a2e';
+      ctx.fillRect(w / 2 + 50 + j * (pipSize + pipGap), 30, pipSize, pipSize);
+      ctx.strokeStyle = '#2a2a40'; ctx.lineWidth = 0.5;
+      ctx.strokeRect(w / 2 + 50 + j * (pipSize + pipGap), 30, pipSize, pipSize);
+    }
+
+    ctx.fillStyle = '#333'; ctx.font = 'bold 14px monospace';
+    ctx.fillText('VS', w / 2, 40);
+    ctx.textAlign = 'left';
+  }
+
+  /** Draw the 3 action buttons */
+  function drawActionButtons(ctx, w, playerChoice, phase) {
+    var actions = Config.actions;
+    for (var i = 0; i < actions.length; i++) {
+      var action = actions[i];
+      var bx = Config.btnStartX + i * (Config.btnW + Config.btnGap);
+      var by = Config.btnY;
+      var bw = Config.btnW;
+      var bh = Config.btnH;
+      var isChosen = playerChoice === action;
+      var isDisabled = phase !== 'choosing' || playerChoice !== null;
+
+      // Button background
+      if (isChosen) {
+        ctx.fillStyle = Config.actionColors[action];
+        ctx.globalAlpha = 0.3;
+      } else if (isDisabled) {
+        ctx.fillStyle = Config.btnDisabled;
+        ctx.globalAlpha = 0.5;
+      } else {
+        ctx.fillStyle = Config.btnBg;
+        ctx.globalAlpha = 1;
+      }
+      roundRect(ctx, bx, by, bw, bh, Config.btnRadius);
+      ctx.fill();
+      ctx.globalAlpha = 1;
+
+      // Border
+      ctx.strokeStyle = isChosen ? Config.btnSelected : Config.btnBorder;
+      ctx.lineWidth = isChosen ? 2 : 1;
+      roundRect(ctx, bx, by, bw, bh, Config.btnRadius);
+      ctx.stroke();
+
+      // Icon + label
+      ctx.fillStyle = isDisabled && !isChosen ? '#444' : Config.actionColors[action];
+      ctx.font = '18px monospace';
       ctx.textAlign = 'center';
-      ctx.fillText(zone.name.charAt(0), zoneX + zw / 2, y + h / 2 + 2.5);
+      ctx.fillText(Config.actionIcons[action], bx + bw / 2, by + 22);
+      ctx.font = 'bold 9px monospace';
+      ctx.fillText(action, bx + bw / 2, by + 38);
 
-      zoneX += zw;
+      // Key hint
+      ctx.fillStyle = '#444'; ctx.font = '8px monospace';
+      ctx.fillText('[' + Config.actionKeys[action] + ']', bx + bw / 2, by + bh + 12);
     }
-    ctx.globalAlpha = 1;
-    ctx.textAlign = 'left';
-
-    // Border
-    ctx.strokeStyle = locked ? '#444' : '#888';
-    ctx.lineWidth = 1;
-    ctx.strokeRect(x, y, w, h);
-
-    // Cursor (sweeping indicator)
-    if (!locked) {
-      var cursorX = x + cursor * w;
-      ctx.fillStyle = '#ffffff';
-      ctx.fillRect(cursorX - 1.5, y - 3, 3, h + 6);
-      ctx.fillStyle = Config.goldColor;
-      ctx.fillRect(cursorX - 0.5, y - 2, 1, h + 4);
-    }
-
-    // Locked indicator
-    if (locked && lockedAction) {
-      var actionColor = getActionColor(lockedAction);
-      ctx.fillStyle = actionColor;
-      ctx.font = 'bold 10px monospace';
-      ctx.textAlign = 'center';
-      ctx.fillText(lockedAction, x + w / 2, y - 6);
-      ctx.textAlign = 'left';
-
-      // Lock icon (small padlock)
-      ctx.fillStyle = Config.goldColor;
-      ctx.fillRect(x + w / 2 + 28, y + 2, 6, 5);
-      ctx.fillRect(x + w / 2 + 29, y - 1, 4, 4);
-    }
-
-    // Player label
-    ctx.fillStyle = isP1 ? Config.p1Color : Config.p2Color;
-    ctx.font = 'bold 9px monospace';
-    ctx.textAlign = 'center';
-    ctx.fillText(isP1 ? 'P1 [Q]' : 'P2 [P]', x + w / 2, y + h + 14);
     ctx.textAlign = 'left';
   }
 
-  function getActionColor(action) {
-    for (var i = 0; i < Config.zones.length; i++) {
-      if (Config.zones[i].name === action) return Config.zones[i].color;
+  /** Draw timer bar during choosing phase */
+  function drawTimerBar(ctx, w, fraction) {
+    var barW = Config.totalBtnW;
+    var bx = Config.btnStartX;
+    var by = Config.timerBarY;
+    var bh = Config.timerBarH;
+
+    ctx.fillStyle = '#1a1a2e';
+    roundRect(ctx, bx, by, barW, bh, 3); ctx.fill();
+
+    if (fraction > 0) {
+      ctx.fillStyle = fraction > 0.3 ? Config.goldColor : '#ff4444';
+      roundRect(ctx, bx, by, barW * fraction, bh, 3); ctx.fill();
     }
-    return '#ffffff';
   }
 
-  function dimColor(hex, amount) {
-    var r = parseInt(hex.slice(1, 3), 16);
-    var g = parseInt(hex.slice(3, 5), 16);
-    var b = parseInt(hex.slice(5, 7), 16);
-    r = Math.floor(r * amount);
-    g = Math.floor(g * amount);
-    b = Math.floor(b * amount);
-    return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
-  }
-
-  // --- Round / match info ---
-  function drawRoundInfo(ctx, w, roundNum, p1Wins, p2Wins, roundsToWin) {
-    // Round number
-    ctx.fillStyle = Config.dimColor;
-    ctx.font = '11px monospace';
-    ctx.textAlign = 'center';
-    ctx.fillText('ROUND ' + roundNum, w / 2, 25);
-
-    // Win pips
-    var pipSize = 8;
-    var pipGap = 4;
-    var totalW = roundsToWin * (pipSize + pipGap) - pipGap;
-
-    // P1 pips (left side)
-    var p1StartX = w / 2 - 50 - totalW;
-    for (var i = 0; i < roundsToWin; i++) {
-      var px = p1StartX + i * (pipSize + pipGap);
-      ctx.fillStyle = i < p1Wins ? Config.p1Color : '#1a1a2e';
-      ctx.fillRect(px, 32, pipSize, pipSize);
-      ctx.strokeStyle = '#2a2a40';
-      ctx.lineWidth = 0.5;
-      ctx.strokeRect(px, 32, pipSize, pipSize);
-    }
-
-    // P2 pips (right side)
-    var p2StartX = w / 2 + 50;
-    for (var j = 0; j < roundsToWin; j++) {
-      var px2 = p2StartX + j * (pipSize + pipGap);
-      ctx.fillStyle = j < p2Wins ? Config.p2Color : '#1a1a2e';
-      ctx.fillRect(px2, 32, pipSize, pipSize);
-      ctx.strokeStyle = '#2a2a40';
-      ctx.lineWidth = 0.5;
-      ctx.strokeRect(px2, 32, pipSize, pipSize);
-    }
-
-    // VS text
-    ctx.fillStyle = '#333';
-    ctx.font = 'bold 14px monospace';
-    ctx.fillText('VS', w / 2, 42);
-
-    ctx.textAlign = 'left';
-  }
-
-  // --- Result text ---
+  /** Draw result text in its own zone between HP bars and fighters */
   function drawResultText(ctx, w, result) {
     if (!result) return;
+    var y = Config.resultY;
 
-    var y = Config.fighterY - 50;
+    // Clear background behind result text
+    ctx.fillStyle = Config.bgColor;
+    ctx.fillRect(0, y - 14, w, 36);
 
-    // Result text
-    ctx.fillStyle = result.winner ? (result.winner === 'p1' ? Config.p1Color : Config.p2Color) : Config.goldColor;
-    ctx.font = 'bold 14px monospace';
-    ctx.textAlign = 'center';
+    ctx.fillStyle = result.winner === 'player' ? Config.playerColor :
+                    result.winner === 'ai' ? Config.aiColor : Config.goldColor;
+    ctx.font = 'bold 13px monospace'; ctx.textAlign = 'center';
     ctx.fillText(result.text, w / 2, y);
 
-    // Action icons
-    drawActionIcon(ctx, w / 2 - 60, y + 12, result.p1Action, Config.p1Color);
-    drawActionIcon(ctx, w / 2 + 40, y + 12, result.p2Action, Config.p2Color);
+    // Show both choices
+    ctx.font = '11px monospace';
+    ctx.fillStyle = Config.playerColor;
+    ctx.fillText(Config.actionIcons[result.playerAction] + ' ' + result.playerAction, w / 2 - 70, y + 16);
+    ctx.fillStyle = Config.aiColor;
+    ctx.fillText(result.aiAction + ' ' + Config.actionIcons[result.aiAction], w / 2 + 70, y + 16);
 
     ctx.textAlign = 'left';
   }
 
-  function drawActionIcon(ctx, x, y, action, color) {
-    ctx.fillStyle = color;
-    ctx.font = '10px monospace';
-    ctx.textAlign = 'center';
-    ctx.fillText(action, x + 10, y + 10);
+  function drawPhaseOverlay(ctx, w, h) {
+    if (Combat.phase === 'roundEnd') {
+      ctx.fillStyle = 'rgba(10, 10, 22, 0.7)'; ctx.fillRect(0, 0, w, h);
+      ctx.fillStyle = Config.goldColor; ctx.font = 'bold 28px monospace'; ctx.textAlign = 'center';
+      ctx.fillText('ROUND ' + (Combat.roundNum + 1), w / 2, h / 2 - 20);
+      ctx.fillStyle = Config.textColor; ctx.font = '14px monospace';
+      ctx.fillText('GET READY', w / 2, h / 2 + 10);
+      ctx.textAlign = 'left';
+    }
+    if (Combat.phase === 'resolving') {
+      ctx.fillStyle = 'rgba(10, 10, 22, 0.4)'; ctx.fillRect(0, 0, w, h);
+      ctx.fillStyle = Config.goldColor; ctx.font = 'bold 20px monospace'; ctx.textAlign = 'center';
+      ctx.fillText('REVEALING...', w / 2, h / 2 - 20);
+      ctx.textAlign = 'left';
+    }
+  }
+
+  function drawChoosePrompt(ctx, w) {
+    if (Combat.phase !== 'choosing') return;
+    ctx.fillStyle = Config.goldColor; ctx.font = 'bold 11px monospace'; ctx.textAlign = 'center';
+    ctx.fillText('CHOOSE YOUR ACTION!', w / 2, Config.promptY);
     ctx.textAlign = 'left';
   }
 
-  // --- Phase overlays ---
-  function drawPhaseOverlay(ctx, w, h, phase, phaseTimer, roundNum, p1Wins, p2Wins) {
-    if (phase === 'roundEnd') {
-      ctx.fillStyle = 'rgba(10, 10, 22, 0.6)';
-      ctx.fillRect(0, 0, w, h);
-      ctx.fillStyle = Config.goldColor;
-      ctx.font = 'bold 24px monospace';
-      ctx.textAlign = 'center';
-      ctx.fillText('ROUND ' + (roundNum + 1), w / 2, h / 2 - 10);
-      ctx.fillStyle = Config.textColor;
-      ctx.font = '12px monospace';
-      ctx.fillText('GET READY', w / 2, h / 2 + 15);
-      ctx.textAlign = 'left';
-    }
-
-    if (phase === 'resolving') {
-      // Dramatic pause — dim screen slightly
-      ctx.fillStyle = 'rgba(10, 10, 22, 0.3)';
-      ctx.fillRect(0, 0, w, h);
-      ctx.fillStyle = Config.goldColor;
-      ctx.font = 'bold 16px monospace';
-      ctx.textAlign = 'center';
-      ctx.fillText('...', w / 2, h / 2 - 40);
-      ctx.textAlign = 'left';
-    }
-  }
-
-  // --- Screen flash ---
   function drawFlash(ctx, w, h) {
     if (flashTimer > 0) {
-      ctx.globalAlpha = flashTimer * 4;
-      ctx.fillStyle = '#ffffff';
-      ctx.fillRect(0, 0, w, h);
-      ctx.globalAlpha = 1;
+      ctx.globalAlpha = flashTimer * 4; ctx.fillStyle = '#ffffff';
+      ctx.fillRect(0, 0, w, h); ctx.globalAlpha = 1;
     }
   }
 
-  // --- Mobile touch zones ---
-  function drawTouchZones(ctx, w, h, phase) {
-    if (phase !== 'timing') return;
-    // Subtle divider showing tap zones
-    ctx.strokeStyle = 'rgba(255,255,255,0.05)';
-    ctx.lineWidth = 1;
-    ctx.setLineDash([4, 4]);
+  function roundRect(ctx, x, y, w, h, r) {
     ctx.beginPath();
-    ctx.moveTo(w / 2, h - 60);
-    ctx.lineTo(w / 2, h);
-    ctx.stroke();
-    ctx.setLineDash([]);
-
-    ctx.globalAlpha = 0.15;
-    ctx.fillStyle = Config.p1Color;
-    ctx.font = '8px monospace';
-    ctx.textAlign = 'center';
-    ctx.fillText('TAP P1', w / 4, h - 10);
-    ctx.fillStyle = Config.p2Color;
-    ctx.fillText('TAP P2', w * 3 / 4, h - 10);
-    ctx.globalAlpha = 1;
-    ctx.textAlign = 'left';
-  }
-
-  // --- Speed indicator ---
-  function drawSpeedIndicator(ctx, w, speed) {
-    ctx.fillStyle = Config.dimColor;
-    ctx.font = '8px monospace';
-    ctx.textAlign = 'right';
-    ctx.fillText('SPD ' + speed.toFixed(1) + 'x', w - 10, Config.barY - 8);
-    ctx.textAlign = 'left';
+    ctx.moveTo(x + r, y); ctx.lineTo(x + w - r, y);
+    ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+    ctx.lineTo(x + w, y + h - r);
+    ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+    ctx.lineTo(x + r, y + h);
+    ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+    ctx.lineTo(x, y + r);
+    ctx.quadraticCurveTo(x, y, x + r, y);
+    ctx.closePath();
   }
 
   reset();
 
   return {
-    reset: reset,
-    triggerShake: triggerShake,
-    triggerFlash: triggerFlash,
-    updateEffects: updateEffects,
-    drawBackground: drawBackground,
-    drawArena: drawArena,
-    drawFighter: drawFighter,
-    drawHealthBar: drawHealthBar,
-    drawTimingBar: drawTimingBar,
-    drawRoundInfo: drawRoundInfo,
-    drawResultText: drawResultText,
-    drawPhaseOverlay: drawPhaseOverlay,
-    drawFlash: drawFlash,
-    drawTouchZones: drawTouchZones,
-    drawSpeedIndicator: drawSpeedIndicator,
-    get shakeX() { return shakeX; },
-    get shakeY() { return shakeY; },
+    reset: reset, triggerShake: triggerShake, triggerFlash: triggerFlash, updateEffects: updateEffects,
+    drawBackground: drawBackground, drawArena: drawArena, drawFighter: drawFighter,
+    drawHealthBar: drawHealthBar, drawRoundInfo: drawRoundInfo,
+    drawActionButtons: drawActionButtons, drawTimerBar: drawTimerBar,
+    drawResultText: drawResultText, drawPhaseOverlay: drawPhaseOverlay,
+    drawChoosePrompt: drawChoosePrompt, drawFlash: drawFlash,
   };
 })();
