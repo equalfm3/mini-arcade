@@ -128,7 +128,7 @@ The arcade uses a shared module system loaded by [`shared/arcade.js`](./shared/a
 | [`Grid`](./shared/grid.js) | Grid data structure + DOM renderer (for board games) |
 | [`Timer`](./shared/timer.js) | Countdown + stopwatch |
 | [`GameIcons`](./shared/icons.js) | 16×16 pixel art SVG icons for each game |
-| [Utilities](./shared/utils.js) | `randInt()`, `clamp()`, `collides()`, `saveHighScore()`, `onSwipe()`, etc. |
+| [`Utilities`](./shared/utils.js) | `randInt()`, `clamp()`, `collides()`, `saveHighScore()`, `onSwipe()`, etc. |
 
 ---
 
