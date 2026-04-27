@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300">
+  <rect width="600" height="300" fill="#0a0a16" rx="6"/>
+  <defs>
+    <style>text{font-family:monospace;}</style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ffd700"/>
+    </marker>
+  </defs>
+
+  <!-- IDLE box -->
+  <rect x="20" y="110" width="70" height="40" fill="#12121f" stroke="#44aaff" stroke-width="2" rx="4"/>
+  <text fill="#44aaff" font-size="10" x="33" y="135" font-weight="bold">IDLE</text>
+
+  <!-- SHOW box -->
+  <rect x="140" y="110" width="80" height="40" fill="#12121f" stroke="#c084fc" stroke-width="2" rx="4"/>
+  <text fill="#c084fc" font-size="10" x="155" y="135" font-weight="bold">SHOW</text>
+
+  <!-- PAINT box -->
+  <rect x="280" y="110" width="80" height="40" fill="#12121f" stroke="#44ff66" stroke-width="2" rx="4"/>
+  <text fill="#44ff66" font-size="10" x="295" y="135" font-weight="bold">PAINT</text>
+
+  <!-- COMPARE box -->
+  <rect x="420" y="110" width="90" height="40" fill="#12121f" stroke="#ffd700" stroke-width="2" rx="4"/>
+  <text fill="#ffd700" font-size="10" x="428" y="135" font-weight="bold">COMPARE</text>
+
+  <!-- PAUSED box -->
+  <rect x="230" y="30" width="90" height="40" fill="#12121f" stroke="#ffd700" stroke-width="2" rx="4"/>
+  <text fill="#ffd700" font-size="10" x="245" y="55" font-weight="bold">PAUSED</text>
+
+  <!-- OVER box -->
+  <rect x="420" y="220" width="90" height="40" fill="#12121f" stroke="#ff4444" stroke-width="2" rx="4"/>
+  <text fill="#ff4444" font-size="10" x="443" y="245" font-weight="bold">OVER</text>
+
+  <!-- Arrows -->
+  <!-- idle → show -->
+  <line x1="90" y1="130" x2="138" y2="130" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="96" y="125">Start</text>
+
+  <!-- show → paint -->
+  <line x1="220" y1="130" x2="278" y2="130" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="228" y="125">Timer</text>
+
+  <!-- paint → compare -->
+  <line x1="360" y1="130" x2="418" y2="130" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="368" y="125">Submit</text>
+
+  <!-- compare → show (pass, next level) -->
+  <path d="M 465 110 Q 465 85 320 85 Q 180 85 180 108" fill="none" stroke="#44ff66" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#44ff66" font-size="8" x="290" y="80">Pass (≥80%)</text>
+
+  <!-- compare → over (fail) -->
+  <line x1="465" y1="150" x2="465" y2="218" stroke="#ff4444" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#ff4444" font-size="8" x="472" y="190">Fail (&lt;80%)</text>
+
+  <!-- over → idle (play again) -->
+  <path d="M 420 240 Q 55 240 55 152" fill="none" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="200" y="260">Play Again</text>
+
+  <!-- playing → paused (from paint phase) -->
+  <line x1="310" y1="110" x2="285" y2="72" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="282" y="95">Esc/P</text>
+
+  <!-- paused → playing -->
+  <line x1="265" y1="70" x2="300" y2="108" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="300" y="85">Resume</text>
+
+  <!-- paused → idle (restart) -->
+  <path d="M 230 50 Q 55 50 55 108" fill="none" stroke="#ffd700" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="120" y="44">Restart</text>
+
+  <rect width="600" height="300" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

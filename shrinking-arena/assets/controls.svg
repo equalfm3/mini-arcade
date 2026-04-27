@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+  <rect width="600" height="200" fill="#0a0a16" rx="6"/>
+
+  <!-- Desktop section -->
+  <text fill="#44aaff" font-size="13" font-weight="bold" x="140" y="28" text-anchor="middle">DESKTOP</text>
+
+  <!-- Arrow keys -->
+  <rect x="115" y="42" width="28" height="28" fill="#12121f" stroke="#44aaff" stroke-width="2" rx="4"/>
+  <text fill="#44aaff" font-size="10" x="129" y="61" text-anchor="middle">▲</text>
+
+  <rect x="85" y="74" width="28" height="28" fill="#12121f" stroke="#44aaff" stroke-width="2" rx="4"/>
+  <text fill="#44aaff" font-size="10" x="99" y="93" text-anchor="middle">◄</text>
+
+  <rect x="115" y="74" width="28" height="28" fill="#12121f" stroke="#44aaff" stroke-width="2" rx="4"/>
+  <text fill="#44aaff" font-size="10" x="129" y="93" text-anchor="middle">▼</text>
+
+  <rect x="145" y="74" width="28" height="28" fill="#12121f" stroke="#44aaff" stroke-width="2" rx="4"/>
+  <text fill="#44aaff" font-size="10" x="159" y="93" text-anchor="middle">►</text>
+
+  <text fill="#888" font-size="9" x="140" y="118" text-anchor="middle">Move (8 directions)</text>
+
+  <!-- WASD keys -->
+  <rect x="50" y="130" width="24" height="24" fill="#12121f" stroke="#44aaff" stroke-width="1.5" rx="3"/>
+  <text fill="#44aaff" font-size="9" x="62" y="146" text-anchor="middle">W</text>
+  <rect x="78" y="130" width="24" height="24" fill="#12121f" stroke="#44aaff" stroke-width="1.5" rx="3"/>
+  <text fill="#44aaff" font-size="9" x="90" y="146" text-anchor="middle">A</text>
+  <rect x="106" y="130" width="24" height="24" fill="#12121f" stroke="#44aaff" stroke-width="1.5" rx="3"/>
+  <text fill="#44aaff" font-size="9" x="118" y="146" text-anchor="middle">S</text>
+  <rect x="134" y="130" width="24" height="24" fill="#12121f" stroke="#44aaff" stroke-width="1.5" rx="3"/>
+  <text fill="#44aaff" font-size="9" x="146" y="146" text-anchor="middle">D</text>
+  <text fill="#888" font-size="9" x="120" y="170" text-anchor="middle">Also WASD</text>
+
+  <!-- Esc/P -->
+  <rect x="190" y="130" width="40" height="24" fill="#12121f" stroke="#ffd700" stroke-width="1.5" rx="3"/>
+  <text fill="#ffd700" font-size="9" x="210" y="146" text-anchor="middle">ESC</text>
+  <rect x="234" y="130" width="24" height="24" fill="#12121f" stroke="#ffd700" stroke-width="1.5" rx="3"/>
+  <text fill="#ffd700" font-size="9" x="246" y="146" text-anchor="middle">P</text>
+  <text fill="#888" font-size="9" x="222" y="170" text-anchor="middle">Pause</text>
+
+  <!-- Divider -->
+  <line x1="300" y1="20" x2="300" y2="180" stroke="#2a2a40" stroke-width="1"/>
+
+  <!-- Mobile section -->
+  <text fill="#44aaff" font-size="13" font-weight="bold" x="450" y="28" text-anchor="middle">MOBILE</text>
+
+  <!-- D-pad -->
+  <rect x="425" y="42" width="30" height="30" fill="#12121f" stroke="#44aaff" stroke-width="2" rx="4"/>
+  <text fill="#44aaff" font-size="12" x="440" y="62" text-anchor="middle">▲</text>
+
+  <rect x="393" y="74" width="30" height="30" fill="#12121f" stroke="#44aaff" stroke-width="2" rx="4"/>
+  <text fill="#44aaff" font-size="12" x="408" y="94" text-anchor="middle">◄</text>
+
+  <rect x="425" y="74" width="30" height="30" fill="#12121f" stroke="#44aaff" stroke-width="2" rx="4"/>
+  <text fill="#44aaff" font-size="12" x="440" y="94" text-anchor="middle">▼</text>
+
+  <rect x="457" y="74" width="30" height="30" fill="#12121f" stroke="#44aaff" stroke-width="2" rx="4"/>
+  <text fill="#44aaff" font-size="12" x="472" y="94" text-anchor="middle">►</text>
+
+  <text fill="#888" font-size="9" x="440" y="120" text-anchor="middle">D-pad to move</text>
+  <text fill="#888" font-size="9" x="440" y="135" text-anchor="middle">in any direction</text>
+
+  <!-- Border -->
+  <rect width="600" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

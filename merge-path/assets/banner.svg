@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <style>
+      .bg { fill: #0e0e1a; }
+      .title { font-family: monospace; font-size: 44px; font-weight: bold; fill: #44aaff; }
+      .sub { font-family: monospace; font-size: 14px; fill: #666666; }
+    </style>
+    <radialGradient id="glowR" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff4444" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ff4444" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#44aaff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#44aaff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowG" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#44ff66" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#44ff66" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowY" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ffd700" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect class="bg" width="800" height="200" rx="8"/>
+
+  <!-- Subtle grid pattern (5x5 puzzle grid on left) -->
+  <g transform="translate(30, 20)">
+    <!-- Grid cells -->
+    <rect x="0" y="0" width="30" height="30" fill="#161625" rx="4"/>
+    <rect x="33" y="0" width="30" height="30" fill="#161625" rx="4"/>
+    <rect x="66" y="0" width="30" height="30" fill="#161625" rx="4"/>
+    <rect x="99" y="0" width="30" height="30" fill="#161625" rx="4"/>
+    <rect x="132" y="0" width="30" height="30" fill="#161625" rx="4"/>
+    <rect x="0" y="33" width="30" height="30" fill="#161625" rx="4"/>
+    <rect x="33" y="33" width="30" height="30" fill="#161625" rx="4"/>
+    <rect x="66" y="33" width="30" height="30" fill="#161625" rx="4"/>
+    <rect x="99" y="33" width="30" height="30" fill="#161625" rx="4"/>
+    <rect x="132" y="33" width="30" height="30" fill="#161625" rx="4"/>
+    <rect x="0" y="66" width="30" height="30" fill="#161625" rx="4"/>
+    <rect x="33" y="66" width="30" height="30" fill="#161625" rx="4"/>
+    <rect x="66" y="66" width="30" height="30" fill="#161625" rx="4"/>
+    <rect x="99" y="66" width="30" height="30" fill="#161625" rx="4"/>
+    <rect x="132" y="66" width="30" height="30" fill="#161625" rx="4"/>
+    <rect x="0" y="99" width="30" height="30" fill="#161625" rx="4"/>
+    <rect x="33" y="99" width="30" height="30" fill="#161625" rx="4"/>
+    <rect x="66" y="99" width="30" height="30" fill="#161625" rx="4"/>
+    <rect x="99" y="99" width="30" height="30" fill="#161625" rx="4"/>
+    <rect x="132" y="99" width="30" height="30" fill="#161625" rx="4"/>
+    <rect x="0" y="132" width="30" height="30" fill="#161625" rx="4"/>
+    <rect x="33" y="132" width="30" height="30" fill="#161625" rx="4"/>
+    <rect x="66" y="132" width="30" height="30" fill="#161625" rx="4"/>
+    <rect x="99" y="132" width="30" height="30" fill="#161625" rx="4"/>
+    <rect x="132" y="132" width="30" height="30" fill="#161625" rx="4"/>
+
+    <!-- Filled cells with tint (red path: (0,0) → (0,1) → (1,1) → (2,1) → (2,0) → (3,0) → (4,0) → (4,1) → (4,2) → (4,3) → (4,4)) -->
+    <rect x="0" y="0" width="30" height="30" fill="#ff4444" opacity="0.12" rx="4"/>
+    <rect x="33" y="0" width="30" height="30" fill="#ff4444" opacity="0.12" rx="4"/>
+    <rect x="33" y="33" width="30" height="30" fill="#ff4444" opacity="0.12" rx="4"/>
+    <rect x="33" y="66" width="30" height="30" fill="#ff4444" opacity="0.12" rx="4"/>
+    <rect x="0" y="66" width="30" height="30" fill="#ff4444" opacity="0.12" rx="4"/>
+    <rect x="0" y="99" width="30" height="30" fill="#ff4444" opacity="0.12" rx="4"/>
+    <rect x="0" y="132" width="30" height="30" fill="#ff4444" opacity="0.12" rx="4"/>
+    <rect x="33" y="132" width="30" height="30" fill="#ff4444" opacity="0.12" rx="4"/>
+    <rect x="66" y="132" width="30" height="30" fill="#ff4444" opacity="0.12" rx="4"/>
+    <rect x="99" y="132" width="30" height="30" fill="#ff4444" opacity="0.12" rx="4"/>
+    <rect x="132" y="132" width="30" height="30" fill="#ff4444" opacity="0.12" rx="4"/>
+
+    <!-- Blue path tint -->
+    <rect x="132" y="0" width="30" height="30" fill="#44aaff" opacity="0.12" rx="4"/>
+    <rect x="132" y="33" width="30" height="30" fill="#44aaff" opacity="0.12" rx="4"/>
+    <rect x="132" y="66" width="30" height="30" fill="#44aaff" opacity="0.12" rx="4"/>
+    <rect x="132" y="99" width="30" height="30" fill="#44aaff" opacity="0.12" rx="4"/>
+    <rect x="99" y="99" width="30" height="30" fill="#44aaff" opacity="0.12" rx="4"/>
+    <rect x="99" y="66" width="30" height="30" fill="#44aaff" opacity="0.12" rx="4"/>
+    <rect x="99" y="33" width="30" height="30" fill="#44aaff" opacity="0.12" rx="4"/>
+    <rect x="99" y="0" width="30" height="30" fill="#44aaff" opacity="0.12" rx="4"/>
+
+    <!-- Green path tint -->
+    <rect x="66" y="0" width="30" height="30" fill="#44ff66" opacity="0.12" rx="4"/>
+    <rect x="66" y="33" width="30" height="30" fill="#44ff66" opacity="0.12" rx="4"/>
+    <rect x="66" y="66" width="30" height="30" fill="#44ff66" opacity="0.12" rx="4"/>
+    <rect x="66" y="99" width="30" height="30" fill="#44ff66" opacity="0.12" rx="4"/>
+
+    <!-- Red path line -->
+    <polyline points="15,15 48,15 48,48 48,81 15,81 15,114 15,147 48,147 81,147 114,147 147,147"
+      fill="none" stroke="#ff4444" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+
+    <!-- Blue path line -->
+    <polyline points="147,15 147,48 147,81 147,114 114,114 114,81 114,48 114,15"
+      fill="none" stroke="#44aaff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+
+    <!-- Green path line -->
+    <polyline points="81,15 81,48 81,81 81,114"
+      fill="none" stroke="#44ff66" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+
+    <!-- Red dots -->
+    <circle cx="15" cy="15" r="9" fill="url(#glowR)"/>
+    <circle cx="15" cy="15" r="7" fill="#ff4444"/>
+    <circle cx="13" cy="12" r="3" fill="rgba(255,255,255,0.3)"/>
+    <circle cx="147" cy="147" r="9" fill="url(#glowR)"/>
+    <circle cx="147" cy="147" r="7" fill="#ff4444"/>
+    <circle cx="145" cy="144" r="3" fill="rgba(255,255,255,0.3)"/>
+
+    <!-- Blue dots -->
+    <circle cx="147" cy="15" r="9" fill="url(#glowB)"/>
+    <circle cx="147" cy="15" r="7" fill="#44aaff"/>
+    <circle cx="145" cy="12" r="3" fill="rgba(255,255,255,0.3)"/>
+    <circle cx="114" cy="15" r="9" fill="url(#glowB)"/>
+    <circle cx="114" cy="15" r="7" fill="#44aaff"/>
+    <circle cx="112" cy="12" r="3" fill="rgba(255,255,255,0.3)"/>
+
+    <!-- Green dots -->
+    <circle cx="81" cy="15" r="9" fill="url(#glowG)"/>
+    <circle cx="81" cy="15" r="7" fill="#44ff66"/>
+    <circle cx="79" cy="12" r="3" fill="rgba(255,255,255,0.3)"/>
+    <circle cx="81" cy="114" r="9" fill="url(#glowG)"/>
+    <circle cx="81" cy="114" r="7" fill="#44ff66"/>
+    <circle cx="79" cy="111" r="3" fill="rgba(255,255,255,0.3)"/>
+  </g>
+
+  <!-- Pixel icon (merge-path from icons.js) -->
+  <g transform="translate(260, 30)" shape-rendering="crispEdges">
+    <rect x="0" y="0" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="22.5" y="0" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="1.5" y="1.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="3" y="1.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="19.5" y="1.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="21" y="1.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="3" y="3" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="4.5" y="3" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="18" y="3" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="19.5" y="3" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="4.5" y="4.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="6" y="4.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="16.5" y="4.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="18" y="4.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="6" y="6" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="7.5" y="6" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="15" y="6" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="16.5" y="6" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="7.5" y="7.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="9" y="7.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="10.5" y="7.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="12" y="7.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="13.5" y="7.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="15" y="7.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="7.5" y="12" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="9" y="12" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="10.5" y="12" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="12" y="12" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="13.5" y="12" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="15" y="12" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="6" y="13.5" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="7.5" y="13.5" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="15" y="13.5" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="16.5" y="13.5" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="4.5" y="15" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="6" y="15" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="16.5" y="15" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="18" y="15" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="3" y="16.5" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="4.5" y="16.5" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="18" y="16.5" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="19.5" y="16.5" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="1.5" y="18" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="3" y="18" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="19.5" y="18" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="21" y="18" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="0" y="19.5" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="22.5" y="19.5" width="1.5" height="1.5" fill="#44aaff"/>
+  </g>
+
+  <!-- Title -->
+  <text class="title" x="320" y="90">MERGE PATH</text>
+  <text class="sub" x="320" y="115">Connect · Fill · Solve</text>
+
+  <!-- HUD mock -->
+  <g transform="translate(320, 135)">
+    <rect width="260" height="30" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="2"/>
+    <text font-family="monospace" font-size="9" fill="#666" x="10" y="19">LEVEL</text>
+    <text font-family="monospace" font-size="9" fill="#ffd700" x="55" y="19">3</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="90" y="19">MOVES</text>
+    <text font-family="monospace" font-size="9" fill="#ffd700" x="140" y="19">12</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="180" y="19">FILL</text>
+    <text font-family="monospace" font-size="9" fill="#44ff66" x="210" y="19">25/25</text>
+  </g>
+
+  <!-- Border -->
+  <rect width="800" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+</svg>

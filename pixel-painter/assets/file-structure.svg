@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 280" width="620" height="280">
+  <defs>
+    <style>text{font-family:monospace;font-size:12px;}</style>
+  </defs>
+  <rect width="620" height="280" fill="#0a0a16" rx="6"/>
+
+  <text fill="#c084fc" font-size="14" font-weight="bold" x="20" y="30">pixel-painter/</text>
+
+  <text fill="#ffd700" x="40" y="55">index.html</text>
+  <text fill="#666" x="220" y="55">Entry point — GAME config + arcade.js loader</text>
+
+  <text fill="#ffd700" x="40" y="80">style.css</text>
+  <text fill="#666" x="220" y="80">Game accent color (purple)</text>
+
+  <text fill="#ffd700" x="40" y="105">game.js</text>
+  <text fill="#666" x="220" y="105">Orchestrator — phases, input, scoring</text>
+
+  <text fill="#c084fc" x="40" y="135">src/</text>
+
+  <text fill="#44ff66" x="60" y="160">config.js</text>
+  <text fill="#666" x="220" y="160">Grid 8×8, 6 colors, timing, scoring thresholds</text>
+
+  <text fill="#44ff66" x="60" y="185">patterns.js</text>
+  <text fill="#666" x="220" y="185">20 pixel art patterns across 3 difficulty tiers</text>
+
+  <text fill="#44ff66" x="60" y="210">renderer.js</text>
+  <text fill="#666" x="220" y="210">Canvas grid, palette, timer, comparison view</text>
+
+  <text fill="#c084fc" x="40" y="240">assets/</text>
+  <text fill="#666" x="220" y="240">SVG images for README documentation</text>
+
+  <text fill="#ffd700" x="40" y="265">README.md</text>
+  <text fill="#666" x="220" y="265">Rich documentation with embedded SVG assets</text>
+
+  <rect width="620" height="280" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

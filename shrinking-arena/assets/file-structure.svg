@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 280" width="620" height="280">
+  <defs>
+    <style>text{font-family:monospace;font-size:11px;}</style>
+  </defs>
+  <rect width="620" height="280" fill="#0a0a16" rx="6"/>
+
+  <!-- File tree -->
+  <text fill="#44aaff" x="30" y="30" font-weight="bold" font-size="12">shrinking-arena/</text>
+
+  <text fill="#888" x="50" y="52">├── index.html</text>
+  <text fill="#555" x="280" y="52">Entry point — GAME config + arcade.js loader</text>
+
+  <text fill="#888" x="50" y="72">├── style.css</text>
+  <text fill="#555" x="280" y="72">Accent color override (--c-game: #44aaff)</text>
+
+  <text fill="#888" x="50" y="92">├── game.js</text>
+  <text fill="#555" x="280" y="92">Orchestrator — collisions, rounds, win/lose</text>
+
+  <text fill="#44aaff" x="50" y="116" font-size="10">├── src/</text>
+
+  <text fill="#888" x="70" y="136">├── config.js</text>
+  <text fill="#555" x="280" y="136">Arena size, speeds, colors, AI thresholds</text>
+
+  <text fill="#888" x="70" y="156">├── player.js</text>
+  <text fill="#555" x="280" y="156">WASD/arrow movement, push physics, trail</text>
+
+  <text fill="#888" x="70" y="176">├── enemies.js</text>
+  <text fill="#555" x="280" y="176">AI dots — wander, avoid, aggressive behavior</text>
+
+  <text fill="#888" x="70" y="196">├── arena.js</text>
+  <text fill="#555" x="280" y="196">Circular boundary, shrink logic, elimination</text>
+
+  <text fill="#888" x="70" y="216">└── renderer.js</text>
+  <text fill="#555" x="280" y="216">Arena ring, dots, trails, particles, effects</text>
+
+  <text fill="#44aaff" x="50" y="240" font-size="10">├── assets/</text>
+  <text fill="#555" x="280" y="240">SVG images for README</text>
+
+  <text fill="#888" x="50" y="260">└── README.md</text>
+  <text fill="#555" x="280" y="260">Full documentation with embedded SVGs</text>
+
+  <rect width="620" height="280" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

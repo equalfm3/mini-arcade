@@ -8,7 +8,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <script>var GAME = { id: 'shrinking-arena', title: 'Shrinking Arena', stats: [{id:'alive',label:'Alive',value:'—'},{id:'wins',label:'Wins',value:'0'}] };</script>
+  <script>var GAME = {
+    id: 'shrinking-arena',
+    title: 'Shrinking Arena',
+    stats: [{ id: 'alive', label: 'Alive', value: '—' }, { id: 'wins', label: 'Wins', value: '0' }],
+    src: ['src/config.js', 'src/player.js', 'src/enemies.js', 'src/arena.js', 'src/renderer.js']
+  };</script>
   <script src="../shared/arcade.js"></script>
 </body>
 </html>

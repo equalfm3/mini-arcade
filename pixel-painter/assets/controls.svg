@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220" width="600" height="220">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+  <rect width="600" height="220" fill="#0a0a16" rx="6"/>
+
+  <!-- Desktop -->
+  <text fill="#c084fc" font-size="14" font-weight="bold" x="130" y="25" text-anchor="middle">Desktop</text>
+
+  <!-- Color keys 1-6 -->
+  <g transform="translate(30, 40)">
+    <text fill="#888" font-size="10" x="0" y="12">Select color:</text>
+    <g transform="translate(0, 20)">
+      <rect width="28" height="28" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+      <text fill="#ff4444" font-size="14" font-weight="bold" x="14" y="20" text-anchor="middle">1</text>
+      <rect x="34" width="28" height="28" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+      <text fill="#ff8844" font-size="14" font-weight="bold" x="48" y="20" text-anchor="middle">2</text>
+      <rect x="68" width="28" height="28" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+      <text fill="#ffd700" font-size="14" font-weight="bold" x="82" y="20" text-anchor="middle">3</text>
+      <rect x="102" width="28" height="28" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+      <text fill="#44ff66" font-size="14" font-weight="bold" x="116" y="20" text-anchor="middle">4</text>
+      <rect x="136" width="28" height="28" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+      <text fill="#44aaff" font-size="14" font-weight="bold" x="150" y="20" text-anchor="middle">5</text>
+      <rect x="170" width="28" height="28" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+      <text fill="#c084fc" font-size="14" font-weight="bold" x="184" y="20" text-anchor="middle">6</text>
+    </g>
+  </g>
+
+  <!-- Paint + Submit -->
+  <g transform="translate(30, 100)">
+    <text fill="#888" font-size="10" x="0" y="12">Paint:</text>
+    <text fill="#e0e0e0" font-size="10" x="50" y="12">Click cells on the grid</text>
+  </g>
+
+  <g transform="translate(30, 125)">
+    <text fill="#888" font-size="10" x="0" y="12">Submit:</text>
+    <rect x="55" y="0" width="50" height="20" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+    <text fill="#ffd700" font-size="10" font-weight="bold" x="80" y="14" text-anchor="middle">Enter</text>
+    <text fill="#666" font-size="10" x="112" y="14">or</text>
+    <rect x="128" y="0" width="50" height="20" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+    <text fill="#ffd700" font-size="10" font-weight="bold" x="153" y="14" text-anchor="middle">Space</text>
+  </g>
+
+  <!-- Pause key -->
+  <g transform="translate(30, 155)">
+    <text fill="#888" font-size="10" x="0" y="12">Pause:</text>
+    <rect x="55" y="0" width="40" height="20" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+    <text fill="#ffd700" font-size="10" font-weight="bold" x="75" y="14" text-anchor="middle">Esc</text>
+    <text fill="#666" font-size="10" x="102" y="14">or</text>
+    <rect x="118" y="0" width="28" height="20" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+    <text fill="#ffd700" font-size="10" font-weight="bold" x="132" y="14" text-anchor="middle">P</text>
+  </g>
+
+  <!-- Erase -->
+  <g transform="translate(30, 185)">
+    <text fill="#888" font-size="10" x="0" y="12">Erase:</text>
+    <text fill="#e0e0e0" font-size="10" x="50" y="12">Click a painted cell with same color</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="300" y1="15" x2="300" y2="205" stroke="#2a2a40" stroke-width="1"/>
+
+  <!-- Mobile -->
+  <text fill="#44ff66" font-size="14" font-weight="bold" x="450" y="25" text-anchor="middle">Mobile</text>
+
+  <!-- Tap palette -->
+  <g transform="translate(340, 45)">
+    <text fill="#888" font-size="10" x="0" y="12">Tap palette to select color:</text>
+    <g transform="translate(20, 25)">
+      <rect x="0" y="0" width="30" height="30" fill="#ff4444" rx="5"/>
+      <rect x="36" y="0" width="30" height="30" fill="#ff8844" rx="5"/>
+      <rect x="72" y="0" width="30" height="30" fill="#ffd700" rx="5" stroke="#fff" stroke-width="2"/>
+      <rect x="108" y="0" width="30" height="30" fill="#44ff66" rx="5"/>
+      <!-- Tap indicator -->
+      <circle cx="87" cy="15" r="7" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
+      <circle cx="87" cy="15" r="2.5" fill="#fff" opacity="0.8"/>
+    </g>
+  </g>
+
+  <!-- Tap grid -->
+  <g transform="translate(340, 115)">
+    <text fill="#888" font-size="10" x="0" y="12">Tap cells to paint them</text>
+  </g>
+
+  <!-- Tap submit -->
+  <g transform="translate(340, 140)">
+    <text fill="#888" font-size="10" x="0" y="12">Tap SUBMIT when done</text>
+  </g>
+
+  <!-- Erase mobile -->
+  <g transform="translate(340, 165)">
+    <text fill="#888" font-size="10" x="0" y="12">Tap painted cell with same</text>
+    <text fill="#888" font-size="10" x="0" y="28">color to erase it</text>
+  </g>
+
+  <rect width="600" height="220" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

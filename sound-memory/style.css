@@ -1,1 +1,143 @@
 /* Sound Memory — Game Styles */
+
+:root {
+  --c-game: #c084fc;
+}
+
+/* ---- Wrapper ---- */
+.sm-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  position: relative;
+}
+
+/* ---- Status message (absolutely positioned to prevent layout shifts) ---- */
+.sm-status {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: var(--font-pixel, monospace);
+  font-size: 1rem;
+  color: #888;
+  height: 1.6em;
+  line-height: 1.6em;
+  overflow: hidden;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.sm-status-learn  { color: #c084fc; }
+.sm-status-listen { color: #ffd700; }
+.sm-status-play   { color: #44ff66; }
+.sm-status-fail   { color: #ff4444; }
+
+/* ---- Button grid (2×3) ---- */
+.sm-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* ---- Button (identical appearance — no visual distinction) ---- */
+.sm-btn {
+  width: 90px;
+  height: 90px;
+  border: 2px solid #2a2a40;
+  border-radius: 50%;
+  background: #1a1a2e;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  padding: 0;
+  position: relative;
+}
+
+/* ---- Note label inside button ---- */
+.sm-btn-note {
+  font-family: var(--font-pixel, monospace);
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+  pointer-events: none;
+  transition: color 0.15s ease;
+}
+
+.sm-btn:hover .sm-btn-note {
+  color: #888;
+}
+
+.sm-btn-active .sm-btn-note {
+  color: #1a1a2e !important;
+}
+
+.sm-btn:hover {
+  background: #22223a;
+  border-color: #3a3a55;
+}
+
+.sm-btn:active {
+  background: #2a2a4a;
+}
+
+/* ---- Active (glowing white) state ---- */
+.sm-btn-active {
+  background: #ffffff !important;
+  border-color: #ffffff !important;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.3);
+}
+
+/* ---- Wrong flash ---- */
+.sm-btn-wrong {
+  animation: sm-wrong-flash 0.6s ease;
+}
+
+@keyframes sm-wrong-flash {
+  0%, 100% { background: #1a1a2e; border-color: #2a2a40; }
+  25% { background: #ff4444; border-color: #ff4444; box-shadow: 0 0 20px rgba(255, 68, 68, 0.6); }
+  50% { background: #1a1a2e; border-color: #2a2a40; }
+  75% { background: #ff4444; border-color: #ff4444; box-shadow: 0 0 20px rgba(255, 68, 68, 0.6); }
+}
+
+/* ---- Disabled state ---- */
+.sm-disabled .sm-btn {
+  cursor: default;
+  pointer-events: none;
+}
+
+/* ---- Waveform display ---- */
+.sm-waveform {
+  margin-top: 20px;
+  border-radius: 6px;
+  background: #12121f;
+  border: 1px solid #2a2a40;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 380px) {
+  .sm-btn {
+    width: 72px;
+    height: 72px;
+  }
+
+  .sm-grid {
+    gap: 12px;
+    padding: 10px;
+  }
+
+  .sm-waveform {
+    margin-top: 14px;
+  }
+}

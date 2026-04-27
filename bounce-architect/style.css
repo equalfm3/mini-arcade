@@ -1,1 +1,9 @@
 /* Bounce Architect — Game Styles */
+
+:root {
+  --c-game: #44ff66;
+}
+
+#launch-btn {
+  margin-top: 8px;
+}

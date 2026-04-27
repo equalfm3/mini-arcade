@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300">
+  <rect width="600" height="300" fill="#0a0a16" rx="6"/>
+  <defs>
+    <style>text{font-family:monospace;}</style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c084fc"/>
+    </marker>
+  </defs>
+
+  <!-- IDLE box -->
+  <rect x="20" y="120" width="80" height="40" fill="#12121f" stroke="#44aaff" stroke-width="2" rx="4"/>
+  <text fill="#44aaff" font-size="11" x="37" y="145" font-weight="bold">IDLE</text>
+
+  <!-- LEARN box -->
+  <rect x="150" y="40" width="90" height="40" fill="#12121f" stroke="#c084fc" stroke-width="2" rx="4"/>
+  <text fill="#c084fc" font-size="11" x="165" y="65" font-weight="bold">LEARN</text>
+
+  <!-- LISTEN box -->
+  <rect x="290" y="40" width="100" height="40" fill="#12121f" stroke="#ffd700" stroke-width="2" rx="4"/>
+  <text fill="#ffd700" font-size="11" x="307" y="65" font-weight="bold">LISTEN</text>
+
+  <!-- PLAY box -->
+  <rect x="290" y="180" width="100" height="40" fill="#12121f" stroke="#44ff66" stroke-width="2" rx="4"/>
+  <text fill="#44ff66" font-size="11" x="317" y="205" font-weight="bold">PLAY</text>
+
+  <!-- PAUSED box -->
+  <rect x="150" y="230" width="90" height="40" fill="#12121f" stroke="#888" stroke-width="2" rx="4"/>
+  <text fill="#888" font-size="11" x="162" y="255" font-weight="bold">PAUSED</text>
+
+  <!-- OVER box -->
+  <rect x="470" y="120" width="100" height="40" fill="#12121f" stroke="#ff4444" stroke-width="2" rx="4"/>
+  <text fill="#ff4444" font-size="11" x="493" y="145" font-weight="bold">OVER</text>
+
+  <!-- idle → learn -->
+  <path d="M 100 130 Q 130 60 148 60" fill="none" stroke="#c084fc" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="100" y="85">Start</text>
+
+  <!-- learn → listen -->
+  <line x1="240" y1="60" x2="288" y2="60" stroke="#c084fc" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="248" y="53">Done</text>
+
+  <!-- listen → play -->
+  <line x1="340" y1="80" x2="340" y2="178" stroke="#c084fc" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="346" y="135">Sequence done</text>
+
+  <!-- play → listen (round complete, loops back) -->
+  <path d="M 290 195 Q 260 130 290 65" fill="none" stroke="#c084fc" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="248" y="135">Round ✓</text>
+
+  <!-- play → over (wrong button) -->
+  <path d="M 390 195 Q 440 160 468 145" fill="none" stroke="#ff4444" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="410" y="175">Wrong / Timeout</text>
+
+  <!-- over → idle (play again) -->
+  <path d="M 520 160 Q 520 280 75 280 Q 30 280 30 162" fill="none" stroke="#c084fc" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="260" y="290">Play Again</text>
+
+  <!-- any → paused -->
+  <path d="M 290 200 Q 240 230 242 238" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="240" y="218">Esc</text>
+
+  <!-- paused → resume -->
+  <path d="M 195 230 Q 195 200 290 195" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="200" y="210">Resume</text>
+
+  <!-- Border -->
+  <rect width="600" height="300" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

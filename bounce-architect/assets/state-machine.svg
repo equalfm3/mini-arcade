@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 280" width="560" height="280">
+  <rect width="560" height="280" fill="#0a0a16" rx="6"/>
+  <defs>
+    <style>text { font-family: monospace; }</style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ffd700"/>
+    </marker>
+  </defs>
+
+  <!-- IDLE box -->
+  <rect x="20" y="110" width="80" height="40" fill="#12121f" stroke="#44aaff" stroke-width="2" rx="4"/>
+  <text fill="#44aaff" font-size="10" x="40" y="134" font-weight="bold">IDLE</text>
+
+  <!-- PLACE box -->
+  <rect x="150" y="110" width="90" height="40" fill="#12121f" stroke="#44ff66" stroke-width="2" rx="4"/>
+  <text fill="#44ff66" font-size="10" x="168" y="134" font-weight="bold">PLACE</text>
+
+  <!-- FLYING box -->
+  <rect x="290" y="110" width="90" height="40" fill="#12121f" stroke="#ff8844" stroke-width="2" rx="4"/>
+  <text fill="#ff8844" font-size="10" x="305" y="134" font-weight="bold">FLYING</text>
+
+  <!-- RESULT box -->
+  <rect x="430" y="110" width="100" height="40" fill="#12121f" stroke="#ffd700" stroke-width="2" rx="4"/>
+  <text fill="#ffd700" font-size="10" x="450" y="134" font-weight="bold">RESULT</text>
+
+  <!-- PAUSED box -->
+  <rect x="200" y="20" width="100" height="40" fill="#12121f" stroke="#888888" stroke-width="2" rx="4"/>
+  <text fill="#888888" font-size="10" x="218" y="44" font-weight="bold">PAUSED</text>
+
+  <!-- OVER box -->
+  <rect x="430" y="220" width="100" height="40" fill="#12121f" stroke="#ff4444" stroke-width="2" rx="4"/>
+  <text fill="#ff4444" font-size="10" x="455" y="244" font-weight="bold">OVER</text>
+
+  <!-- idle → place -->
+  <line x1="100" y1="130" x2="148" y2="130" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="108" y="124">Start</text>
+
+  <!-- place → flying -->
+  <line x1="240" y1="130" x2="288" y2="130" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="248" y="124">Space</text>
+
+  <!-- flying → result -->
+  <line x1="380" y1="130" x2="428" y2="130" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="385" y="124">Goal/Miss</text>
+
+  <!-- result → place (retry) -->
+  <path d="M 480 150 Q 480 190 310 190 Q 195 190 195 152" fill="none" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="320" y="200">Retry / Next</text>
+
+  <!-- result → over (all levels done) -->
+  <line x1="480" y1="150" x2="480" y2="218" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="486" y="190">All clear</text>
+
+  <!-- over → idle -->
+  <path d="M 430 240 Q 60 240 60 152" fill="none" stroke="#ffd700" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="200" y="255">Play Again</text>
+
+  <!-- place ↔ paused -->
+  <line x1="220" y1="110" x2="240" y2="62" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="210" y="82">Esc</text>
+  <line x1="260" y1="60" x2="240" y2="108" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="260" y="82">Resume</text>
+
+  <rect width="560" height="280" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

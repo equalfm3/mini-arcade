@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 280" width="620" height="280">
+  <defs>
+    <style>text{font-family:monospace;font-size:11px;}</style>
+  </defs>
+  <rect width="620" height="280" fill="#0a0a16" rx="6"/>
+
+  <text fill="#c084fc" x="20" y="28" font-size="13" font-weight="bold">sound-memory/</text>
+
+  <text fill="#44aaff" x="30" y="55">├── index.html</text>
+  <text fill="#666" x="260" y="55">Entry point — GAME config + arcade.js loader</text>
+
+  <text fill="#44aaff" x="30" y="75">├── style.css</text>
+  <text fill="#666" x="260" y="75">Accent color, circular buttons, waveform, glow</text>
+
+  <text fill="#44aaff" x="30" y="95">├── game.js</text>
+  <text fill="#666" x="260" y="95">Orchestrator — learn/listen/play phases</text>
+
+  <text fill="#c084fc" x="30" y="120">├── src/</text>
+
+  <text fill="#44ff66" x="50" y="140">├── config.js</text>
+  <text fill="#666" x="260" y="140">6 note frequencies (C4-A4), layout, timing</text>
+
+  <text fill="#44ff66" x="50" y="160">├── tones.js</text>
+  <text fill="#666" x="260" y="160">Web Audio tone generation, waveform data</text>
+
+  <text fill="#44ff66" x="50" y="180">├── sequence.js</text>
+  <text fill="#666" x="260" y="180">Sequence generation, playback, input validation</text>
+
+  <text fill="#44ff66" x="50" y="200">└── renderer.js</text>
+  <text fill="#666" x="260" y="200">DOM buttons (identical), glow, waveform display</text>
+
+  <text fill="#c084fc" x="30" y="225">├── assets/</text>
+  <text fill="#666" x="260" y="225">SVG images for README documentation</text>
+
+  <text fill="#44aaff" x="30" y="250">└── README.md</text>
+  <text fill="#666" x="260" y="250">Full documentation with embedded SVGs</text>
+
+  <!-- Border -->
+  <rect width="620" height="280" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

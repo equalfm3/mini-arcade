@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 140" width="600" height="140">
+  <defs>
+    <style>text{font-family:monospace;font-size:10px;}</style>
+  </defs>
+  <rect width="600" height="140" fill="#0a0a16" rx="6"/>
+
+  <!-- Background -->
+  <rect x="20" y="20" width="60" height="40" fill="#0e0e1a" stroke="#2a2a40" stroke-width="1" rx="4"/>
+  <text fill="#888" x="25" y="80">Background</text>
+  <text fill="#666" x="25" y="95">#0e0e1a</text>
+
+  <!-- Button -->
+  <rect x="100" y="20" width="60" height="40" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+  <text fill="#888" x="105" y="80">Button</text>
+  <text fill="#666" x="105" y="95">#1a1a2e</text>
+
+  <!-- Border -->
+  <rect x="180" y="20" width="60" height="40" fill="#2a2a40" rx="4"/>
+  <text fill="#888" x="185" y="80">Border</text>
+  <text fill="#666" x="185" y="95">#2a2a40</text>
+
+  <!-- Glow (white) -->
+  <circle cx="290" cy="40" r="20" fill="#ffffff"/>
+  <circle cx="290" cy="40" r="26" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.3"/>
+  <text fill="#888" x="270" y="80">Glow</text>
+  <text fill="#666" x="270" y="95">#ffffff</text>
+
+  <!-- Accent (purple) -->
+  <rect x="340" y="20" width="60" height="40" fill="#c084fc" rx="4"/>
+  <text fill="#888" x="345" y="80">Accent</text>
+  <text fill="#666" x="345" y="95">#c084fc</text>
+
+  <!-- Waveform -->
+  <rect x="420" y="20" width="60" height="40" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="4"/>
+  <rect x="425" y="30" width="4" height="20" fill="#c084fc" opacity="0.7"/>
+  <rect x="432" y="25" width="4" height="30" fill="#c084fc"/>
+  <rect x="439" y="32" width="4" height="16" fill="#c084fc" opacity="0.5"/>
+  <rect x="446" y="28" width="4" height="24" fill="#c084fc" opacity="0.8"/>
+  <rect x="453" y="34" width="4" height="12" fill="#c084fc" opacity="0.4"/>
+  <rect x="460" y="26" width="4" height="28" fill="#c084fc" opacity="0.9"/>
+  <rect x="467" y="30" width="4" height="20" fill="#c084fc" opacity="0.6"/>
+  <text fill="#888" x="425" y="80">Waveform</text>
+  <text fill="#666" x="425" y="95">#c084fc</text>
+
+  <!-- Fail -->
+  <rect x="510" y="20" width="60" height="40" fill="#ff4444" rx="4"/>
+  <text fill="#888" x="515" y="80">Fail</text>
+  <text fill="#666" x="515" y="95">#ff4444</text>
+
+  <!-- Border -->
+  <rect width="600" height="140" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 380" width="380" height="380">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+  <rect width="380" height="380" fill="#0a0a16" rx="6"/>
+
+  <!-- Background stars -->
+  <g fill="#ffffff" opacity="0.2">
+    <rect x="30" y="20" width="2" height="2"/><rect x="90" y="50" width="1" height="1"/>
+    <rect x="150" y="30" width="2" height="2"/><rect x="250" y="60" width="1" height="1"/>
+    <rect x="320" y="40" width="2" height="2"/><rect x="350" y="100" width="1" height="1"/>
+    <rect x="40" y="300" width="2" height="2"/><rect x="100" y="340" width="1" height="1"/>
+    <rect x="280" y="320" width="2" height="2"/><rect x="340" y="280" width="1" height="1"/>
+    <rect x="60" y="180" width="1" height="1"/><rect x="330" y="200" width="2" height="2"/>
+  </g>
+
+  <!-- Remaining count -->
+  <text fill="#888" font-size="11" text-anchor="middle" x="190" y="18">Remaining: 7</text>
+
+  <!-- Arena ring (partially shrunk, ~130px radius) -->
+  <circle cx="190" cy="195" r="130" fill="rgba(20,20,40,0.3)"/>
+  <circle cx="190" cy="195" r="130" fill="none" stroke="rgba(68,170,255,0.08)" stroke-width="8"/>
+  <circle cx="190" cy="195" r="130" fill="none" stroke="#44aaff" stroke-width="2.5"/>
+
+  <!-- Player dot (bright blue, slightly off-center) -->
+  <!-- Trail -->
+  <circle cx="165" cy="185" r="4" fill="#44aaff" opacity="0.12"/>
+  <circle cx="160" cy="182" r="4.5" fill="#44aaff" opacity="0.18"/>
+  <circle cx="155" cy="180" r="5" fill="#44aaff" opacity="0.25"/>
+  <circle cx="150" cy="178" r="5.5" fill="#44aaff" opacity="0.32"/>
+  <!-- Player glow -->
+  <circle cx="175" cy="190" r="11" fill="rgba(68,170,255,0.15)"/>
+  <!-- Player body -->
+  <circle cx="175" cy="190" r="7" fill="#44aaff"/>
+  <circle cx="173" cy="188" r="2.5" fill="#ffffff" opacity="0.3"/>
+
+  <!-- Enemy dots (6 alive, scattered inside arena) -->
+  <!-- Red enemy (aggressive, near player) -->
+  <circle cx="210" cy="170" r="5" fill="#ff4444"/>
+  <circle cx="215" cy="172" r="3.5" fill="#ff4444" opacity="0.2"/>
+
+  <!-- Orange enemy -->
+  <circle cx="140" cy="230" r="5" fill="#ff8844"/>
+  <circle cx="137" cy="233" r="3.5" fill="#ff8844" opacity="0.2"/>
+
+  <!-- Yellow enemy -->
+  <circle cx="230" cy="240" r="5" fill="#ffcc44"/>
+
+  <!-- Green enemy (near center, passive) -->
+  <circle cx="195" cy="210" r="5" fill="#44ff66"/>
+
+  <!-- Cyan enemy -->
+  <circle cx="250" cy="160" r="5" fill="#44ffdd"/>
+
+  <!-- Purple enemy (near edge) -->
+  <circle cx="120" cy="145" r="5" fill="#c084fc"/>
+  <circle cx="117" cy="142" r="3.5" fill="#c084fc" opacity="0.2"/>
+
+  <!-- Elimination burst (pink enemy just eliminated at edge) -->
+  <g opacity="0.7">
+    <circle cx="310" cy="230" r="4" fill="#ff66aa" opacity="0.4"/>
+    <rect x="313" y="225" width="2" height="2" fill="#ff66aa"/>
+    <rect x="305" y="222" width="2" height="2" fill="#ff66aa"/>
+    <rect x="316" y="233" width="2" height="2" fill="#ffffff"/>
+    <rect x="303" y="235" width="2" height="2" fill="#ffdd44"/>
+    <rect x="318" y="226" width="2" height="2" fill="#ffffff"/>
+    <rect x="308" y="237" width="2" height="2" fill="#ff66aa"/>
+  </g>
+
+  <!-- Border -->
+  <rect width="380" height="380" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <style>
+      .bg { fill: #0a0a16; }
+      .title { font-family: monospace; font-size: 42px; font-weight: bold; fill: #44ff66; }
+      .sub { font-family: monospace; font-size: 14px; fill: #666666; }
+      .grid { stroke: #161625; stroke-width: 0.5; }
+    </style>
+  </defs>
+  <!-- Background -->
+  <rect class="bg" width="800" height="200" rx="8"/>
+  <!-- Subtle grid -->
+  <g class="grid" fill="none">
+    <line x1="0" y1="30" x2="800" y2="30"/><line x1="0" y1="60" x2="800" y2="60"/>
+    <line x1="0" y1="90" x2="800" y2="90"/><line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="150" x2="800" y2="150"/><line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="30" y1="0" x2="30" y2="200"/><line x1="60" y1="0" x2="60" y2="200"/>
+    <line x1="90" y1="0" x2="90" y2="200"/><line x1="120" y1="0" x2="120" y2="200"/>
+  </g>
+
+  <!-- Ball bouncing off pads illustration -->
+  <g shape-rendering="crispEdges">
+    <!-- Ball at top -->
+    <circle cx="60" cy="40" r="8" fill="#44aaff"/>
+    <circle cx="60" cy="40" r="12" fill="none" stroke="#44aaff" stroke-width="1" opacity="0.3"/>
+
+    <!-- Trajectory dots -->
+    <circle cx="65" cy="55" r="2" fill="#44aaff" opacity="0.2"/>
+    <circle cx="70" cy="68" r="2" fill="#44aaff" opacity="0.2"/>
+    <circle cx="76" cy="80" r="2" fill="#44aaff" opacity="0.2"/>
+    <circle cx="82" cy="90" r="2" fill="#44aaff" opacity="0.2"/>
+
+    <!-- Pad 1 (angled) -->
+    <line x1="70" y1="105" x2="120" y2="90" stroke="#44ff66" stroke-width="5" stroke-linecap="round"/>
+    <line x1="70" y1="105" x2="120" y2="90" stroke="#22aa44" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Trajectory after bounce 1 -->
+    <circle cx="125" cy="95" r="2" fill="#44aaff" opacity="0.2"/>
+    <circle cx="135" cy="105" r="2" fill="#44aaff" opacity="0.2"/>
+    <circle cx="145" cy="118" r="2" fill="#44aaff" opacity="0.2"/>
+
+    <!-- Pad 2 (angled) -->
+    <line x1="140" y1="135" x2="190" y2="125" stroke="#44ff66" stroke-width="5" stroke-linecap="round"/>
+    <line x1="140" y1="135" x2="190" y2="125" stroke="#22aa44" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Trajectory after bounce 2 -->
+    <circle cx="195" cy="130" r="2" fill="#44aaff" opacity="0.2"/>
+    <circle cx="200" cy="140" r="2" fill="#44aaff" opacity="0.2"/>
+    <circle cx="203" cy="152" r="2" fill="#44aaff" opacity="0.2"/>
+
+    <!-- Goal -->
+    <circle cx="205" cy="172" r="14" fill="#ffd700" opacity="0.3"/>
+    <circle cx="205" cy="172" r="10" fill="#ffd700"/>
+    <line x1="200" y1="172" x2="210" y2="172" stroke="#fff" stroke-width="1.5" opacity="0.5"/>
+    <line x1="205" y1="167" x2="205" y2="177" stroke="#fff" stroke-width="1.5" opacity="0.5"/>
+
+    <!-- Obstacle block -->
+    <rect x="100" y="150" width="60" height="12" fill="#444466" stroke="#555588" stroke-width="1"/>
+  </g>
+
+  <!-- Pixel icon -->
+  <g transform="translate(260, 30)" shape-rendering="crispEdges">
+    <rect x="15" y="1.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="13.5" y="3" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="12" y="4.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="10.5" y="6" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="9" y="7.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="7.5" y="9" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="3" y="10.5" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="4.5" y="10.5" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="6" y="10.5" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="7.5" y="10.5" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="9" y="10.5" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="10.5" y="10.5" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="15" y="13.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="13.5" y="15" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="12" y="16.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="10.5" y="18" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="9" y="19.5" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="10.5" y="19.5" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="12" y="19.5" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="13.5" y="19.5" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="15" y="19.5" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="16.5" y="19.5" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="9" y="22.5" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="10.5" y="22.5" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="12" y="22.5" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="13.5" y="22.5" width="1.5" height="1.5" fill="#ffd700"/>
+  </g>
+
+  <!-- Title -->
+  <text class="title" x="300" y="95">BOUNCE ARCHITECT</text>
+  <text class="sub" x="300" y="120">Place · Launch · Solve</text>
+
+  <!-- HUD mock -->
+  <g transform="translate(300, 140)">
+    <rect width="260" height="30" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="2"/>
+    <text font-family="monospace" font-size="9" fill="#666" x="10" y="19">LEVEL</text>
+    <text font-family="monospace" font-size="9" fill="#ffd700" x="55" y="19">3</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="100" y="19">PADS</text>
+    <text font-family="monospace" font-size="9" fill="#ffd700" x="140" y="19">1/1</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="190" y="19">PHASE</text>
+    <text font-family="monospace" font-size="9" fill="#44ff66" x="230" y="19">PLACE</text>
+  </g>
+
+  <!-- Border -->
+  <rect width="800" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+</svg>
