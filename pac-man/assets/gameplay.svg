@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 500" width="420" height="500">
+  <rect width="420" height="500" fill="#000000" rx="6"/>
+
+  <!-- Simplified maze section showing gameplay -->
+  <g transform="translate(14, 14)">
+    <!-- Maze walls (blue outlines) -->
+    <g stroke="#2121de" stroke-width="1.5" fill="none">
+      <!-- Outer border -->
+      <rect x="0" y="0" width="392" height="434" rx="4"/>
+      <!-- Top inner walls -->
+      <rect x="28" y="28" width="56" height="28" rx="2"/>
+      <rect x="112" y="28" width="70" height="28" rx="2"/>
+      <rect x="210" y="28" width="70" height="28" rx="2"/>
+      <rect x="308" y="28" width="56" height="28" rx="2"/>
+      <!-- Middle walls -->
+      <rect x="28" y="84" width="56" height="56" rx="2"/>
+      <rect x="112" y="84" width="28" height="28" rx="2"/>
+      <rect x="168" y="70" width="56" height="42" rx="2"/>
+      <rect x="252" y="84" width="28" height="28" rx="2"/>
+      <rect x="308" y="84" width="56" height="56" rx="2"/>
+      <!-- Ghost house -->
+      <rect x="140" y="168" width="112" height="56" rx="2"/>
+      <!-- Ghost door -->
+      <line x1="175" y1="168" x2="217" y2="168" stroke="#ffb8ff" stroke-width="2.5"/>
+      <!-- Bottom walls -->
+      <rect x="28" y="280" width="56" height="28" rx="2"/>
+      <rect x="112" y="280" width="70" height="28" rx="2"/>
+      <rect x="210" y="280" width="70" height="28" rx="2"/>
+      <rect x="308" y="280" width="56" height="28" rx="2"/>
+      <rect x="28" y="336" width="56" height="56" rx="2"/>
+      <rect x="168" y="336" width="56" height="28" rx="2"/>
+      <rect x="308" y="336" width="56" height="56" rx="2"/>
+    </g>
+
+    <!-- Pellets (small dots) -->
+    <g fill="#ffb8ae">
+      <circle cx="14" cy="14" r="1.5"/><circle cx="28" cy="14" r="1.5"/>
+      <circle cx="98" cy="14" r="1.5"/><circle cx="112" cy="14" r="1.5"/>
+      <circle cx="196" cy="14" r="1.5"/><circle cx="294" cy="14" r="1.5"/>
+      <circle cx="378" cy="14" r="1.5"/>
+      <circle cx="14" cy="70" r="1.5"/><circle cx="98" cy="70" r="1.5"/>
+      <circle cx="294" cy="70" r="1.5"/><circle cx="378" cy="70" r="1.5"/>
+      <circle cx="14" cy="252" r="1.5"/><circle cx="98" cy="252" r="1.5"/>
+      <circle cx="196" cy="252" r="1.5"/><circle cx="294" cy="252" r="1.5"/>
+      <circle cx="378" cy="252" r="1.5"/>
+      <circle cx="14" cy="322" r="1.5"/><circle cx="98" cy="322" r="1.5"/>
+      <circle cx="294" cy="322" r="1.5"/><circle cx="378" cy="322" r="1.5"/>
+      <circle cx="14" cy="406" r="1.5"/><circle cx="196" cy="406" r="1.5"/>
+      <circle cx="378" cy="406" r="1.5"/>
+    </g>
+
+    <!-- Power pellets (big dots) -->
+    <g fill="#ffb8ae">
+      <circle cx="14" cy="42" r="4"/>
+      <circle cx="378" cy="42" r="4"/>
+      <circle cx="14" cy="308" r="4"/>
+      <circle cx="378" cy="308" r="4"/>
+    </g>
+
+    <!-- Pac-Man (mouth open, facing right) -->
+    <g transform="translate(196, 252)">
+      <path d="M 0 0 L 7 -5 A 7 7 0 1 1 7 5 Z" fill="#ffff00"/>
+    </g>
+
+    <!-- Blinky (red ghost) chasing -->
+    <g transform="translate(154, 252)">
+      <path d="M -6 0 A 6 6 0 0 1 6 0 L 6 5 L 4 3 L 2 5 L 0 3 L -2 5 L -4 3 L -6 5 Z" fill="#ff0000"/>
+      <circle cx="-2" cy="-1" r="1.8" fill="white"/><circle cx="2" cy="-1" r="1.8" fill="white"/>
+      <circle cx="-1" cy="-1" r="0.9" fill="#2121de"/><circle cx="3" cy="-1" r="0.9" fill="#2121de"/>
+    </g>
+
+    <!-- Pinky (pink ghost) -->
+    <g transform="translate(154, 196)">
+      <path d="M -6 0 A 6 6 0 0 1 6 0 L 6 5 L 4 3 L 2 5 L 0 3 L -2 5 L -4 3 L -6 5 Z" fill="#ffb8ff"/>
+      <circle cx="-2" cy="-1" r="1.8" fill="white"/><circle cx="2" cy="-1" r="1.8" fill="white"/>
+      <circle cx="-1" cy="-1" r="0.9" fill="#2121de"/><circle cx="3" cy="-1" r="0.9" fill="#2121de"/>
+    </g>
+
+    <!-- Inky (cyan ghost) in house -->
+    <g transform="translate(175, 196)">
+      <path d="M -6 0 A 6 6 0 0 1 6 0 L 6 5 L 4 3 L 2 5 L 0 3 L -2 5 L -4 3 L -6 5 Z" fill="#00ffff"/>
+      <circle cx="-2" cy="-1" r="1.8" fill="white"/><circle cx="2" cy="-1" r="1.8" fill="white"/>
+      <circle cx="-1" cy="-1" r="0.9" fill="#2121de"/><circle cx="3" cy="-1" r="0.9" fill="#2121de"/>
+    </g>
+
+    <!-- Clyde (orange ghost) in house -->
+    <g transform="translate(217, 196)">
+      <path d="M -6 0 A 6 6 0 0 1 6 0 L 6 5 L 4 3 L 2 5 L 0 3 L -2 5 L -4 3 L -6 5 Z" fill="#ffb852"/>
+      <circle cx="-2" cy="-1" r="1.8" fill="white"/><circle cx="2" cy="-1" r="1.8" fill="white"/>
+      <circle cx="-1" cy="-1" r="0.9" fill="#2121de"/><circle cx="3" cy="-1" r="0.9" fill="#2121de"/>
+    </g>
+  </g>
+
+  <!-- HUD at bottom -->
+  <g transform="translate(14, 462)">
+    <!-- Lives -->
+    <g fill="#ffff00">
+      <path d="M 10 10 L 16 6 A 6 6 0 1 1 16 14 Z"/>
+      <path d="M 30 10 L 36 6 A 6 6 0 1 1 36 14 Z"/>
+    </g>
+    <text font-family="monospace" font-size="10" fill="#ffffff" text-anchor="end" x="400" y="14">LVL 1</text>
+  </g>
+
+  <rect width="420" height="500" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

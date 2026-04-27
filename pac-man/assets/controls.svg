@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <rect width="600" height="200" fill="#0a0a16" rx="6"/>
+
+  <!-- Desktop section -->
+  <text font-family="monospace" font-size="12" fill="#ffff00" font-weight="bold" x="100" y="25" text-anchor="middle">Desktop</text>
+
+  <!-- Arrow keys -->
+  <g transform="translate(60, 50)">
+    <!-- Up -->
+    <rect x="28" y="0" width="24" height="24" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="3"/>
+    <text font-family="monospace" font-size="10" fill="#e0e0e0" text-anchor="middle" x="40" y="16">▲</text>
+    <!-- Left -->
+    <rect x="0" y="28" width="24" height="24" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="3"/>
+    <text font-family="monospace" font-size="10" fill="#e0e0e0" text-anchor="middle" x="12" y="44">◄</text>
+    <!-- Down -->
+    <rect x="28" y="28" width="24" height="24" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="3"/>
+    <text font-family="monospace" font-size="10" fill="#e0e0e0" text-anchor="middle" x="40" y="44">▼</text>
+    <!-- Right -->
+    <rect x="56" y="28" width="24" height="24" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="3"/>
+    <text font-family="monospace" font-size="10" fill="#e0e0e0" text-anchor="middle" x="68" y="44">►</text>
+  </g>
+  <text font-family="monospace" font-size="9" fill="#666" text-anchor="middle" x="100" y="130">Arrow keys</text>
+  <text font-family="monospace" font-size="9" fill="#666" text-anchor="middle" x="100" y="142">to move</text>
+
+  <!-- Esc key -->
+  <g transform="translate(60, 155)">
+    <rect x="0" y="0" width="36" height="20" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="3"/>
+    <text font-family="monospace" font-size="8" fill="#e0e0e0" text-anchor="middle" x="18" y="14">ESC</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="44" y="14">Pause</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="220" y1="20" x2="220" y2="180" stroke="#2a2a40" stroke-width="1"/>
+
+  <!-- Mobile section -->
+  <text font-family="monospace" font-size="12" fill="#ffff00" font-weight="bold" x="400" y="25" text-anchor="middle">Mobile</text>
+
+  <!-- D-pad -->
+  <g transform="translate(360, 50)">
+    <!-- Up -->
+    <rect x="28" y="0" width="24" height="24" fill="#12121f" stroke="#ffff00" stroke-width="1.5" rx="3"/>
+    <text font-family="monospace" font-size="10" fill="#ffff00" text-anchor="middle" x="40" y="16">▲</text>
+    <!-- Left -->
+    <rect x="0" y="28" width="24" height="24" fill="#12121f" stroke="#ffff00" stroke-width="1.5" rx="3"/>
+    <text font-family="monospace" font-size="10" fill="#ffff00" text-anchor="middle" x="12" y="44">◄</text>
+    <!-- Down -->
+    <rect x="28" y="28" width="24" height="24" fill="#12121f" stroke="#ffff00" stroke-width="1.5" rx="3"/>
+    <text font-family="monospace" font-size="10" fill="#ffff00" text-anchor="middle" x="40" y="44">▼</text>
+    <!-- Right -->
+    <rect x="56" y="28" width="24" height="24" fill="#12121f" stroke="#ffff00" stroke-width="1.5" rx="3"/>
+    <text font-family="monospace" font-size="10" fill="#ffff00" text-anchor="middle" x="68" y="44">►</text>
+  </g>
+  <text font-family="monospace" font-size="9" fill="#666" text-anchor="middle" x="400" y="130">D-pad or swipe</text>
+  <text font-family="monospace" font-size="9" fill="#666" text-anchor="middle" x="400" y="142">to move</text>
+
+  <rect width="600" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

@@ -709,6 +709,25 @@ var GameIcons = (function () {
 '................',
 ],
 
+'pac-man': [
+'................',
+'.....yyyy.......',
+'...yyyyyyyy.....',
+'..yyyyyyyyyy....',
+'..yyyyyyyyyy....',
+'.yyyyyyy........',
+'.yyyyyy.........',
+'.yyyyyyy........',
+'..yyyyyyyyyy....',
+'..yyyyyyyyyy....',
+'...yyyyyyyy.....',
+'.....yyyy.......',
+'................',
+'..r..m..c..o....',
+'................',
+'................',
+],
+
   };
 
   function buildSVG(name, size) {

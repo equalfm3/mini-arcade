@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Mini Arcade — 35 browser games, zero dependencies" width="800"/>
+  <img src="assets/banner.svg" alt="Mini Arcade — 46 browser games, zero dependencies" width="800"/>
 </p>
 
 <p align="center">
-  A collection of 35 small, fun web games — playable in the browser on desktop and mobile.<br/>
+  A collection of 46 small, fun web games — playable in the browser on desktop and mobile.<br/>
   No dependencies, no build step. Just open and play.
 </p>
 
@@ -38,6 +38,12 @@
 | 13 | [Wordle](./wordle) | Guess the 5-letter word in 6 tries |
 | 14 | [Space Invaders](./space-invaders) | Shoot the descending alien waves |
 | 15 | [Doodle Jump](./doodle-jump) | Endless vertical platformer |
+| 16 | [Pac-Man](./pac-man) | Eat pellets, avoid ghosts, clear the maze |
+| 17 | [Frogger](./frogger) | Guide the frog across traffic and rivers |
+| 18 | [Asteroids](./asteroids) | Rotate, thrust, and shoot drifting rocks |
+| 19 | [Connect Four](./connect-four) | Drop discs to get four in a row vs AI |
+| 20 | [Sudoku](./sudoku) | Fill the 9×9 grid with logic |
+| 21 | [Hangman](./hangman) | Guess the word letter by letter |
 
 ### Modern Hits
 
@@ -50,6 +56,7 @@
 | 5 | [Reaction Time](./reaction-time) | Test your reflexes |
 | 6 | [Typing Speed](./typing-speed) | Type words before they reach the edge |
 | 7 | [Endless Runner](./endless-runner) | Jump and dodge in a side-scroller |
+| 8 | [Cookie Clicker](./cookie-clicker) | Click to earn, buy upgrades, go idle |
 
 ### Originals
 
@@ -68,6 +75,10 @@
 | 11 | [Sound Memory](./sound-memory) | Simon Says with musical tones |
 | 12 | [Shrinking Arena](./shrinking-arena) | Survive as the arena closes in |
 | 13 | [One-Button Duels](./one-button-duels) | Two players, one button each, timing combat |
+| 14 | [Hex Merge](./hex-merge) | Merge numbers on a hexagonal grid |
+| 15 | [Laser Reflect](./laser-reflect) | Place mirrors to guide a laser to the target |
+| 16 | [Gravity Well](./gravity-well) | Launch satellites between planetary orbits |
+| 17 | [Lights Out](./lights-out) | Toggle lights to turn them all off |
 
 ---
 
@@ -170,6 +181,12 @@ mini-arcade/
 ├── wordle/                 │
 ├── space-invaders/         │
 ├── doodle-jump/            ┘
+├── pac-man/                │
+├── frogger/                │  + New Classics (6)
+├── asteroids/              │
+├── connect-four/           │
+├── sudoku/                 │
+├── hangman/                ┘
 │
 ├── color-switch/           ┐
 ├── stack-tower/            │
@@ -178,6 +195,7 @@ mini-arcade/
 ├── reaction-time/          │
 ├── typing-speed/           │
 ├── endless-runner/         ┘
+├── cookie-clicker/         ← New Modern Hit
 │
 ├── gravity-flip/           ┐
 ├── color-flood/            │
@@ -192,6 +210,10 @@ mini-arcade/
 ├── sound-memory/           │
 ├── shrinking-arena/        │
 └── one-button-duels/       ┘
+├── hex-merge/              │
+├── laser-reflect/          │  + New Originals (4)
+├── gravity-well/           │
+└── lights-out/             ┘
 ```
 
 Each game folder contains:

@@ -1,0 +1,9 @@
+/* Pac-Man — Game Styles */
+
+:root {
+  --c-game: #ffff00;
+}
+
+.game-area {
+  background: #000000;
+}
