@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 310" width="620" height="310">
+  <rect width="620" height="310" fill="#0a0a16" rx="6"/>
+  <defs>
+    <style>text{font-family:monospace;font-size:12px;}</style>
+  </defs>
+
+  <!-- File tree -->
+  <text fill="#ff8844" font-weight="bold" x="30" y="30">word-chain/</text>
+
+  <text fill="#666" x="50" y="55">&#x251C;&#x2500;&#x2500;</text><text fill="#44aaff" x="85" y="55">index.html</text>
+  <text fill="#555" x="220" y="55">Entry point &#x2014; GAME config + arcade.js loader</text>
+
+  <text fill="#666" x="50" y="80">&#x251C;&#x2500;&#x2500;</text><text fill="#44aaff" x="85" y="80">style.css</text>
+  <text fill="#555" x="220" y="80">Mode selector, input, history, timer, AI styles</text>
+
+  <text fill="#666" x="50" y="105">&#x251C;&#x2500;&#x2500;</text><text fill="#44aaff" x="85" y="105">game.js</text>
+  <text fill="#555" x="220" y="105">Orchestrator &#x2014; modes, timer, AI turns, scoring</text>
+
+  <text fill="#666" x="50" y="130">&#x251C;&#x2500;&#x2500;</text><text fill="#ff8844" x="85" y="130">data/</text>
+
+  <text fill="#666" x="75" y="155">&#x2514;&#x2500;&#x2500;</text><text fill="#44ff66" x="110" y="155">words.js</text>
+  <text fill="#555" x="220" y="155">~370k English words (dwyl/english-words)</text>
+
+  <text fill="#666" x="50" y="180">&#x2514;&#x2500;&#x2500;</text><text fill="#ff8844" x="85" y="180">src/</text>
+
+  <text fill="#666" x="75" y="205">&#x251C;&#x2500;&#x2500;</text><text fill="#44ff66" x="110" y="205">config.js</text>
+  <text fill="#555" x="220" y="205">Timer, scoring, AI speed, colors, thresholds</text>
+
+  <text fill="#666" x="75" y="230">&#x251C;&#x2500;&#x2500;</text><text fill="#44ff66" x="110" y="230">dictionary.js</text>
+  <text fill="#555" x="220" y="230">Set-based O(1) lookup + AI word selection</text>
+
+  <text fill="#666" x="75" y="255">&#x251C;&#x2500;&#x2500;</text><text fill="#44ff66" x="110" y="255">chain.js</text>
+  <text fill="#555" x="220" y="255">Chain state, validation, scoring (1pt/letter)</text>
+
+  <text fill="#666" x="75" y="280">&#x2514;&#x2500;&#x2500;</text><text fill="#44ff66" x="110" y="280">renderer.js</text>
+  <text fill="#555" x="220" y="280">DOM: mode select, pixel icons, history, turns</text>
+
+  <!-- Border -->
+  <rect width="620" height="310" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>
