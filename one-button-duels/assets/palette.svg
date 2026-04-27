@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 140" width="600" height="140">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+  <rect width="600" height="140" fill="#0a0a16" rx="6"/>
+
+  <!-- Color swatches -->
+  <g transform="translate(30, 25)">
+    <!-- P1 Red -->
+    <rect x="0" y="0" width="50" height="50" fill="#ff4444" rx="4"/>
+    <text fill="#ff4444" font-size="8" x="0" y="68">P1 Color</text>
+    <text fill="#666" font-size="7" x="0" y="80">#ff4444</text>
+
+    <!-- P1 Dark -->
+    <rect x="70" y="0" width="50" height="50" fill="#aa2222" rx="4"/>
+    <text fill="#aa2222" font-size="8" x="70" y="68">P1 Dark</text>
+    <text fill="#666" font-size="7" x="70" y="80">#aa2222</text>
+
+    <!-- P2 Blue -->
+    <rect x="140" y="0" width="50" height="50" fill="#44aaff" rx="4"/>
+    <text fill="#44aaff" font-size="8" x="140" y="68">P2 Color</text>
+    <text fill="#666" font-size="7" x="140" y="80">#44aaff</text>
+
+    <!-- P2 Dark -->
+    <rect x="210" y="0" width="50" height="50" fill="#2266aa" rx="4"/>
+    <text fill="#2266aa" font-size="8" x="210" y="68">P2 Dark</text>
+    <text fill="#666" font-size="7" x="210" y="80">#2266aa</text>
+
+    <!-- Strike Red -->
+    <rect x="300" y="0" width="50" height="50" fill="#ff4444" rx="4"/>
+    <text fill="#fff" font-size="9" font-weight="bold" text-anchor="middle" x="325" y="30">S</text>
+    <text fill="#ff4444" font-size="8" x="300" y="68">Strike</text>
+    <text fill="#666" font-size="7" x="300" y="80">#ff4444</text>
+
+    <!-- Parry Blue -->
+    <rect x="370" y="0" width="50" height="50" fill="#44aaff" rx="4"/>
+    <text fill="#fff" font-size="9" font-weight="bold" text-anchor="middle" x="395" y="30">P</text>
+    <text fill="#44aaff" font-size="8" x="370" y="68">Parry</text>
+    <text fill="#666" font-size="7" x="370" y="80">#44aaff</text>
+
+    <!-- Dodge Green -->
+    <rect x="440" y="0" width="50" height="50" fill="#44ff66" rx="4"/>
+    <text fill="#fff" font-size="9" font-weight="bold" text-anchor="middle" x="465" y="30">D</text>
+    <text fill="#44ff66" font-size="8" x="440" y="68">Dodge</text>
+    <text fill="#666" font-size="7" x="440" y="80">#44ff66</text>
+
+    <!-- Gold -->
+    <rect x="510" y="0" width="50" height="50" fill="#ffd700" rx="4"/>
+    <text fill="#ffd700" font-size="8" x="510" y="68">Gold</text>
+    <text fill="#666" font-size="7" x="510" y="80">#ffd700</text>
+  </g>
+
+  <!-- Labels -->
+  <text fill="#888" font-size="9" x="30" y="120">All colors defined in src/config.js</text>
+
+  <rect width="600" height="140" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+  <rect width="600" height="200" fill="#0a0a16" rx="6"/>
+
+  <!-- Desktop section -->
+  <text fill="#888" font-size="12" x="30" y="25">DESKTOP</text>
+  <line x1="30" y1="32" x2="270" y2="32" stroke="#2a2a40" stroke-width="1"/>
+
+  <!-- P1 key -->
+  <rect x="40" y="50" width="40" height="40" rx="4" fill="#12121f" stroke="#ff4444" stroke-width="2"/>
+  <text fill="#ff4444" font-size="18" font-weight="bold" text-anchor="middle" x="60" y="77">Q</text>
+  <text fill="#ff4444" font-size="10" x="90" y="65">Player 1</text>
+  <text fill="#666" font-size="9" x="90" y="78">Lock action</text>
+
+  <!-- P2 key -->
+  <rect x="40" y="105" width="40" height="40" rx="4" fill="#12121f" stroke="#44aaff" stroke-width="2"/>
+  <text fill="#44aaff" font-size="18" font-weight="bold" text-anchor="middle" x="60" y="132">P</text>
+  <text fill="#44aaff" font-size="10" x="90" y="120">Player 2</text>
+  <text fill="#666" font-size="9" x="90" y="133">Lock action</text>
+
+  <!-- Esc key -->
+  <rect x="190" y="50" width="50" height="30" rx="4" fill="#12121f" stroke="#ffd700" stroke-width="1.5"/>
+  <text fill="#ffd700" font-size="11" font-weight="bold" text-anchor="middle" x="215" y="70">Esc</text>
+  <text fill="#666" font-size="9" x="250" y="70">Pause</text>
+
+  <!-- Mobile section -->
+  <text fill="#888" font-size="12" x="330" y="25">MOBILE</text>
+  <line x1="330" y1="32" x2="570" y2="32" stroke="#2a2a40" stroke-width="1"/>
+
+  <!-- Phone outline -->
+  <rect x="370" y="45" width="160" height="120" rx="8" fill="#12121f" stroke="#2a2a40" stroke-width="2"/>
+
+  <!-- Split screen -->
+  <line x1="450" y1="55" x2="450" y2="155" stroke="#444" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Left half (P1) -->
+  <rect x="375" y="50" width="72" height="110" fill="#ff4444" opacity="0.1" rx="4"/>
+  <text fill="#ff4444" font-size="10" font-weight="bold" text-anchor="middle" x="411" y="110">TAP</text>
+  <text fill="#ff4444" font-size="8" text-anchor="middle" x="411" y="122">P1</text>
+
+  <!-- Right half (P2) -->
+  <rect x="453" y="50" width="72" height="110" fill="#44aaff" opacity="0.1" rx="4"/>
+  <text fill="#44aaff" font-size="10" font-weight="bold" text-anchor="middle" x="489" y="110">TAP</text>
+  <text fill="#44aaff" font-size="8" text-anchor="middle" x="489" y="122">P2</text>
+
+  <!-- Tap finger icons -->
+  <circle cx="411" y="85" r="8" fill="none" stroke="#ff4444" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="489" y="85" r="8" fill="none" stroke="#44aaff" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Description -->
+  <text fill="#666" font-size="9" x="370" y="185">Left half = P1 · Right half = P2</text>
+
+  <rect width="600" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

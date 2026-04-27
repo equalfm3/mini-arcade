@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <style>
+      .bg { fill: #0a0a16; }
+      .title { font-family: monospace; font-size: 42px; font-weight: bold; fill: #ff4444; }
+      .sub { font-family: monospace; font-size: 14px; fill: #666666; }
+      .grid { stroke: #161625; stroke-width: 0.5; }
+    </style>
+  </defs>
+  <!-- Background -->
+  <rect class="bg" width="800" height="200" rx="8"/>
+  <!-- Subtle grid -->
+  <g class="grid" fill="none">
+    <line x1="0" y1="40" x2="800" y2="40"/><line x1="0" y1="80" x2="800" y2="80"/>
+    <line x1="0" y1="120" x2="800" y2="120"/><line x1="0" y1="160" x2="800" y2="160"/>
+  </g>
+
+  <!-- P1 Fighter (red, left) -->
+  <g transform="translate(80, 60)" shape-rendering="crispEdges">
+    <!-- Head -->
+    <rect x="-8" y="0" width="16" height="16" fill="#ff4444"/>
+    <!-- Eyes -->
+    <rect x="-2" y="4" width="3" height="3" fill="#fff"/>
+    <rect x="4" y="4" width="3" height="3" fill="#fff"/>
+    <rect x="-1" y="5" width="2" height="2" fill="#000"/>
+    <rect x="5" y="5" width="2" height="2" fill="#000"/>
+    <!-- Torso -->
+    <rect x="-10" y="18" width="20" height="16" fill="#aa2222"/>
+    <!-- Arms (strike pose) -->
+    <rect x="10" y="18" width="20" height="6" fill="#ff4444"/>
+    <rect x="28" y="16" width="8" height="10" fill="#fff"/>
+    <!-- Legs -->
+    <rect x="-8" y="34" width="6" height="14" fill="#aa2222"/>
+    <rect x="2" y="34" width="6" height="14" fill="#aa2222"/>
+  </g>
+
+  <!-- VS spark -->
+  <g transform="translate(160, 90)">
+    <text font-family="monospace" font-size="20" fill="#ffd700" font-weight="bold" text-anchor="middle">⚔</text>
+  </g>
+
+  <!-- P2 Fighter (blue, right) -->
+  <g transform="translate(240, 60)" shape-rendering="crispEdges">
+    <!-- Head -->
+    <rect x="-8" y="0" width="16" height="16" fill="#44aaff"/>
+    <!-- Eyes -->
+    <rect x="-6" y="4" width="3" height="3" fill="#fff"/>
+    <rect x="-0" y="4" width="3" height="3" fill="#fff"/>
+    <rect x="-5" y="5" width="2" height="2" fill="#000"/>
+    <rect x="1" y="5" width="2" height="2" fill="#000"/>
+    <!-- Torso -->
+    <rect x="-10" y="18" width="20" height="16" fill="#2266aa"/>
+    <!-- Arms (parry pose — shield) -->
+    <rect x="-6" y="16" width="12" height="8" fill="#44aaff"/>
+    <rect x="-16" y="14" width="14" height="12" fill="#aaaacc"/>
+    <rect x="-14" y="16" width="4" height="4" fill="#ccccee"/>
+    <!-- Legs -->
+    <rect x="-8" y="34" width="6" height="14" fill="#2266aa"/>
+    <rect x="2" y="34" width="6" height="14" fill="#2266aa"/>
+  </g>
+
+  <!-- Pixel icon -->
+  <g transform="translate(310, 30)" shape-rendering="crispEdges">
+    <rect x="3" y="0" width="3" height="3" fill="#ff4444"/>
+    <rect x="3" y="3" width="3" height="3" fill="#ff4444"/>
+    <rect x="3" y="3" width="4.5" height="3" fill="#ff4444"/>
+    <rect x="6" y="6" width="3" height="3" fill="#ff4444"/>
+    <rect x="6" y="9" width="3" height="3" fill="#ff4444"/>
+    <rect x="7.5" y="12" width="3" height="3" fill="#ff4444"/>
+    <rect x="21" y="0" width="3" height="3" fill="#44aaff"/>
+    <rect x="21" y="3" width="3" height="3" fill="#44aaff"/>
+    <rect x="18" y="3" width="4.5" height="3" fill="#44aaff"/>
+    <rect x="18" y="6" width="3" height="3" fill="#44aaff"/>
+    <rect x="18" y="9" width="3" height="3" fill="#44aaff"/>
+    <rect x="16.5" y="12" width="3" height="3" fill="#44aaff"/>
+    <!-- Clash center -->
+    <rect x="9" y="9" width="9" height="3" fill="#ffd700"/>
+    <rect x="10.5" y="6" width="6" height="9" fill="#ffd700"/>
+  </g>
+
+  <!-- Title -->
+  <text class="title" x="360" y="90">ONE-BUTTON</text>
+  <text class="title" x="360" y="135" font-size="42" fill="#44aaff">DUELS</text>
+  <text class="sub" x="360" y="160">Strike · Parry · Dodge — Timing is everything</text>
+
+  <!-- HUD mock -->
+  <g transform="translate(360, 170)">
+    <rect width="280" height="24" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="2"/>
+    <text font-family="monospace" font-size="9" fill="#ff4444" x="10" y="16">P1 ■■■</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="80" y="16">ROUND 3</text>
+    <text font-family="monospace" font-size="9" fill="#44aaff" x="160" y="16">P2 ■■</text>
+    <text font-family="monospace" font-size="9" fill="#ffd700" x="220" y="16">SPD 2.6x</text>
+  </g>
+
+  <!-- Border -->
+  <rect width="800" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+</svg>
