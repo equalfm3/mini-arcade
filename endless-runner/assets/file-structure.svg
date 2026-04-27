@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 280" width="620" height="280">
+  <defs>
+    <style>text { font-family: monospace; font-size: 11px; }</style>
+  </defs>
+  <rect width="620" height="280" fill="#0a0a16" rx="6"/>
+
+  <text fill="#44ff66" font-size="13" font-weight="bold" x="20" y="25">endless-runner/</text>
+
+  <!-- Files -->
+  <text fill="#888" x="30" y="50">├── index.html</text>
+  <text fill="#555" x="250" y="50">Entry point — GAME config + arcade.js loader</text>
+
+  <text fill="#888" x="30" y="70">├── style.css</text>
+  <text fill="#555" x="250" y="70">Accent color (#44ff66), wider container</text>
+
+  <text fill="#888" x="30" y="90">├── game.js</text>
+  <text fill="#555" x="250" y="90">Orchestrator — input, speed, score, game loop</text>
+
+  <text fill="#44ff66" x="30" y="115">├── src/</text>
+
+  <text fill="#888" x="50" y="135">├── config.js</text>
+  <text fill="#555" x="250" y="135">All constants — physics, sizes, colors, speeds</text>
+
+  <text fill="#888" x="50" y="155">├── player.js</text>
+  <text fill="#555" x="250" y="155">Run/jump/duck states, gravity, hitbox</text>
+
+  <text fill="#888" x="50" y="175">├── obstacles.js</text>
+  <text fill="#555" x="250" y="175">Spawning, scrolling, collision detection</text>
+
+  <text fill="#888" x="50" y="195">├── ground.js</text>
+  <text fill="#555" x="250" y="195">Scrolling ground + parallax (clouds, hills)</text>
+
+  <text fill="#888" x="50" y="215">└── renderer.js</text>
+  <text fill="#555" x="250" y="215">Pixel art player, cacti, birds, background</text>
+
+  <text fill="#44ff66" x="30" y="240">├── assets/</text>
+  <text fill="#555" x="250" y="240">SVG images for README documentation</text>
+
+  <text fill="#888" x="30" y="260">└── README.md</text>
+  <text fill="#555" x="250" y="260">Full documentation with embedded SVGs</text>
+
+  <!-- Border -->
+  <rect width="620" height="280" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

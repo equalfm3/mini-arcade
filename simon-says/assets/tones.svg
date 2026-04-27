@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" width="500" height="200">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+  <rect width="500" height="200" fill="#0a0a16" rx="6"/>
+
+  <text font-size="12" fill="#ffd700" x="20" y="25" font-weight="bold">Tone Frequencies</text>
+
+  <!-- Frequency bars -->
+  <!-- Green: C4 = 261.63 Hz -->
+  <rect x="40" y="50" width="80" height="28" fill="#44ff66" rx="4" opacity="0.8"/>
+  <text font-size="9" fill="#0a0a16" x="48" y="68" font-weight="bold">Green</text>
+  <text font-size="9" fill="#888" x="130" y="68">C4 — 261.63 Hz</text>
+
+  <!-- Red: E4 = 329.63 Hz -->
+  <rect x="40" y="88" width="101" height="28" fill="#ff4444" rx="4" opacity="0.8"/>
+  <text font-size="9" fill="#0a0a16" x="48" y="106" font-weight="bold">Red</text>
+  <text font-size="9" fill="#888" x="150" y="106">E4 — 329.63 Hz</text>
+
+  <!-- Yellow: G4 = 392.00 Hz -->
+  <rect x="40" y="126" width="120" height="28" fill="#ffd700" rx="4" opacity="0.8"/>
+  <text font-size="9" fill="#0a0a16" x="48" y="144" font-weight="bold">Yellow</text>
+  <text font-size="9" fill="#888" x="170" y="144">G4 — 392.00 Hz</text>
+
+  <!-- Blue: C5 = 523.25 Hz -->
+  <rect x="40" y="164" width="160" height="28" fill="#44aaff" rx="4" opacity="0.8"/>
+  <text font-size="9" fill="#0a0a16" x="48" y="182" font-weight="bold">Blue</text>
+  <text font-size="9" fill="#888" x="210" y="182">C5 — 523.25 Hz</text>
+
+  <!-- Musical note labels -->
+  <text font-size="8" fill="#444" x="340" y="68">Major triad: C-E-G-C</text>
+  <text font-size="8" fill="#444" x="340" y="85">Waveform: sine</text>
+  <text font-size="8" fill="#444" x="340" y="102">Duration: 0.3s</text>
+  <text font-size="8" fill="#444" x="340" y="119">Volume: 0.18</text>
+
+  <!-- Sine wave decoration -->
+  <path d="M 340 145 Q 355 130 370 145 Q 385 160 400 145 Q 415 130 430 145 Q 445 160 460 145" fill="none" stroke="#ffd700" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Border -->
+  <rect width="500" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

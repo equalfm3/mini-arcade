@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 180" width="600" height="180">
+  <defs>
+    <style>text { font-family: monospace; }</style>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="180" fill="#050510" rx="6"/>
+
+  <text fill="#666" font-size="12" x="20" y="25">NEON COLOR PALETTE</text>
+
+  <!-- Player / Primary -->
+  <rect x="20" y="40" width="80" height="40" fill="#00ffcc" rx="4" filter="url(#glow)"/>
+  <text fill="#050510" font-size="9" x="28" y="64" font-weight="bold">Player</text>
+  <text fill="#00ffcc" font-size="9" x="20" y="96">#00ffcc</text>
+
+  <!-- Magenta -->
+  <rect x="115" y="40" width="80" height="40" fill="#ff00ff" rx="4" filter="url(#glow)"/>
+  <text fill="#050510" font-size="9" x="123" y="64" font-weight="bold">Magenta</text>
+  <text fill="#ff00ff" font-size="9" x="115" y="96">#ff00ff</text>
+
+  <!-- Sky Blue -->
+  <rect x="210" y="40" width="80" height="40" fill="#00ccff" rx="4" filter="url(#glow)"/>
+  <text fill="#050510" font-size="9" x="218" y="64" font-weight="bold">Sky Blue</text>
+  <text fill="#00ccff" font-size="9" x="210" y="96">#00ccff</text>
+
+  <!-- Yellow -->
+  <rect x="305" y="40" width="80" height="40" fill="#ffff00" rx="4" filter="url(#glow)"/>
+  <text fill="#050510" font-size="9" x="313" y="64" font-weight="bold">Yellow</text>
+  <text fill="#ffff00" font-size="9" x="305" y="96">#ffff00</text>
+
+  <!-- Orange -->
+  <rect x="400" y="40" width="80" height="40" fill="#ff6600" rx="4" filter="url(#glow)"/>
+  <text fill="#050510" font-size="9" x="408" y="64" font-weight="bold">Orange</text>
+  <text fill="#ff6600" font-size="9" x="400" y="96">#ff6600</text>
+
+  <!-- Purple -->
+  <rect x="495" y="40" width="80" height="40" fill="#cc00ff" rx="4" filter="url(#glow)"/>
+  <text fill="#050510" font-size="9" x="503" y="64" font-weight="bold">Purple</text>
+  <text fill="#cc00ff" font-size="9" x="495" y="96">#cc00ff</text>
+
+  <!-- Wall colors -->
+  <text fill="#666" font-size="12" x="20" y="125">ENVIRONMENT</text>
+
+  <rect x="20" y="135" width="60" height="30" fill="#0044aa" rx="3"/>
+  <text fill="#00aaff" font-size="8" x="24" y="154">Wall</text>
+  <text fill="#666" font-size="8" x="20" y="175">#0044aa</text>
+
+  <rect x="95" y="135" width="60" height="30" fill="#00aaff" rx="3" filter="url(#glow)"/>
+  <text fill="#050510" font-size="8" x="99" y="154">Edge</text>
+  <text fill="#00aaff" font-size="8" x="95" y="175">#00aaff</text>
+
+  <rect x="170" y="135" width="60" height="30" fill="#050510" stroke="#1a1a40" stroke-width="1" rx="3"/>
+  <text fill="#666" font-size="8" x="174" y="154">BG</text>
+  <text fill="#666" font-size="8" x="170" y="175">#050510</text>
+
+  <rect x="245" y="135" width="60" height="30" fill="#ffff00" rx="3" filter="url(#glow)"/>
+  <text fill="#050510" font-size="8" x="249" y="154">Orb</text>
+  <text fill="#ffff00" font-size="8" x="245" y="175">#ffff00</text>
+
+  <!-- Border -->
+  <rect width="600" height="180" fill="none" stroke="#1a1a40" stroke-width="2" rx="6"/>
+</svg>

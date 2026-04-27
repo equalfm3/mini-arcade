@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 280" width="620" height="280">
+  <rect width="620" height="280" fill="#0a0a16" rx="6"/>
+
+  <text font-family="monospace" font-size="13" fill="#44ff66" font-weight="bold" x="30" y="30">space-invaders/</text>
+
+  <g font-family="monospace" font-size="11">
+    <text fill="#e0e0e0" x="30" y="55">├── index.html</text>
+    <text fill="#666" x="250" y="55">Entry point — GAME config + loader</text>
+
+    <text fill="#e0e0e0" x="30" y="75">├── style.css</text>
+    <text fill="#666" x="250" y="75">Accent color override (--c-game)</text>
+
+    <text fill="#e0e0e0" x="30" y="95">├── game.js</text>
+    <text fill="#666" x="250" y="95">Orchestrator — wave loop, lives, scoring</text>
+
+    <text fill="#44ff66" x="30" y="120">├── src/</text>
+
+    <text fill="#e0e0e0" x="30" y="140">│   ├── config.js</text>
+    <text fill="#666" x="250" y="140">All constants — speeds, sizes, colors</text>
+
+    <text fill="#e0e0e0" x="30" y="160">│   ├── player.js</text>
+    <text fill="#666" x="250" y="160">Ship movement + shooting cooldown</text>
+
+    <text fill="#e0e0e0" x="30" y="180">│   ├── enemies.js</text>
+    <text fill="#666" x="250" y="180">Formation grid, lateral + descent movement</text>
+
+    <text fill="#e0e0e0" x="30" y="200">│   ├── bullets.js</text>
+    <text fill="#666" x="250" y="200">Bullet pool + collision detection</text>
+
+    <text fill="#e0e0e0" x="30" y="220">│   └── renderer.js</text>
+    <text fill="#666" x="250" y="220">Pixel art sprites + background</text>
+
+    <text fill="#44ff66" x="30" y="245">├── assets/</text>
+    <text fill="#666" x="250" y="245">SVG images for README</text>
+
+    <text fill="#e0e0e0" x="30" y="265">└── README.md</text>
+    <text fill="#666" x="250" y="265">Full documentation</text>
+  </g>
+
+  <rect width="620" height="280" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 280" width="620" height="280">
+  <rect width="620" height="280" fill="#0a0a16" rx="6"/>
+
+  <text font-family="monospace" font-size="12" fill="#538d4e" font-weight="bold" x="20" y="25">wordle/</text>
+
+  <g font-family="monospace" font-size="11">
+    <text fill="#e0e0e0" x="20" y="50">├── index.html</text>
+    <text fill="#666" x="250" y="50">Entry point — GAME config + arcade.js loader</text>
+
+    <text fill="#e0e0e0" x="20" y="70">├── style.css</text>
+    <text fill="#666" x="250" y="70">Tile, keyboard, flip animation styles</text>
+
+    <text fill="#e0e0e0" x="20" y="90">├── game.js</text>
+    <text fill="#666" x="250" y="90">Orchestrator — input, guess flow, win/lose</text>
+
+    <text fill="#538d4e" x="20" y="115">├── src/</text>
+
+    <text fill="#e0e0e0" x="20" y="135">│   ├── config.js</text>
+    <text fill="#666" x="250" y="135">Word length, max guesses, colors, timing</text>
+
+    <text fill="#e0e0e0" x="20" y="155">│   ├── words.js</text>
+    <text fill="#666" x="250" y="155">~300 target words + ~1200 valid guesses</text>
+
+    <text fill="#e0e0e0" x="20" y="175">│   ├── evaluator.js</text>
+    <text fill="#666" x="250" y="175">Two-pass letter evaluation algorithm</text>
+
+    <text fill="#e0e0e0" x="20" y="195">│   ├── keyboard.js</text>
+    <text fill="#666" x="250" y="195">On-screen QWERTY keyboard with color state</text>
+
+    <text fill="#e0e0e0" x="20" y="215">│   └── renderer.js</text>
+    <text fill="#666" x="250" y="215">DOM grid, tile flip, shake, bounce</text>
+
+    <text fill="#b59f3b" x="20" y="240">├── assets/</text>
+    <text fill="#666" x="250" y="240">SVG images for README</text>
+
+    <text fill="#e0e0e0" x="20" y="260">└── README.md</text>
+    <text fill="#666" x="250" y="260">Documentation with embedded SVGs</text>
+  </g>
+
+  <!-- Border -->
+  <rect width="620" height="280" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

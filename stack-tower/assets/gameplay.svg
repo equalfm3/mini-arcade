@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 500" width="380" height="500">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+  <!-- Background gradient -->
+  <rect width="380" height="500" fill="#0a0a16" rx="6"/>
+  <rect width="380" height="250" fill="#12121f" y="250" rx="0" opacity="0.3"/>
+
+  <!-- Stars -->
+  <rect x="30" y="40" width="2" height="2" fill="#fff" opacity="0.3"/>
+  <rect x="120" y="80" width="1" height="1" fill="#fff" opacity="0.4"/>
+  <rect x="280" y="30" width="2" height="2" fill="#fff" opacity="0.25"/>
+  <rect x="340" y="120" width="1" height="1" fill="#fff" opacity="0.35"/>
+  <rect x="60" y="200" width="2" height="2" fill="#fff" opacity="0.3"/>
+  <rect x="310" y="250" width="1" height="1" fill="#fff" opacity="0.4"/>
+
+  <!-- Large score watermark -->
+  <text fill="rgba(255,255,255,0.06)" font-family="monospace" font-size="80" font-weight="bold" text-anchor="middle" x="190" y="270">12</text>
+
+  <!-- HUD bar -->
+  <rect x="20" y="10" width="340" height="28" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="3"/>
+  <text fill="#666" font-size="10" x="30" y="28">SCORE</text>
+  <text fill="#ffd700" font-size="10" x="80" y="28">12</text>
+  <text fill="#666" font-size="10" x="260" y="28">BEST</text>
+  <text fill="#ffd700" font-size="10" x="300" y="28">24</text>
+
+  <!-- Tower stack (isometric blocks, bottom to top) -->
+  <!-- Block 1 (base, widest) — hue 0 -->
+  <rect x="60" y="430" width="200" height="22" fill="hsl(0,70%,55%)"/>
+  <polygon points="60,430 70,420 270,420 260,430" fill="hsl(0,70%,70%)"/>
+  <polygon points="260,430 270,420 270,442 260,452" fill="hsl(0,70%,43%)"/>
+
+  <!-- Block 2 — hue 12 -->
+  <rect x="65" y="408" width="190" height="22" fill="hsl(12,70%,55%)"/>
+  <polygon points="65,408 75,398 265,398 255,408" fill="hsl(12,70%,70%)"/>
+  <polygon points="255,408 265,398 265,420 255,430" fill="hsl(12,70%,43%)"/>
+
+  <!-- Block 3 — hue 24 -->
+  <rect x="70" y="386" width="180" height="22" fill="hsl(24,70%,55%)"/>
+  <polygon points="70,386 80,376 260,376 250,386" fill="hsl(24,70%,70%)"/>
+  <polygon points="250,386 260,376 260,398 250,408" fill="hsl(24,70%,43%)"/>
+
+  <!-- Block 4 — hue 36 -->
+  <rect x="75" y="364" width="170" height="22" fill="hsl(36,70%,55%)"/>
+  <polygon points="75,364 85,354 255,354 245,364" fill="hsl(36,70%,70%)"/>
+  <polygon points="245,364 255,354 255,376 245,386" fill="hsl(36,70%,43%)"/>
+
+  <!-- Block 5 — hue 48 -->
+  <rect x="80" y="342" width="160" height="22" fill="hsl(48,70%,55%)"/>
+  <polygon points="80,342 90,332 250,332 240,342" fill="hsl(48,70%,70%)"/>
+  <polygon points="240,342 250,332 250,354 240,364" fill="hsl(48,70%,43%)"/>
+
+  <!-- Block 6 — hue 60 -->
+  <rect x="85" y="320" width="150" height="22" fill="hsl(60,70%,55%)"/>
+  <polygon points="85,320 95,310 245,310 235,320" fill="hsl(60,70%,70%)"/>
+  <polygon points="235,320 245,310 245,332 235,342" fill="hsl(60,70%,43%)"/>
+
+  <!-- Block 7 — hue 72 -->
+  <rect x="90" y="298" width="140" height="22" fill="hsl(72,70%,55%)"/>
+  <polygon points="90,298 100,288 240,288 230,298" fill="hsl(72,70%,70%)"/>
+  <polygon points="230,298 240,288 240,310 230,320" fill="hsl(72,70%,43%)"/>
+
+  <!-- Block 8 — hue 84 -->
+  <rect x="95" y="276" width="130" height="22" fill="hsl(84,70%,55%)"/>
+  <polygon points="95,276 105,266 235,266 225,276" fill="hsl(84,70%,70%)"/>
+  <polygon points="225,276 235,266 235,288 225,298" fill="hsl(84,70%,43%)"/>
+
+  <!-- Block 9 — hue 96 -->
+  <rect x="100" y="254" width="120" height="22" fill="hsl(96,70%,55%)"/>
+  <polygon points="100,254 110,244 230,244 220,254" fill="hsl(96,70%,70%)"/>
+  <polygon points="220,254 230,244 230,266 220,276" fill="hsl(96,70%,43%)"/>
+
+  <!-- Block 10 — hue 108 -->
+  <rect x="105" y="232" width="110" height="22" fill="hsl(108,70%,55%)"/>
+  <polygon points="105,232 115,222 225,222 215,232" fill="hsl(108,70%,70%)"/>
+  <polygon points="215,232 225,222 225,244 215,254" fill="hsl(108,70%,43%)"/>
+
+  <!-- Block 11 — hue 120 -->
+  <rect x="110" y="210" width="100" height="22" fill="hsl(120,70%,55%)"/>
+  <polygon points="110,210 120,200 220,200 210,210" fill="hsl(120,70%,70%)"/>
+  <polygon points="210,210 220,200 220,222 210,232" fill="hsl(120,70%,43%)"/>
+
+  <!-- Block 12 (current, sliding) — hue 132 -->
+  <rect x="130" y="188" width="100" height="22" fill="hsl(132,70%,55%)"/>
+  <polygon points="130,188 140,178 240,178 230,188" fill="hsl(132,70%,70%)"/>
+  <polygon points="230,188 240,178 240,200 230,210" fill="hsl(132,70%,43%)"/>
+
+  <!-- Sliding arrow -->
+  <line x1="145" y1="183" x2="215" y2="183" stroke="#ffd700" stroke-width="1.5" opacity="0.6"/>
+  <polygon points="215,180 222,183 215,186" fill="#ffd700" opacity="0.6"/>
+
+  <!-- Falling overhang piece (from a previous imperfect placement) -->
+  <g opacity="0.5">
+    <rect x="215" y="350" width="25" height="22" fill="hsl(48,70%,55%)"/>
+    <polygon points="215,350 225,340 250,340 240,350" fill="hsl(48,70%,70%)"/>
+  </g>
+
+  <!-- Border -->
+  <rect width="380" height="500" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

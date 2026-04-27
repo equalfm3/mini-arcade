@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+    <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#44ff66"/>
+    </marker>
+    <marker id="arwR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ff4444"/>
+    </marker>
+    <marker id="arwY" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ffd700"/>
+    </marker>
+  </defs>
+  <rect width="600" height="300" fill="#0a0a16" rx="6"/>
+
+  <!-- Title -->
+  <text fill="#e0e0e0" font-size="14" font-weight="bold" x="20" y="25">JUMP PHYSICS</text>
+
+  <!-- Left side: Jump arc diagram -->
+  <g transform="translate(30, 50)">
+    <!-- Platform -->
+    <rect x="10" y="200" width="58" height="12" fill="#44ff66"/>
+    <rect x="10" y="209" width="58" height="3" fill="#22aa44"/>
+
+    <!-- Jump arc (parabola) -->
+    <path d="M 39 200 Q 39 60 160 60 Q 280 60 280 200" fill="none" stroke="#44ff66" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+    <!-- Player at bottom -->
+    <rect x="27" y="172" width="24" height="28" rx="4" fill="#44ff66" opacity="0.4"/>
+
+    <!-- Player at peak -->
+    <rect x="148" y="32" width="24" height="28" rx="4" fill="#44ff66" opacity="0.4"/>
+
+    <!-- Gravity arrow (down) -->
+    <line x1="160" y1="70" x2="160" y2="110" stroke="#ff4444" stroke-width="2" marker-end="url(#arwR)"/>
+    <text fill="#ff4444" font-size="9" x="168" y="95">gravity</text>
+    <text fill="#ff4444" font-size="9" x="168" y="105">900 px/s²</text>
+
+    <!-- Jump force arrow (up) -->
+    <line x1="39" y1="195" x2="39" y2="145" stroke="#44ff66" stroke-width="2" marker-end="url(#arw)"/>
+    <text fill="#44ff66" font-size="9" x="47" y="170">jump</text>
+    <text fill="#44ff66" font-size="9" x="47" y="180">-450 px/s</text>
+
+    <!-- Height label -->
+    <line x1="5" y1="60" x2="5" y2="200" stroke="#ffd700" stroke-width="1" stroke-dasharray="3,3"/>
+    <text fill="#ffd700" font-size="8" x="0" y="135" transform="rotate(-90, 5, 135)">~113 px</text>
+  </g>
+
+  <!-- Right side: Formulas -->
+  <g transform="translate(330, 50)">
+    <text fill="#44aaff" font-size="12" font-weight="bold" y="0">Equations</text>
+
+    <text fill="#e0e0e0" font-size="10" y="25">Velocity update:</text>
+    <text fill="#ffd700" font-size="10" y="40">vy += gravity × dt</text>
+
+    <text fill="#e0e0e0" font-size="10" y="65">Position update:</text>
+    <text fill="#ffd700" font-size="10" y="80">y += vy × dt</text>
+
+    <text fill="#e0e0e0" font-size="10" y="105">On platform land:</text>
+    <text fill="#ffd700" font-size="10" y="120">vy = jumpForce (-450)</text>
+
+    <text fill="#e0e0e0" font-size="10" y="145">On spring land:</text>
+    <text fill="#ffd700" font-size="10" y="160">vy = springForce (-700)</text>
+
+    <text fill="#e0e0e0" font-size="10" y="185">Terminal velocity:</text>
+    <text fill="#ffd700" font-size="10" y="200">vy = min(vy, 600)</text>
+
+    <!-- Screen wrap -->
+    <text fill="#44aaff" font-size="12" font-weight="bold" y="230">Screen Wrap</text>
+    <text fill="#e0e0e0" font-size="9" y="248">x &lt; -halfW → x = canvasW + halfW</text>
+    <text fill="#e0e0e0" font-size="9" y="262">x &gt; canvasW + halfW → x = -halfW</text>
+  </g>
+
+  <rect width="600" height="300" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

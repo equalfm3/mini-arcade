@@ -1,0 +1,126 @@
+/* 2048 — Game-specific styles */
+
+:root {
+  --c-game: #ffd700;
+}
+
+/* ---- Grid ---- */
+.grid-2048 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 8px;
+  background: #12121f;
+  border-radius: 8px;
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none;
+}
+
+/* Empty cell backgrounds */
+.cell-2048 {
+  width: 80px;
+  height: 80px;
+  background: #1a1a2e;
+  border-radius: 4px;
+}
+
+/* ---- Tile container (overlays on top of grid) ---- */
+.tile-layer {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  pointer-events: none;
+}
+
+/* ---- Tile ---- */
+.tile {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-pixel, monospace);
+  font-weight: bold;
+  font-size: 1.6rem;
+  transition: top 0.12s ease, left 0.12s ease;
+  z-index: 1;
+}
+
+/* Font size adjustments for larger numbers */
+.tile-128, .tile-256, .tile-512 {
+  font-size: 1.3rem;
+}
+
+.tile-1024, .tile-2048 {
+  font-size: 1.1rem;
+}
+
+.tile-super {
+  font-size: 0.9rem;
+}
+
+/* ---- Tile colors ---- */
+.tile-2    { background: #eee4da; color: #776e65; }
+.tile-4    { background: #ede0c8; color: #776e65; }
+.tile-8    { background: #f2b179; color: #f9f6f2; }
+.tile-16   { background: #f59563; color: #f9f6f2; }
+.tile-32   { background: #f67c5f; color: #f9f6f2; }
+.tile-64   { background: #f65e3b; color: #f9f6f2; }
+.tile-128  { background: #edcf72; color: #f9f6f2; }
+.tile-256  { background: #edcc61; color: #f9f6f2; }
+.tile-512  { background: #edc850; color: #f9f6f2; }
+.tile-1024 { background: #edc53f; color: #f9f6f2; }
+.tile-2048 { background: #edc22e; color: #f9f6f2; }
+.tile-super { background: #3c3a32; color: #f9f6f2; }
+
+/* ---- Animations ---- */
+@keyframes tile-pop {
+  0%   { transform: scale(0); }
+  60%  { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes tile-merge {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.tile-new {
+  animation: tile-pop 0.2s ease forwards;
+}
+
+.tile-merged {
+  animation: tile-merge 0.2s ease forwards;
+  z-index: 2;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 400px) {
+  .cell-2048, .tile {
+    width: 64px;
+    height: 64px;
+  }
+  .grid-2048 {
+    gap: 6px;
+    padding: 6px;
+  }
+  .tile-layer {
+    top: 6px;
+    left: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+  }
+  .tile { font-size: 1.3rem; }
+  .tile-128, .tile-256, .tile-512 { font-size: 1.1rem; }
+  .tile-1024, .tile-2048 { font-size: 0.9rem; }
+  .tile-super { font-size: 0.75rem; }
+}

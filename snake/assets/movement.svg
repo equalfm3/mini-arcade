@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 220" width="700" height="220">
+  <rect width="700" height="220" fill="#0a0a16" rx="6"/>
+  <defs><style>text{font-family:monospace;}</style></defs>
+
+  <!-- Step 1: Before -->
+  <text fill="#888" font-size="10" x="30" y="25">BEFORE</text>
+  <g transform="translate(30, 35)">
+    <!-- Grid cells -->
+    <rect x="0" y="0" width="120" height="40" fill="#0e0e1a" stroke="#2a2a40" stroke-width="1"/>
+    <line x1="30" y1="0" x2="30" y2="40" stroke="#161625" stroke-width="0.5"/>
+    <line x1="60" y1="0" x2="60" y2="40" stroke="#161625" stroke-width="0.5"/>
+    <line x1="90" y1="0" x2="90" y2="40" stroke="#161625" stroke-width="0.5"/>
+    <!-- Snake: H B B T -->
+    <rect x="91" y="1" width="28" height="38" fill="#44ff66"/>
+    <circle cx="108" cy="14" r="3" fill="white"/><circle cx="116" cy="14" r="3" fill="white"/>
+    <circle cx="109" cy="13" r="1.5" fill="#0a0a16"/><circle cx="117" cy="13" r="1.5" fill="#0a0a16"/>
+    <rect x="61" y="1" width="28" height="38" fill="#28bb48"/>
+    <rect x="31" y="1" width="28" height="38" fill="#1e7730"/>
+    <rect x="1" y="1" width="28" height="38" fill="#14401a"/>
+    <!-- Labels -->
+    <text fill="#44ff66" font-size="8" x="100" y="55">H</text>
+    <text fill="#888" font-size="8" x="70" y="55">B</text>
+    <text fill="#888" font-size="8" x="40" y="55">B</text>
+    <text fill="#666" font-size="8" x="10" y="55">T</text>
+  </g>
+
+  <!-- Arrow -->
+  <text fill="#ffd700" font-size="20" x="175" y="65">→</text>
+
+  <!-- Step 2: New head added -->
+  <text fill="#888" font-size="10" x="210" y="25">+ NEW HEAD</text>
+  <g transform="translate(210, 35)">
+    <rect x="0" y="0" width="150" height="40" fill="#0e0e1a" stroke="#2a2a40" stroke-width="1"/>
+    <line x1="30" y1="0" x2="30" y2="40" stroke="#161625" stroke-width="0.5"/>
+    <line x1="60" y1="0" x2="60" y2="40" stroke="#161625" stroke-width="0.5"/>
+    <line x1="90" y1="0" x2="90" y2="40" stroke="#161625" stroke-width="0.5"/>
+    <line x1="120" y1="0" x2="120" y2="40" stroke="#161625" stroke-width="0.5"/>
+    <!-- New head -->
+    <rect x="121" y="1" width="28" height="38" fill="#44ff66"/>
+    <circle cx="138" cy="14" r="3" fill="white"/><circle cx="146" cy="14" r="3" fill="white"/>
+    <circle cx="139" cy="13" r="1.5" fill="#0a0a16"/><circle cx="147" cy="13" r="1.5" fill="#0a0a16"/>
+    <rect x="91" y="1" width="28" height="38" fill="#30cc50"/>
+    <rect x="61" y="1" width="28" height="38" fill="#28bb48"/>
+    <rect x="31" y="1" width="28" height="38" fill="#1e7730"/>
+    <rect x="1" y="1" width="28" height="38" fill="#14401a"/>
+    <text fill="#44ff66" font-size="8" x="130" y="55">H</text>
+    <text fill="#888" font-size="8" x="100" y="55">B</text>
+    <text fill="#888" font-size="8" x="70" y="55">B</text>
+    <text fill="#888" font-size="8" x="40" y="55">B</text>
+    <text fill="#666" font-size="8" x="10" y="55">T</text>
+  </g>
+
+  <!-- Arrow -->
+  <text fill="#ffd700" font-size="20" x="385" y="65">→</text>
+
+  <!-- Step 3: Tail removed -->
+  <text fill="#888" font-size="10" x="420" y="25">- TAIL (no food)</text>
+  <g transform="translate(420, 35)">
+    <rect x="0" y="0" width="150" height="40" fill="#0e0e1a" stroke="#2a2a40" stroke-width="1"/>
+    <line x1="30" y1="0" x2="30" y2="40" stroke="#161625" stroke-width="0.5"/>
+    <line x1="60" y1="0" x2="60" y2="40" stroke="#161625" stroke-width="0.5"/>
+    <line x1="90" y1="0" x2="90" y2="40" stroke="#161625" stroke-width="0.5"/>
+    <line x1="120" y1="0" x2="120" y2="40" stroke="#161625" stroke-width="0.5"/>
+    <rect x="121" y="1" width="28" height="38" fill="#44ff66"/>
+    <circle cx="138" cy="14" r="3" fill="white"/><circle cx="146" cy="14" r="3" fill="white"/>
+    <circle cx="139" cy="13" r="1.5" fill="#0a0a16"/><circle cx="147" cy="13" r="1.5" fill="#0a0a16"/>
+    <rect x="91" y="1" width="28" height="38" fill="#30cc50"/>
+    <rect x="61" y="1" width="28" height="38" fill="#28bb48"/>
+    <rect x="31" y="1" width="28" height="38" fill="#1e7730"/>
+    <!-- Empty tail cell -->
+    <rect x="1" y="1" width="28" height="38" fill="#0e0e1a"/>
+    <text fill="#44ff66" font-size="8" x="130" y="55">H</text>
+    <text fill="#888" font-size="8" x="100" y="55">B</text>
+    <text fill="#888" font-size="8" x="70" y="55">B</text>
+    <text fill="#666" font-size="8" x="40" y="55">T</text>
+    <text fill="#333" font-size="8" x="7" y="55">gone</text>
+  </g>
+
+  <!-- ATE FOOD scenario -->
+  <text fill="#ff4444" font-size="10" x="30" y="115">ATE FOOD → tail stays (snake grows)</text>
+  <g transform="translate(30, 125)">
+    <rect x="0" y="0" width="150" height="40" fill="#0e0e1a" stroke="#2a2a40" stroke-width="1"/>
+    <line x1="30" y1="0" x2="30" y2="40" stroke="#161625" stroke-width="0.5"/>
+    <line x1="60" y1="0" x2="60" y2="40" stroke="#161625" stroke-width="0.5"/>
+    <line x1="90" y1="0" x2="90" y2="40" stroke="#161625" stroke-width="0.5"/>
+    <line x1="120" y1="0" x2="120" y2="40" stroke="#161625" stroke-width="0.5"/>
+    <rect x="121" y="1" width="28" height="38" fill="#44ff66"/>
+    <circle cx="138" cy="14" r="3" fill="white"/><circle cx="146" cy="14" r="3" fill="white"/>
+    <circle cx="139" cy="13" r="1.5" fill="#0a0a16"/><circle cx="147" cy="13" r="1.5" fill="#0a0a16"/>
+    <rect x="91" y="1" width="28" height="38" fill="#30cc50"/>
+    <rect x="61" y="1" width="28" height="38" fill="#28bb48"/>
+    <rect x="31" y="1" width="28" height="38" fill="#1e7730"/>
+    <rect x="1" y="1" width="28" height="38" fill="#14401a"/>
+    <text fill="#44ff66" font-size="8" x="130" y="55">H</text>
+    <text fill="#888" font-size="8" x="100" y="55">B</text>
+    <text fill="#888" font-size="8" x="70" y="55">B</text>
+    <text fill="#888" font-size="8" x="40" y="55">B</text>
+    <text fill="#666" font-size="8" x="10" y="55">T</text>
+    <text fill="#44ff66" font-size="8" x="0" y="75">length: 5 (+1)</text>
+  </g>
+
+  <!-- Particles -->
+  <g transform="translate(210, 130)">
+    <rect x="0" y="0" width="8" height="8" fill="#ff4444" opacity="0.8"/>
+    <rect x="15" y="-5" width="5" height="5" fill="#ff4444" opacity="0.6"/>
+    <rect x="-8" y="5" width="6" height="6" fill="#ff6666" opacity="0.5"/>
+    <rect x="10" y="12" width="4" height="4" fill="#ff4444" opacity="0.4"/>
+    <rect x="-5" y="-8" width="5" height="5" fill="#ff8888" opacity="0.3"/>
+    <text fill="#ff4444" font-size="9" x="-5" y="35">+10 pts</text>
+  </g>
+
+  <rect width="700" height="220" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

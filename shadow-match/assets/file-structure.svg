@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 260" width="620" height="260">
+  <defs>
+    <style>text{font-family:monospace;font-size:11px;}</style>
+  </defs>
+  <rect width="620" height="260" fill="#0a0a16" rx="6"/>
+
+  <text fill="#8866ee" font-size="12" x="310" y="22" text-anchor="middle" font-weight="bold">PROJECT STRUCTURE</text>
+
+  <!-- File tree -->
+  <g transform="translate(30, 40)">
+    <text fill="#ffd700" x="0" y="14">shadow-match/</text>
+    <text fill="#e0e0e0" x="20" y="34">├── index.html</text>
+    <text fill="#666" x="220" y="34">Entry point — GAME config + loader</text>
+    <text fill="#e0e0e0" x="20" y="54">├── style.css</text>
+    <text fill="#666" x="220" y="54">Accent color override (#8866ee)</text>
+    <text fill="#e0e0e0" x="20" y="74">├── game.js</text>
+    <text fill="#666" x="220" y="74">Orchestrator — phases, input, scoring</text>
+    <text fill="#ffd700" x="20" y="94">├── src/</text>
+    <text fill="#44aaff" x="40" y="114">│   ├── config.js</text>
+    <text fill="#666" x="220" y="114">Grid sizes, timings, colors, difficulty</text>
+    <text fill="#44aaff" x="40" y="134">│   ├── shapes.js</text>
+    <text fill="#666" x="220" y="134">Polyomino gen, rotate, mirror, distractors</text>
+    <text fill="#44aaff" x="40" y="154">│   └── renderer.js</text>
+    <text fill="#666" x="220" y="154">Shadow display, options, timer, animations</text>
+    <text fill="#ffd700" x="20" y="174">├── assets/</text>
+    <text fill="#44ff66" x="40" y="194">│   ├── banner.svg</text>
+    <text fill="#666" x="220" y="194">Hero image (800×200)</text>
+    <text fill="#44ff66" x="40" y="214">│   ├── gameplay.svg + ...</text>
+    <text fill="#666" x="220" y="214">Screenshots, controls, palette, state</text>
+    <text fill="#e0e0e0" x="20" y="234">└── README.md</text>
+    <text fill="#666" x="220" y="234">Full documentation with SVG assets</text>
+  </g>
+
+  <rect width="620" height="260" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 180" width="500" height="180">
+  <rect width="500" height="180" fill="#0a0a16" rx="6"/>
+  <defs><style>text{font-family:monospace;}</style></defs>
+
+  <!-- Step 1: Before slide -->
+  <text fill="#888" font-size="10" x="15" y="18">STEP 1 — Before</text>
+  <g transform="translate(15, 28)">
+    <rect width="44" height="44" fill="#eee4da" rx="3"/>
+    <text fill="#776e65" font-size="18" font-weight="bold" x="22" y="30" text-anchor="middle">2</text>
+
+    <rect x="50" y="0" width="44" height="44" fill="#eee4da" rx="3"/>
+    <text fill="#776e65" font-size="18" font-weight="bold" x="72" y="30" text-anchor="middle">2</text>
+
+    <rect x="100" y="0" width="44" height="44" fill="#ede0c8" rx="3"/>
+    <text fill="#776e65" font-size="18" font-weight="bold" x="122" y="30" text-anchor="middle">4</text>
+
+    <rect x="150" y="0" width="44" height="44" fill="#1a1a2e" rx="3"/>
+  </g>
+  <text fill="#555" font-size="9" x="15" y="86">[ 2 ][ 2 ][ 4 ][ _ ]</text>
+
+  <!-- Arrow -->
+  <g transform="translate(220, 40)">
+    <line x1="0" y1="10" x2="30" y2="10" stroke="#ffd700" stroke-width="2"/>
+    <polygon points="26,4 36,10 26,16" fill="#ffd700"/>
+    <text fill="#ffd700" font-size="8" x="4" y="28">slide ←</text>
+  </g>
+
+  <!-- Step 2: After first slide -->
+  <text fill="#888" font-size="10" x="270" y="18">STEP 2 — Merge 2+2=4</text>
+  <g transform="translate(270, 28)">
+    <rect width="44" height="44" fill="#ede0c8" rx="3" stroke="#ffd700" stroke-width="2"/>
+    <text fill="#776e65" font-size="18" font-weight="bold" x="22" y="30" text-anchor="middle">4</text>
+
+    <rect x="50" y="0" width="44" height="44" fill="#ede0c8" rx="3"/>
+    <text fill="#776e65" font-size="18" font-weight="bold" x="72" y="30" text-anchor="middle">4</text>
+
+    <rect x="100" y="0" width="44" height="44" fill="#1a1a2e" rx="3"/>
+    <rect x="150" y="0" width="44" height="44" fill="#1a1a2e" rx="3"/>
+  </g>
+  <text fill="#44ff66" font-size="9" x="270" y="86">Score +4</text>
+  <text fill="#555" font-size="9" x="330" y="86">[ 4 ][ 4 ][ _ ][ _ ]</text>
+
+  <!-- Step 3: Another slide left -->
+  <text fill="#888" font-size="10" x="15" y="110">STEP 3 — Slide left again</text>
+
+  <!-- Arrow -->
+  <g transform="translate(15, 118)">
+    <rect width="44" height="44" fill="#ede0c8" rx="3"/>
+    <text fill="#776e65" font-size="18" font-weight="bold" x="22" y="30" text-anchor="middle">4</text>
+
+    <rect x="50" y="0" width="44" height="44" fill="#ede0c8" rx="3"/>
+    <text fill="#776e65" font-size="18" font-weight="bold" x="72" y="30" text-anchor="middle">4</text>
+  </g>
+
+  <g transform="translate(130, 130)">
+    <line x1="0" y1="10" x2="30" y2="10" stroke="#ffd700" stroke-width="2"/>
+    <polygon points="26,4 36,10 26,16" fill="#ffd700"/>
+    <text fill="#ffd700" font-size="8" x="4" y="28">slide ←</text>
+  </g>
+
+  <!-- Result -->
+  <g transform="translate(270, 118)">
+    <rect width="44" height="44" fill="#f2b179" rx="3" stroke="#ffd700" stroke-width="2"/>
+    <text fill="#f9f6f2" font-size="18" font-weight="bold" x="22" y="30" text-anchor="middle">8</text>
+
+    <rect x="50" y="0" width="44" height="44" fill="#1a1a2e" rx="3"/>
+    <rect x="100" y="0" width="44" height="44" fill="#1a1a2e" rx="3"/>
+    <rect x="150" y="0" width="44" height="44" fill="#1a1a2e" rx="3"/>
+  </g>
+  <text fill="#44ff66" font-size="9" x="270" y="175">Score +8 (total +12)</text>
+
+  <rect width="500" height="180" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

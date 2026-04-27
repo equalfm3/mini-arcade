@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <style>
+      .bg { fill: #0e0e1a; }
+      .title { font-family: monospace; font-size: 44px; font-weight: bold; fill: #44aaff; }
+      .sub { font-family: monospace; font-size: 14px; fill: #666666; }
+      .grid { stroke: #161625; stroke-width: 0.5; }
+    </style>
+  </defs>
+  <!-- Background -->
+  <rect class="bg" width="800" height="200" rx="8"/>
+  <!-- Subtle grid -->
+  <g class="grid" fill="none">
+    <line x1="0" y1="20" x2="800" y2="20"/><line x1="0" y1="40" x2="800" y2="40"/>
+    <line x1="0" y1="60" x2="800" y2="60"/><line x1="0" y1="80" x2="800" y2="80"/>
+    <line x1="0" y1="100" x2="800" y2="100"/><line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="140" x2="800" y2="140"/><line x1="0" y1="160" x2="800" y2="160"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+  </g>
+
+  <!-- Keyboard pixel art on the left -->
+  <g transform="translate(30, 30)" shape-rendering="crispEdges">
+    <!-- Row 1: QWERTY keys -->
+    <rect x="0" y="0" width="22" height="18" fill="#2a2a40" rx="2"/>
+    <text font-family="monospace" font-size="10" fill="#888" x="6" y="13">Q</text>
+    <rect x="26" y="0" width="22" height="18" fill="#2a2a40" rx="2"/>
+    <text font-family="monospace" font-size="10" fill="#888" x="32" y="13">W</text>
+    <rect x="52" y="0" width="22" height="18" fill="#2a2a40" rx="2"/>
+    <text font-family="monospace" font-size="10" fill="#888" x="58" y="13">E</text>
+    <rect x="78" y="0" width="22" height="18" fill="#2a2a40" rx="2"/>
+    <text font-family="monospace" font-size="10" fill="#888" x="84" y="13">R</text>
+    <rect x="104" y="0" width="22" height="18" fill="#2a2a40" rx="2"/>
+    <text font-family="monospace" font-size="10" fill="#888" x="110" y="13">T</text>
+    <rect x="130" y="0" width="22" height="18" fill="#2a2a40" rx="2"/>
+    <text font-family="monospace" font-size="10" fill="#888" x="136" y="13">Y</text>
+
+    <!-- Row 2: ASDF keys -->
+    <rect x="8" y="24" width="22" height="18" fill="#2a2a40" rx="2"/>
+    <text font-family="monospace" font-size="10" fill="#888" x="14" y="37">A</text>
+    <rect x="34" y="24" width="22" height="18" fill="#2a2a40" rx="2"/>
+    <text font-family="monospace" font-size="10" fill="#888" x="40" y="37">S</text>
+    <rect x="60" y="24" width="22" height="18" fill="#2a2a40" rx="2"/>
+    <text font-family="monospace" font-size="10" fill="#888" x="66" y="37">D</text>
+    <rect x="86" y="24" width="22" height="18" fill="#2a2a40" rx="2"/>
+    <text font-family="monospace" font-size="10" fill="#888" x="92" y="37">F</text>
+    <rect x="112" y="24" width="22" height="18" fill="#44aaff" rx="2"/>
+    <text font-family="monospace" font-size="10" fill="#fff" x="118" y="37">G</text>
+    <rect x="138" y="24" width="22" height="18" fill="#2a2a40" rx="2"/>
+    <text font-family="monospace" font-size="10" fill="#888" x="144" y="37">H</text>
+
+    <!-- Row 3: ZXC keys -->
+    <rect x="16" y="48" width="22" height="18" fill="#2a2a40" rx="2"/>
+    <text font-family="monospace" font-size="10" fill="#888" x="22" y="61">Z</text>
+    <rect x="42" y="48" width="22" height="18" fill="#2a2a40" rx="2"/>
+    <text font-family="monospace" font-size="10" fill="#888" x="48" y="61">X</text>
+    <rect x="68" y="48" width="22" height="18" fill="#2a2a40" rx="2"/>
+    <text font-family="monospace" font-size="10" fill="#888" x="74" y="61">C</text>
+    <rect x="94" y="48" width="22" height="18" fill="#2a2a40" rx="2"/>
+    <text font-family="monospace" font-size="10" fill="#888" x="100" y="61">V</text>
+
+    <!-- Spacebar -->
+    <rect x="30" y="72" width="100" height="16" fill="#2a2a40" rx="2"/>
+
+    <!-- Typed text flowing from keyboard -->
+    <text font-family="monospace" font-size="11" x="0" y="115">
+      <tspan fill="#44ff66">the quick </tspan>
+      <tspan fill="#44ff66">brown </tspan>
+      <tspan fill="#ffffff">f</tspan>
+      <tspan fill="#888">ox jumps</tspan>
+    </text>
+
+    <text font-family="monospace" font-size="11" fill="#444" x="0" y="132">over the lazy dog</text>
+  </g>
+
+  <!-- Pixel icon (keyboard from icons.js) -->
+  <g transform="translate(240, 30)" shape-rendering="crispEdges">
+    <!-- Row 1: .dddddddddddd.. -->
+    <rect x="1.5" y="0" width="1.5" height="1.5" fill="#666"/>
+    <rect x="3" y="0" width="1.5" height="1.5" fill="#666"/>
+    <rect x="4.5" y="0" width="1.5" height="1.5" fill="#666"/>
+    <rect x="6" y="0" width="1.5" height="1.5" fill="#666"/>
+    <rect x="7.5" y="0" width="1.5" height="1.5" fill="#666"/>
+    <rect x="9" y="0" width="1.5" height="1.5" fill="#666"/>
+    <rect x="10.5" y="0" width="1.5" height="1.5" fill="#666"/>
+    <rect x="12" y="0" width="1.5" height="1.5" fill="#666"/>
+    <rect x="13.5" y="0" width="1.5" height="1.5" fill="#666"/>
+    <rect x="15" y="0" width="1.5" height="1.5" fill="#666"/>
+    <rect x="16.5" y="0" width="1.5" height="1.5" fill="#666"/>
+    <rect x="18" y="0" width="1.5" height="1.5" fill="#666"/>
+    <!-- Rows 2-3: keys -->
+    <rect x="1.5" y="1.5" width="1.5" height="1.5" fill="#666"/>
+    <rect x="3" y="1.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="4.5" y="1.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="6" y="1.5" width="1.5" height="1.5" fill="#666"/>
+    <rect x="7.5" y="1.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="9" y="1.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="10.5" y="1.5" width="1.5" height="1.5" fill="#666"/>
+    <rect x="12" y="1.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="13.5" y="1.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="15" y="1.5" width="1.5" height="1.5" fill="#666"/>
+    <rect x="16.5" y="1.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="18" y="1.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+  </g>
+
+  <!-- Title -->
+  <text class="title" x="300" y="90">TYPING SPEED</text>
+  <text class="sub" x="300" y="118">Type · Race · Improve</text>
+
+  <!-- WPM HUD mock -->
+  <g transform="translate(300, 135)">
+    <rect width="280" height="30" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="2"/>
+    <text font-family="monospace" font-size="9" fill="#666" x="12" y="19">WPM</text>
+    <text font-family="monospace" font-size="9" fill="#44aaff" x="45" y="19">72</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="80" y="19">ACC</text>
+    <text font-family="monospace" font-size="9" fill="#44ff66" x="110" y="19">96%</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="155" y="19">TIME</text>
+    <text font-family="monospace" font-size="9" fill="#ffd700" x="190" y="19">42s</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="225" y="19">WORDS</text>
+    <text font-family="monospace" font-size="9" fill="#ffffff" x="265" y="19">38</text>
+  </g>
+
+  <!-- Border -->
+  <rect width="800" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+</svg>

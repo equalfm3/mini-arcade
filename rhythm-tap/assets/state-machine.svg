@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 280" width="560" height="280">
+  <rect width="560" height="280" fill="#0a0a16" rx="6"/>
+  <defs>
+    <style>text{font-family:monospace;}</style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ffd700"/>
+    </marker>
+  </defs>
+
+  <!-- IDLE box -->
+  <rect x="20" y="100" width="90" height="40" fill="#12121f" stroke="#44aaff" stroke-width="2" rx="4"/>
+  <text fill="#44aaff" font-size="11" x="40" y="125" font-weight="bold">IDLE</text>
+
+  <!-- SELECT box -->
+  <rect x="160" y="100" width="100" height="40" fill="#12121f" stroke="#c084fc" stroke-width="2" rx="4"/>
+  <text fill="#c084fc" font-size="11" x="175" y="125" font-weight="bold">SELECT</text>
+
+  <!-- PLAYING box -->
+  <rect x="310" y="100" width="110" height="40" fill="#12121f" stroke="#44ff66" stroke-width="2" rx="4"/>
+  <text fill="#44ff66" font-size="11" x="325" y="125" font-weight="bold">PLAYING</text>
+
+  <!-- PAUSED box -->
+  <rect x="310" y="20" width="110" height="40" fill="#12121f" stroke="#ffd700" stroke-width="2" rx="4"/>
+  <text fill="#ffd700" font-size="11" x="327" y="45" font-weight="bold">PAUSED</text>
+
+  <!-- RESULTS box -->
+  <rect x="460" y="100" width="90" height="40" fill="#12121f" stroke="#ff66aa" stroke-width="2" rx="4"/>
+  <text fill="#ff66aa" font-size="11" x="470" y="125" font-weight="bold">RESULTS</text>
+
+  <!-- Arrows -->
+  <!-- idle → select -->
+  <line x1="110" y1="120" x2="158" y2="120" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="115" y="115">Start</text>
+
+  <!-- select → playing -->
+  <line x1="260" y1="120" x2="308" y2="120" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="262" y="115">Pick BPM</text>
+
+  <!-- playing → paused -->
+  <line x1="350" y1="100" x2="350" y2="62" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="356" y="85">Esc</text>
+
+  <!-- paused → playing -->
+  <line x1="390" y1="60" x2="390" y2="98" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="396" y="85">Resume</text>
+
+  <!-- playing → results -->
+  <line x1="420" y1="120" x2="458" y2="120" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="422" y="115">Song end</text>
+
+  <!-- results → select -->
+  <path d="M 505 140 Q 505 230 210 230 Q 210 230 210 142" fill="none" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="320" y="248">Play Again</text>
+
+  <!-- paused → idle (restart) -->
+  <path d="M 310 40 Q 55 40 55 98" fill="none" stroke="#ffd700" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="140" y="35">Restart</text>
+
+  <!-- Border -->
+  <rect width="560" height="280" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

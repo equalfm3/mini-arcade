@@ -1,0 +1,202 @@
+# Mini Arcade — Game Implementation Tasks
+
+## Classics
+
+- [x] 1. Tetris — Game Code
+  - [x] 1.1 Create `tetris/src/config.js` — board 10×20, piece colors, drop speed, line clear scoring
+  - [x] 1.2 Create `tetris/src/pieces.js` — 7 tetromino shapes, rotation matrices, wall kick logic
+  - [x] 1.3 Create `tetris/src/board.js` — grid state, line detection, clearing with collapse
+  - [x] 1.4 Create `tetris/src/renderer.js` — board rendering, ghost piece preview, next piece display
+  - [x] 1.5 Create `tetris/game.js` — orchestrator with drop timer, input, hard drop
+  - [x] 1.6 Create `tetris/style.css` — accent color
+  - [x] 1.7 Update `tetris/index.html` — add src module declarations
+- [x] 2. Tetris — Assets & README
+  - [x] 2.1 Create `tetris/assets/banner.svg` — hero banner with tetromino pixel art
+  - [x] 2.2 Create `tetris/assets/gameplay.svg` — game board screenshot with pieces and sidebar
+  - [x] 2.3 Create `tetris/assets/controls.svg` — desktop + mobile control diagrams
+  - [x] 2.4 Create `tetris/assets/palette.svg` — 7 piece color swatches
+  - [x] 2.5 Create `tetris/assets/rotation.svg` — SRS rotation system diagram
+  - [x] 2.6 Create `tetris/assets/scoring.svg` — scoring table visual
+  - [x] 2.7 Create `tetris/assets/file-structure.svg` — file tree with descriptions
+  - [x] 2.8 Create `tetris/assets/state-machine.svg` — game state diagram
+  - [x] 2.9 Create `tetris/README.md` — full documentation with embedded SVGs
+- [x] 3. Breakout
+  - [x] 3.1 Create `breakout/src/config.js` — paddle size, ball speed, brick layout, lives
+  - [x] 3.2 Create `breakout/src/paddle.js` — paddle movement, mouse/touch tracking
+  - [x] 3.3 Create `breakout/src/ball.js` — ball physics, angle reflection, speed increase
+  - [x] 3.4 Create `breakout/src/bricks.js` — brick grid, hit detection, brick types/colors
+  - [x] 3.5 Create `breakout/src/renderer.js` — draw paddle, ball, bricks with pixel style
+  - [x] 3.6 Create `breakout/game.js` — orchestrator with ball launch, lives, level progression
+  - [x] 3.7 Create assets + README
+- [x] 4. Minesweeper
+  - [x] 4.1 Create `minesweeper/src/config.js` — grid sizes (easy/medium/hard), mine count
+  - [x] 4.2 Create `minesweeper/src/board.js` — mine placement, neighbor counting, flood reveal
+  - [x] 4.3 Create `minesweeper/src/renderer.js` — DOM grid cells, number colors, flag/mine icons
+  - [x] 4.4 Create `minesweeper/game.js` — click to reveal, long-press/right-click to flag, win detection
+  - [x] 4.5 Create assets + README
+- [x] 5. 2048
+  - [x] 5.1 Create `2048/src/config.js` — grid 4×4, tile colors per value, animation speed
+  - [x] 5.2 Create `2048/src/board.js` — grid state, merge logic, slide in 4 directions
+  - [x] 5.3 Create `2048/src/tiles.js` — tile spawning, merge animation, value tracking
+  - [x] 5.4 Create `2048/src/renderer.js` — DOM grid with colored tiles, slide animations
+  - [x] 5.5 Create `2048/game.js` — swipe/arrow input, move validation, win/lose detection
+  - [x] 5.6 Create assets + README
+- [x] 6. Flappy Bird
+  - [x] 6.1 Create `flappy-bird/src/config.js` — gravity, flap force, pipe gap, pipe speed
+  - [x] 6.2 Create `flappy-bird/src/bird.js` — bird physics, rotation based on velocity
+  - [x] 6.3 Create `flappy-bird/src/pipes.js` — pipe spawning, scrolling, gap positioning
+  - [x] 6.4 Create `flappy-bird/src/renderer.js` — bird, pipes, ground scroll, parallax background
+  - [x] 6.5 Create `flappy-bird/game.js` — tap/space to flap, pipe collision, score on pass
+  - [x] 6.6 Create assets + README
+- [x] 7. Pong
+  - [x] 7.1 Create `pong/src/config.js` — paddle size, ball speed, win score, AI difficulty
+  - [x] 7.2 Create `pong/src/paddle.js` — player paddle, AI paddle with tracking
+  - [x] 7.3 Create `pong/src/ball.js` — ball movement, paddle reflection angles, speed increase
+  - [x] 7.4 Create `pong/src/renderer.js` — paddles, ball, center line, score display
+  - [x] 7.5 Create `pong/game.js` — 2-player or vs AI mode, serve mechanic, win condition
+  - [x] 7.6 Create assets + README
+- [x] 8. Memory Cards
+  - [x] 8.1 Create `memory-cards/src/config.js` — grid size, card symbols, flip timing
+  - [x] 8.2 Create `memory-cards/src/deck.js` — card pairs generation, shuffle algorithm
+  - [x] 8.3 Create `memory-cards/src/renderer.js` — DOM card grid, flip animation
+  - [x] 8.4 Create `memory-cards/game.js` — card flip logic, match checking, win detection
+  - [x] 8.5 Create assets + README
+- [x] 9. Whack-a-Mole
+  - [x] 9.1 Create `whack-a-mole/src/config.js` — grid 3×3, mole timing, round duration
+  - [x] 9.2 Create `whack-a-mole/src/moles.js` — mole spawn timing, random hole selection
+  - [x] 9.3 Create `whack-a-mole/src/renderer.js` — DOM holes with mole pop-up animation
+  - [x] 9.4 Create `whack-a-mole/game.js` — tap/click to whack, countdown timer, score
+  - [x] 9.5 Create assets + README
+- [x] 10. Tic-Tac-Toe
+  - [x] 10.1 Create `tic-tac-toe/src/config.js` — board 3×3, AI difficulty levels
+  - [x] 10.2 Create `tic-tac-toe/src/ai.js` — minimax algorithm with alpha-beta pruning
+  - [x] 10.3 Create `tic-tac-toe/src/board.js` — win detection, draw detection
+  - [x] 10.4 Create `tic-tac-toe/src/renderer.js` — DOM grid, X/O drawing, win line highlight
+  - [x] 10.5 Create `tic-tac-toe/game.js` — player turn, AI turn, game reset
+  - [x] 10.6 Create assets + README
+- [x] 11. Simon Says
+  - [x] 11.1 Create `simon-says/src/config.js` — 4 colors, tone frequencies, sequence timing
+  - [x] 11.2 Create `simon-says/src/sequence.js` — sequence generation, playback, input validation
+  - [x] 11.3 Create `simon-says/src/renderer.js` — 4 colored buttons with light-up animation
+  - [x] 11.4 Create `simon-says/game.js` — watch phase, input phase, round progression
+  - [x] 11.5 Create assets + README
+- [x] 12. Solitaire
+  - [x] 12.1 Create `solitaire/src/config.js` — card dimensions, animation speed, layout
+  - [x] 12.2 Create `solitaire/src/deck.js` — 52-card deck, shuffle, suit/rank data
+  - [x] 12.3 Create `solitaire/src/tableau.js` — 7 columns, stacking rules
+  - [x] 12.4 Create `solitaire/src/foundation.js` — 4 foundation piles, ace-to-king validation
+  - [x] 12.5 Create `solitaire/src/stock.js` — stock pile, waste pile, draw mechanic
+  - [x] 12.6 Create `solitaire/src/drag.js` — drag-and-drop + tap-to-move
+  - [x] 12.7 Create `solitaire/src/renderer.js` — canvas card rendering
+  - [x] 12.8 Create `solitaire/game.js` — orchestrator, auto-complete, win animation
+  - [x] 12.9 Create assets + README
+- [x] 13. Wordle
+  - [x] 13.1 Create `wordle/src/config.js` — word length 5, max guesses 6
+  - [x] 13.2 Create `wordle/src/words.js` — word list (target + valid guesses)
+  - [x] 13.3 Create `wordle/src/evaluator.js` — letter evaluation (correct/present/absent)
+  - [x] 13.4 Create `wordle/src/keyboard.js` — on-screen keyboard with color state
+  - [x] 13.5 Create `wordle/src/renderer.js` — DOM grid rows, letter tiles, flip animation
+  - [x] 13.6 Create `wordle/game.js` — input handling, guess submission, win/lose
+  - [x] 13.7 Create assets + README
+- [x] 14. Space Invaders
+  - [x] 14.1 Create `space-invaders/src/config.js` — grid formation, enemy speed, bullet speed
+  - [x] 14.2 Create `space-invaders/src/player.js` — ship movement, shooting cooldown
+  - [x] 14.3 Create `space-invaders/src/enemies.js` — formation, lateral movement, descent
+  - [x] 14.4 Create `space-invaders/src/bullets.js` — bullet pool, collision detection
+  - [x] 14.5 Create `space-invaders/src/renderer.js` — pixel art sprites
+  - [x] 14.6 Create `space-invaders/game.js` — wave progression, difficulty scaling, lives
+  - [x] 14.7 Create assets + README
+- [x] 15. Doodle Jump
+  - [x] 15.1 Create `doodle-jump/src/config.js` — gravity, jump force, platform spacing
+  - [x] 15.2 Create `doodle-jump/src/player.js` — player physics, horizontal movement
+  - [x] 15.3 Create `doodle-jump/src/platforms.js` — platform types, generation
+  - [x] 15.4 Create `doodle-jump/src/camera.js` — vertical scrolling, platform recycling
+  - [x] 15.5 Create `doodle-jump/src/renderer.js` — player, platforms, background
+  - [x] 15.6 Create `doodle-jump/game.js` — orchestrator, fall detection, score = height
+  - [x] 15.7 Create assets + README
+
+## Modern Hits
+
+- [x] 16. Color Switch
+  - [x] 16.1 Create src modules (config, ball, obstacles, renderer)
+  - [x] 16.2 Create `color-switch/game.js`
+  - [x] 16.3 Create assets + README
+- [x] 17. Stack Tower
+  - [x] 17.1 Create src modules (config, blocks, renderer)
+  - [x] 17.2 Create `stack-tower/game.js`
+  - [x] 17.3 Create assets + README
+- [x] 18. Crossy Road
+  - [x] 18.1 Create src modules (config, player, lanes, renderer)
+  - [x] 18.2 Create `crossy-road/game.js`
+  - [x] 18.3 Create assets + README
+- [x] 19. Fruit Ninja
+  - [x] 19.1 Create src modules (config, fruits, blade, renderer)
+  - [x] 19.2 Create `fruit-ninja/game.js`
+  - [x] 19.3 Create assets + README
+- [x] 20. Reaction Time
+  - [x] 20.1 Create src modules (config, test, renderer)
+  - [x] 20.2 Create `reaction-time/game.js`
+  - [x] 20.3 Create assets + README
+- [x] 21. Typing Speed
+  - [x] 21.1 Create src modules (config, words, renderer)
+  - [x] 21.2 Create `typing-speed/game.js`
+  - [x] 21.3 Create assets + README
+- [x] 22. Endless Runner
+  - [x] 22.1 Create src modules (config, player, obstacles, ground, renderer)
+  - [x] 22.2 Create `endless-runner/game.js`
+  - [x] 22.3 Create assets + README
+
+## Originals
+
+- [x] 23. Gravity Flip
+  - [x] 23.1 Create src modules (config, player, corridors, renderer)
+  - [x] 23.2 Create `gravity-flip/game.js`
+  - [x] 23.3 Create assets + README
+- [x] 24. Color Flood
+  - [x] 24.1 Create src modules (config, board, renderer)
+  - [x] 24.2 Create `color-flood/game.js`
+  - [x] 24.3 Create assets + README
+- [x] 25. Rhythm Tap
+  - [x] 25.1 Create src modules (config, song, notes, renderer)
+  - [x] 25.2 Create `rhythm-tap/game.js`
+  - [x] 25.3 Create assets + README
+- [x] 26. Shadow Match
+  - [x] 26.1 Create src modules (config, shapes, renderer)
+  - [x] 26.2 Create `shadow-match/game.js`
+  - [x] 26.3 Create assets + README
+- [x] 27. Chain Reaction
+  - [x] 27.1 Create src modules (config, particles, explosions, renderer)
+  - [x] 27.2 Create `chain-reaction/game.js`
+  - [x] 27.3 Create assets + README
+- [ ] 28. Orbit Dodge
+  - [ ] 28.1 Create src modules (config, player, obstacles, renderer)
+  - [ ] 28.2 Create `orbit-dodge/game.js`
+  - [ ] 28.3 Create assets + README
+- [ ] 29. Word Chain
+  - [ ] 29.1 Create src modules (config, dictionary, chain, renderer)
+  - [ ] 29.2 Create `word-chain/game.js`
+  - [ ] 29.3 Create assets + README
+- [ ] 30. Pixel Painter
+  - [ ] 30.1 Create src modules (config, patterns, renderer)
+  - [ ] 30.2 Create `pixel-painter/game.js`
+  - [ ] 30.3 Create assets + README
+- [ ] 31. Merge Path
+  - [ ] 31.1 Create src modules (config, puzzle, paths, renderer)
+  - [ ] 31.2 Create `merge-path/game.js`
+  - [ ] 31.3 Create assets + README
+- [ ] 32. Bounce Architect
+  - [ ] 32.1 Create src modules (config, ball, pads, levels, renderer)
+  - [ ] 32.2 Create `bounce-architect/game.js`
+  - [ ] 32.3 Create assets + README
+- [ ] 33. Sound Memory
+  - [ ] 33.1 Create src modules (config, tones, sequence, renderer)
+  - [ ] 33.2 Create `sound-memory/game.js`
+  - [ ] 33.3 Create assets + README
+- [ ] 34. Shrinking Arena
+  - [ ] 34.1 Create src modules (config, player, enemies, arena, renderer)
+  - [ ] 34.2 Create `shrinking-arena/game.js`
+  - [ ] 34.3 Create assets + README
+- [ ] 35. One-Button Duels
+  - [ ] 35.1 Create src modules (config, combat, renderer)
+  - [ ] 35.2 Create `one-button-duels/game.js`
+  - [ ] 35.3 Create assets + README

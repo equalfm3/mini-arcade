@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <defs>
+    <style>text { font-family: monospace; }</style>
+  </defs>
+  <rect width="600" height="200" fill="#0a0a16" rx="6"/>
+
+  <!-- Desktop section -->
+  <text fill="#44ff66" font-size="13" font-weight="bold" x="30" y="30">DESKTOP</text>
+
+  <!-- Space / Up key — Jump -->
+  <rect x="30" y="45" width="70" height="28" fill="#12121f" stroke="#3a3a55" stroke-width="1.5" rx="3"/>
+  <text fill="#e0e0e0" font-size="10" x="42" y="63">SPACE</text>
+  <text fill="#888" font-size="9" x="110" y="63">Jump</text>
+
+  <rect x="30" y="80" width="35" height="28" fill="#12121f" stroke="#3a3a55" stroke-width="1.5" rx="3"/>
+  <text fill="#e0e0e0" font-size="10" x="42" y="98">↑</text>
+  <text fill="#888" font-size="9" x="75" y="98">Jump (alt)</text>
+
+  <!-- Down key — Duck -->
+  <rect x="30" y="115" width="35" height="28" fill="#12121f" stroke="#3a3a55" stroke-width="1.5" rx="3"/>
+  <text fill="#e0e0e0" font-size="10" x="42" y="133">↓</text>
+  <text fill="#888" font-size="9" x="75" y="133">Duck (hold)</text>
+
+  <!-- Esc — Pause -->
+  <rect x="30" y="150" width="40" height="28" fill="#12121f" stroke="#3a3a55" stroke-width="1.5" rx="3"/>
+  <text fill="#e0e0e0" font-size="10" x="36" y="168">ESC</text>
+  <text fill="#888" font-size="9" x="80" y="168">Pause</text>
+
+  <!-- Divider -->
+  <line x1="300" y1="20" x2="300" y2="185" stroke="#2a2a40" stroke-width="1"/>
+
+  <!-- Mobile section -->
+  <text fill="#44ff66" font-size="13" font-weight="bold" x="330" y="30">MOBILE</text>
+
+  <!-- Tap — Jump -->
+  <rect x="330" y="45" width="60" height="28" fill="#12121f" stroke="#44ff66" stroke-width="1.5" rx="3"/>
+  <text fill="#44ff66" font-size="10" x="342" y="63">JUMP</text>
+  <text fill="#888" font-size="9" x="400" y="63">Tap button</text>
+
+  <!-- Tap canvas -->
+  <rect x="330" y="80" width="60" height="28" fill="#12121f" stroke="#3a3a55" stroke-width="1.5" rx="3"/>
+  <text fill="#e0e0e0" font-size="10" x="340" y="98">TAP</text>
+  <text fill="#888" font-size="9" x="400" y="98">Tap screen to jump</text>
+
+  <!-- Swipe down — Duck -->
+  <rect x="330" y="115" width="60" height="28" fill="#12121f" stroke="#3a3a55" stroke-width="1.5" rx="3"/>
+  <text fill="#e0e0e0" font-size="10" x="336" y="133">SWIPE↓</text>
+  <text fill="#888" font-size="9" x="400" y="133">Duck</text>
+
+  <!-- Border -->
+  <rect width="600" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

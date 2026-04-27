@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 380" width="340" height="380">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+  <rect width="340" height="380" fill="#0a0a16" rx="6"/>
+
+  <!-- HUD bar -->
+  <rect x="20" y="15" width="300" height="28" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="3"/>
+  <text font-size="10" fill="#888" x="30" y="34">Simon Says</text>
+  <text font-size="9" fill="#666" x="170" y="34">Round</text>
+  <text font-size="9" fill="#ffd700" x="210" y="34">5</text>
+  <text font-size="9" fill="#666" x="250" y="34">Best</text>
+  <text font-size="9" fill="#ffd700" x="280" y="34">12</text>
+
+  <!-- 2×2 button grid -->
+  <g transform="translate(30, 60)">
+    <!-- Green (top-left) — dimmed -->
+    <rect x="0" y="0" width="130" height="130" fill="#44ff66" rx="10" opacity="0.4"/>
+    <rect x="0" y="0" width="130" height="10" fill="#88ffaa" rx="10" opacity="0.15"/>
+
+    <!-- Red (top-right) — lit up (current playback step) -->
+    <rect x="145" y="0" width="130" height="130" fill="#ff4444" rx="10"/>
+    <rect x="145" y="0" width="130" height="10" fill="#ff8888" rx="10" opacity="0.4"/>
+    <!-- Glow -->
+    <rect x="141" y="-4" width="138" height="138" fill="none" stroke="#ff4444" stroke-width="3" rx="12" opacity="0.5"/>
+    <rect x="137" y="-8" width="146" height="146" fill="none" stroke="#ff4444" stroke-width="1" rx="14" opacity="0.2"/>
+
+    <!-- Yellow (bottom-left) — dimmed -->
+    <rect x="0" y="145" width="130" height="130" fill="#ffd700" rx="10" opacity="0.4"/>
+    <rect x="0" y="145" width="130" height="10" fill="#ffec66" rx="10" opacity="0.15"/>
+
+    <!-- Blue (bottom-right) — dimmed -->
+    <rect x="145" y="145" width="130" height="130" fill="#44aaff" rx="10" opacity="0.4"/>
+    <rect x="145" y="145" width="130" height="10" fill="#88ccff" rx="10" opacity="0.15"/>
+  </g>
+
+  <!-- Status text -->
+  <text font-size="12" fill="#ffd700" text-anchor="middle" x="170" y="355">Watch...</text>
+
+  <!-- Border -->
+  <rect width="340" height="380" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

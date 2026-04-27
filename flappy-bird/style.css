@@ -1,0 +1,10 @@
+/* Flappy Bird — Game-specific styles */
+
+:root {
+  --c-game: #ffd700;
+}
+
+.btn-action {
+  font-size: 0.7rem;
+  padding: var(--sp-3) var(--sp-6);
+}

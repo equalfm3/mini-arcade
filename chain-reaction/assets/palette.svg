@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 180" width="600" height="180">
+  <rect width="600" height="180" fill="#0a0a16" rx="6"/>
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+
+  <!-- Title -->
+  <text fill="#888" font-size="12" x="300" y="22" text-anchor="middle">COLOR PALETTE</text>
+
+  <!-- Dot colors row -->
+  <text fill="#666" font-size="10" x="20" y="52">Dots</text>
+
+  <!-- Red -->
+  <rect x="65" y="38" width="40" height="28" fill="#ff4444" rx="3"/>
+  <text fill="#fff" font-size="8" x="85" y="56" text-anchor="middle">#ff4444</text>
+  <text fill="#888" font-size="8" x="85" y="78" text-anchor="middle">Red</text>
+
+  <!-- Orange -->
+  <rect x="115" y="38" width="40" height="28" fill="#ff8844" rx="3"/>
+  <text fill="#0a0a16" font-size="8" x="135" y="56" text-anchor="middle">#ff8844</text>
+  <text fill="#888" font-size="8" x="135" y="78" text-anchor="middle">Orange</text>
+
+  <!-- Gold -->
+  <rect x="165" y="38" width="40" height="28" fill="#ffd700" rx="3"/>
+  <text fill="#0a0a16" font-size="8" x="185" y="56" text-anchor="middle">#ffd700</text>
+  <text fill="#888" font-size="8" x="185" y="78" text-anchor="middle">Gold</text>
+
+  <!-- Green -->
+  <rect x="215" y="38" width="40" height="28" fill="#44ff66" rx="3"/>
+  <text fill="#0a0a16" font-size="8" x="235" y="56" text-anchor="middle">#44ff66</text>
+  <text fill="#888" font-size="8" x="235" y="78" text-anchor="middle">Green</text>
+
+  <!-- Blue -->
+  <rect x="265" y="38" width="40" height="28" fill="#44aaff" rx="3"/>
+  <text fill="#0a0a16" font-size="8" x="285" y="56" text-anchor="middle">#44aaff</text>
+  <text fill="#888" font-size="8" x="285" y="78" text-anchor="middle">Blue</text>
+
+  <!-- Purple -->
+  <rect x="315" y="38" width="40" height="28" fill="#c084fc" rx="3"/>
+  <text fill="#0a0a16" font-size="8" x="335" y="56" text-anchor="middle">#c084fc</text>
+  <text fill="#888" font-size="8" x="335" y="78" text-anchor="middle">Purple</text>
+
+  <!-- Pink -->
+  <rect x="365" y="38" width="40" height="28" fill="#ff66aa" rx="3"/>
+  <text fill="#0a0a16" font-size="8" x="385" y="56" text-anchor="middle">#ff66aa</text>
+  <text fill="#888" font-size="8" x="385" y="78" text-anchor="middle">Pink</text>
+
+  <!-- Cyan -->
+  <rect x="415" y="38" width="40" height="28" fill="#44ffdd" rx="3"/>
+  <text fill="#0a0a16" font-size="8" x="435" y="56" text-anchor="middle">#44ffdd</text>
+  <text fill="#888" font-size="8" x="435" y="78" text-anchor="middle">Cyan</text>
+
+  <!-- UI colors row -->
+  <text fill="#666" font-size="10" x="20" y="110">UI</text>
+
+  <!-- Background -->
+  <rect x="65" y="96" width="40" height="28" fill="#0a0a16" stroke="#2a2a40" stroke-width="1" rx="3"/>
+  <text fill="#888" font-size="8" x="85" y="114" text-anchor="middle">#0a0a16</text>
+  <text fill="#888" font-size="8" x="85" y="136" text-anchor="middle">BG</text>
+
+  <!-- Grid -->
+  <rect x="115" y="96" width="40" height="28" fill="#161625" stroke="#2a2a40" stroke-width="1" rx="3"/>
+  <text fill="#888" font-size="8" x="135" y="114" text-anchor="middle">#161625</text>
+  <text fill="#888" font-size="8" x="135" y="136" text-anchor="middle">Grid</text>
+
+  <!-- Explosion (white) -->
+  <rect x="165" y="96" width="40" height="28" fill="#ffffff" rx="3"/>
+  <text fill="#0a0a16" font-size="8" x="185" y="114" text-anchor="middle">#ffffff</text>
+  <text fill="#888" font-size="8" x="185" y="136" text-anchor="middle">Click</text>
+
+  <!-- Accent -->
+  <rect x="215" y="96" width="40" height="28" fill="#ff8844" rx="3"/>
+  <text fill="#0a0a16" font-size="8" x="235" y="114" text-anchor="middle">#ff8844</text>
+  <text fill="#888" font-size="8" x="235" y="136" text-anchor="middle">Accent</text>
+
+  <!-- Pass -->
+  <rect x="265" y="96" width="40" height="28" fill="#44ff66" rx="3"/>
+  <text fill="#0a0a16" font-size="8" x="285" y="114" text-anchor="middle">#44ff66</text>
+  <text fill="#888" font-size="8" x="285" y="136" text-anchor="middle">Pass</text>
+
+  <!-- Fail -->
+  <rect x="315" y="96" width="40" height="28" fill="#ff4444" rx="3"/>
+  <text fill="#fff" font-size="8" x="335" y="114" text-anchor="middle">#ff4444</text>
+  <text fill="#888" font-size="8" x="335" y="136" text-anchor="middle">Fail</text>
+
+  <!-- Chain text -->
+  <rect x="365" y="96" width="40" height="28" fill="#ffd700" rx="3"/>
+  <text fill="#0a0a16" font-size="8" x="385" y="114" text-anchor="middle">#ffd700</text>
+  <text fill="#888" font-size="8" x="385" y="136" text-anchor="middle">Score</text>
+
+  <!-- Border -->
+  <rect width="600" height="180" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

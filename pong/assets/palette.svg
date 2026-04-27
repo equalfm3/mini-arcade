@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80" width="400" height="80">
+  <rect width="400" height="80" fill="#0a0a16" rx="6"/>
+  <defs><style>text{font-family:monospace;font-size:8px;}</style></defs>
+
+  <!-- Paddle -->
+  <rect x="20" y="12" width="35" height="35" fill="#e0e0e0" rx="2"/>
+  <text fill="#aaa" x="20" y="62">Paddle</text>
+  <text fill="#555" x="20" y="72">#e0e0e0</text>
+
+  <!-- Ball -->
+  <rect x="80" y="12" width="35" height="35" fill="#ffffff" rx="2"/>
+  <text fill="#aaa" x="80" y="62">Ball</text>
+  <text fill="#555" x="80" y="72">#ffffff</text>
+
+  <!-- Center line -->
+  <rect x="140" y="12" width="35" height="35" fill="#2a2a40" rx="2"/>
+  <text fill="#aaa" x="140" y="62">Line</text>
+  <text fill="#555" x="140" y="72">#2a2a40</text>
+
+  <!-- Background -->
+  <rect x="200" y="12" width="35" height="35" fill="#0e0e1a" rx="2" stroke="#2a2a40" stroke-width="1"/>
+  <text fill="#aaa" x="200" y="62">BG</text>
+  <text fill="#555" x="200" y="72">#0e0e1a</text>
+
+  <!-- Score bg -->
+  <rect x="260" y="12" width="35" height="35" fill="#333333" rx="2"/>
+  <text fill="#aaa" x="260" y="62">Score</text>
+  <text fill="#555" x="260" y="72">#333333</text>
+
+  <!-- HUD bg -->
+  <rect x="320" y="12" width="35" height="35" fill="#1a1a2e" rx="2"/>
+  <text fill="#aaa" x="320" y="62">HUD BG</text>
+  <text fill="#555" x="320" y="72">#1a1a2e</text>
+
+  <rect width="400" height="80" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

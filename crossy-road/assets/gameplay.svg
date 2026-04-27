@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 480" width="320" height="480">
+  <rect width="320" height="480" fill="#0a0a16" rx="6"/>
+
+  <!-- Lane rendering from bottom to top (player at row ~7) -->
+  <g shape-rendering="crispEdges">
+    <!-- Row 0-1: Starting grass (bottom, partially off-screen) -->
+    <rect x="0" y="416" width="320" height="32" fill="#4a8c3f"/>
+    <rect x="0" y="448" width="320" height="32" fill="#3d7534"/>
+
+    <!-- Row 2: Grass with trees -->
+    <rect x="0" y="384" width="320" height="32" fill="#3d7534"/>
+    <rect x="19" y="392" width="6" height="10" fill="#6b4226"/>
+    <rect x="10" y="386" width="24" height="14" fill="#2d6b2d"/>
+    <rect x="12" y="386" width="20" height="5" fill="#3d8b3d"/>
+    <rect x="243" y="392" width="6" height="10" fill="#6b4226"/>
+    <rect x="234" y="386" width="24" height="14" fill="#2d6b2d"/>
+
+    <!-- Row 3: Road with cars -->
+    <rect x="0" y="352" width="320" height="32" fill="#444455"/>
+    <rect x="10" y="367" width="12" height="2" fill="#555566"/>
+    <rect x="34" y="367" width="12" height="2" fill="#555566"/>
+    <rect x="58" y="367" width="12" height="2" fill="#555566"/>
+    <rect x="82" y="367" width="12" height="2" fill="#555566"/>
+    <rect x="106" y="367" width="12" height="2" fill="#555566"/>
+    <rect x="130" y="367" width="12" height="2" fill="#555566"/>
+    <rect x="154" y="367" width="12" height="2" fill="#555566"/>
+    <rect x="178" y="367" width="12" height="2" fill="#555566"/>
+    <rect x="202" y="367" width="12" height="2" fill="#555566"/>
+    <rect x="226" y="367" width="12" height="2" fill="#555566"/>
+    <rect x="250" y="367" width="12" height="2" fill="#555566"/>
+    <rect x="274" y="367" width="12" height="2" fill="#555566"/>
+    <!-- Car moving right -->
+    <rect x="60" y="356" width="48" height="24" fill="#ff4444"/>
+    <rect x="60" y="356" width="48" height="4" fill="rgba(255,255,255,0.2)"/>
+    <rect x="94" y="359" width="10" height="18" fill="#88ccff"/>
+    <rect x="64" y="354" width="8" height="4" fill="#222"/>
+    <rect x="96" y="354" width="8" height="4" fill="#222"/>
+    <!-- Car 2 -->
+    <rect x="220" y="356" width="48" height="24" fill="#ff4444"/>
+    <rect x="220" y="356" width="48" height="4" fill="rgba(255,255,255,0.2)"/>
+
+    <!-- Row 4: Road with cars (opposite direction) -->
+    <rect x="0" y="320" width="320" height="32" fill="#444455"/>
+    <rect x="10" y="335" width="12" height="2" fill="#555566"/>
+    <rect x="34" y="335" width="12" height="2" fill="#555566"/>
+    <rect x="58" y="335" width="12" height="2" fill="#555566"/>
+    <rect x="82" y="335" width="12" height="2" fill="#555566"/>
+    <rect x="106" y="335" width="12" height="2" fill="#555566"/>
+    <rect x="130" y="335" width="12" height="2" fill="#555566"/>
+    <rect x="154" y="335" width="12" height="2" fill="#555566"/>
+    <rect x="178" y="335" width="12" height="2" fill="#555566"/>
+    <rect x="202" y="335" width="12" height="2" fill="#555566"/>
+    <rect x="250" y="335" width="12" height="2" fill="#555566"/>
+    <!-- Car moving left -->
+    <rect x="140" y="324" width="48" height="24" fill="#ffd700"/>
+    <rect x="140" y="324" width="48" height="4" fill="rgba(255,255,255,0.2)"/>
+    <rect x="144" y="327" width="10" height="18" fill="#88ccff"/>
+
+    <!-- Row 5: Grass (safe) -->
+    <rect x="0" y="288" width="320" height="32" fill="#4a8c3f"/>
+    <rect x="83" y="296" width="6" height="10" fill="#6b4226"/>
+    <rect x="74" y="290" width="24" height="14" fill="#2d6b2d"/>
+
+    <!-- Row 6: River with logs -->
+    <rect x="0" y="256" width="320" height="32" fill="#2266aa"/>
+    <rect x="5" y="271" width="8" height="2" fill="rgba(255,255,255,0.08)"/>
+    <rect x="25" y="271" width="8" height="2" fill="rgba(255,255,255,0.08)"/>
+    <rect x="45" y="271" width="8" height="2" fill="rgba(255,255,255,0.08)"/>
+    <!-- Log 1 -->
+    <rect x="30" y="260" width="96" height="28" fill="#8b6914"/>
+    <rect x="30" y="273" width="96" height="2" fill="#6b4f10"/>
+    <rect x="30" y="260" width="96" height="3" fill="rgba(255,255,255,0.15)"/>
+    <rect x="30" y="260" width="3" height="28" fill="#6b4f10"/>
+    <rect x="123" y="260" width="3" height="28" fill="#6b4f10"/>
+    <!-- Log 2 -->
+    <rect x="200" y="260" width="80" height="28" fill="#8b6914"/>
+    <rect x="200" y="273" width="80" height="2" fill="#6b4f10"/>
+    <rect x="200" y="260" width="80" height="3" fill="rgba(255,255,255,0.15)"/>
+    <rect x="200" y="260" width="3" height="28" fill="#6b4f10"/>
+    <rect x="277" y="260" width="3" height="28" fill="#6b4f10"/>
+
+    <!-- Row 7: River with logs -->
+    <rect x="0" y="224" width="320" height="32" fill="#3388cc"/>
+    <!-- Log -->
+    <rect x="80" y="228" width="110" height="28" fill="#8b6914"/>
+    <rect x="80" y="241" width="110" height="2" fill="#6b4f10"/>
+    <rect x="80" y="228" width="110" height="3" fill="rgba(255,255,255,0.15)"/>
+    <rect x="80" y="228" width="3" height="28" fill="#6b4f10"/>
+    <rect x="187" y="228" width="3" height="28" fill="#6b4f10"/>
+
+    <!-- Row 8: Grass -->
+    <rect x="0" y="192" width="320" height="32" fill="#3d7534"/>
+    <rect x="275" y="200" width="6" height="10" fill="#6b4226"/>
+    <rect x="266" y="194" width="24" height="14" fill="#2d6b2d"/>
+
+    <!-- Row 9: Road -->
+    <rect x="0" y="160" width="320" height="32" fill="#444455"/>
+    <rect x="10" y="175" width="12" height="2" fill="#555566"/>
+    <rect x="34" y="175" width="12" height="2" fill="#555566"/>
+    <rect x="58" y="175" width="12" height="2" fill="#555566"/>
+    <rect x="82" y="175" width="12" height="2" fill="#555566"/>
+    <rect x="106" y="175" width="12" height="2" fill="#555566"/>
+    <rect x="130" y="175" width="12" height="2" fill="#555566"/>
+    <rect x="154" y="175" width="12" height="2" fill="#555566"/>
+    <rect x="178" y="175" width="12" height="2" fill="#555566"/>
+    <rect x="202" y="175" width="12" height="2" fill="#555566"/>
+    <!-- Car -->
+    <rect x="10" y="164" width="48" height="24" fill="#c084fc"/>
+    <rect x="10" y="164" width="48" height="4" fill="rgba(255,255,255,0.2)"/>
+    <rect x="44" y="167" width="10" height="18" fill="#88ccff"/>
+
+    <!-- Row 10: Grass -->
+    <rect x="0" y="128" width="320" height="32" fill="#4a8c3f"/>
+
+    <!-- Row 11: Grass -->
+    <rect x="0" y="96" width="320" height="32" fill="#3d7534"/>
+    <rect x="147" y="104" width="6" height="10" fill="#6b4226"/>
+    <rect x="138" y="98" width="24" height="14" fill="#2d6b2d"/>
+
+    <!-- Row 12: Road -->
+    <rect x="0" y="64" width="320" height="32" fill="#444455"/>
+    <rect x="10" y="79" width="12" height="2" fill="#555566"/>
+    <rect x="34" y="79" width="12" height="2" fill="#555566"/>
+    <rect x="58" y="79" width="12" height="2" fill="#555566"/>
+    <rect x="82" y="79" width="12" height="2" fill="#555566"/>
+    <rect x="106" y="79" width="12" height="2" fill="#555566"/>
+    <rect x="130" y="79" width="12" height="2" fill="#555566"/>
+    <rect x="154" y="79" width="12" height="2" fill="#555566"/>
+    <rect x="178" y="79" width="12" height="2" fill="#555566"/>
+    <rect x="250" y="68" width="48" height="24" fill="#44aaff"/>
+    <rect x="250" y="68" width="48" height="4" fill="rgba(255,255,255,0.2)"/>
+
+    <!-- Row 13: Grass -->
+    <rect x="0" y="32" width="320" height="32" fill="#4a8c3f"/>
+
+    <!-- Row 14: Grass -->
+    <rect x="0" y="0" width="320" height="32" fill="#3d7534"/>
+  </g>
+
+  <!-- Player (on row 8 grass, col 5) -->
+  <g shape-rendering="crispEdges">
+    <!-- Shadow -->
+    <rect x="150" y="212" width="20" height="4" fill="rgba(0,0,0,0.2)"/>
+    <!-- Body -->
+    <rect x="148" y="196" width="24" height="24" fill="#e0e0e0"/>
+    <rect x="148" y="216" width="24" height="4" fill="rgba(0,0,0,0.15)"/>
+    <!-- Eyes -->
+    <rect x="153" y="202" width="4" height="4" fill="#222"/>
+    <rect x="163" y="202" width="4" height="4" fill="#222"/>
+    <!-- Beak (facing up) -->
+    <rect x="157" y="194" width="6" height="4" fill="#ffa500"/>
+  </g>
+
+  <!-- Border -->
+  <rect width="320" height="480" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

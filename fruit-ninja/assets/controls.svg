@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <rect width="600" height="200" fill="#0a0a16" rx="6"/>
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+
+  <!-- Desktop section -->
+  <text fill="#44aaff" font-size="14" font-weight="bold" x="80" y="30" text-anchor="middle">DESKTOP</text>
+
+  <!-- Mouse with swipe arrow -->
+  <g transform="translate(40, 50)">
+    <!-- Mouse body -->
+    <rect x="15" y="10" width="50" height="70" fill="#1a1a2e" stroke="#44aaff" stroke-width="2" rx="10"/>
+    <!-- Mouse buttons -->
+    <line x1="40" y1="10" x2="40" y2="40" stroke="#44aaff" stroke-width="1"/>
+    <rect x="15" y="10" width="25" height="30" fill="#222244" rx="10"/>
+    <!-- Swipe arrow -->
+    <path d="M 80 70 Q 100 30 120 50" fill="none" stroke="#ffd700" stroke-width="2" marker-end="url(#arrowC)"/>
+    <text fill="#888" font-size="9" x="85" y="25">Click + Drag</text>
+  </g>
+
+  <!-- Pause key -->
+  <g transform="translate(30, 140)">
+    <rect x="0" y="0" width="36" height="24" fill="#1a1a2e" stroke="#44aaff" stroke-width="1.5" rx="3"/>
+    <text fill="#44aaff" font-size="10" x="18" y="16" text-anchor="middle">Esc</text>
+    <text fill="#888" font-size="9" x="44" y="16">Pause</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="300" y1="15" x2="300" y2="185" stroke="#2a2a40" stroke-width="1"/>
+
+  <!-- Mobile section -->
+  <text fill="#44ff66" font-size="14" font-weight="bold" x="450" y="30" text-anchor="middle">MOBILE</text>
+
+  <!-- Phone outline with finger swipe -->
+  <g transform="translate(380, 45)">
+    <rect x="0" y="0" width="80" height="120" fill="#1a1a2e" stroke="#44ff66" stroke-width="2" rx="8"/>
+    <!-- Screen -->
+    <rect x="5" y="10" width="70" height="95" fill="#0e0e1a" rx="2"/>
+
+    <!-- Finger swipe gesture -->
+    <circle cx="25" cy="80" r="8" fill="#44ff66" opacity="0.3"/>
+    <path d="M 25 80 Q 40 50 60 40" fill="none" stroke="#ffd700" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="60" cy="40" r="3" fill="#ffd700"/>
+
+    <!-- Fruit on screen -->
+    <circle cx="50" cy="55" r="10" fill="#ff4444" opacity="0.6"/>
+
+    <text fill="#888" font-size="9" x="90" y="40">Touch</text>
+    <text fill="#888" font-size="9" x="90" y="52">+ Drag</text>
+  </g>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowC" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ffd700"/>
+    </marker>
+  </defs>
+
+  <!-- Border -->
+  <rect width="600" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

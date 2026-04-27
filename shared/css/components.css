@@ -1,0 +1,127 @@
+/* ============================================
+   components.css — Reusable UI components
+   Buttons, badges, overlays, controls
+   ============================================ */
+
+/* ---- Buttons ---- */
+.btn {
+  font-family: var(--font-pixel);
+  font-size: 0.65rem;
+  padding: var(--sp-3) var(--sp-5);
+  background: var(--c-bg-raised);
+  color: var(--c-text);
+  border: var(--px-border) solid var(--c-border);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: transform 0.1s, background 0.15s, border-color 0.15s;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.btn:hover {
+  background: var(--c-border);
+  border-color: var(--c-border-hi);
+}
+
+.btn:active {
+  transform: translateY(2px);
+}
+
+.btn-primary {
+  background: var(--c-game);
+  color: var(--c-bg);
+  border-color: var(--c-game);
+  font-weight: 700;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.15);
+}
+
+.btn-sm {
+  font-size: 0.55rem;
+  padding: var(--sp-2) var(--sp-3);
+}
+
+.btn-icon {
+  padding: var(--sp-2);
+  line-height: 1;
+  font-size: 1rem;
+  font-family: var(--font-system);
+}
+
+/* ---- Badge / Tag ---- */
+.badge {
+  font-family: var(--font-pixel);
+  font-size: 0.5rem;
+  padding: var(--sp-1) var(--sp-2);
+  background: var(--c-border);
+  color: var(--c-text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: inline-block;
+}
+
+.badge-accent {
+  background: var(--c-game);
+  color: var(--c-bg);
+}
+
+/* ---- Overlay (start screen, game over, pause) ---- */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 5, 12, 0.92);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-4);
+  z-index: 100;
+  padding: var(--sp-4);
+}
+
+.overlay[hidden] {
+  display: none;
+}
+
+.overlay-title {
+  font-size: 1rem;
+  color: var(--c-game);
+  text-align: center;
+}
+
+.overlay-subtitle {
+  font-family: var(--font-pixel);
+  font-size: 0.55rem;
+  color: var(--c-text-dim);
+  text-align: center;
+}
+
+.overlay-score {
+  font-family: var(--font-pixel);
+  font-size: 0.75rem;
+  color: var(--c-text);
+}
+
+/* ---- Toast / flash message ---- */
+.toast {
+  position: fixed;
+  top: var(--sp-4);
+  left: 50%;
+  transform: translateX(-50%) translateY(-120%);
+  font-family: var(--font-pixel);
+  font-size: 0.55rem;
+  padding: var(--sp-2) var(--sp-4);
+  background: var(--c-game);
+  color: var(--c-bg);
+  z-index: 200;
+  transition: transform 0.3s ease;
+  pointer-events: none;
+}
+
+.toast.show {
+  transform: translateX(-50%) translateY(0);
+}

@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <style>
+      .bg { fill: #0e0e1a; }
+      .title { font-family: monospace; font-size: 48px; font-weight: bold; fill: #44aaff; }
+      .sub { font-family: monospace; font-size: 14px; fill: #666666; }
+      .grid { stroke: #161625; stroke-width: 0.5; }
+    </style>
+  </defs>
+  <!-- Background -->
+  <rect class="bg" width="800" height="200" rx="8"/>
+  <!-- Subtle grid -->
+  <g class="grid" fill="none">
+    <line x1="0" y1="20" x2="800" y2="20"/><line x1="0" y1="40" x2="800" y2="40"/>
+    <line x1="0" y1="60" x2="800" y2="60"/><line x1="0" y1="80" x2="800" y2="80"/>
+    <line x1="0" y1="100" x2="800" y2="100"/><line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="140" x2="800" y2="140"/><line x1="0" y1="160" x2="800" y2="160"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="20" y1="0" x2="20" y2="200"/><line x1="40" y1="0" x2="40" y2="200"/>
+    <line x1="60" y1="0" x2="60" y2="200"/><line x1="80" y1="0" x2="80" y2="200"/>
+    <line x1="100" y1="0" x2="100" y2="200"/>
+  </g>
+
+  <!-- Falling tetrominoes on the left side -->
+  <g shape-rendering="crispEdges">
+    <!-- I-piece (horizontal, cyan) falling top-left -->
+    <rect x="30" y="20" width="16" height="16" fill="#00e5ff"/>
+    <rect x="46" y="20" width="16" height="16" fill="#00e5ff"/>
+    <rect x="62" y="20" width="16" height="16" fill="#00e5ff"/>
+    <rect x="78" y="20" width="16" height="16" fill="#00e5ff"/>
+    <!-- highlight -->
+    <rect x="30" y="20" width="16" height="3" fill="#fff" opacity="0.25"/>
+    <rect x="46" y="20" width="16" height="3" fill="#fff" opacity="0.25"/>
+    <rect x="62" y="20" width="16" height="3" fill="#fff" opacity="0.25"/>
+    <rect x="78" y="20" width="16" height="3" fill="#fff" opacity="0.25"/>
+
+    <!-- T-piece (purple) -->
+    <rect x="120" y="60" width="16" height="16" fill="#ab47bc"/>
+    <rect x="136" y="60" width="16" height="16" fill="#ab47bc"/>
+    <rect x="152" y="60" width="16" height="16" fill="#ab47bc"/>
+    <rect x="136" y="44" width="16" height="16" fill="#ab47bc"/>
+    <rect x="120" y="60" width="16" height="3" fill="#fff" opacity="0.25"/>
+    <rect x="136" y="44" width="16" height="3" fill="#fff" opacity="0.25"/>
+    <rect x="152" y="60" width="16" height="3" fill="#fff" opacity="0.25"/>
+
+    <!-- O-piece (yellow) -->
+    <rect x="50" y="90" width="16" height="16" fill="#ffeb3b"/>
+    <rect x="66" y="90" width="16" height="16" fill="#ffeb3b"/>
+    <rect x="50" y="106" width="16" height="16" fill="#ffeb3b"/>
+    <rect x="66" y="106" width="16" height="16" fill="#ffeb3b"/>
+    <rect x="50" y="90" width="16" height="3" fill="#fff" opacity="0.25"/>
+    <rect x="66" y="90" width="16" height="3" fill="#fff" opacity="0.25"/>
+
+    <!-- S-piece (green) -->
+    <rect x="140" y="120" width="16" height="16" fill="#66bb6a"/>
+    <rect x="156" y="120" width="16" height="16" fill="#66bb6a"/>
+    <rect x="124" y="136" width="16" height="16" fill="#66bb6a"/>
+    <rect x="140" y="136" width="16" height="16" fill="#66bb6a"/>
+    <rect x="140" y="120" width="16" height="3" fill="#fff" opacity="0.25"/>
+    <rect x="156" y="120" width="16" height="3" fill="#fff" opacity="0.25"/>
+
+    <!-- Z-piece (red) -->
+    <rect x="30" y="150" width="16" height="16" fill="#ef5350"/>
+    <rect x="46" y="150" width="16" height="16" fill="#ef5350"/>
+    <rect x="46" y="166" width="16" height="16" fill="#ef5350"/>
+    <rect x="62" y="166" width="16" height="16" fill="#ef5350"/>
+    <rect x="30" y="150" width="16" height="3" fill="#fff" opacity="0.25"/>
+    <rect x="46" y="150" width="16" height="3" fill="#fff" opacity="0.25"/>
+
+    <!-- L-piece (orange) -->
+    <rect x="190" y="130" width="16" height="16" fill="#ffa726"/>
+    <rect x="190" y="146" width="16" height="16" fill="#ffa726"/>
+    <rect x="190" y="162" width="16" height="16" fill="#ffa726"/>
+    <rect x="206" y="162" width="16" height="16" fill="#ffa726"/>
+    <rect x="190" y="130" width="16" height="3" fill="#fff" opacity="0.25"/>
+
+    <!-- J-piece (blue) -->
+    <rect x="110" y="160" width="16" height="16" fill="#42a5f5"/>
+    <rect x="94" y="160" width="16" height="16" fill="#42a5f5"/>
+    <rect x="94" y="176" width="16" height="16" fill="#42a5f5"/>
+    <rect x="94" y="144" width="16" height="16" fill="#42a5f5"/>
+    <rect x="110" y="160" width="16" height="3" fill="#fff" opacity="0.25"/>
+    <rect x="94" y="144" width="16" height="3" fill="#fff" opacity="0.25"/>
+  </g>
+
+  <!-- Pixel icon (tetris icon from icons.js rendered as SVG rects, 1.5px per pixel = 24px) -->
+  <g transform="translate(260, 30)" shape-rendering="crispEdges">
+    <!-- Row 1: ....bb.......... -->
+    <rect x="6" y="1.5" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="7.5" y="1.5" width="1.5" height="1.5" fill="#44aaff"/>
+    <!-- Row 2: ....bb.......... -->
+    <rect x="6" y="3" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="7.5" y="3" width="1.5" height="1.5" fill="#44aaff"/>
+    <!-- Row 3: ....bbbb........ -->
+    <rect x="6" y="4.5" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="7.5" y="4.5" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="9" y="4.5" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="10.5" y="4.5" width="1.5" height="1.5" fill="#44aaff"/>
+    <!-- Row 4: ....bbbb........ -->
+    <rect x="6" y="6" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="7.5" y="6" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="9" y="6" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="10.5" y="6" width="1.5" height="1.5" fill="#44aaff"/>
+    <!-- Row 6: ..oooo.......... -->
+    <rect x="3" y="9" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="4.5" y="9" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="6" y="9" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="7.5" y="9" width="1.5" height="1.5" fill="#ff8844"/>
+    <!-- Row 7: ..oooo.......... -->
+    <rect x="3" y="10.5" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="4.5" y="10.5" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="6" y="10.5" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="7.5" y="10.5" width="1.5" height="1.5" fill="#ff8844"/>
+    <!-- Row 9: ........rr...... -->
+    <rect x="12" y="13.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="13.5" y="13.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <!-- Row 10: .......rr....... -->
+    <rect x="10.5" y="15" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="12" y="15" width="1.5" height="1.5" fill="#ff4444"/>
+    <!-- Row 11: .......rr....... -->
+    <rect x="10.5" y="16.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="12" y="16.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <!-- Row 13: ......gg........ -->
+    <rect x="9" y="19.5" width="1.5" height="1.5" fill="#44ff66"/>
+    <rect x="10.5" y="19.5" width="1.5" height="1.5" fill="#44ff66"/>
+    <!-- Row 14: ......gggg...... -->
+    <rect x="9" y="21" width="1.5" height="1.5" fill="#44ff66"/>
+    <rect x="10.5" y="21" width="1.5" height="1.5" fill="#44ff66"/>
+    <rect x="12" y="21" width="1.5" height="1.5" fill="#44ff66"/>
+    <rect x="13.5" y="21" width="1.5" height="1.5" fill="#44ff66"/>
+  </g>
+
+  <!-- Title -->
+  <text class="title" x="320" y="95">TETRIS</text>
+  <text class="sub" x="320" y="125">Stack · Clear · Score</text>
+
+  <!-- Score HUD mock -->
+  <g transform="translate(320, 145)">
+    <rect width="240" height="30" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="2"/>
+    <text font-family="monospace" font-size="9" fill="#666" x="10" y="19">SCORE</text>
+    <text font-family="monospace" font-size="9" fill="#ffd700" x="55" y="19">2400</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="110" y="19">LINES</text>
+    <text font-family="monospace" font-size="9" fill="#ffd700" x="155" y="19">18</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="190" y="19">LVL</text>
+    <text font-family="monospace" font-size="9" fill="#ffd700" x="215" y="19">2</text>
+  </g>
+
+  <!-- Border -->
+  <rect width="800" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+</svg>

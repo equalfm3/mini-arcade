@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <rect width="600" height="200" fill="#0a0a16" rx="6"/>
+
+  <!-- Desktop section -->
+  <text font-family="monospace" font-size="12" fill="#22cc44" x="30" y="30" font-weight="bold">Desktop</text>
+
+  <!-- Space key -->
+  <rect x="30" y="45" width="100" height="35" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="4"/>
+  <text font-family="monospace" font-size="11" fill="#e0e0e0" x="50" y="67">Space</text>
+  <text font-family="monospace" font-size="9" fill="#888" x="145" y="67">Tap / Start</text>
+
+  <!-- Enter key -->
+  <rect x="30" y="90" width="100" height="35" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="4"/>
+  <text font-family="monospace" font-size="11" fill="#e0e0e0" x="50" y="112">Enter</text>
+  <text font-family="monospace" font-size="9" fill="#888" x="145" y="112">Tap / Start</text>
+
+  <!-- Click -->
+  <rect x="30" y="135" width="100" height="35" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="4"/>
+  <text font-family="monospace" font-size="11" fill="#e0e0e0" x="50" y="157">Click</text>
+  <text font-family="monospace" font-size="9" fill="#888" x="145" y="157">Tap on game area</text>
+
+  <!-- Esc/P key -->
+  <g transform="translate(30, 175)">
+    <rect width="40" height="20" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <text font-family="monospace" font-size="9" fill="#e0e0e0" x="8" y="14">Esc</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="48" y="14">/</text>
+    <rect x="56" width="20" height="20" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <text font-family="monospace" font-size="9" fill="#e0e0e0" x="63" y="14">P</text>
+    <text font-family="monospace" font-size="9" fill="#888" x="90" y="14">Pause</text>
+  </g>
+
+  <!-- Mobile section -->
+  <text font-family="monospace" font-size="12" fill="#22cc44" x="350" y="30" font-weight="bold">Mobile</text>
+
+  <!-- Phone outline -->
+  <rect x="370" y="45" width="140" height="140" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="10"/>
+
+  <!-- Screen area (green = go phase) -->
+  <rect x="380" y="60" width="120" height="100" fill="#22cc44" rx="4"/>
+  <text font-family="monospace" font-size="18" fill="#fff" x="410" y="115" font-weight="bold">TAP!</text>
+
+  <!-- Tap indicator -->
+  <circle cx="440" cy="120" r="15" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="440" cy="120" r="8" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
+  <circle cx="440" cy="120" r="3" fill="#fff" opacity="0.6"/>
+
+  <!-- Touch label -->
+  <text font-family="monospace" font-size="9" fill="#888" x="390" y="175">Tap anywhere on screen</text>
+
+  <rect width="600" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

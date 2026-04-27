@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 180" width="600" height="180">
+  <rect width="600" height="180" fill="#0a0a16" rx="6"/>
+  <defs><style>text{font-family:monospace;}</style></defs>
+
+  <text fill="#888" font-size="12" font-weight="bold" x="20" y="25">Color Palette</text>
+
+  <!-- Row 1: Terrain -->
+  <g transform="translate(20, 40)">
+    <rect width="50" height="40" fill="#4a8c3f" rx="3"/>
+    <text fill="#fff" font-size="7" x="4" y="52">Grass Lt</text>
+    <text fill="#888" font-size="7" x="4" y="62">#4a8c3f</text>
+
+    <rect x="60" width="50" height="40" fill="#3d7534" rx="3"/>
+    <text fill="#fff" font-size="7" x="64" y="52">Grass Dk</text>
+    <text fill="#888" font-size="7" x="64" y="62">#3d7534</text>
+
+    <rect x="120" width="50" height="40" fill="#444455" rx="3"/>
+    <text fill="#fff" font-size="7" x="124" y="52">Road</text>
+    <text fill="#888" font-size="7" x="124" y="62">#444455</text>
+
+    <rect x="180" width="50" height="40" fill="#2266aa" rx="3"/>
+    <text fill="#fff" font-size="7" x="184" y="52">River</text>
+    <text fill="#888" font-size="7" x="184" y="62">#2266aa</text>
+
+    <rect x="240" width="50" height="40" fill="#3388cc" rx="3"/>
+    <text fill="#fff" font-size="7" x="244" y="52">River Lt</text>
+    <text fill="#888" font-size="7" x="244" y="62">#3388cc</text>
+
+    <rect x="300" width="50" height="40" fill="#8b6914" rx="3"/>
+    <text fill="#fff" font-size="7" x="304" y="52">Log</text>
+    <text fill="#888" font-size="7" x="304" y="62">#8b6914</text>
+  </g>
+
+  <!-- Row 2: Cars & Player -->
+  <g transform="translate(20, 105)">
+    <rect width="50" height="40" fill="#ff4444" rx="3"/>
+    <text fill="#fff" font-size="7" x="4" y="52">Car Red</text>
+    <text fill="#888" font-size="7" x="4" y="62">#ff4444</text>
+
+    <rect x="60" width="50" height="40" fill="#44aaff" rx="3"/>
+    <text fill="#fff" font-size="7" x="64" y="52">Car Blue</text>
+    <text fill="#888" font-size="7" x="64" y="62">#44aaff</text>
+
+    <rect x="120" width="50" height="40" fill="#ffd700" rx="3"/>
+    <text fill="#000" font-size="7" x="124" y="52">Car Gold</text>
+    <text fill="#888" font-size="7" x="124" y="62">#ffd700</text>
+
+    <rect x="180" width="50" height="40" fill="#c084fc" rx="3"/>
+    <text fill="#fff" font-size="7" x="184" y="52">Car Purp</text>
+    <text fill="#888" font-size="7" x="184" y="62">#c084fc</text>
+
+    <rect x="240" width="50" height="40" fill="#e0e0e0" rx="3"/>
+    <text fill="#000" font-size="7" x="244" y="52">Player</text>
+    <text fill="#888" font-size="7" x="244" y="62">#e0e0e0</text>
+
+    <rect x="300" width="50" height="40" fill="#2d6b2d" rx="3"/>
+    <text fill="#fff" font-size="7" x="304" y="52">Tree</text>
+    <text fill="#888" font-size="7" x="304" y="62">#2d6b2d</text>
+  </g>
+
+  <rect width="600" height="180" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

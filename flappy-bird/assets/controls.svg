@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 100" width="600" height="100">
+  <rect width="600" height="100" fill="#0a0a16" rx="6"/>
+  <defs><style>text{font-family:monospace;}</style></defs>
+
+  <!-- Desktop section -->
+  <text fill="#888" font-size="10" x="30" y="18">DESKTOP</text>
+
+  <!-- Space bar -->
+  <g transform="translate(40, 30)">
+    <rect x="0" y="0" width="100" height="28" fill="#1a1a2e" stroke="#2a2a40" stroke-width="2" rx="3"/>
+    <text fill="#e0e0e0" font-size="10" x="25" y="19">SPACE</text>
+  </g>
+
+  <!-- Up arrow -->
+  <g transform="translate(155, 30)">
+    <rect x="0" y="0" width="30" height="28" fill="#1a1a2e" stroke="#2a2a40" stroke-width="2" rx="3"/>
+    <text fill="#e0e0e0" font-size="14" x="8" y="20">▲</text>
+  </g>
+
+  <text fill="#ffd700" font-size="9" x="50" y="78">Flap</text>
+
+  <!-- Pause key -->
+  <g transform="translate(155, 65)">
+    <rect x="0" y="0" width="50" height="22" fill="#1a1a2e" stroke="#2a2a40" stroke-width="2" rx="3"/>
+    <text fill="#ffd700" font-size="8" x="10" y="15">ESC</text>
+  </g>
+  <text fill="#666" font-size="8" x="212" y="80">Pause</text>
+
+  <!-- Divider -->
+  <line x1="280" y1="10" x2="280" y2="90" stroke="#2a2a40" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Mobile section -->
+  <text fill="#888" font-size="10" x="310" y="18">MOBILE</text>
+
+  <!-- Tap gesture -->
+  <g transform="translate(340, 28)">
+    <circle cx="25" cy="25" r="22" fill="none" stroke="#2a2a40" stroke-width="1.5"/>
+    <!-- Finger tap icon -->
+    <circle cx="25" cy="20" r="5" fill="none" stroke="#ffd700" stroke-width="1.5"/>
+    <line x1="25" y1="25" x2="25" y2="40" stroke="#ffd700" stroke-width="1.5"/>
+    <!-- Ripple -->
+    <circle cx="25" cy="25" r="14" fill="none" stroke="#ffd700" stroke-width="0.5" opacity="0.4"/>
+    <text fill="#888" font-size="9" x="55" y="20">Tap anywhere</text>
+    <text fill="#888" font-size="9" x="55" y="35">to flap</text>
+  </g>
+
+  <rect width="600" height="100" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

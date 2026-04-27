@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <style>
+      .bg { fill: #0e0e1a; }
+      .title { font-family: monospace; font-size: 40px; font-weight: bold; fill: #ff8844; }
+      .sub { font-family: monospace; font-size: 14px; fill: #666666; }
+    </style>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff4444" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ff4444" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#44aaff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#44aaff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ffd700" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow4" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#44ff66" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#44ff66" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow5" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect class="bg" width="800" height="200" rx="8"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#161625" stroke-width="0.5" opacity="0.6">
+    <line x1="0" y1="30" x2="800" y2="30"/><line x1="0" y1="60" x2="800" y2="60"/>
+    <line x1="0" y1="90" x2="800" y2="90"/><line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="150" x2="800" y2="150"/><line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="30" y1="0" x2="30" y2="200"/><line x1="60" y1="0" x2="60" y2="200"/>
+    <line x1="90" y1="0" x2="90" y2="200"/><line x1="120" y1="0" x2="120" y2="200"/>
+    <line x1="150" y1="0" x2="150" y2="200"/><line x1="180" y1="0" x2="180" y2="200"/>
+    <line x1="210" y1="0" x2="210" y2="200"/><line x1="240" y1="0" x2="240" y2="200"/>
+  </g>
+
+  <!-- Floating dots with glow -->
+  <!-- Red dot -->
+  <circle cx="60" cy="50" r="18" fill="url(#glow1)"/>
+  <circle cx="60" cy="50" r="10" fill="#ff4444"/>
+  <circle cx="57" cy="46" r="4" fill="rgba(255,255,255,0.35)"/>
+
+  <!-- Blue dot -->
+  <circle cx="180" cy="130" r="18" fill="url(#glow2)"/>
+  <circle cx="180" cy="130" r="10" fill="#44aaff"/>
+  <circle cx="177" cy="126" r="4" fill="rgba(255,255,255,0.35)"/>
+
+  <!-- Gold dot -->
+  <circle cx="120" cy="90" r="18" fill="url(#glow3)"/>
+  <circle cx="120" cy="90" r="10" fill="#ffd700"/>
+  <circle cx="117" cy="86" r="4" fill="rgba(255,255,255,0.35)"/>
+
+  <!-- Green dot -->
+  <circle cx="50" cy="160" r="18" fill="url(#glow4)"/>
+  <circle cx="50" cy="160" r="10" fill="#44ff66"/>
+  <circle cx="47" cy="156" r="4" fill="rgba(255,255,255,0.35)"/>
+
+  <!-- Purple dot -->
+  <circle cx="200" cy="50" r="18" fill="url(#glow5)"/>
+  <circle cx="200" cy="50" r="10" fill="#c084fc"/>
+  <circle cx="197" cy="46" r="4" fill="rgba(255,255,255,0.35)"/>
+
+  <!-- Explosion rings (chain reaction in progress) -->
+  <!-- Central explosion (white, player click) -->
+  <circle cx="140" cy="100" r="40" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.5"/>
+  <circle cx="140" cy="100" r="38" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <circle cx="140" cy="100" r="40" fill="#ffffff" opacity="0.06"/>
+
+  <!-- Chain explosion from red dot -->
+  <circle cx="60" cy="50" r="30" fill="none" stroke="#ff4444" stroke-width="2.5" opacity="0.6"/>
+  <circle cx="60" cy="50" r="28" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <circle cx="60" cy="50" r="30" fill="#ff4444" opacity="0.08"/>
+
+  <!-- Chain explosion from gold dot -->
+  <circle cx="120" cy="90" r="25" fill="none" stroke="#ffd700" stroke-width="2.5" opacity="0.5"/>
+  <circle cx="120" cy="90" r="23" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.25"/>
+  <circle cx="120" cy="90" r="25" fill="#ffd700" opacity="0.07"/>
+
+  <!-- Particle burst pixels -->
+  <g opacity="0.8" shape-rendering="crispEdges">
+    <rect x="72" y="38" width="3" height="3" fill="#ff4444"/>
+    <rect x="48" y="62" width="3" height="3" fill="#ff7777"/>
+    <rect x="78" y="55" width="3" height="3" fill="#ff4444"/>
+    <rect x="130" y="72" width="3" height="3" fill="#ffd700"/>
+    <rect x="108" y="98" width="3" height="3" fill="#ffee66"/>
+    <rect x="135" y="105" width="3" height="3" fill="#ffd700"/>
+    <rect x="155" y="80" width="3" height="3" fill="#ffffff"/>
+    <rect x="125" y="115" width="3" height="3" fill="#ffffff"/>
+  </g>
+
+  <!-- Chain counter text -->
+  <text font-family="monospace" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle" x="140" y="106" opacity="0.7">3</text>
+  <text font-family="monospace" font-size="8" fill="#ffffff" text-anchor="middle" x="140" y="118" opacity="0.4">CHAIN</text>
+
+  <!-- Orange dot (alive, not yet hit) -->
+  <circle cx="230" cy="150" r="18" fill="url(#glow3)"/>
+  <circle cx="230" cy="150" r="10" fill="#ff8844"/>
+  <circle cx="227" cy="146" r="4" fill="rgba(255,255,255,0.35)"/>
+
+  <!-- Pink dot (alive) -->
+  <circle cx="100" cy="170" r="14" fill="#ff66aa" opacity="0.15"/>
+  <circle cx="100" cy="170" r="8" fill="#ff66aa"/>
+  <circle cx="97" cy="167" r="3" fill="rgba(255,255,255,0.35)"/>
+
+  <!-- Cyan dot (alive) -->
+  <circle cx="240" cy="80" r="14" fill="#44ffdd" opacity="0.15"/>
+  <circle cx="240" cy="80" r="8" fill="#44ffdd"/>
+  <circle cx="237" cy="77" r="3" fill="rgba(255,255,255,0.35)"/>
+
+  <!-- Pixel icon (chain-reaction from icons.js) -->
+  <g transform="translate(300, 28)" shape-rendering="crispEdges">
+    <!-- Row 2: ...r.......b.... -->
+    <rect x="4.5" y="1.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="16.5" y="1.5" width="1.5" height="1.5" fill="#44aaff"/>
+    <!-- Row 3: ..rrr.....bbb... -->
+    <rect x="3" y="3" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="4.5" y="3" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="6" y="3" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="15" y="3" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="16.5" y="3" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="18" y="3" width="1.5" height="1.5" fill="#44aaff"/>
+    <!-- Row 4: ...r.......b.... -->
+    <rect x="4.5" y="4.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="16.5" y="4.5" width="1.5" height="1.5" fill="#44aaff"/>
+    <!-- Row 6-10: center explosion yyyyy / yyoooyy / yooooy / yyoooyy / yyyyy -->
+    <rect x="7.5" y="7.5" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="9" y="7.5" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="10.5" y="7.5" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="12" y="7.5" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="13.5" y="7.5" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="6" y="9" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="7.5" y="9" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="9" y="9" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="10.5" y="9" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="12" y="9" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="13.5" y="9" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="15" y="9" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="6" y="10.5" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="7.5" y="10.5" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="9" y="10.5" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="10.5" y="10.5" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="12" y="10.5" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="13.5" y="10.5" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="6" y="12" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="7.5" y="12" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="9" y="12" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="10.5" y="12" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="12" y="12" width="1.5" height="1.5" fill="#ff8844"/>
+    <rect x="13.5" y="12" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="15" y="12" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="7.5" y="13.5" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="9" y="13.5" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="10.5" y="13.5" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="12" y="13.5" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="13.5" y="13.5" width="1.5" height="1.5" fill="#ffd700"/>
+    <!-- Row 12-14: g and p dots -->
+    <rect x="4.5" y="16.5" width="1.5" height="1.5" fill="#44ff66"/>
+    <rect x="16.5" y="16.5" width="1.5" height="1.5" fill="#c084fc"/>
+    <rect x="3" y="18" width="1.5" height="1.5" fill="#44ff66"/>
+    <rect x="4.5" y="18" width="1.5" height="1.5" fill="#44ff66"/>
+    <rect x="6" y="18" width="1.5" height="1.5" fill="#44ff66"/>
+    <rect x="15" y="18" width="1.5" height="1.5" fill="#c084fc"/>
+    <rect x="16.5" y="18" width="1.5" height="1.5" fill="#c084fc"/>
+    <rect x="18" y="18" width="1.5" height="1.5" fill="#c084fc"/>
+    <rect x="4.5" y="19.5" width="1.5" height="1.5" fill="#44ff66"/>
+    <rect x="16.5" y="19.5" width="1.5" height="1.5" fill="#c084fc"/>
+  </g>
+
+  <!-- Title -->
+  <text class="title" x="350" y="90">CHAIN REACTION</text>
+  <text class="sub" x="350" y="115">Click · Chain · Pop</text>
+
+  <!-- Score HUD mock -->
+  <g transform="translate(350, 135)">
+    <rect width="280" height="30" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="2"/>
+    <text font-family="monospace" font-size="9" fill="#666" x="10" y="19">POPPED</text>
+    <text font-family="monospace" font-size="9" fill="#ffd700" x="65" y="19">8/8</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="110" y="19">LEVEL</text>
+    <text font-family="monospace" font-size="9" fill="#ffd700" x="155" y="19">4</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="190" y="19">BEST</text>
+    <text font-family="monospace" font-size="9" fill="#ffd700" x="225" y="19">6</text>
+  </g>
+
+  <!-- Border -->
+  <rect width="800" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+</svg>

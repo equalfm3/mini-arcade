@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+  <rect width="600" height="200" fill="#0a0a16" rx="6"/>
+
+  <!-- Desktop -->
+  <text fill="#44aaff" font-size="14" font-weight="bold" x="130" y="25" text-anchor="middle">Desktop</text>
+
+  <!-- Color buttons 1-6 -->
+  <g transform="translate(30, 40)">
+    <text fill="#888" font-size="10" x="0" y="12">Pick color:</text>
+    <g transform="translate(0, 20)">
+      <rect width="28" height="28" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+      <text fill="#ff4444" font-size="14" font-weight="bold" x="14" y="20" text-anchor="middle">1</text>
+      <rect x="34" width="28" height="28" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+      <text fill="#ff8844" font-size="14" font-weight="bold" x="48" y="20" text-anchor="middle">2</text>
+      <rect x="68" width="28" height="28" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+      <text fill="#ffd700" font-size="14" font-weight="bold" x="82" y="20" text-anchor="middle">3</text>
+      <rect x="102" width="28" height="28" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+      <text fill="#44ff66" font-size="14" font-weight="bold" x="116" y="20" text-anchor="middle">4</text>
+      <rect x="136" width="28" height="28" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+      <text fill="#44aaff" font-size="14" font-weight="bold" x="150" y="20" text-anchor="middle">5</text>
+      <rect x="170" width="28" height="28" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+      <text fill="#c084fc" font-size="14" font-weight="bold" x="184" y="20" text-anchor="middle">6</text>
+    </g>
+  </g>
+
+  <!-- Pause key -->
+  <g transform="translate(30, 110)">
+    <text fill="#888" font-size="10" x="0" y="12">Pause:</text>
+    <rect y="20" width="40" height="28" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+    <text fill="#ffd700" font-size="11" font-weight="bold" x="20" y="39" text-anchor="middle">Esc</text>
+    <text fill="#666" font-size="10" x="48" y="39">or</text>
+    <rect x="62" y="20" width="28" height="28" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+    <text fill="#ffd700" font-size="11" font-weight="bold" x="76" y="39" text-anchor="middle">P</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="300" y1="15" x2="300" y2="185" stroke="#2a2a40" stroke-width="1"/>
+
+  <!-- Mobile -->
+  <text fill="#44ff66" font-size="14" font-weight="bold" x="450" y="25" text-anchor="middle">Mobile</text>
+
+  <!-- Tap color buttons -->
+  <g transform="translate(340, 45)">
+    <text fill="#888" font-size="10" x="0" y="12">Tap a color button:</text>
+
+    <!-- Hand tapping a color button -->
+    <g transform="translate(30, 30)">
+      <rect x="0" y="0" width="34" height="34" fill="#ff4444" rx="6"/>
+      <rect x="40" y="0" width="34" height="34" fill="#ff8844" rx="6"/>
+      <rect x="80" y="0" width="34" height="34" fill="#ffd700" rx="6" stroke="#fff" stroke-width="2"/>
+      <rect x="120" y="0" width="34" height="34" fill="#44ff66" rx="6"/>
+      <!-- Tap indicator -->
+      <circle cx="97" cy="17" r="8" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
+      <circle cx="97" cy="17" r="3" fill="#fff" opacity="0.8"/>
+    </g>
+  </g>
+
+  <!-- Touch note -->
+  <g transform="translate(340, 130)">
+    <text fill="#888" font-size="10" x="0" y="12">Each tap picks a color</text>
+    <text fill="#888" font-size="10" x="0" y="28">and floods the board</text>
+    <text fill="#888" font-size="10" x="0" y="44">from the top-left corner</text>
+  </g>
+
+  <rect width="600" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

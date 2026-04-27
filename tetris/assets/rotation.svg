@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <rect width="600" height="200" fill="#0a0a16" rx="6"/>
+  <defs>
+    <style>text{font-family:monospace;}</style>
+    <marker id="rotArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ffd700"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text fill="#888" font-size="10" x="200" y="18">SRS ROTATION SYSTEM</text>
+
+  <!-- State 0: T-piece spawn orientation -->
+  <g transform="translate(30, 35)" shape-rendering="crispEdges">
+    <rect width="48" height="48" fill="#0e0e1a" stroke="#2a2a40" stroke-width="1" rx="2"/>
+    <!-- 3x3 grid: top-center, middle-left, middle-center, middle-right -->
+    <rect x="16" y="2" width="14" height="14" fill="#ab47bc"/>
+    <rect x="2" y="18" width="14" height="14" fill="#ab47bc"/>
+    <rect x="16" y="18" width="14" height="14" fill="#ab47bc"/>
+    <rect x="30" y="18" width="14" height="14" fill="#ab47bc"/>
+    <text fill="#666" font-size="8" x="16" y="46">0</text>
+  </g>
+
+  <!-- Arrow 0→1 -->
+  <line x1="82" y1="60" x2="108" y2="60" stroke="#ffd700" stroke-width="1.5" marker-end="url(#rotArrow)"/>
+  <text fill="#ffd700" font-size="7" x="86" y="54">CW</text>
+
+  <!-- State 1: T-piece rotated CW once -->
+  <g transform="translate(115, 35)" shape-rendering="crispEdges">
+    <rect width="48" height="48" fill="#0e0e1a" stroke="#2a2a40" stroke-width="1" rx="2"/>
+    <!-- 3x3 grid: top-center, middle-center, middle-right, bottom-center -->
+    <rect x="16" y="2" width="14" height="14" fill="#ab47bc"/>
+    <rect x="16" y="18" width="14" height="14" fill="#ab47bc"/>
+    <rect x="30" y="18" width="14" height="14" fill="#ab47bc"/>
+    <rect x="16" y="34" width="14" height="14" fill="#ab47bc"/>
+    <text fill="#666" font-size="8" x="16" y="46">1</text>
+  </g>
+
+  <!-- Arrow 1→2 -->
+  <line x1="167" y1="60" x2="193" y2="60" stroke="#ffd700" stroke-width="1.5" marker-end="url(#rotArrow)"/>
+  <text fill="#ffd700" font-size="7" x="171" y="54">CW</text>
+
+  <!-- State 2: T-piece rotated CW twice -->
+  <g transform="translate(200, 35)" shape-rendering="crispEdges">
+    <rect width="48" height="48" fill="#0e0e1a" stroke="#2a2a40" stroke-width="1" rx="2"/>
+    <!-- 3x3 grid: middle-left, middle-center, middle-right, bottom-center -->
+    <rect x="2" y="18" width="14" height="14" fill="#ab47bc"/>
+    <rect x="16" y="18" width="14" height="14" fill="#ab47bc"/>
+    <rect x="30" y="18" width="14" height="14" fill="#ab47bc"/>
+    <rect x="16" y="34" width="14" height="14" fill="#ab47bc"/>
+    <text fill="#666" font-size="8" x="16" y="46">2</text>
+  </g>
+
+  <!-- Arrow 2→3 -->
+  <line x1="252" y1="60" x2="278" y2="60" stroke="#ffd700" stroke-width="1.5" marker-end="url(#rotArrow)"/>
+  <text fill="#ffd700" font-size="7" x="256" y="54">CW</text>
+
+  <!-- State 3: T-piece rotated CW three times -->
+  <g transform="translate(285, 35)" shape-rendering="crispEdges">
+    <rect width="48" height="48" fill="#0e0e1a" stroke="#2a2a40" stroke-width="1" rx="2"/>
+    <!-- 3x3 grid: top-center, middle-left, middle-center, bottom-center -->
+    <rect x="16" y="2" width="14" height="14" fill="#ab47bc"/>
+    <rect x="2" y="18" width="14" height="14" fill="#ab47bc"/>
+    <rect x="16" y="18" width="14" height="14" fill="#ab47bc"/>
+    <rect x="16" y="34" width="14" height="14" fill="#ab47bc"/>
+    <text fill="#666" font-size="8" x="16" y="46">3</text>
+  </g>
+
+  <!-- Arrow 3→0 (curved back) -->
+  <path d="M 333 50 Q 360 30 360 60 Q 360 90 30 90 Q 10 90 20 70" fill="none" stroke="#ffd700" stroke-width="1.5" marker-end="url(#rotArrow)"/>
+  <text fill="#ffd700" font-size="7" x="180" y="100">CW → back to 0</text>
+
+  <!-- Wall kick example -->
+  <g transform="translate(400, 25)">
+    <text fill="#44aaff" font-size="10" x="0" y="0" font-weight="bold">Wall Kick</text>
+
+    <!-- Board edge (wall) -->
+    <rect x="0" y="10" width="6" height="70" fill="#2a2a40"/>
+    <text fill="#666" font-size="7" x="0" y="88">wall</text>
+
+    <!-- T-piece trying to rotate into wall (faded) -->
+    <g opacity="0.3" shape-rendering="crispEdges">
+      <rect x="6" y="20" width="14" height="14" fill="#ab47bc"/>
+      <rect x="6" y="36" width="14" height="14" fill="#ab47bc"/>
+      <rect x="20" y="36" width="14" height="14" fill="#ab47bc"/>
+      <rect x="6" y="52" width="14" height="14" fill="#ab47bc"/>
+    </g>
+    <text fill="#ff4444" font-size="8" x="8" y="80">✗</text>
+
+    <!-- Kick arrow -->
+    <line x1="40" y1="42" x2="60" y2="42" stroke="#44aaff" stroke-width="2" marker-end="url(#rotArrow)"/>
+    <text fill="#44aaff" font-size="7" x="42" y="56">kick</text>
+
+    <!-- T-piece after wall kick (solid, shifted right) -->
+    <g shape-rendering="crispEdges">
+      <rect x="62" y="20" width="14" height="14" fill="#ab47bc"/>
+      <rect x="62" y="36" width="14" height="14" fill="#ab47bc"/>
+      <rect x="76" y="36" width="14" height="14" fill="#ab47bc"/>
+      <rect x="62" y="52" width="14" height="14" fill="#ab47bc"/>
+    </g>
+    <text fill="#44ff66" font-size="8" x="68" y="80">✓</text>
+  </g>
+
+  <!-- Explanation -->
+  <text fill="#666" font-size="8" x="30" y="130">Each piece has 4 rotation states (0–3). When a rotation collides,</text>
+  <text fill="#666" font-size="8" x="30" y="142">the SRS system tries up to 4 alternative positions (wall kicks).</text>
+  <text fill="#666" font-size="8" x="30" y="154">If any kick succeeds, the piece moves there. Otherwise, rotation fails.</text>
+
+  <!-- Kick offsets table -->
+  <g transform="translate(30, 165)">
+    <text fill="#888" font-size="8" x="0" y="10">Kick tests (JLSTZ):</text>
+    <text fill="#44aaff" font-size="7" x="0" y="24">(0,0) → (-1,0) → (-1,+1) → (0,-2) → (-1,-2)</text>
+  </g>
+
+  <rect width="600" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

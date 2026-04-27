@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 280" width="620" height="280">
+  <defs>
+    <style>text{font-family:monospace;font-size:11px;}</style>
+  </defs>
+  <rect width="620" height="280" fill="#0a0a16" rx="6"/>
+
+  <!-- File tree -->
+  <text fill="#ffd700" x="20" y="30">doodle-jump/</text>
+
+  <text fill="#44aaff" x="40" y="52">├── index.html</text>
+  <text fill="#666" x="260" y="52">Entry point — GAME config + arcade.js loader</text>
+
+  <text fill="#44aaff" x="40" y="72">├── style.css</text>
+  <text fill="#666" x="260" y="72">Accent color override (--c-game: #44ff66)</text>
+
+  <text fill="#44aaff" x="40" y="92">├── game.js</text>
+  <text fill="#666" x="260" y="92">Orchestrator — collision, score, game over</text>
+
+  <text fill="#ffd700" x="40" y="116">├── src/</text>
+
+  <text fill="#44ff66" x="60" y="136">│   ├── config.js</text>
+  <text fill="#666" x="260" y="136">All constants — gravity, speeds, colors</text>
+
+  <text fill="#44ff66" x="60" y="156">│   ├── player.js</text>
+  <text fill="#666" x="260" y="156">Player physics, movement, screen wrap</text>
+
+  <text fill="#44ff66" x="60" y="176">│   ├── platforms.js</text>
+  <text fill="#666" x="260" y="176">Platform types, generation, recycling</text>
+
+  <text fill="#44ff66" x="60" y="196">│   ├── camera.js</text>
+  <text fill="#666" x="260" y="196">Vertical scrolling, height tracking</text>
+
+  <text fill="#44ff66" x="60" y="216">│   └── renderer.js</text>
+  <text fill="#666" x="260" y="216">Background, stars, height markers</text>
+
+  <text fill="#ffd700" x="40" y="240">├── assets/</text>
+  <text fill="#666" x="260" y="240">SVG images for README documentation</text>
+
+  <text fill="#44aaff" x="40" y="260">└── README.md</text>
+  <text fill="#666" x="260" y="260">Full documentation with embedded SVGs</text>
+
+  <rect width="620" height="280" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

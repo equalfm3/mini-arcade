@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 370" width="620" height="370">
+  <rect width="620" height="370" fill="#0a0a16" rx="6"/>
+  <defs><style>text{font-family:monospace;font-size:11px;} .dim{fill:#555;font-size:9px;} .lines{fill:#444;font-size:9px;}</style></defs>
+
+  <!-- Folder icon -->
+  <rect x="25" y="18" width="16" height="4" fill="#ffd700" rx="1"/>
+  <rect x="20" y="22" width="24" height="14" fill="#ffd700" rx="2"/>
+  <text fill="#ffd700" font-size="13" x="50" y="35" font-weight="bold">breakout/</text>
+
+  <!-- index.html -->
+  <rect x="40" y="55" width="14" height="16" fill="#ff8844" rx="1"/>
+  <text fill="#ff8844" font-size="7" x="42" y="66">&lt;/&gt;</text>
+  <text fill="#e0e0e0" x="60" y="68">index.html</text>
+  <text class="lines" x="160" y="68">~18 lines</text>
+  <text class="dim" x="220" y="68">Entry point · GAME config + arcade.js loader</text>
+
+  <!-- style.css -->
+  <rect x="40" y="82" width="14" height="16" fill="#44aaff" rx="1"/>
+  <text fill="#44aaff" font-size="7" x="43" y="93">#</text>
+  <text fill="#e0e0e0" x="60" y="95">style.css</text>
+  <text class="lines" x="160" y="95">~3 lines</text>
+  <text class="dim" x="220" y="95">Accent color: --c-game: #ff8844</text>
+
+  <!-- game.js -->
+  <rect x="40" y="109" width="14" height="16" fill="#ffd700" rx="1"/>
+  <text fill="#ffd700" font-size="7" x="43" y="120">JS</text>
+  <text fill="#e0e0e0" x="60" y="122">game.js</text>
+  <text class="lines" x="160" y="122">~150 lines</text>
+  <text class="dim" x="220" y="122">Orchestrator · Engine loop, collisions, scoring</text>
+
+  <!-- src folder -->
+  <rect x="45" y="148" width="14" height="4" fill="#c084fc" rx="1"/>
+  <rect x="40" y="152" width="22" height="12" fill="#c084fc" rx="2"/>
+  <text fill="#c084fc" font-size="12" x="68" y="163" font-weight="bold">src/</text>
+
+  <!-- config.js -->
+  <rect x="60" y="180" width="14" height="16" fill="#ff8844" rx="1"/>
+  <text fill="#ff8844" font-size="7" x="63" y="191">JS</text>
+  <text fill="#e0e0e0" x="80" y="193">config.js</text>
+  <text class="lines" x="180" y="193">~40 lines</text>
+  <text class="dim" x="240" y="193">Canvas, paddle, ball, bricks, colors</text>
+
+  <!-- paddle.js -->
+  <rect x="60" y="207" width="14" height="16" fill="#ff8844" rx="1"/>
+  <text fill="#ff8844" font-size="7" x="63" y="218">JS</text>
+  <text fill="#e0e0e0" x="80" y="220">paddle.js</text>
+  <text class="lines" x="180" y="220">~60 lines</text>
+  <text class="dim" x="240" y="220">Keyboard + mouse/touch paddle control</text>
+
+  <!-- ball.js -->
+  <rect x="60" y="234" width="14" height="16" fill="#ff8844" rx="1"/>
+  <text fill="#ff8844" font-size="7" x="63" y="245">JS</text>
+  <text fill="#e0e0e0" x="80" y="247">ball.js</text>
+  <text class="lines" x="180" y="247">~80 lines</text>
+  <text class="dim" x="240" y="247">Movement, wall bounce, speed scaling</text>
+
+  <!-- bricks.js -->
+  <rect x="60" y="261" width="14" height="16" fill="#ff8844" rx="1"/>
+  <text fill="#ff8844" font-size="7" x="63" y="272">JS</text>
+  <text fill="#e0e0e0" x="80" y="274">bricks.js</text>
+  <text class="lines" x="180" y="274">~90 lines</text>
+  <text class="dim" x="240" y="274">Grid layout, collision detection, rendering</text>
+
+  <!-- renderer.js -->
+  <rect x="60" y="288" width="14" height="16" fill="#ff8844" rx="1"/>
+  <text fill="#ff8844" font-size="7" x="63" y="299">JS</text>
+  <text fill="#e0e0e0" x="80" y="301">renderer.js</text>
+  <text class="lines" x="180" y="301">~20 lines</text>
+  <text class="dim" x="240" y="301">Background + border drawing</text>
+
+  <!-- Tree lines -->
+  <g stroke="#2a2a40" stroke-width="1" fill="none">
+    <line x1="35" y1="50" x2="35" y2="130"/>
+    <line x1="35" y1="63" x2="40" y2="63"/>
+    <line x1="35" y1="90" x2="40" y2="90"/>
+    <line x1="35" y1="117" x2="40" y2="117"/>
+    <line x1="35" y1="130" x2="35" y2="158"/>
+    <line x1="35" y1="158" x2="40" y2="158"/>
+    <line x1="55" y1="175" x2="55" y2="305"/>
+    <line x1="55" y1="188" x2="60" y2="188"/>
+    <line x1="55" y1="215" x2="60" y2="215"/>
+    <line x1="55" y1="242" x2="60" y2="242"/>
+    <line x1="55" y1="269" x2="60" y2="269"/>
+    <line x1="55" y1="296" x2="60" y2="296"/>
+  </g>
+
+  <!-- Load order -->
+  <g transform="translate(20, 330)">
+    <text fill="#888" font-size="9" x="0" y="10">Load order:</text>
+    <rect x="80" y="0" width="60" height="16" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="2"/>
+    <text fill="#888" font-size="8" x="88" y="11">shared/*</text>
+    <text fill="#ffd700" font-size="10" x="145" y="11">→</text>
+    <rect x="158" y="0" width="52" height="16" fill="#12121f" stroke="#ff8844" stroke-width="1" rx="2"/>
+    <text fill="#ff8844" font-size="8" x="164" y="11">config</text>
+    <text fill="#ffd700" font-size="10" x="215" y="11">→</text>
+    <rect x="228" y="0" width="52" height="16" fill="#12121f" stroke="#ff8844" stroke-width="1" rx="2"/>
+    <text fill="#ff8844" font-size="8" x="234" y="11">paddle</text>
+    <text fill="#ffd700" font-size="10" x="285" y="11">→</text>
+    <rect x="298" y="0" width="38" height="16" fill="#12121f" stroke="#ff8844" stroke-width="1" rx="2"/>
+    <text fill="#ff8844" font-size="8" x="306" y="11">ball</text>
+    <text fill="#ffd700" font-size="10" x="341" y="11">→</text>
+    <rect x="354" y="0" width="48" height="16" fill="#12121f" stroke="#ff8844" stroke-width="1" rx="2"/>
+    <text fill="#ff8844" font-size="8" x="360" y="11">bricks</text>
+    <text fill="#ffd700" font-size="10" x="407" y="11">→</text>
+    <rect x="420" y="0" width="60" height="16" fill="#12121f" stroke="#ff8844" stroke-width="1" rx="2"/>
+    <text fill="#ff8844" font-size="8" x="426" y="11">renderer</text>
+    <text fill="#ffd700" font-size="10" x="485" y="11">→</text>
+    <rect x="498" y="0" width="60" height="16" fill="#12121f" stroke="#ffd700" stroke-width="1" rx="2"/>
+    <text fill="#ffd700" font-size="8" x="504" y="11">game.js</text>
+  </g>
+
+  <rect width="620" height="370" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

@@ -1,0 +1,12 @@
+/* ============================================
+   game.css — Master import for game pages.
+   Each game's index.html links only this file
+   + its own local style.css for overrides.
+   ============================================ */
+
+@import 'reset.css';
+@import 'tokens.css';
+@import 'base.css';
+@import 'pixel.css';
+@import 'layout.css';
+@import 'components.css';

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 180" width="500" height="180">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+  <rect width="500" height="180" fill="#0a0a16" rx="6"/>
+
+  <!-- Desktop section -->
+  <text fill="#44aaff" font-size="12" font-weight="bold" x="80" y="25">DESKTOP</text>
+
+  <!-- Mouse click icon -->
+  <rect x="55" y="45" width="50" height="70" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="8"/>
+  <line x1="80" y1="45" x2="80" y2="80" stroke="#2a2a40" stroke-width="1"/>
+  <line x1="55" y1="80" x2="105" y2="80" stroke="#2a2a40" stroke-width="1"/>
+  <!-- Left button highlight -->
+  <rect x="56" y="46" width="23" height="33" fill="#ffd700" opacity="0.3" rx="7"/>
+  <text fill="#888" font-size="9" x="50" y="135">Click mole</text>
+
+  <!-- Esc key -->
+  <rect x="130" y="55" width="40" height="28" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+  <text fill="#e0e0e0" font-size="10" x="137" y="74">ESC</text>
+  <text fill="#888" font-size="9" x="130" y="105">Pause</text>
+
+  <!-- Divider -->
+  <line x1="250" y1="15" x2="250" y2="165" stroke="#2a2a40" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Mobile section -->
+  <text fill="#44ff66" font-size="12" font-weight="bold" x="340" y="25">MOBILE</text>
+
+  <!-- Tap icon -->
+  <circle cx="360" cy="80" r="25" fill="#12121f" stroke="#2a2a40" stroke-width="2"/>
+  <circle cx="360" cy="80" r="8" fill="#ffd700" opacity="0.4"/>
+  <!-- Finger -->
+  <ellipse cx="360" cy="65" rx="8" ry="12" fill="#ddbb88" opacity="0.6"/>
+  <text fill="#888" font-size="9" x="340" y="125">Tap mole</text>
+
+  <rect width="500" height="180" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

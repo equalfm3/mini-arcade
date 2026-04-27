@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="600" height="320">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+  <rect width="600" height="320" fill="#0a0a16" rx="6"/>
+
+  <text fill="#c084fc" font-size="14" font-weight="bold" x="20" y="25">Arc Collision Detection</text>
+
+  <!-- Ring diagram -->
+  <g transform="translate(150, 170)">
+    <!-- Ring arcs with labels -->
+    <path d="M 0,-70 A 70,70 0 0,1 70,0" stroke="#ff4444" stroke-width="16" fill="none"/>
+    <path d="M 70,0 A 70,70 0 0,1 0,70" stroke="#ffd700" stroke-width="16" fill="none"/>
+    <path d="M 0,70 A 70,70 0 0,1 -70,0" stroke="#44ff66" stroke-width="16" fill="none"/>
+    <path d="M -70,0 A 70,70 0 0,1 0,-70" stroke="#c084fc" stroke-width="16" fill="none"/>
+
+    <!-- Center point -->
+    <circle cx="0" cy="0" r="3" fill="#666"/>
+
+    <!-- Angle labels -->
+    <text fill="#ff4444" font-size="9" x="25" y="-40">0°–90°</text>
+    <text fill="#ffd700" font-size="9" x="30" y="45">90°–180°</text>
+    <text fill="#44ff66" font-size="9" x="-65" y="45">180°–270°</text>
+    <text fill="#c084fc" font-size="9" x="-65" y="-40">270°–360°</text>
+
+    <!-- Inner/outer radius lines -->
+    <line x1="0" y1="0" x2="80" y2="0" stroke="#666" stroke-width="0.5" stroke-dasharray="3,3"/>
+    <text fill="#666" font-size="8" x="35" y="-5">r_outer</text>
+    <line x1="0" y1="0" x2="0" y2="-60" stroke="#666" stroke-width="0.5" stroke-dasharray="3,3"/>
+    <text fill="#666" font-size="8" x="5" y="-30">r_inner</text>
+
+    <!-- Ball example (green, in green arc = safe) -->
+    <circle cx="-50" cy="30" r="10" fill="#44ff66" opacity="0.8"/>
+    <text fill="#44ff66" font-size="8" x="-45" y="55">✓ safe</text>
+
+    <!-- Ball example (green, in red arc = die) -->
+    <circle cx="40" cy="-40" r="10" fill="#44ff66" opacity="0.8"/>
+    <line x1="33" y1="-33" x2="47" y2="-47" stroke="#ff4444" stroke-width="2"/>
+    <line x1="47" y1="-33" x2="33" y2="-47" stroke="#ff4444" stroke-width="2"/>
+    <text fill="#ff4444" font-size="8" x="55" y="-35">✗ die</text>
+  </g>
+
+  <!-- Math formulas -->
+  <g transform="translate(310, 50)">
+    <text fill="#e0e0e0" font-size="11" x="0" y="0">1. Distance from center:</text>
+    <text fill="#ffd700" font-size="10" x="10" y="20">dist = √(dx² + dy²)</text>
+
+    <text fill="#e0e0e0" font-size="11" x="0" y="50">2. In ring band?</text>
+    <text fill="#ffd700" font-size="10" x="10" y="70">r_inner ≤ dist ≤ r_outer</text>
+
+    <text fill="#e0e0e0" font-size="11" x="0" y="100">3. Ball angle relative to ring:</text>
+    <text fill="#ffd700" font-size="10" x="10" y="120">θ = atan2(dy, dx) - rotation</text>
+
+    <text fill="#e0e0e0" font-size="11" x="0" y="150">4. Determine arc segment:</text>
+    <text fill="#ffd700" font-size="10" x="10" y="170">arcIndex = floor(θ / (π/2))</text>
+
+    <text fill="#e0e0e0" font-size="11" x="0" y="200">5. Color match check:</text>
+    <text fill="#44ff66" font-size="10" x="10" y="220">arcIndex == ballColor → pass</text>
+    <text fill="#ff4444" font-size="10" x="10" y="240">arcIndex != ballColor → die</text>
+  </g>
+
+  <!-- Border -->
+  <rect width="600" height="320" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

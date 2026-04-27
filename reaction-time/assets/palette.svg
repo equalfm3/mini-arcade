@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 180" width="600" height="180">
+  <rect width="600" height="180" fill="#0a0a16" rx="6"/>
+
+  <!-- Phase colors -->
+  <text font-family="monospace" font-size="11" fill="#888" x="20" y="25">Phase Colors</text>
+
+  <!-- Wait / Ready (red) -->
+  <rect x="20" y="35" width="80" height="50" fill="#cc2222" rx="4"/>
+  <text font-family="monospace" font-size="9" fill="#fff" x="30" y="55">Wait</text>
+  <text font-family="monospace" font-size="8" fill="#fff" x="30" y="72" opacity="0.7">#cc2222</text>
+
+  <!-- Go (green) -->
+  <rect x="110" y="35" width="80" height="50" fill="#22cc44" rx="4"/>
+  <text font-family="monospace" font-size="9" fill="#fff" x="130" y="55">Go!</text>
+  <text font-family="monospace" font-size="8" fill="#fff" x="120" y="72" opacity="0.7">#22cc44</text>
+
+  <!-- Result (blue) -->
+  <rect x="200" y="35" width="80" height="50" fill="#1a3a6a" rx="4"/>
+  <text font-family="monospace" font-size="9" fill="#fff" x="215" y="55">Result</text>
+  <text font-family="monospace" font-size="8" fill="#fff" x="210" y="72" opacity="0.7">#1a3a6a</text>
+
+  <!-- Early (orange) -->
+  <rect x="290" y="35" width="80" height="50" fill="#cc8800" rx="4"/>
+  <text font-family="monospace" font-size="9" fill="#fff" x="305" y="55">Early</text>
+  <text font-family="monospace" font-size="8" fill="#fff" x="300" y="72" opacity="0.7">#cc8800</text>
+
+  <!-- Background -->
+  <rect x="380" y="35" width="80" height="50" fill="#0e0e1a" stroke="#2a2a40" stroke-width="1" rx="4"/>
+  <text font-family="monospace" font-size="9" fill="#888" x="400" y="55">BG</text>
+  <text font-family="monospace" font-size="8" fill="#888" x="390" y="72">#0e0e1a</text>
+
+  <!-- Rating colors -->
+  <text font-family="monospace" font-size="11" fill="#888" x="20" y="110">Rating Colors</text>
+
+  <rect x="20" y="120" width="60" height="40" fill="#ff44ff" rx="4"/>
+  <text font-family="monospace" font-size="7" fill="#fff" x="25" y="138">Inhuman</text>
+  <text font-family="monospace" font-size="7" fill="#fff" x="28" y="152" opacity="0.7">&lt;150ms</text>
+
+  <rect x="90" y="120" width="60" height="40" fill="#ffd700" rx="4"/>
+  <text font-family="monospace" font-size="7" fill="#000" x="93" y="138">Lightning</text>
+  <text font-family="monospace" font-size="7" fill="#000" x="98" y="152" opacity="0.7">&lt;200ms</text>
+
+  <rect x="160" y="120" width="60" height="40" fill="#ff8844" rx="4"/>
+  <text font-family="monospace" font-size="7" fill="#fff" x="167" y="138">Blazing</text>
+  <text font-family="monospace" font-size="7" fill="#fff" x="168" y="152" opacity="0.7">&lt;250ms</text>
+
+  <rect x="230" y="120" width="60" height="40" fill="#44ff66" rx="4"/>
+  <text font-family="monospace" font-size="7" fill="#000" x="245" y="138">Fast</text>
+  <text font-family="monospace" font-size="7" fill="#000" x="238" y="152" opacity="0.7">&lt;300ms</text>
+
+  <rect x="300" y="120" width="60" height="40" fill="#44aaff" rx="4"/>
+  <text font-family="monospace" font-size="7" fill="#fff" x="315" y="138">Good</text>
+  <text font-family="monospace" font-size="7" fill="#fff" x="308" y="152" opacity="0.7">&lt;400ms</text>
+
+  <rect x="370" y="120" width="60" height="40" fill="#aaaaaa" rx="4"/>
+  <text font-family="monospace" font-size="7" fill="#000" x="378" y="138">Average</text>
+  <text font-family="monospace" font-size="7" fill="#000" x="378" y="152" opacity="0.7">&lt;500ms</text>
+
+  <rect x="440" y="120" width="60" height="40" fill="#888888" rx="4"/>
+  <text font-family="monospace" font-size="7" fill="#fff" x="455" y="138">Slow</text>
+  <text font-family="monospace" font-size="7" fill="#fff" x="448" y="152" opacity="0.7">&lt;700ms</text>
+
+  <rect x="510" y="120" width="60" height="40" fill="#666666" rx="4"/>
+  <text font-family="monospace" font-size="7" fill="#fff" x="518" y="138">Sleepy</text>
+  <text font-family="monospace" font-size="7" fill="#fff" x="518" y="152" opacity="0.7">700ms+</text>
+
+  <rect width="600" height="180" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

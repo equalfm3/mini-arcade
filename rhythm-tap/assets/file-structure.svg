@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 280" width="620" height="280">
+  <defs>
+    <style>text{font-family:monospace;font-size:11px;}</style>
+  </defs>
+  <rect width="620" height="280" fill="#0a0a16" rx="6"/>
+
+  <!-- Title -->
+  <text font-size="13" font-weight="bold" fill="#ff66aa" x="20" y="25">rhythm-tap/</text>
+
+  <!-- Files -->
+  <text fill="#888" x="20" y="50">├── index.html</text>
+  <text fill="#555" x="220" y="50">Entry point — GAME config + arcade.js loader</text>
+
+  <text fill="#888" x="20" y="70">├── style.css</text>
+  <text fill="#555" x="220" y="70">Accent color (#ff66aa), lane width override</text>
+
+  <text fill="#888" x="20" y="90">├── game.js</text>
+  <text fill="#555" x="220" y="90">Orchestrator — BPM select, lane input, combo, phases</text>
+
+  <text fill="#ffd700" x="20" y="120">├── src/</text>
+
+  <text fill="#888" x="20" y="140">│   ├── config.js</text>
+  <text fill="#555" x="220" y="140">Lane keys, timing windows, colors, BPM options</text>
+
+  <text fill="#888" x="20" y="160">│   ├── song.js</text>
+  <text fill="#555" x="220" y="160">Procedural note generation — beat subdivisions</text>
+
+  <text fill="#888" x="20" y="180">│   ├── notes.js</text>
+  <text fill="#555" x="220" y="180">Note spawning, scrolling, hit detection, grades</text>
+
+  <text fill="#888" x="20" y="200">│   └── renderer.js</text>
+  <text fill="#555" x="220" y="200">Lanes, notes, glow, hit zone, grade popups, pulse</text>
+
+  <text fill="#44ffdd" x="20" y="230">├── assets/</text>
+
+  <text fill="#888" x="20" y="250">│   ├── banner.svg, gameplay.svg, controls.svg, ...</text>
+
+  <text fill="#888" x="20" y="270">└── README.md</text>
+
+  <!-- Border -->
+  <rect width="620" height="280" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

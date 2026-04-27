@@ -1,0 +1,8 @@
+:root {
+  --c-game: #44ff66;
+}
+
+/* Wider canvas for side-scrolling runner */
+:root {
+  --game-max-w: 620px;
+}

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 480" width="380" height="480">
+  <rect width="380" height="480" fill="#0a0a16" rx="6"/>
+
+  <!-- Title bar -->
+  <rect x="10" y="10" width="360" height="30" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="3"/>
+  <text font-family="monospace" font-size="11" fill="#538d4e" font-weight="bold" x="20" y="30">WORDLE</text>
+  <text font-family="monospace" font-size="9" fill="#666" x="280" y="30">Guess 3/6</text>
+
+  <!-- Tile grid: 6 rows × 5 cols -->
+  <!-- Row 1: CRANE — C(absent) R(present) A(present) N(absent) E(correct) -->
+  <g transform="translate(55, 55)">
+    <rect x="0" y="0" width="50" height="50" fill="#3a3a4c" rx="3"/>
+    <rect x="56" y="0" width="50" height="50" fill="#b59f3b" rx="3"/>
+    <rect x="112" y="0" width="50" height="50" fill="#b59f3b" rx="3"/>
+    <rect x="168" y="0" width="50" height="50" fill="#3a3a4c" rx="3"/>
+    <rect x="224" y="0" width="50" height="50" fill="#538d4e" rx="3"/>
+    <text font-family="monospace" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle">
+      <tspan x="25" y="33">C</tspan><tspan x="81" y="33">R</tspan><tspan x="137" y="33">A</tspan><tspan x="193" y="33">N</tspan><tspan x="249" y="33">E</tspan>
+    </text>
+  </g>
+
+  <!-- Row 2: STARE — S(absent) T(absent) A(correct) R(absent) E(correct) -->
+  <g transform="translate(55, 111)">
+    <rect x="0" y="0" width="50" height="50" fill="#3a3a4c" rx="3"/>
+    <rect x="56" y="0" width="50" height="50" fill="#3a3a4c" rx="3"/>
+    <rect x="112" y="0" width="50" height="50" fill="#538d4e" rx="3"/>
+    <rect x="168" y="0" width="50" height="50" fill="#3a3a4c" rx="3"/>
+    <rect x="224" y="0" width="50" height="50" fill="#538d4e" rx="3"/>
+    <text font-family="monospace" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle">
+      <tspan x="25" y="33">S</tspan><tspan x="81" y="33">T</tspan><tspan x="137" y="33">A</tspan><tspan x="193" y="33">R</tspan><tspan x="249" y="33">E</tspan>
+    </text>
+  </g>
+
+  <!-- Row 3: MAPLE — typing in progress "MAP" -->
+  <g transform="translate(55, 167)">
+    <rect x="0" y="0" width="50" height="50" fill="#12121f" stroke="#3a3a55" stroke-width="2" rx="3"/>
+    <rect x="56" y="0" width="50" height="50" fill="#12121f" stroke="#3a3a55" stroke-width="2" rx="3"/>
+    <rect x="112" y="0" width="50" height="50" fill="#12121f" stroke="#3a3a55" stroke-width="2" rx="3"/>
+    <rect x="168" y="0" width="50" height="50" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+    <rect x="224" y="0" width="50" height="50" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+    <text font-family="monospace" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle">
+      <tspan x="25" y="33">M</tspan><tspan x="81" y="33">A</tspan><tspan x="137" y="33">P</tspan>
+    </text>
+  </g>
+
+  <!-- Rows 4-6: empty -->
+  <g transform="translate(55, 223)">
+    <rect x="0" y="0" width="50" height="50" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+    <rect x="56" y="0" width="50" height="50" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+    <rect x="112" y="0" width="50" height="50" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+    <rect x="168" y="0" width="50" height="50" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+    <rect x="224" y="0" width="50" height="50" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+  </g>
+  <g transform="translate(55, 279)">
+    <rect x="0" y="0" width="50" height="50" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+    <rect x="56" y="0" width="50" height="50" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+    <rect x="112" y="0" width="50" height="50" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+    <rect x="168" y="0" width="50" height="50" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+    <rect x="224" y="0" width="50" height="50" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+  </g>
+  <g transform="translate(55, 335)">
+    <rect x="0" y="0" width="50" height="50" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+    <rect x="56" y="0" width="50" height="50" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+    <rect x="112" y="0" width="50" height="50" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+    <rect x="168" y="0" width="50" height="50" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+    <rect x="224" y="0" width="50" height="50" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+  </g>
+
+  <!-- Keyboard (simplified) -->
+  <g transform="translate(20, 400)">
+    <!-- Row 1: QWERTYUIOP -->
+    <rect x="0" y="0" width="30" height="28" fill="#818384" rx="3"/>
+    <rect x="34" y="0" width="30" height="28" fill="#818384" rx="3"/>
+    <rect x="68" y="0" width="30" height="28" fill="#538d4e" rx="3"/>
+    <rect x="102" y="0" width="30" height="28" fill="#3a3a4c" rx="3"/>
+    <rect x="136" y="0" width="30" height="28" fill="#3a3a4c" rx="3"/>
+    <rect x="170" y="0" width="30" height="28" fill="#818384" rx="3"/>
+    <rect x="204" y="0" width="30" height="28" fill="#818384" rx="3"/>
+    <rect x="238" y="0" width="30" height="28" fill="#818384" rx="3"/>
+    <rect x="272" y="0" width="30" height="28" fill="#818384" rx="3"/>
+    <rect x="306" y="0" width="30" height="28" fill="#b59f3b" rx="3"/>
+    <text font-family="monospace" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">
+      <tspan x="15" y="18">Q</tspan><tspan x="49" y="18">W</tspan><tspan x="83" y="18">E</tspan><tspan x="117" y="18">R</tspan><tspan x="151" y="18">T</tspan>
+      <tspan x="185" y="18">Y</tspan><tspan x="219" y="18">U</tspan><tspan x="253" y="18">I</tspan><tspan x="287" y="18">O</tspan><tspan x="321" y="18">P</tspan>
+    </text>
+
+    <!-- Row 2: ASDFGHJKL -->
+    <rect x="17" y="32" width="30" height="28" fill="#538d4e" rx="3"/>
+    <rect x="51" y="32" width="30" height="28" fill="#3a3a4c" rx="3"/>
+    <rect x="85" y="32" width="30" height="28" fill="#818384" rx="3"/>
+    <rect x="119" y="32" width="30" height="28" fill="#818384" rx="3"/>
+    <rect x="153" y="32" width="30" height="28" fill="#818384" rx="3"/>
+    <rect x="187" y="32" width="30" height="28" fill="#818384" rx="3"/>
+    <rect x="221" y="32" width="30" height="28" fill="#818384" rx="3"/>
+    <rect x="255" y="32" width="30" height="28" fill="#818384" rx="3"/>
+    <rect x="289" y="32" width="30" height="28" fill="#818384" rx="3"/>
+    <text font-family="monospace" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">
+      <tspan x="32" y="50">A</tspan><tspan x="66" y="50">S</tspan><tspan x="100" y="50">D</tspan><tspan x="134" y="50">F</tspan><tspan x="168" y="50">G</tspan>
+      <tspan x="202" y="50">H</tspan><tspan x="236" y="50">J</tspan><tspan x="270" y="50">K</tspan><tspan x="304" y="50">L</tspan>
+    </text>
+  </g>
+
+  <!-- Border -->
+  <rect width="380" height="480" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

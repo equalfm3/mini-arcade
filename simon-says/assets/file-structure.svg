@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 260" width="620" height="260">
+  <defs>
+    <style>text{font-family:monospace;font-size:11px;}</style>
+  </defs>
+  <rect width="620" height="260" fill="#0a0a16" rx="6"/>
+
+  <text fill="#ffd700" x="20" y="28" font-size="13" font-weight="bold">simon-says/</text>
+
+  <text fill="#44aaff" x="30" y="55">├── index.html</text>
+  <text fill="#666" x="260" y="55">Entry point — GAME config + arcade.js loader</text>
+
+  <text fill="#44aaff" x="30" y="75">├── style.css</text>
+  <text fill="#666" x="260" y="75">Accent color, button grid, light-up animations</text>
+
+  <text fill="#44aaff" x="30" y="95">├── game.js</text>
+  <text fill="#666" x="260" y="95">Orchestrator — watch/input phases, round logic</text>
+
+  <text fill="#ffd700" x="30" y="120">├── src/</text>
+
+  <text fill="#44ff66" x="50" y="140">├── config.js</text>
+  <text fill="#666" x="260" y="140">Colors, frequencies, timing, difficulty ramp</text>
+
+  <text fill="#44ff66" x="50" y="160">├── sequence.js</text>
+  <text fill="#666" x="260" y="160">Sequence generation, playback, input validation</text>
+
+  <text fill="#44ff66" x="50" y="180">└── renderer.js</text>
+  <text fill="#666" x="260" y="180">DOM button grid, light-up effects, status text</text>
+
+  <text fill="#ffd700" x="30" y="205">├── assets/</text>
+  <text fill="#666" x="260" y="205">SVG images for README documentation</text>
+
+  <text fill="#44aaff" x="30" y="230">└── README.md</text>
+  <text fill="#666" x="260" y="230">Full documentation with embedded SVGs</text>
+
+  <!-- Border -->
+  <rect width="620" height="260" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" width="500" height="200">
+  <rect width="500" height="200" fill="#0a0a16" rx="6"/>
+
+  <!-- Desktop section -->
+  <text font-family="monospace" font-size="13" fill="#e0e0e0" font-weight="bold" x="130" y="30" text-anchor="middle">Desktop</text>
+
+  <!-- Mouse click icon -->
+  <g transform="translate(80, 50)">
+    <rect width="100" height="60" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="4"/>
+    <!-- Mouse shape -->
+    <rect x="35" y="10" width="30" height="42" fill="none" stroke="#44aaff" stroke-width="2" rx="10"/>
+    <line x1="50" y1="10" x2="50" y2="25" stroke="#44aaff" stroke-width="1.5"/>
+    <circle cx="50" cy="20" r="3" fill="#44aaff"/>
+    <text font-family="monospace" font-size="8" fill="#888" x="50" y="58" text-anchor="middle">Click cell</text>
+  </g>
+
+  <!-- Esc key -->
+  <g transform="translate(80, 125)">
+    <rect width="100" height="50" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="4"/>
+    <rect x="20" y="8" width="36" height="20" fill="#1a1a2e" stroke="#3a3a50" stroke-width="1" rx="3"/>
+    <text font-family="monospace" font-size="9" fill="#e0e0e0" x="38" y="22" text-anchor="middle">Esc</text>
+    <text font-family="monospace" font-size="8" fill="#888" x="50" y="42" text-anchor="middle">Pause</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="250" y1="20" x2="250" y2="180" stroke="#2a2a40" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Mobile section -->
+  <text font-family="monospace" font-size="13" fill="#e0e0e0" font-weight="bold" x="370" y="30" text-anchor="middle">Mobile</text>
+
+  <!-- Tap icon -->
+  <g transform="translate(320, 50)">
+    <rect width="100" height="60" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="4"/>
+    <!-- Finger tap -->
+    <circle cx="50" cy="25" r="12" fill="none" stroke="#ff4444" stroke-width="2"/>
+    <circle cx="50" cy="25" r="4" fill="#ff4444"/>
+    <text font-family="monospace" font-size="8" fill="#888" x="50" y="55" text-anchor="middle">Tap cell</text>
+  </g>
+
+  <!-- Border -->
+  <rect width="500" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

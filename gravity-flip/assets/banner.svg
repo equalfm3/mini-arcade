@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <style>
+      .bg { fill: #050510; }
+      .title { font-family: monospace; font-size: 48px; font-weight: bold; fill: #00ffcc; }
+      .sub { font-family: monospace; font-size: 14px; fill: #666666; }
+    </style>
+    <linearGradient id="neonGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00ffcc"/>
+      <stop offset="50%" stop-color="#ff00ff"/>
+      <stop offset="100%" stop-color="#00ccff"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect class="bg" width="800" height="200" rx="8"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#0a0a20" stroke-width="0.5" fill="none" opacity="0.5">
+    <line x1="0" y1="30" x2="800" y2="30"/><line x1="0" y1="60" x2="800" y2="60"/>
+    <line x1="0" y1="90" x2="800" y2="90"/><line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="150" x2="800" y2="150"/><line x1="0" y1="180" x2="800" y2="180"/>
+  </g>
+
+  <!-- Corridor walls (top) -->
+  <rect x="0" y="0" width="180" height="40" fill="#0044aa" opacity="0.8"/>
+  <line x1="0" y1="40" x2="180" y2="40" stroke="#00aaff" stroke-width="2" filter="url(#glow)"/>
+  <!-- Gap in top wall -->
+  <rect x="240" y="0" width="560" height="40" fill="#0044aa" opacity="0.8"/>
+  <line x1="240" y1="40" x2="800" y2="40" stroke="#00aaff" stroke-width="2" filter="url(#glow)"/>
+  <!-- Gap edges -->
+  <line x1="180" y1="0" x2="180" y2="40" stroke="#00aaff" stroke-width="2" filter="url(#glow)"/>
+  <line x1="240" y1="0" x2="240" y2="40" stroke="#00aaff" stroke-width="2" filter="url(#glow)"/>
+
+  <!-- Corridor walls (bottom) -->
+  <rect x="0" y="160" width="350" height="40" fill="#0044aa" opacity="0.8"/>
+  <line x1="0" y1="160" x2="350" y2="160" stroke="#00aaff" stroke-width="2" filter="url(#glow)"/>
+  <!-- Gap in bottom wall -->
+  <rect x="420" y="160" width="380" height="40" fill="#0044aa" opacity="0.8"/>
+  <line x1="420" y1="160" x2="800" y2="160" stroke="#00aaff" stroke-width="2" filter="url(#glow)"/>
+  <line x1="350" y1="160" x2="350" y2="200" stroke="#00aaff" stroke-width="2" filter="url(#glow)"/>
+  <line x1="420" y1="160" x2="420" y2="200" stroke="#00aaff" stroke-width="2" filter="url(#glow)"/>
+
+  <!-- Player trail -->
+  <rect x="60" y="88" width="8" height="8" fill="#00ffcc" opacity="0.15"/>
+  <rect x="72" y="86" width="9" height="9" fill="#00ffcc" opacity="0.2"/>
+  <rect x="85" y="83" width="10" height="10" fill="#00ffcc" opacity="0.3"/>
+  <rect x="99" y="80" width="11" height="11" fill="#00ffcc" opacity="0.4"/>
+  <rect x="114" y="76" width="12" height="12" fill="#00ffcc" opacity="0.55"/>
+
+  <!-- Player (glowing square) -->
+  <rect x="130" y="72" width="16" height="16" fill="#00ffcc" filter="url(#glow)"/>
+  <rect x="132" y="74" width="6" height="6" fill="#ffffff" opacity="0.35"/>
+
+  <!-- Gravity arrow -->
+  <polygon points="138,94 134,88 142,88" fill="#ffffff" opacity="0.3"/>
+
+  <!-- Collectible orb -->
+  <circle cx="390" cy="20" r="5" fill="#ffff00" filter="url(#glow)"/>
+  <circle cx="390" cy="20" r="2" fill="#ffffff" opacity="0.7"/>
+
+  <!-- Speed lines -->
+  <line x1="10" y1="65" x2="55" y2="65" stroke="#ffffff" stroke-width="1" opacity="0.06"/>
+  <line x1="30" y1="105" x2="90" y2="105" stroke="#ffffff" stroke-width="1" opacity="0.05"/>
+  <line x1="5" y1="135" x2="70" y2="135" stroke="#ffffff" stroke-width="1" opacity="0.04"/>
+
+  <!-- Pixel icon (gravity-flip from icons.js) -->
+  <g transform="translate(310, 60)" shape-rendering="crispEdges">
+    <rect x="4.5" y="1.5" width="1.5" height="1.5" fill="#44ffdd"/>
+    <rect x="4.5" y="3" width="1.5" height="1.5" fill="#44ffdd"/>
+    <rect x="4.5" y="4.5" width="1.5" height="1.5" fill="#44ffdd"/>
+    <rect x="4.5" y="6" width="1.5" height="1.5" fill="#44ffdd"/>
+    <rect x="0" y="9" width="21" height="1.5" fill="#666666"/>
+    <rect x="0" y="10.5" width="21" height="1.5" fill="#444444"/>
+    <rect x="0" y="12" width="21" height="1.5" fill="#666666"/>
+    <rect x="15" y="15" width="1.5" height="1.5" fill="#44ffdd"/>
+    <rect x="15" y="16.5" width="1.5" height="1.5" fill="#44ffdd"/>
+    <rect x="15" y="18" width="1.5" height="1.5" fill="#44ffdd"/>
+    <rect x="15" y="19.5" width="1.5" height="1.5" fill="#44ffdd"/>
+  </g>
+
+  <!-- Title -->
+  <text class="title" x="370" y="95">GRAVITY FLIP</text>
+  <text class="sub" x="370" y="120">Flip · Dodge · Survive</text>
+
+  <!-- Score HUD mock -->
+  <g transform="translate(370, 138)">
+    <rect width="260" height="30" fill="#0a0a20" stroke="#1a1a40" stroke-width="2" rx="2"/>
+    <text font-family="monospace" font-size="9" fill="#666" x="10" y="19">SCORE</text>
+    <text font-family="monospace" font-size="9" fill="#00ffcc" x="55" y="19">1420</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="120" y="19">BEST</text>
+    <text font-family="monospace" font-size="9" fill="#00ffcc" x="155" y="19">3850</text>
+  </g>
+
+  <!-- Border -->
+  <rect width="800" height="200" fill="none" stroke="#1a1a40" stroke-width="2" rx="8"/>
+</svg>

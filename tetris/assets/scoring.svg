@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 180" width="500" height="180">
+  <rect width="500" height="180" fill="#0a0a16" rx="6"/>
+  <defs><style>text{font-family:monospace;}</style></defs>
+
+  <!-- Title -->
+  <text fill="#888" font-size="10" x="180" y="18">SCORING TABLE</text>
+
+  <!-- Column headers -->
+  <text fill="#666" font-size="8" x="20" y="38">Clear</text>
+  <text fill="#666" font-size="8" x="90" y="38">Lines</text>
+  <text fill="#666" font-size="8" x="150" y="38">Visual</text>
+  <text fill="#666" font-size="8" x="310" y="38">Points</text>
+
+  <!-- Row 1: Single -->
+  <text fill="#e0e0e0" font-size="9" x="20" y="58">Single</text>
+  <text fill="#aaa" font-size="9" x="90" y="58">1</text>
+  <!-- Visual: 1 filled row -->
+  <g transform="translate(150, 48)" shape-rendering="crispEdges">
+    <rect width="140" height="8" fill="#0e0e1a" stroke="#2a2a40" stroke-width="0.5"/>
+    <rect x="0" y="0" width="140" height="8" fill="#44aaff" opacity="0.5"/>
+  </g>
+  <text fill="#ffd700" font-size="9" x="310" y="58">100 × L</text>
+
+  <!-- Row 2: Double -->
+  <text fill="#e0e0e0" font-size="9" x="20" y="80">Double</text>
+  <text fill="#aaa" font-size="9" x="90" y="80">2</text>
+  <g transform="translate(150, 70)" shape-rendering="crispEdges">
+    <rect width="140" height="16" fill="#0e0e1a" stroke="#2a2a40" stroke-width="0.5"/>
+    <rect x="0" y="0" width="140" height="8" fill="#44aaff" opacity="0.5"/>
+    <rect x="0" y="8" width="140" height="8" fill="#44aaff" opacity="0.5"/>
+  </g>
+  <text fill="#ffd700" font-size="9" x="310" y="80">300 × L</text>
+
+  <!-- Row 3: Triple -->
+  <text fill="#e0e0e0" font-size="9" x="20" y="106">Triple</text>
+  <text fill="#aaa" font-size="9" x="90" y="106">3</text>
+  <g transform="translate(150, 92)" shape-rendering="crispEdges">
+    <rect width="140" height="24" fill="#0e0e1a" stroke="#2a2a40" stroke-width="0.5"/>
+    <rect x="0" y="0" width="140" height="8" fill="#44aaff" opacity="0.5"/>
+    <rect x="0" y="8" width="140" height="8" fill="#44aaff" opacity="0.5"/>
+    <rect x="0" y="16" width="140" height="8" fill="#44aaff" opacity="0.5"/>
+  </g>
+  <text fill="#ffd700" font-size="9" x="310" y="106">500 × L</text>
+
+  <!-- Row 4: Tetris -->
+  <text fill="#44aaff" font-size="9" x="20" y="136" font-weight="bold">Tetris</text>
+  <text fill="#aaa" font-size="9" x="90" y="136">4</text>
+  <g transform="translate(150, 118)" shape-rendering="crispEdges">
+    <rect width="140" height="32" fill="#0e0e1a" stroke="#44aaff" stroke-width="1"/>
+    <rect x="0" y="0" width="140" height="8" fill="#44aaff" opacity="0.6"/>
+    <rect x="0" y="8" width="140" height="8" fill="#44aaff" opacity="0.6"/>
+    <rect x="0" y="16" width="140" height="8" fill="#44aaff" opacity="0.6"/>
+    <rect x="0" y="24" width="140" height="8" fill="#44aaff" opacity="0.6"/>
+  </g>
+  <text fill="#ffd700" font-size="9" x="310" y="136" font-weight="bold">800 × L</text>
+
+  <!-- Footer notes -->
+  <text fill="#666" font-size="8" x="20" y="165">L = level</text>
+  <text fill="#666" font-size="8" x="120" y="165">Soft drop: 1 pt/cell</text>
+  <text fill="#666" font-size="8" x="300" y="165">Hard drop: 2 pts/cell</text>
+
+  <rect width="500" height="180" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

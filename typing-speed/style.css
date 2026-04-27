@@ -1,0 +1,186 @@
+/* Typing Speed — Game Styles */
+
+:root {
+  --c-game: #44aaff;
+}
+
+/* ---- Main container ---- */
+.ts-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 8px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* ---- Word lines display ---- */
+.ts-lines {
+  background: #0e0e1a;
+  border: 2px solid #2a2a40;
+  border-radius: 6px;
+  padding: 16px 20px;
+  min-height: 140px;
+  font-family: var(--font-pixel, monospace);
+  font-size: 1.25rem;
+  line-height: 2.2;
+  overflow: hidden;
+}
+
+.ts-line {
+  overflow: hidden;
+}
+
+/* ---- Word states ---- */
+.ts-word {
+  display: inline;
+  border-radius: 3px;
+  padding: 2px 0;
+  transition: color 0.1s ease;
+}
+
+.ts-word-done {
+  color: #444444;
+}
+
+.ts-word-current {
+  background: #1a2a3a;
+  border-radius: 3px;
+  padding: 2px 4px;
+  margin: 0 -4px;
+}
+
+.ts-word-upcoming {
+  color: #888888;
+}
+
+.ts-space {
+  display: inline;
+}
+
+/* ---- Character coloring ---- */
+.ts-char-correct {
+  color: #44ff66;
+}
+
+.ts-char-wrong {
+  color: #ff4444;
+  text-decoration: underline;
+  text-decoration-color: #ff4444;
+}
+
+.ts-char-cursor {
+  color: #ffffff;
+  border-bottom: 2px solid #ffd700;
+}
+
+.ts-char-pending {
+  color: #ffffff;
+}
+
+.ts-char-extra {
+  color: #ff4444;
+  background: rgba(255, 68, 68, 0.15);
+  border-radius: 2px;
+}
+
+/* ---- Input display ---- */
+.ts-input {
+  background: #12121f;
+  border: 2px solid #2a2a40;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-family: var(--font-pixel, monospace);
+  font-size: 1.4rem;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ts-input-label {
+  color: #666666;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.ts-input-word {
+  letter-spacing: 1px;
+}
+
+/* ---- Stats bar ---- */
+.ts-stats {
+  display: flex;
+  justify-content: space-around;
+  background: #12121f;
+  border: 2px solid #2a2a40;
+  border-radius: 6px;
+  padding: 10px 16px;
+}
+
+.ts-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  font-family: var(--font-pixel, monospace);
+}
+
+.ts-stat-label {
+  font-size: 0.65rem;
+  color: #666666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ts-stat-value {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* ---- Mobile note ---- */
+.ts-mobile-note {
+  text-align: center;
+  font-family: var(--font-pixel, monospace);
+  font-size: 0.7rem;
+  color: #555555;
+  padding: 4px 0;
+}
+
+/* ---- Hidden input for mobile keyboard ---- */
+.ts-hidden-input {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 400px) {
+  .ts-lines {
+    font-size: 1rem;
+    padding: 12px 14px;
+    min-height: 120px;
+    line-height: 2;
+  }
+
+  .ts-input {
+    font-size: 1.1rem;
+    padding: 10px 14px;
+  }
+
+  .ts-stat-value {
+    font-size: 0.85rem;
+  }
+
+  .ts-stat-label {
+    font-size: 0.55rem;
+  }
+}
+

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" width="600" height="120">
+  <rect width="600" height="120" fill="#0a0a16" rx="6"/>
+  <defs><style>text{font-family:monospace;}</style></defs>
+
+  <!-- Desktop section -->
+  <text fill="#888" font-size="10" x="30" y="18">DESKTOP</text>
+
+  <!-- Left click -->
+  <g transform="translate(40, 30)">
+    <!-- Mouse outline -->
+    <rect x="0" y="0" width="40" height="55" fill="#1a1a2e" stroke="#2a2a40" stroke-width="2" rx="12"/>
+    <!-- Left button highlighted -->
+    <rect x="2" y="2" width="18" height="24" fill="#ffd700" rx="10" opacity="0.6"/>
+    <!-- Divider -->
+    <line x1="20" y1="2" x2="20" y2="26" stroke="#2a2a40" stroke-width="1"/>
+    <!-- Scroll wheel -->
+    <rect x="17" y="28" width="6" height="8" fill="#2a2a40" rx="2"/>
+    <text fill="#ffd700" font-size="9" x="50" y="18">Left Click</text>
+    <text fill="#888" font-size="8" x="50" y="30">Reveal cell</text>
+  </g>
+
+  <!-- Right click -->
+  <g transform="translate(170, 30)">
+    <rect x="0" y="0" width="40" height="55" fill="#1a1a2e" stroke="#2a2a40" stroke-width="2" rx="12"/>
+    <!-- Right button highlighted -->
+    <rect x="20" y="2" width="18" height="24" fill="#ff4444" rx="10" opacity="0.6"/>
+    <line x1="20" y1="2" x2="20" y2="26" stroke="#2a2a40" stroke-width="1"/>
+    <rect x="17" y="28" width="6" height="8" fill="#2a2a40" rx="2"/>
+    <text fill="#ff4444" font-size="9" x="50" y="18">Right Click</text>
+    <text fill="#888" font-size="8" x="50" y="30">Toggle flag</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="310" y1="10" x2="310" y2="110" stroke="#2a2a40" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Mobile section -->
+  <text fill="#888" font-size="10" x="330" y="18">MOBILE</text>
+
+  <!-- Tap -->
+  <g transform="translate(340, 30)">
+    <circle cx="15" cy="15" r="14" fill="none" stroke="#ffd700" stroke-width="2"/>
+    <circle cx="15" cy="15" r="4" fill="#ffd700"/>
+    <text fill="#ffd700" font-size="9" x="38" y="12">Tap</text>
+    <text fill="#888" font-size="8" x="38" y="24">Reveal cell</text>
+  </g>
+
+  <!-- Long press -->
+  <g transform="translate(340, 62)">
+    <circle cx="15" cy="15" r="14" fill="none" stroke="#ff4444" stroke-width="2" stroke-dasharray="3,2"/>
+    <circle cx="15" cy="15" r="4" fill="#ff4444"/>
+    <text fill="#888" font-size="7" x="8" y="38">500ms</text>
+    <text fill="#ff4444" font-size="9" x="38" y="12">Long Press</text>
+    <text fill="#888" font-size="8" x="38" y="24">Toggle flag</text>
+  </g>
+
+  <!-- Flag mode button -->
+  <g transform="translate(480, 40)">
+    <rect x="0" y="0" width="90" height="28" fill="#1a1a2e" stroke="#ffd700" stroke-width="1.5" rx="4"/>
+    <text font-size="10" fill="#ffd700" x="8" y="19">🚩 Flag Mode</text>
+    <text fill="#888" font-size="7" x="8" y="42">Toggle to flag</text>
+    <text fill="#888" font-size="7" x="8" y="52">with tap instead</text>
+  </g>
+
+  <rect width="600" height="120" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

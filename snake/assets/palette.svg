@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" width="600" height="160">
+  <rect width="600" height="160" fill="#0a0a16" rx="6"/>
+  <defs><style>text{font-family:monospace;font-size:9px;}</style></defs>
+
+  <!-- Row 1: Snake colors -->
+  <rect x="20" y="20" width="40" height="40" fill="#44ff66" rx="2"/>
+  <text fill="#aaa" x="20" y="78">Head</text>
+  <text fill="#555" x="20" y="90">#44ff66</text>
+
+  <rect x="90" y="20" width="40" height="40" fill="#22aa44" rx="2"/>
+  <text fill="#aaa" x="90" y="78">Body</text>
+  <text fill="#555" x="90" y="90">#22aa44</text>
+
+  <rect x="160" y="20" width="40" height="40" fill="#14401a" rx="2"/>
+  <text fill="#aaa" x="160" y="78">Tail</text>
+  <text fill="#555" x="160" y="90">#14401a</text>
+
+  <rect x="230" y="20" width="40" height="40" fill="#ffffff" rx="2"/>
+  <circle cx="250" cy="40" r="6" fill="#0a0a16"/>
+  <text fill="#aaa" x="230" y="78">Eye</text>
+  <text fill="#555" x="230" y="90">#ffffff</text>
+
+  <!-- Row 1: Food + board -->
+  <rect x="320" y="20" width="40" height="40" fill="#ff4444" rx="2"/>
+  <rect x="322" y="22" width="8" height="8" fill="#ff8888"/>
+  <text fill="#aaa" x="320" y="78">Food</text>
+  <text fill="#555" x="320" y="90">#ff4444</text>
+
+  <rect x="390" y="20" width="40" height="40" fill="#ff6666" rx="2" opacity="0.4"/>
+  <text fill="#aaa" x="390" y="78">Glow</text>
+  <text fill="#555" x="390" y="90">#ff6666</text>
+
+  <rect x="460" y="20" width="40" height="40" fill="#0e0e1a" rx="2" stroke="#2a2a40" stroke-width="1"/>
+  <line x1="470" y1="20" x2="470" y2="60" stroke="#161625" stroke-width="0.5"/>
+  <line x1="480" y1="20" x2="480" y2="60" stroke="#161625" stroke-width="0.5"/>
+  <line x1="490" y1="20" x2="490" y2="60" stroke="#161625" stroke-width="0.5"/>
+  <line x1="460" y1="30" x2="500" y2="30" stroke="#161625" stroke-width="0.5"/>
+  <line x1="460" y1="40" x2="500" y2="40" stroke="#161625" stroke-width="0.5"/>
+  <line x1="460" y1="50" x2="500" y2="50" stroke="#161625" stroke-width="0.5"/>
+  <text fill="#aaa" x="460" y="78">Grid</text>
+  <text fill="#555" x="460" y="90">#0e0e1a</text>
+
+  <rect x="530" y="20" width="40" height="40" fill="#2a2a40" rx="2"/>
+  <text fill="#aaa" x="530" y="78">Border</text>
+  <text fill="#555" x="530" y="90">#2a2a40</text>
+
+  <!-- Gradient bar showing body fade -->
+  <text fill="#888" x="20" y="120">Body gradient</text>
+  <linearGradient id="bodyGrad" x1="0" y1="0" x2="1" y2="0" xmlns="http://www.w3.org/2000/svg">
+    <stop offset="0%" stop-color="#44ff66"/>
+    <stop offset="100%" stop-color="#14401a"/>
+  </linearGradient>
+  <rect x="20" y="128" width="550" height="12" fill="url(#bodyGrad)" rx="2"/>
+  <text fill="#666" x="20" y="155">HEAD</text>
+  <text fill="#666" x="540" y="155">TAIL</text>
+
+  <rect width="600" height="160" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

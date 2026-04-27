@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" width="600" height="160">
+  <rect width="600" height="160" fill="#0a0a16" rx="6"/>
+
+  <text font-family="monospace" font-size="11" fill="#888" x="20" y="25">TILE STATES</text>
+
+  <!-- Correct -->
+  <rect x="20" y="40" width="50" height="50" fill="#538d4e" rx="4"/>
+  <text font-family="monospace" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle" x="45" y="72">A</text>
+  <text font-family="monospace" font-size="9" fill="#538d4e" x="80" y="58">Correct</text>
+  <text font-family="monospace" font-size="8" fill="#666" x="80" y="72">#538d4e</text>
+
+  <!-- Present -->
+  <rect x="20" y="100" width="50" height="50" fill="#b59f3b" rx="4"/>
+  <text font-family="monospace" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle" x="45" y="132">B</text>
+  <text font-family="monospace" font-size="9" fill="#b59f3b" x="80" y="118">Present</text>
+  <text font-family="monospace" font-size="8" fill="#666" x="80" y="132">#b59f3b</text>
+
+  <!-- Absent -->
+  <rect x="200" y="40" width="50" height="50" fill="#3a3a4c" rx="4"/>
+  <text font-family="monospace" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle" x="225" y="72">C</text>
+  <text font-family="monospace" font-size="9" fill="#888" x="260" y="58">Absent</text>
+  <text font-family="monospace" font-size="8" fill="#666" x="260" y="72">#3a3a4c</text>
+
+  <!-- Empty -->
+  <rect x="200" y="100" width="50" height="50" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="4"/>
+  <text font-family="monospace" font-size="9" fill="#888" x="260" y="118">Empty</text>
+  <text font-family="monospace" font-size="8" fill="#666" x="260" y="132">#12121f</text>
+
+  <text font-family="monospace" font-size="11" fill="#888" x="400" y="25">KEYBOARD</text>
+
+  <!-- Key default -->
+  <rect x="400" y="40" width="40" height="30" fill="#818384" rx="3"/>
+  <text font-family="monospace" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle" x="420" y="60">K</text>
+  <text font-family="monospace" font-size="8" fill="#666" x="450" y="58">#818384</text>
+
+  <!-- Key correct -->
+  <rect x="400" y="78" width="40" height="30" fill="#538d4e" rx="3"/>
+  <text font-family="monospace" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle" x="420" y="98">K</text>
+  <text font-family="monospace" font-size="8" fill="#538d4e" x="450" y="96">correct</text>
+
+  <!-- Key present -->
+  <rect x="400" y="116" width="40" height="30" fill="#b59f3b" rx="3"/>
+  <text font-family="monospace" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle" x="420" y="136">K</text>
+  <text font-family="monospace" font-size="8" fill="#b59f3b" x="450" y="134">present</text>
+
+  <!-- Border -->
+  <rect width="600" height="160" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>🕹️ Mini Arcade</title>
+  <link rel="stylesheet" href="shared/css/reset.css">
+  <link rel="stylesheet" href="shared/css/tokens.css">
+  <link rel="stylesheet" href="shared/css/base.css">
+  <link rel="stylesheet" href="shared/css/pixel.css">
+  <link rel="stylesheet" href="shared/css/hub.css">
+</head>
+<body>
+
+  <div class="hub-header">
+    <h1>Mini Arcade</h1>
+    <p>Pick a game and play — no installs, no ads, just fun.</p>
+  </div>
+
+  <div class="section-label">Classics</div>
+  <div class="card-grid" id="classics"></div>
+
+  <div class="section-label">Modern Hits</div>
+  <div class="card-grid" id="modern"></div>
+
+  <div class="section-label">Originals</div>
+  <div class="card-grid" id="originals"></div>
+
+  <script src="shared/icons.js"></script>
+  <script>
+    var games = {
+      classics: [
+        { id: 'snake',          name: 'Snake',          tag: 'Classic' },
+        { id: 'tetris',         name: 'Tetris',         tag: 'Puzzle' },
+        { id: 'breakout',       name: 'Breakout',       tag: 'Action' },
+        { id: 'minesweeper',    name: 'Minesweeper',    tag: 'Logic' },
+        { id: '2048',           name: '2048',           tag: 'Puzzle' },
+        { id: 'flappy-bird',    name: 'Flappy Bird',    tag: 'Action' },
+        { id: 'pong',           name: 'Pong',           tag: '2-Player' },
+        { id: 'memory-cards',   name: 'Memory Cards',   tag: 'Brain' },
+        { id: 'whack-a-mole',   name: 'Whack-a-Mole',  tag: 'Reflex' },
+        { id: 'tic-tac-toe',    name: 'Tic-Tac-Toe',   tag: 'Strategy' },
+        { id: 'simon-says',     name: 'Simon Says',     tag: 'Memory' },
+        { id: 'solitaire',      name: 'Solitaire',      tag: 'Cards' },
+        { id: 'wordle',         name: 'Wordle',         tag: 'Word' },
+        { id: 'space-invaders', name: 'Space Invaders', tag: 'Shooter' },
+        { id: 'doodle-jump',    name: 'Doodle Jump',    tag: 'Platformer' },
+      ],
+      modern: [
+        { id: 'color-switch',   name: 'Color Switch',   tag: 'Timing' },
+        { id: 'stack-tower',    name: 'Stack Tower',    tag: 'Timing' },
+        { id: 'crossy-road',    name: 'Crossy Road',    tag: 'Action' },
+        { id: 'fruit-ninja',    name: 'Fruit Ninja',    tag: 'Swipe' },
+        { id: 'reaction-time',  name: 'Reaction Time',  tag: 'Reflex' },
+        { id: 'typing-speed',   name: 'Typing Speed',   tag: 'Skill' },
+        { id: 'endless-runner', name: 'Endless Runner', tag: 'Action' },
+      ],
+      originals: [
+        { id: 'gravity-flip',      name: 'Gravity Flip',      tag: 'Platformer' },
+        { id: 'color-flood',       name: 'Color Flood',       tag: 'Strategy' },
+        { id: 'rhythm-tap',        name: 'Rhythm Tap',        tag: 'Music' },
+        { id: 'shadow-match',      name: 'Shadow Match',      tag: 'Brain' },
+        { id: 'chain-reaction',    name: 'Chain Reaction',    tag: 'Physics' },
+        { id: 'orbit-dodge',       name: 'Orbit Dodge',       tag: 'Action' },
+        { id: 'word-chain',        name: 'Word Chain',        tag: 'Word' },
+        { id: 'pixel-painter',     name: 'Pixel Painter',     tag: 'Art' },
+        { id: 'merge-path',        name: 'Merge Path',        tag: 'Puzzle' },
+        { id: 'bounce-architect',  name: 'Bounce Architect',  tag: 'Physics' },
+        { id: 'sound-memory',      name: 'Sound Memory',      tag: 'Audio' },
+        { id: 'shrinking-arena',   name: 'Shrinking Arena',   tag: 'Survival' },
+        { id: 'one-button-duels',  name: 'One-Button Duels',  tag: '2-Player' },
+      ]
+    };
+
+    function renderGrid(containerId, list) {
+      var container = document.getElementById(containerId);
+      var html = '';
+      for (var i = 0; i < list.length; i++) {
+        var g = list[i];
+        html += '<a href="' + g.id + '/index.html" class="card">' +
+          '<span class="card-icon">' + GameIcons.svg(g.id, 64) + '</span>' +
+          '<span class="card-name">' + g.name + '</span>' +
+          '<span class="card-tag">' + g.tag + '</span>' +
+          '</a>';
+      }
+      container.innerHTML = html;
+    }
+
+    renderGrid('classics', games.classics);
+    renderGrid('modern', games.modern);
+    renderGrid('originals', games.originals);
+  </script>
+</body>
+</html>

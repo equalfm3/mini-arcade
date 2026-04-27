@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 540" width="440" height="540">
+  <defs>
+    <style>text { font-family: monospace; }</style>
+  </defs>
+  <!-- Outer frame -->
+  <rect width="440" height="540" fill="#0a0a16" rx="8"/>
+
+  <!-- HUD bar -->
+  <rect x="20" y="15" width="400" height="35" fill="#12121f" stroke="#2a2a40" stroke-width="2"/>
+
+  <!-- Pixel icon in HUD (pong icon) -->
+  <g transform="translate(28, 19)" shape-rendering="crispEdges">
+    <rect x="1.2" y="1.2" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="13.2" y="1.2" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="1.2" y="2.4" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="13.2" y="2.4" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="1.2" y="3.6" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="7.2" y="3.6" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="13.2" y="3.6" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="1.2" y="4.8" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="6" y="4.8" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="13.2" y="4.8" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="1.2" y="6" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="4.8" y="6" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="13.2" y="6" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="1.2" y="7.2" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="13.2" y="7.2" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="1.2" y="8.4" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="12" y="8.4" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="1.2" y="9.6" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="10.8" y="9.6" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="1.2" y="10.8" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="9.6" y="10.8" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="13.2" y="10.8" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="1.2" y="12" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="8.4" y="12" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="13.2" y="12" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="1.2" y="13.2" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="13.2" y="13.2" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="1.2" y="14.4" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="13.2" y="14.4" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="1.2" y="15.6" width="2.4" height="1.2" fill="#e0e0e0"/>
+    <rect x="13.2" y="15.6" width="2.4" height="1.2" fill="#e0e0e0"/>
+  </g>
+
+  <text font-size="11" fill="#e0e0e0" x="52" y="38" font-weight="bold">Pong</text>
+  <text font-size="8" fill="#666" x="220" y="35">P1</text>
+  <text font-size="10" fill="#ffd700" x="238" y="35">3</text>
+  <text font-size="8" fill="#666" x="275" y="35">P2</text>
+  <text font-size="10" fill="#ffd700" x="293" y="35">2</text>
+  <text font-size="8" fill="#666" x="330" y="35">Time</text>
+  <text font-size="10" fill="#ffd700" x="362" y="35">1:42</text>
+
+  <!-- Game board -->
+  <rect x="20" y="60" width="400" height="460" fill="#0e0e1a" stroke="#2a2a40" stroke-width="2"/>
+
+  <!-- Dashed center line -->
+  <line x1="220" y1="60" x2="220" y2="520" stroke="#2a2a40" stroke-width="2" stroke-dasharray="8,8"/>
+
+  <!-- Large faded score numbers in background -->
+  <text font-size="120" fill="#1a1a2e" font-family="monospace" font-weight="bold" text-anchor="middle" x="120" y="330">3</text>
+  <text font-size="120" fill="#1a1a2e" font-family="monospace" font-weight="bold" text-anchor="middle" x="320" y="330">2</text>
+
+  <!-- Left paddle (P1) at ~40% height -->
+  <rect x="40" y="220" width="10" height="70" fill="#e0e0e0"/>
+
+  <!-- Right paddle (P2/AI) at ~60% height -->
+  <rect x="390" y="310" width="10" height="70" fill="#e0e0e0"/>
+
+  <!-- Ball mid-flight heading toward right paddle -->
+  <rect x="280" y="330" width="16" height="16" fill="#ffffff"/>
+
+  <!-- Ball trail (fading squares showing trajectory) -->
+  <rect x="200" y="300" width="10" height="10" fill="#ffffff" opacity="0.08"/>
+  <rect x="225" y="308" width="11" height="11" fill="#ffffff" opacity="0.12"/>
+  <rect x="250" y="318" width="13" height="13" fill="#ffffff" opacity="0.2"/>
+
+  <!-- Score particles (from a recent point scored) -->
+  <rect x="25" y="180" width="3" height="3" fill="#e0e0e0" opacity="0.4"/>
+  <rect x="32" y="175" width="2" height="2" fill="#e0e0e0" opacity="0.3"/>
+  <rect x="28" y="190" width="3" height="3" fill="#e0e0e0" opacity="0.2"/>
+
+  <!-- Border -->
+  <rect width="440" height="540" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+</svg>

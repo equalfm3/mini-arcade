@@ -1,0 +1,105 @@
+/* ============================================
+   hub.css — Arcade hub / game selector page only
+   ============================================ */
+
+.hub-header {
+  text-align: center;
+  padding: var(--sp-8) var(--sp-4) var(--sp-4);
+}
+
+.hub-header h1 {
+  font-size: 1.2rem;
+  background: linear-gradient(135deg, var(--c-accent), #ff6b6b, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hub-header p {
+  font-family: var(--font-pixel);
+  font-size: 0.45rem;
+  color: var(--c-text-dim);
+  margin-top: var(--sp-2);
+}
+
+/* Section labels */
+.section-label {
+  width: 100%;
+  max-width: 900px;
+  padding: var(--sp-6) var(--sp-4) var(--sp-2);
+  font-family: var(--font-pixel);
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--c-text-dim);
+}
+
+/* Game card grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: var(--sp-3);
+  padding: 0 var(--sp-4) var(--sp-4);
+  max-width: 900px;
+  width: 100%;
+}
+
+.card {
+  background: var(--c-bg-raised);
+  border: var(--px-border) solid var(--c-border);
+  padding: var(--sp-4) var(--sp-3);
+  text-align: center;
+  transition: transform 0.15s, border-color 0.15s;
+  cursor: pointer;
+}
+
+.card:hover, .card:active {
+  transform: translateY(-3px);
+  border-color: var(--c-accent);
+}
+
+.card-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--sp-2);
+}
+
+.card-icon svg {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.card-name {
+  font-family: var(--font-pixel);
+  font-size: 0.5rem;
+  color: var(--c-text-bright);
+  display: block;
+  margin-bottom: var(--sp-1);
+}
+
+.card-tag {
+  font-family: var(--font-pixel);
+  font-size: 0.35rem;
+  color: var(--c-text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 480px) {
+  .hub-header h1 {
+    font-size: 0.9rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: var(--sp-2);
+  }
+
+  .card {
+    padding: var(--sp-3) var(--sp-2);
+  }
+
+  .card-emoji {
+    font-size: 1.6rem;
+  }
+}

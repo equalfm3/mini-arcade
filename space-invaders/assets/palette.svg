@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" width="600" height="160">
+  <rect width="600" height="160" fill="#0a0a16" rx="6"/>
+
+  <!-- Color swatches -->
+  <g>
+    <!-- Background -->
+    <rect x="30" y="30" width="50" height="50" fill="#0a0a16" stroke="#2a2a40" stroke-width="1.5" rx="3"/>
+    <text font-family="monospace" font-size="8" fill="#666" text-anchor="middle" x="55" y="100">Background</text>
+    <text font-family="monospace" font-size="7" fill="#888" text-anchor="middle" x="55" y="112">#0a0a16</text>
+
+    <!-- Player green -->
+    <rect x="110" y="30" width="50" height="50" fill="#44ff66" rx="3"/>
+    <text font-family="monospace" font-size="8" fill="#e0e0e0" text-anchor="middle" x="135" y="100">Player</text>
+    <text font-family="monospace" font-size="7" fill="#888" text-anchor="middle" x="135" y="112">#44ff66</text>
+
+    <!-- Squid purple -->
+    <rect x="190" y="30" width="50" height="50" fill="#c084fc" rx="3"/>
+    <text font-family="monospace" font-size="8" fill="#e0e0e0" text-anchor="middle" x="215" y="100">Squid</text>
+    <text font-family="monospace" font-size="7" fill="#888" text-anchor="middle" x="215" y="112">#c084fc</text>
+
+    <!-- Crab blue -->
+    <rect x="270" y="30" width="50" height="50" fill="#44aaff" rx="3"/>
+    <text font-family="monospace" font-size="8" fill="#e0e0e0" text-anchor="middle" x="295" y="100">Crab</text>
+    <text font-family="monospace" font-size="7" fill="#888" text-anchor="middle" x="295" y="112">#44aaff</text>
+
+    <!-- Octopus green -->
+    <rect x="350" y="30" width="50" height="50" fill="#44ff66" rx="3"/>
+    <text font-family="monospace" font-size="8" fill="#e0e0e0" text-anchor="middle" x="375" y="100">Octopus</text>
+    <text font-family="monospace" font-size="7" fill="#888" text-anchor="middle" x="375" y="112">#44ff66</text>
+
+    <!-- Enemy bullet red -->
+    <rect x="430" y="30" width="50" height="50" fill="#ff4444" rx="3"/>
+    <text font-family="monospace" font-size="8" fill="#e0e0e0" text-anchor="middle" x="455" y="100">Enemy</text>
+    <text font-family="monospace" font-size="7" fill="#888" text-anchor="middle" x="455" y="112">#ff4444</text>
+
+    <!-- HUD gold -->
+    <rect x="510" y="30" width="50" height="50" fill="#ffd700" rx="3"/>
+    <text font-family="monospace" font-size="8" fill="#e0e0e0" text-anchor="middle" x="535" y="100">HUD</text>
+    <text font-family="monospace" font-size="7" fill="#888" text-anchor="middle" x="535" y="112">#ffd700</text>
+  </g>
+
+  <text font-family="monospace" font-size="9" fill="#444" text-anchor="middle" x="300" y="145">All colors defined in src/config.js</text>
+
+  <rect width="600" height="160" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

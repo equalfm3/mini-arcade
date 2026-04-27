@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" width="600" height="120">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+  <rect width="600" height="120" fill="#0a0a16" rx="6"/>
+
+  <!-- Color swatches -->
+  <g transform="translate(30, 20)">
+    <!-- Red -->
+    <rect x="0" y="0" width="70" height="50" fill="#ff4444" rx="6"/>
+    <text fill="#fff" font-size="11" font-weight="bold" x="35" y="32" text-anchor="middle">Red</text>
+    <text fill="#888" font-size="9" x="35" y="75" text-anchor="middle">#ff4444</text>
+
+    <!-- Orange -->
+    <rect x="90" y="0" width="70" height="50" fill="#ff8844" rx="6"/>
+    <text fill="#fff" font-size="11" font-weight="bold" x="125" y="32" text-anchor="middle">Orange</text>
+    <text fill="#888" font-size="9" x="125" y="75" text-anchor="middle">#ff8844</text>
+
+    <!-- Yellow -->
+    <rect x="180" y="0" width="70" height="50" fill="#ffd700" rx="6"/>
+    <text fill="#1a1a2e" font-size="11" font-weight="bold" x="215" y="32" text-anchor="middle">Yellow</text>
+    <text fill="#888" font-size="9" x="215" y="75" text-anchor="middle">#ffd700</text>
+
+    <!-- Green -->
+    <rect x="270" y="0" width="70" height="50" fill="#44ff66" rx="6"/>
+    <text fill="#1a1a2e" font-size="11" font-weight="bold" x="305" y="32" text-anchor="middle">Green</text>
+    <text fill="#888" font-size="9" x="305" y="75" text-anchor="middle">#44ff66</text>
+
+    <!-- Blue -->
+    <rect x="360" y="0" width="70" height="50" fill="#44aaff" rx="6"/>
+    <text fill="#fff" font-size="11" font-weight="bold" x="395" y="32" text-anchor="middle">Blue</text>
+    <text fill="#888" font-size="9" x="395" y="75" text-anchor="middle">#44aaff</text>
+
+    <!-- Purple -->
+    <rect x="450" y="0" width="70" height="50" fill="#c084fc" rx="6"/>
+    <text fill="#fff" font-size="11" font-weight="bold" x="485" y="32" text-anchor="middle">Purple</text>
+    <text fill="#888" font-size="9" x="485" y="75" text-anchor="middle">#c084fc</text>
+  </g>
+
+  <rect width="600" height="120" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" width="600" height="120">
+  <rect width="600" height="120" fill="#0a0a16" rx="6"/>
+
+  <!-- X Color -->
+  <g transform="translate(30, 20)">
+    <rect width="70" height="50" fill="#ff4444" rx="4"/>
+    <text font-family="monospace" font-size="10" fill="#ff4444" x="35" y="75" text-anchor="middle">X Mark</text>
+    <text font-family="monospace" font-size="8" fill="#666" x="35" y="90" text-anchor="middle">#ff4444</text>
+  </g>
+
+  <!-- O Color -->
+  <g transform="translate(120, 20)">
+    <rect width="70" height="50" fill="#44aaff" rx="4"/>
+    <text font-family="monospace" font-size="10" fill="#44aaff" x="35" y="75" text-anchor="middle">O Mark</text>
+    <text font-family="monospace" font-size="8" fill="#666" x="35" y="90" text-anchor="middle">#44aaff</text>
+  </g>
+
+  <!-- Win Line -->
+  <g transform="translate(210, 20)">
+    <rect width="70" height="50" fill="#ffd700" rx="4"/>
+    <text font-family="monospace" font-size="10" fill="#ffd700" x="35" y="75" text-anchor="middle">Win Line</text>
+    <text font-family="monospace" font-size="8" fill="#666" x="35" y="90" text-anchor="middle">#ffd700</text>
+  </g>
+
+  <!-- Grid -->
+  <g transform="translate(300, 20)">
+    <rect width="70" height="50" fill="#2a2a40" rx="4"/>
+    <text font-family="monospace" font-size="10" fill="#2a2a40" x="35" y="75" text-anchor="middle">Grid</text>
+    <text font-family="monospace" font-size="8" fill="#666" x="35" y="90" text-anchor="middle">#2a2a40</text>
+  </g>
+
+  <!-- Cell BG -->
+  <g transform="translate(390, 20)">
+    <rect width="70" height="50" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="4"/>
+    <text font-family="monospace" font-size="10" fill="#888" x="35" y="75" text-anchor="middle">Cell BG</text>
+    <text font-family="monospace" font-size="8" fill="#666" x="35" y="90" text-anchor="middle">#12121f</text>
+  </g>
+
+  <!-- Draw -->
+  <g transform="translate(480, 20)">
+    <rect width="70" height="50" fill="#888888" rx="4"/>
+    <text font-family="monospace" font-size="10" fill="#888" x="35" y="75" text-anchor="middle">Draw</text>
+    <text font-family="monospace" font-size="8" fill="#666" x="35" y="90" text-anchor="middle">#888888</text>
+  </g>
+
+  <!-- Border -->
+  <rect width="600" height="120" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

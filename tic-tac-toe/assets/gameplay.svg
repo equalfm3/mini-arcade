@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 420" width="380" height="420">
+  <rect width="380" height="420" fill="#0a0a16" rx="6"/>
+
+  <!-- HUD bar -->
+  <g transform="translate(20, 15)">
+    <rect width="340" height="28" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="3"/>
+    <text font-family="monospace" font-size="10" fill="#666" x="12" y="18">WINS</text>
+    <text font-family="monospace" font-size="10" fill="#ffd700" x="52" y="18">3</text>
+    <text font-family="monospace" font-size="10" fill="#666" x="100" y="18">DRAWS</text>
+    <text font-family="monospace" font-size="10" fill="#ffd700" x="152" y="18">1</text>
+    <text font-family="monospace" font-size="10" fill="#666" x="210" y="18">STREAK</text>
+    <text font-family="monospace" font-size="10" fill="#ffd700" x="272" y="18">2</text>
+  </g>
+
+  <!-- Status text -->
+  <text font-family="monospace" font-size="12" fill="#ff4444" x="190" y="70" text-anchor="middle">Your turn (X)</text>
+
+  <!-- Board: mid-game state — X played corners, O played center and edge -->
+  <g transform="translate(50, 85)">
+    <!-- Grid background cells -->
+    <!-- Row 0 -->
+    <rect x="0" y="0" width="86" height="86" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="4"/>
+    <rect x="94" y="0" width="86" height="86" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="4"/>
+    <rect x="188" y="0" width="86" height="86" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="4"/>
+    <!-- Row 1 -->
+    <rect x="0" y="94" width="86" height="86" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="4"/>
+    <rect x="94" y="94" width="86" height="86" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="4"/>
+    <rect x="188" y="94" width="86" height="86" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="4"/>
+    <!-- Row 2 -->
+    <rect x="0" y="188" width="86" height="86" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="4"/>
+    <rect x="94" y="188" width="86" height="86" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="4"/>
+    <rect x="188" y="188" width="86" height="86" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="4"/>
+
+    <!-- X in top-left (cell 0) -->
+    <line x1="18" y1="18" x2="68" y2="68" stroke="#ff4444" stroke-width="4" stroke-linecap="round"/>
+    <line x1="68" y1="18" x2="18" y2="68" stroke="#ff4444" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- O in center (cell 4) -->
+    <circle cx="137" cy="137" r="28" fill="none" stroke="#44aaff" stroke-width="4"/>
+
+    <!-- X in top-right (cell 2) -->
+    <line x1="206" y1="18" x2="256" y2="68" stroke="#ff4444" stroke-width="4" stroke-linecap="round"/>
+    <line x1="256" y1="18" x2="206" y2="68" stroke="#ff4444" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- O in middle-left (cell 3) -->
+    <circle cx="43" cy="137" r="28" fill="none" stroke="#44aaff" stroke-width="4"/>
+
+    <!-- X in bottom-left (cell 6) — player about to win diagonal -->
+    <line x1="18" y1="206" x2="68" y2="256" stroke="#ff4444" stroke-width="4" stroke-linecap="round"/>
+    <line x1="68" y1="206" x2="18" y2="256" stroke="#ff4444" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Difficulty label -->
+  <text font-family="monospace" font-size="10" fill="#444" x="190" y="380" text-anchor="middle">Difficulty: Medium</text>
+
+  <!-- Border -->
+  <rect width="380" height="420" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

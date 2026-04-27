@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <style>
+      .bg { fill: #0e0e1a; }
+      .title { font-family: monospace; font-size: 48px; font-weight: bold; fill: #ff66aa; }
+      .sub { font-family: monospace; font-size: 14px; fill: #666666; }
+      .grid { stroke: #161625; stroke-width: 0.5; }
+    </style>
+  </defs>
+  <!-- Background -->
+  <rect class="bg" width="800" height="200" rx="8"/>
+
+  <!-- Subtle grid -->
+  <g class="grid" fill="none">
+    <line x1="0" y1="20" x2="800" y2="20"/><line x1="0" y1="40" x2="800" y2="40"/>
+    <line x1="0" y1="60" x2="800" y2="60"/><line x1="0" y1="80" x2="800" y2="80"/>
+    <line x1="0" y1="100" x2="800" y2="100"/><line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="140" x2="800" y2="140"/><line x1="0" y1="160" x2="800" y2="160"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+  </g>
+
+  <!-- 4 Lanes with falling notes -->
+  <g shape-rendering="crispEdges">
+    <!-- Lane backgrounds -->
+    <rect x="30" y="10" width="50" height="180" fill="#662244" opacity="0.15"/>
+    <rect x="84" y="10" width="50" height="180" fill="#1a6655" opacity="0.15"/>
+    <rect x="138" y="10" width="50" height="180" fill="#665500" opacity="0.15"/>
+    <rect x="192" y="10" width="50" height="180" fill="#1a6622" opacity="0.15"/>
+
+    <!-- Lane dividers -->
+    <rect x="82" y="10" width="2" height="180" fill="#1a1a2e"/>
+    <rect x="136" y="10" width="2" height="180" fill="#1a1a2e"/>
+    <rect x="190" y="10" width="2" height="180" fill="#1a1a2e"/>
+
+    <!-- Hit zone line -->
+    <rect x="28" y="155" width="216" height="4" fill="#333355"/>
+    <rect x="28" y="156" width="216" height="2" fill="#ffd700" opacity="0.6"/>
+
+    <!-- Hit zone circles -->
+    <circle cx="55" cy="157" r="8" fill="none" stroke="#ff66aa" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="109" cy="157" r="8" fill="none" stroke="#44ffdd" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="163" cy="157" r="8" fill="none" stroke="#ffd700" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="217" cy="157" r="8" fill="none" stroke="#44ff66" stroke-width="1.5" opacity="0.5"/>
+
+    <!-- Key labels -->
+    <text font-family="monospace" font-size="8" fill="#ff66aa" text-anchor="middle" x="55" y="160" opacity="0.7">D</text>
+    <text font-family="monospace" font-size="8" fill="#44ffdd" text-anchor="middle" x="109" y="160" opacity="0.7">F</text>
+    <text font-family="monospace" font-size="8" fill="#ffd700" text-anchor="middle" x="163" y="160" opacity="0.7">J</text>
+    <text font-family="monospace" font-size="8" fill="#44ff66" text-anchor="middle" x="217" y="160" opacity="0.7">K</text>
+
+    <!-- Falling notes (pink lane) -->
+    <rect x="38" y="25" width="34" height="16" fill="#ff66aa" rx="3"/>
+    <rect x="40" y="25" width="30" height="3" fill="#ff99cc" opacity="0.5" rx="1"/>
+    <rect x="38" y="80" width="34" height="16" fill="#ff66aa" rx="3"/>
+    <rect x="40" y="80" width="30" height="3" fill="#ff99cc" opacity="0.5" rx="1"/>
+
+    <!-- Falling notes (cyan lane) -->
+    <rect x="92" y="50" width="34" height="16" fill="#44ffdd" rx="3"/>
+    <rect x="94" y="50" width="30" height="3" fill="#88ffee" opacity="0.5" rx="1"/>
+    <rect x="92" y="120" width="34" height="16" fill="#44ffdd" rx="3"/>
+    <rect x="94" y="120" width="30" height="3" fill="#88ffee" opacity="0.5" rx="1"/>
+
+    <!-- Falling notes (gold lane) -->
+    <rect x="146" y="35" width="34" height="16" fill="#ffd700" rx="3"/>
+    <rect x="148" y="35" width="30" height="3" fill="#ffee66" opacity="0.5" rx="1"/>
+    <rect x="146" y="100" width="34" height="16" fill="#ffd700" rx="3"/>
+    <rect x="148" y="100" width="30" height="3" fill="#ffee66" opacity="0.5" rx="1"/>
+
+    <!-- Falling notes (green lane) -->
+    <rect x="200" y="60" width="34" height="16" fill="#44ff66" rx="3"/>
+    <rect x="202" y="60" width="30" height="3" fill="#88ff99" opacity="0.5" rx="1"/>
+
+    <!-- Grade popup -->
+    <text font-family="monospace" font-size="12" font-weight="bold" fill="#ffd700" text-anchor="middle" x="55" y="135">PERFECT!</text>
+
+    <!-- Combo display -->
+    <text font-family="monospace" font-size="16" font-weight="bold" fill="#ffd700" text-anchor="middle" x="136" y="115" opacity="0.9">24x</text>
+    <text font-family="monospace" font-size="8" font-weight="bold" fill="#ff66aa" text-anchor="middle" x="136" y="128">2x MULTI</text>
+  </g>
+
+  <!-- Pixel icon (rhythm-tap from icons.js) -->
+  <g transform="translate(290, 30)" shape-rendering="crispEdges">
+    <rect x="3" y="1.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="6" y="1.5" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="9" y="1.5" width="1.5" height="1.5" fill="#44ff66"/>
+    <rect x="3" y="3" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="6" y="3" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="9" y="3" width="1.5" height="1.5" fill="#44ff66"/>
+    <rect x="3" y="4.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="6" y="4.5" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="9" y="4.5" width="1.5" height="1.5" fill="#44ff66"/>
+    <rect x="3" y="6" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="6" y="6" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="9" y="6" width="1.5" height="1.5" fill="#44ff66"/>
+    <rect x="6" y="7.5" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="6" y="9" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="3" y="10.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="9" y="10.5" width="1.5" height="1.5" fill="#44ff66"/>
+    <rect x="3" y="12" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="9" y="12" width="1.5" height="1.5" fill="#44ff66"/>
+    <rect x="3" y="13.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="9" y="13.5" width="1.5" height="1.5" fill="#44ff66"/>
+    <rect x="9" y="15" width="1.5" height="1.5" fill="#44ff66"/>
+    <rect x="3" y="16.5" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="6" y="16.5" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="3" y="18" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="6" y="18" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="6" y="19.5" width="1.5" height="1.5" fill="#44aaff"/>
+    <rect x="0" y="21" width="21" height="1.5" fill="#666666"/>
+    <rect x="0" y="22.5" width="21" height="1.5" fill="#444444"/>
+  </g>
+
+  <!-- Title -->
+  <text class="title" x="340" y="90">RHYTHM TAP</text>
+  <text class="sub" x="340" y="118">Hit · Combo · Flow</text>
+
+  <!-- Score HUD mock -->
+  <g transform="translate(340, 140)">
+    <rect width="280" height="30" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="2"/>
+    <text font-family="monospace" font-size="9" fill="#666" x="10" y="19">SCORE</text>
+    <text font-family="monospace" font-size="9" fill="#ffd700" x="55" y="19">12400</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="110" y="19">COMBO</text>
+    <text font-family="monospace" font-size="9" fill="#ffd700" x="155" y="19">24</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="195" y="19">BPM</text>
+    <text font-family="monospace" font-size="9" fill="#ffd700" x="225" y="19">140</text>
+  </g>
+
+  <!-- Border -->
+  <rect width="800" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+</svg>

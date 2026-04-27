@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 260" width="620" height="260">
+  <rect width="620" height="260" fill="#0a0a16" rx="6"/>
+  <defs><style>text{font-family:monospace;font-size:12px;}</style></defs>
+
+  <text fill="#44ff66" font-size="14" font-weight="bold" x="20" y="25">crossy-road/</text>
+
+  <text fill="#ffd700" x="30" y="50">index.html</text>
+  <text fill="#666" x="200" y="50">Entry point — GAME config + arcade.js loader</text>
+
+  <text fill="#ffd700" x="30" y="72">style.css</text>
+  <text fill="#666" x="200" y="72">Accent color override (--c-game: #44ff66)</text>
+
+  <text fill="#ffd700" x="30" y="94">game.js</text>
+  <text fill="#666" x="200" y="94">Orchestrator — input, collisions, camera, scoring</text>
+
+  <text fill="#44aaff" x="30" y="120">src/</text>
+
+  <text fill="#ffd700" x="50" y="142">config.js</text>
+  <text fill="#666" x="200" y="142">Grid size, lane types, speeds, colors, camera</text>
+
+  <text fill="#ffd700" x="50" y="164">player.js</text>
+  <text fill="#666" x="200" y="164">Grid-based hop movement, animation, idle timer</text>
+
+  <text fill="#ffd700" x="50" y="186">lanes.js</text>
+  <text fill="#666" x="200" y="186">Procedural lane generation, cars, logs, collision</text>
+
+  <text fill="#ffd700" x="50" y="208">renderer.js</text>
+  <text fill="#666" x="200" y="208">Top-down drawing: lanes, cars, logs, trees, player</text>
+
+  <text fill="#44aaff" x="30" y="234">assets/</text>
+  <text fill="#666" x="200" y="234">SVG images for README documentation</text>
+
+  <rect width="620" height="260" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

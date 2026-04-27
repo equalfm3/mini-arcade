@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 460" width="400" height="460">
+  <defs>
+    <style>text { font-family: monospace; }</style>
+  </defs>
+  <!-- Outer frame -->
+  <rect width="400" height="460" fill="#0a0a16" rx="8"/>
+
+  <!-- HUD bar -->
+  <rect x="16" y="12" width="368" height="35" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="2"/>
+
+  <!-- Pixel icon in HUD -->
+  <g transform="translate(24, 16)" shape-rendering="crispEdges">
+    <rect x="0" y="0" width="22" height="22" fill="#edc22e" rx="2"/>
+    <rect x="2" y="2" width="18" height="18" fill="#12121f" rx="1"/>
+    <text fill="#edc22e" font-size="9" font-weight="bold" x="4" y="14">2K</text>
+  </g>
+
+  <text font-size="11" fill="#e0e0e0" x="52" y="34" font-weight="bold">2048</text>
+  <text font-size="8" fill="#666" x="240" y="32">Score</text>
+  <text font-size="10" fill="#ffd700" x="275" y="32">1240</text>
+  <text font-size="8" fill="#666" x="320" y="32">Best</text>
+  <text font-size="10" fill="#ffd700" x="350" y="32">3680</text>
+
+  <!-- Game board background -->
+  <g transform="translate(16, 58)">
+    <rect width="368" height="368" fill="#12121f" rx="8"/>
+
+    <!-- Empty cell backgrounds (4×4 grid, 80px cells, 8px gap, 8px padding) -->
+    <!-- Row 0 -->
+    <rect x="8" y="8" width="80" height="80" fill="#1a1a2e" rx="4"/>
+    <rect x="96" y="8" width="80" height="80" fill="#1a1a2e" rx="4"/>
+    <rect x="184" y="8" width="80" height="80" fill="#1a1a2e" rx="4"/>
+    <rect x="272" y="8" width="80" height="80" fill="#1a1a2e" rx="4"/>
+    <!-- Row 1 -->
+    <rect x="8" y="96" width="80" height="80" fill="#1a1a2e" rx="4"/>
+    <rect x="96" y="96" width="80" height="80" fill="#1a1a2e" rx="4"/>
+    <rect x="184" y="96" width="80" height="80" fill="#1a1a2e" rx="4"/>
+    <rect x="272" y="96" width="80" height="80" fill="#1a1a2e" rx="4"/>
+    <!-- Row 2 -->
+    <rect x="8" y="184" width="80" height="80" fill="#1a1a2e" rx="4"/>
+    <rect x="96" y="184" width="80" height="80" fill="#1a1a2e" rx="4"/>
+    <rect x="184" y="184" width="80" height="80" fill="#1a1a2e" rx="4"/>
+    <rect x="272" y="184" width="80" height="80" fill="#1a1a2e" rx="4"/>
+    <!-- Row 3 -->
+    <rect x="8" y="272" width="80" height="80" fill="#1a1a2e" rx="4"/>
+    <rect x="96" y="272" width="80" height="80" fill="#1a1a2e" rx="4"/>
+    <rect x="184" y="272" width="80" height="80" fill="#1a1a2e" rx="4"/>
+    <rect x="272" y="272" width="80" height="80" fill="#1a1a2e" rx="4"/>
+
+    <!--
+      Realistic mid-game board state:
+      Row 0: [  _,  2,  _,  4 ]
+      Row 1: [  8,  _, 16,  2 ]
+      Row 2: [ 32,  8,  4,  _ ]
+      Row 3: [ 64, 16,  2,  4 ]
+
+      Score verification:
+      To get 64: need 2×32 → +64. To get 32: 2×16 → +32. To get 16s: 2×8 → +16 each (×3=48).
+      To get 8s: 2×4 → +8 each (×5=40). To get 4s: 2×2 → +4 each (×10=40).
+      Approximate total merges: 64+32+48+40+40 = 224... plus extra merges from spawned 4s.
+      With additional merges and spawned tiles, score ~1240 is plausible.
+    -->
+
+    <!-- Row 0: _, 2, _, 4 -->
+    <rect x="96" y="8" width="80" height="80" fill="#eee4da" rx="4"/>
+    <text fill="#776e65" font-size="28" font-weight="bold" x="136" y="58" text-anchor="middle">2</text>
+
+    <rect x="272" y="8" width="80" height="80" fill="#ede0c8" rx="4"/>
+    <text fill="#776e65" font-size="28" font-weight="bold" x="312" y="58" text-anchor="middle">4</text>
+
+    <!-- Row 1: 8, _, 16, 2 -->
+    <rect x="8" y="96" width="80" height="80" fill="#f2b179" rx="4"/>
+    <text fill="#f9f6f2" font-size="28" font-weight="bold" x="48" y="146" text-anchor="middle">8</text>
+
+    <rect x="184" y="96" width="80" height="80" fill="#f59563" rx="4"/>
+    <text fill="#f9f6f2" font-size="24" font-weight="bold" x="224" y="145" text-anchor="middle">16</text>
+
+    <rect x="272" y="96" width="80" height="80" fill="#eee4da" rx="4"/>
+    <text fill="#776e65" font-size="28" font-weight="bold" x="312" y="146" text-anchor="middle">2</text>
+
+    <!-- Row 2: 32, 8, 4, _ -->
+    <rect x="8" y="184" width="80" height="80" fill="#f67c5f" rx="4"/>
+    <text fill="#f9f6f2" font-size="24" font-weight="bold" x="48" y="233" text-anchor="middle">32</text>
+
+    <rect x="96" y="184" width="80" height="80" fill="#f2b179" rx="4"/>
+    <text fill="#f9f6f2" font-size="28" font-weight="bold" x="136" y="234" text-anchor="middle">8</text>
+
+    <rect x="184" y="184" width="80" height="80" fill="#ede0c8" rx="4"/>
+    <text fill="#776e65" font-size="28" font-weight="bold" x="224" y="234" text-anchor="middle">4</text>
+
+    <!-- Row 3: 64, 16, 2, 4 -->
+    <rect x="8" y="272" width="80" height="80" fill="#f65e3b" rx="4"/>
+    <text fill="#f9f6f2" font-size="24" font-weight="bold" x="48" y="321" text-anchor="middle">64</text>
+
+    <rect x="96" y="272" width="80" height="80" fill="#f59563" rx="4"/>
+    <text fill="#f9f6f2" font-size="24" font-weight="bold" x="136" y="321" text-anchor="middle">16</text>
+
+    <rect x="184" y="272" width="80" height="80" fill="#eee4da" rx="4"/>
+    <text fill="#776e65" font-size="28" font-weight="bold" x="224" y="322" text-anchor="middle">2</text>
+
+    <rect x="272" y="272" width="80" height="80" fill="#ede0c8" rx="4"/>
+    <text fill="#776e65" font-size="28" font-weight="bold" x="312" y="322" text-anchor="middle">4</text>
+  </g>
+
+  <!-- Border -->
+  <rect width="400" height="460" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+</svg>

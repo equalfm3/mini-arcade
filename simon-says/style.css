@@ -1,0 +1,107 @@
+/* Simon Says — Game Styles */
+
+:root {
+  --c-game: #ffd700;
+}
+
+/* ---- Grid ---- */
+.simon-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  width: fit-content;
+  margin: 16px auto 0;
+  padding: 16px;
+  padding-bottom: 32px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* ---- Button ---- */
+.simon-btn {
+  width: 130px;
+  height: 130px;
+  border: 3px solid var(--btn-dark);
+  border-radius: 12px;
+  background: var(--btn-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  font-size: 0;
+  padding: 0;
+  filter: brightness(0.6);
+}
+
+.simon-btn:hover {
+  filter: brightness(0.75);
+}
+
+.simon-btn:active {
+  filter: brightness(1);
+}
+
+/* ---- Active (lit up) state ---- */
+.simon-btn-active {
+  background: var(--btn-active) !important;
+  border-color: var(--btn-active) !important;
+  filter: brightness(1) !important;
+  box-shadow: 0 0 24px var(--btn-color), 0 0 48px var(--btn-color);
+}
+
+/* ---- Wrong flash ---- */
+.simon-btn-wrong {
+  animation: simon-wrong-flash 0.6s ease;
+}
+
+@keyframes simon-wrong-flash {
+  0%, 100% { filter: brightness(0.6); }
+  25% { filter: brightness(1.2); background: #ff4444; }
+  50% { filter: brightness(0.4); }
+  75% { filter: brightness(1); background: #ff4444; }
+}
+
+/* ---- Disabled state ---- */
+.simon-disabled .simon-btn {
+  cursor: default;
+  pointer-events: none;
+}
+
+/* ---- Status message ---- */
+.simon-status {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: var(--font-pixel, monospace);
+  font-size: 0.9rem;
+  color: #888;
+  height: 1.4em;
+  line-height: 1.4em;
+  overflow: hidden;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.simon-status-watch { color: #ffd700; }
+.simon-status-input { color: #44ff66; }
+.simon-status-fail  { color: #ff4444; }
+
+/* ---- Responsive ---- */
+@media (max-width: 380px) {
+  .simon-btn {
+    width: 100px;
+    height: 100px;
+  }
+
+  .simon-grid {
+    gap: 8px;
+    padding: 10px;
+    padding-bottom: 28px;
+  }
+}

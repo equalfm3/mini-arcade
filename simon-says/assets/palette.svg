@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" width="600" height="160">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+  <rect width="600" height="160" fill="#0a0a16" rx="6"/>
+
+  <!-- Green -->
+  <rect x="30" y="25" width="50" height="50" fill="#44ff66" rx="6"/>
+  <text font-size="8" fill="#888" x="30" y="92">Green</text>
+  <text font-size="7" fill="#666" x="30" y="104">#44ff66</text>
+  <rect x="30" y="112" width="50" height="12" fill="#22aa44" rx="2"/>
+  <text font-size="7" fill="#666" x="30" y="138">#22aa44</text>
+
+  <!-- Red -->
+  <rect x="170" y="25" width="50" height="50" fill="#ff4444" rx="6"/>
+  <text font-size="8" fill="#888" x="170" y="92">Red</text>
+  <text font-size="7" fill="#666" x="170" y="104">#ff4444</text>
+  <rect x="170" y="112" width="50" height="12" fill="#cc2222" rx="2"/>
+  <text font-size="7" fill="#666" x="170" y="138">#cc2222</text>
+
+  <!-- Yellow -->
+  <rect x="310" y="25" width="50" height="50" fill="#ffd700" rx="6"/>
+  <text font-size="8" fill="#888" x="310" y="92">Yellow</text>
+  <text font-size="7" fill="#666" x="310" y="104">#ffd700</text>
+  <rect x="310" y="112" width="50" height="12" fill="#b89a00" rx="2"/>
+  <text font-size="7" fill="#666" x="310" y="138">#b89a00</text>
+
+  <!-- Blue -->
+  <rect x="450" y="25" width="50" height="50" fill="#44aaff" rx="6"/>
+  <text font-size="8" fill="#888" x="450" y="92">Blue</text>
+  <text font-size="7" fill="#666" x="450" y="104">#44aaff</text>
+  <rect x="450" y="112" width="50" height="12" fill="#2266cc" rx="2"/>
+  <text font-size="7" fill="#666" x="450" y="138">#2266cc</text>
+
+  <!-- Active color labels -->
+  <text font-size="7" fill="#444" x="90" y="50">active: #88ffaa</text>
+  <text font-size="7" fill="#444" x="230" y="50">active: #ff8888</text>
+  <text font-size="7" fill="#444" x="370" y="50">active: #ffec66</text>
+  <text font-size="7" fill="#444" x="510" y="50">active: #88ccff</text>
+
+  <!-- Border -->
+  <rect width="600" height="160" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

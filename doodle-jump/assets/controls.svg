@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+  <rect width="600" height="200" fill="#0a0a16" rx="6"/>
+
+  <!-- Desktop section -->
+  <text fill="#44ff66" font-size="14" font-weight="bold" x="30" y="30">DESKTOP</text>
+
+  <!-- Arrow keys -->
+  <g transform="translate(50, 55)">
+    <!-- Left key -->
+    <rect x="0" y="30" width="28" height="28" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="3"/>
+    <text fill="#e0e0e0" font-size="14" text-anchor="middle" x="14" y="49">←</text>
+    <!-- Right key -->
+    <rect x="60" y="30" width="28" height="28" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="3"/>
+    <text fill="#e0e0e0" font-size="14" text-anchor="middle" x="74" y="49">→</text>
+    <!-- Label -->
+    <text fill="#888" font-size="9" x="0" y="80">Move left / right</text>
+  </g>
+
+  <!-- Esc key -->
+  <g transform="translate(180, 55)">
+    <rect x="0" y="30" width="36" height="28" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="3"/>
+    <text fill="#e0e0e0" font-size="10" text-anchor="middle" x="18" y="49">ESC</text>
+    <text fill="#888" font-size="9" x="0" y="80">Pause</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="300" y1="20" x2="300" y2="180" stroke="#2a2a40" stroke-width="1"/>
+
+  <!-- Mobile section -->
+  <text fill="#44aaff" font-size="14" font-weight="bold" x="330" y="30">MOBILE</text>
+
+  <!-- D-pad -->
+  <g transform="translate(350, 55)">
+    <!-- Left button -->
+    <rect x="0" y="20" width="32" height="32" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="3"/>
+    <text fill="#e0e0e0" font-size="16" text-anchor="middle" x="16" y="42">◄</text>
+    <!-- Right button -->
+    <rect x="70" y="20" width="32" height="32" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="3"/>
+    <text fill="#e0e0e0" font-size="16" text-anchor="middle" x="86" y="42">►</text>
+    <text fill="#888" font-size="9" x="10" y="72">D-pad for movement</text>
+  </g>
+
+  <!-- Swipe hint -->
+  <g transform="translate(350, 130)">
+    <text fill="#888" font-size="9" x="0" y="10">Swipe left / right also works</text>
+  </g>
+
+  <!-- Auto-bounce note -->
+  <text fill="#666" font-size="9" text-anchor="middle" x="300" y="190">Player bounces automatically on platforms — no jump button needed!</text>
+
+  <rect width="600" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

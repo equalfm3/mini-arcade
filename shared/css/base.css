@@ -1,0 +1,35 @@
+/* ============================================
+   base.css — Core body, typography, scrollbar
+   ============================================ */
+
+body {
+  font-family: var(--font-system);
+  background: var(--c-bg);
+  color: var(--c-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+/* Pixel font utility — apply selectively, not globally */
+.pixel {
+  font-family: var(--font-pixel);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-pixel);
+  color: var(--c-text-bright);
+  line-height: 1.3;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--c-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--c-border);
+}

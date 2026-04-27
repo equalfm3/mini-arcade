@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 260" width="620" height="260">
+  <rect width="620" height="260" fill="#0a0a16" rx="6"/>
+  <defs>
+    <style>
+      .dir{fill:#44aaff;font-family:monospace;font-size:13px;font-weight:bold;}
+      .file{fill:#e0e0e0;font-family:monospace;font-size:12px;}
+      .desc{fill:#666666;font-family:monospace;font-size:10px;}
+      .line{stroke:#2a2a40;stroke-width:1;}
+    </style>
+  </defs>
+
+  <!-- Root -->
+  <text class="dir" x="20" y="30">chain-reaction/</text>
+
+  <!-- index.html -->
+  <line class="line" x1="30" y1="38" x2="30" y2="52"/>
+  <line class="line" x1="30" y1="52" x2="40" y2="52"/>
+  <text class="file" x="44" y="56">index.html</text>
+  <text class="desc" x="240" y="56">Entry point — GAME config + arcade.js loader</text>
+
+  <!-- style.css -->
+  <line class="line" x1="30" y1="52" x2="30" y2="74"/>
+  <line class="line" x1="30" y1="74" x2="40" y2="74"/>
+  <text class="file" x="44" y="78">style.css</text>
+  <text class="desc" x="240" y="78">Accent color override (--c-game: #ff8844)</text>
+
+  <!-- game.js -->
+  <line class="line" x1="30" y1="74" x2="30" y2="96"/>
+  <line class="line" x1="30" y1="96" x2="40" y2="96"/>
+  <text class="file" x="44" y="100">game.js</text>
+  <text class="desc" x="240" y="100">Orchestrator — state, clicks, chain logic, levels</text>
+
+  <!-- src/ -->
+  <line class="line" x1="30" y1="96" x2="30" y2="118"/>
+  <line class="line" x1="30" y1="118" x2="40" y2="118"/>
+  <text class="dir" x="44" y="122">src/</text>
+
+  <!-- src/config.js -->
+  <line class="line" x1="54" y1="126" x2="54" y2="140"/>
+  <line class="line" x1="54" y1="140" x2="64" y2="140"/>
+  <text class="file" x="68" y="144">config.js</text>
+  <text class="desc" x="240" y="144">Levels, explosion timing, dot physics, colors</text>
+
+  <!-- src/dots.js -->
+  <line class="line" x1="54" y1="140" x2="54" y2="162"/>
+  <line class="line" x1="54" y1="162" x2="64" y2="162"/>
+  <text class="file" x="68" y="166">dots.js</text>
+  <text class="desc" x="240" y="166">Floating dots, random movement, wall bouncing</text>
+
+  <!-- src/explosions.js -->
+  <line class="line" x1="54" y1="162" x2="54" y2="184"/>
+  <line class="line" x1="54" y1="184" x2="64" y2="184"/>
+  <text class="file" x="68" y="188">explosions.js</text>
+  <text class="desc" x="240" y="188">Expand → hold → fade lifecycle, chain triggers</text>
+
+  <!-- src/renderer.js -->
+  <line class="line" x1="54" y1="184" x2="54" y2="206"/>
+  <line class="line" x1="54" y1="206" x2="64" y2="206"/>
+  <text class="file" x="68" y="210">renderer.js</text>
+  <text class="desc" x="240" y="210">Dot glow, explosion rings, chain counter, flash</text>
+
+  <!-- assets/ -->
+  <line class="line" x1="30" y1="118" x2="30" y2="228"/>
+  <line class="line" x1="30" y1="228" x2="40" y2="228"/>
+  <text class="dir" x="44" y="232">assets/</text>
+  <text class="desc" x="240" y="232">SVG images for README documentation</text>
+
+  <!-- README.md -->
+  <line class="line" x1="30" y1="228" x2="30" y2="250"/>
+  <line class="line" x1="30" y1="250" x2="40" y2="250"/>
+  <text class="file" x="44" y="254">README.md</text>
+  <text class="desc" x="240" y="254">Rich documentation with embedded SVGs</text>
+
+  <!-- Border -->
+  <rect width="620" height="260" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

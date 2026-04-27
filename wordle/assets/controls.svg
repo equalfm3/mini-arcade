@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <rect width="600" height="200" fill="#0a0a16" rx="6"/>
+
+  <!-- Desktop section -->
+  <text font-family="monospace" font-size="13" fill="#538d4e" font-weight="bold" x="80" y="25">DESKTOP</text>
+
+  <!-- Letter keys -->
+  <rect x="30" y="40" width="36" height="30" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+  <text font-family="monospace" font-size="11" fill="#e0e0e0" text-anchor="middle" x="48" y="60">A-Z</text>
+  <text font-family="monospace" font-size="9" fill="#666" x="75" y="60">Type letters</text>
+
+  <!-- Enter key -->
+  <rect x="30" y="80" width="56" height="30" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+  <text font-family="monospace" font-size="11" fill="#e0e0e0" text-anchor="middle" x="58" y="100">Enter</text>
+  <text font-family="monospace" font-size="9" fill="#666" x="95" y="100">Submit guess</text>
+
+  <!-- Backspace key -->
+  <rect x="30" y="120" width="80" height="30" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+  <text font-family="monospace" font-size="11" fill="#e0e0e0" text-anchor="middle" x="70" y="140">Backspace</text>
+  <text font-family="monospace" font-size="9" fill="#666" x="120" y="140">Delete letter</text>
+
+  <!-- Esc key -->
+  <rect x="30" y="160" width="36" height="30" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+  <text font-family="monospace" font-size="11" fill="#e0e0e0" text-anchor="middle" x="48" y="180">Esc</text>
+  <text font-family="monospace" font-size="9" fill="#666" x="75" y="180">Pause</text>
+
+  <!-- Divider -->
+  <line x1="300" y1="15" x2="300" y2="190" stroke="#2a2a40" stroke-width="1"/>
+
+  <!-- Mobile section -->
+  <text font-family="monospace" font-size="13" fill="#538d4e" font-weight="bold" x="400" y="25">MOBILE</text>
+
+  <!-- On-screen keyboard -->
+  <g transform="translate(330, 40)">
+    <rect x="0" y="0" width="22" height="20" fill="#818384" rx="2"/>
+    <rect x="25" y="0" width="22" height="20" fill="#818384" rx="2"/>
+    <rect x="50" y="0" width="22" height="20" fill="#818384" rx="2"/>
+    <rect x="75" y="0" width="22" height="20" fill="#818384" rx="2"/>
+    <rect x="100" y="0" width="22" height="20" fill="#818384" rx="2"/>
+    <text font-family="monospace" font-size="8" fill="#fff" text-anchor="middle">
+      <tspan x="11" y="14">Q</tspan><tspan x="36" y="14">W</tspan><tspan x="61" y="14">E</tspan><tspan x="86" y="14">R</tspan><tspan x="111" y="14">T</tspan>
+    </text>
+  </g>
+  <text font-family="monospace" font-size="9" fill="#666" x="330" y="80">Tap on-screen keys</text>
+
+  <!-- Enter button -->
+  <rect x="330" y="90" width="50" height="24" fill="#538d4e" rx="3"/>
+  <text font-family="monospace" font-size="9" fill="#fff" text-anchor="middle" x="355" y="106">↵</text>
+  <text font-family="monospace" font-size="9" fill="#666" x="390" y="106">Submit</text>
+
+  <!-- Backspace button -->
+  <rect x="330" y="120" width="50" height="24" fill="#818384" rx="3"/>
+  <text font-family="monospace" font-size="9" fill="#fff" text-anchor="middle" x="355" y="136">⌫</text>
+  <text font-family="monospace" font-size="9" fill="#666" x="390" y="136">Delete</text>
+
+  <!-- Border -->
+  <rect width="600" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <style>
+      text { font-family: monospace; }
+    </style>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="200" fill="#0e0e1a" rx="8"/>
+
+  <!-- 4×4 grid on the left -->
+  <g transform="translate(30, 20)">
+    <!-- Grid background -->
+    <rect width="160" height="160" fill="#12121f" rx="6"/>
+
+    <!-- Empty cells -->
+    <rect x="6" y="6" width="33" height="33" fill="#1a1a2e" rx="3"/>
+    <rect x="45" y="6" width="33" height="33" fill="#1a1a2e" rx="3"/>
+    <rect x="84" y="6" width="33" height="33" fill="#1a1a2e" rx="3"/>
+    <rect x="123" y="6" width="33" height="33" fill="#1a1a2e" rx="3"/>
+    <rect x="6" y="45" width="33" height="33" fill="#1a1a2e" rx="3"/>
+    <rect x="45" y="45" width="33" height="33" fill="#1a1a2e" rx="3"/>
+    <rect x="84" y="45" width="33" height="33" fill="#1a1a2e" rx="3"/>
+    <rect x="123" y="45" width="33" height="33" fill="#1a1a2e" rx="3"/>
+    <rect x="6" y="84" width="33" height="33" fill="#1a1a2e" rx="3"/>
+    <rect x="45" y="84" width="33" height="33" fill="#1a1a2e" rx="3"/>
+    <rect x="84" y="84" width="33" height="33" fill="#1a1a2e" rx="3"/>
+    <rect x="123" y="84" width="33" height="33" fill="#1a1a2e" rx="3"/>
+    <rect x="6" y="123" width="33" height="33" fill="#1a1a2e" rx="3"/>
+    <rect x="45" y="123" width="33" height="33" fill="#1a1a2e" rx="3"/>
+    <rect x="84" y="123" width="33" height="33" fill="#1a1a2e" rx="3"/>
+    <rect x="123" y="123" width="33" height="33" fill="#1a1a2e" rx="3"/>
+
+    <!-- Tiles: realistic mid-game -->
+    <!-- Row 0: _, 2, _, 4 -->
+    <rect x="45" y="6" width="33" height="33" fill="#eee4da" rx="3"/>
+    <text fill="#776e65" font-size="14" font-weight="bold" x="57" y="28" text-anchor="middle">2</text>
+    <rect x="123" y="6" width="33" height="33" fill="#ede0c8" rx="3"/>
+    <text fill="#776e65" font-size="14" font-weight="bold" x="135" y="28" text-anchor="middle">4</text>
+
+    <!-- Row 1: 8, _, 16, 2 -->
+    <rect x="6" y="45" width="33" height="33" fill="#f2b179" rx="3"/>
+    <text fill="#f9f6f2" font-size="14" font-weight="bold" x="18" y="67" text-anchor="middle">8</text>
+    <rect x="84" y="45" width="33" height="33" fill="#f59563" rx="3"/>
+    <text fill="#f9f6f2" font-size="12" font-weight="bold" x="96" y="66" text-anchor="middle">16</text>
+    <rect x="123" y="45" width="33" height="33" fill="#eee4da" rx="3"/>
+    <text fill="#776e65" font-size="14" font-weight="bold" x="135" y="67" text-anchor="middle">2</text>
+
+    <!-- Row 2: 32, 8, 4, _ -->
+    <rect x="6" y="84" width="33" height="33" fill="#f67c5f" rx="3"/>
+    <text fill="#f9f6f2" font-size="12" font-weight="bold" x="18" y="105" text-anchor="middle">32</text>
+    <rect x="45" y="84" width="33" height="33" fill="#f2b179" rx="3"/>
+    <text fill="#f9f6f2" font-size="14" font-weight="bold" x="57" y="106" text-anchor="middle">8</text>
+    <rect x="84" y="84" width="33" height="33" fill="#ede0c8" rx="3"/>
+    <text fill="#776e65" font-size="14" font-weight="bold" x="96" y="106" text-anchor="middle">4</text>
+
+    <!-- Row 3: 64, 16, 2, 4 -->
+    <rect x="6" y="123" width="33" height="33" fill="#f65e3b" rx="3"/>
+    <text fill="#f9f6f2" font-size="12" font-weight="bold" x="18" y="144" text-anchor="middle">64</text>
+    <rect x="45" y="123" width="33" height="33" fill="#f59563" rx="3"/>
+    <text fill="#f9f6f2" font-size="12" font-weight="bold" x="57" y="144" text-anchor="middle">16</text>
+    <rect x="84" y="123" width="33" height="33" fill="#eee4da" rx="3"/>
+    <text fill="#776e65" font-size="14" font-weight="bold" x="96" y="145" text-anchor="middle">2</text>
+    <rect x="123" y="123" width="33" height="33" fill="#ede0c8" rx="3"/>
+    <text fill="#776e65" font-size="14" font-weight="bold" x="135" y="145" text-anchor="middle">4</text>
+  </g>
+
+  <!-- Pixel icon (2048 icon — gold square with "2K" text) -->
+  <g transform="translate(230, 55)" shape-rendering="crispEdges">
+    <rect x="0" y="0" width="24" height="24" fill="#edc22e" rx="3"/>
+    <rect x="3" y="3" width="18" height="18" fill="#12121f" rx="2"/>
+    <text fill="#edc22e" font-size="10" font-weight="bold" x="6" y="16">2K</text>
+  </g>
+
+  <!-- Title -->
+  <text fill="#ffd700" font-size="52" font-weight="bold" x="270" y="90">2048</text>
+  <text fill="#666666" font-size="14" x="270" y="118">Slide · Merge · Win</text>
+
+  <!-- Score HUD mock -->
+  <g transform="translate(270, 138)">
+    <rect width="220" height="30" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="2"/>
+    <text font-size="9" fill="#666" x="12" y="19">SCORE</text>
+    <text font-size="9" fill="#ffd700" x="60" y="19">1240</text>
+    <text font-size="9" fill="#666" x="120" y="19">BEST</text>
+    <text font-size="9" fill="#ffd700" x="160" y="19">3680</text>
+  </g>
+
+  <!-- Border -->
+  <rect width="800" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+</svg>

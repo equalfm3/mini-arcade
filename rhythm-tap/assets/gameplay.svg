@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="600" fill="#0a0a16" rx="6"/>
+
+  <!-- Progress bar -->
+  <rect x="0" y="0" width="400" height="3" fill="#1a1a2e"/>
+  <rect x="0" y="0" width="160" height="3" fill="#ff66aa"/>
+
+  <!-- Lane backgrounds -->
+  <rect x="4" y="0" width="95" height="600" fill="#662244" opacity="0.15"/>
+  <rect x="103" y="0" width="95" height="600" fill="#1a6655" opacity="0.15"/>
+  <rect x="202" y="0" width="95" height="600" fill="#665500" opacity="0.15"/>
+  <rect x="301" y="0" width="95" height="600" fill="#1a6622" opacity="0.15"/>
+
+  <!-- Lane dividers -->
+  <rect x="99" y="0" width="4" height="600" fill="#1a1a2e"/>
+  <rect x="198" y="0" width="4" height="600" fill="#1a1a2e"/>
+  <rect x="297" y="0" width="4" height="600" fill="#1a1a2e"/>
+
+  <!-- Hit zone -->
+  <rect x="0" y="520" width="400" height="6" fill="#333355"/>
+  <rect x="0" y="521" width="400" height="2" fill="#ffd700" opacity="0.6"/>
+
+  <!-- Hit zone glow -->
+  <rect x="0" y="512" width="400" height="22" fill="#ffd700" opacity="0.06"/>
+
+  <!-- Hit zone circles -->
+  <circle cx="51" cy="523" r="14" fill="none" stroke="#ff66aa" stroke-width="2" opacity="0.4"/>
+  <circle cx="150" cy="523" r="14" fill="none" stroke="#44ffdd" stroke-width="2" opacity="0.4"/>
+  <circle cx="249" cy="523" r="14" fill="none" stroke="#ffd700" stroke-width="2" opacity="0.4"/>
+  <circle cx="348" cy="523" r="14" fill="none" stroke="#44ff66" stroke-width="2" opacity="0.4"/>
+
+  <!-- Key labels -->
+  <text font-size="11" font-weight="bold" fill="#ff66aa" text-anchor="middle" x="51" y="527" opacity="0.6">D</text>
+  <text font-size="11" font-weight="bold" fill="#44ffdd" text-anchor="middle" x="150" y="527" opacity="0.6">F</text>
+  <text font-size="11" font-weight="bold" fill="#ffd700" text-anchor="middle" x="249" y="527" opacity="0.6">J</text>
+  <text font-size="11" font-weight="bold" fill="#44ff66" text-anchor="middle" x="348" y="527" opacity="0.6">K</text>
+
+  <!-- Falling notes — Lane 1 (pink) -->
+  <rect x="14" y="80" width="74" height="24" fill="#ff66aa" rx="6" opacity="0.15"/>
+  <rect x="18" y="84" width="66" height="16" fill="#ff66aa" rx="4"/>
+  <rect x="20" y="84" width="62" height="4" fill="#ff99cc" opacity="0.5" rx="2"/>
+
+  <rect x="14" y="220" width="74" height="24" fill="#ff66aa" rx="6" opacity="0.15"/>
+  <rect x="18" y="224" width="66" height="16" fill="#ff66aa" rx="4"/>
+  <rect x="20" y="224" width="62" height="4" fill="#ff99cc" opacity="0.5" rx="2"/>
+
+  <rect x="14" y="380" width="74" height="24" fill="#ff66aa" rx="6" opacity="0.15"/>
+  <rect x="18" y="384" width="66" height="16" fill="#ff66aa" rx="4"/>
+  <rect x="20" y="384" width="62" height="4" fill="#ff99cc" opacity="0.5" rx="2"/>
+
+  <!-- Falling notes — Lane 2 (cyan) -->
+  <rect x="113" y="150" width="74" height="24" fill="#44ffdd" rx="6" opacity="0.15"/>
+  <rect x="117" y="154" width="66" height="16" fill="#44ffdd" rx="4"/>
+  <rect x="119" y="154" width="62" height="4" fill="#88ffee" opacity="0.5" rx="2"/>
+
+  <rect x="113" y="310" width="74" height="24" fill="#44ffdd" rx="6" opacity="0.15"/>
+  <rect x="117" y="314" width="66" height="16" fill="#44ffdd" rx="4"/>
+  <rect x="119" y="314" width="62" height="4" fill="#88ffee" opacity="0.5" rx="2"/>
+
+  <rect x="113" y="450" width="74" height="24" fill="#44ffdd" rx="6" opacity="0.15"/>
+  <rect x="117" y="454" width="66" height="16" fill="#44ffdd" rx="4"/>
+  <rect x="119" y="454" width="62" height="4" fill="#88ffee" opacity="0.5" rx="2"/>
+
+  <!-- Falling notes — Lane 3 (gold) -->
+  <rect x="212" y="120" width="74" height="24" fill="#ffd700" rx="6" opacity="0.15"/>
+  <rect x="216" y="124" width="66" height="16" fill="#ffd700" rx="4"/>
+  <rect x="218" y="124" width="62" height="4" fill="#ffee66" opacity="0.5" rx="2"/>
+
+  <rect x="212" y="280" width="74" height="24" fill="#ffd700" rx="6" opacity="0.15"/>
+  <rect x="216" y="284" width="66" height="16" fill="#ffd700" rx="4"/>
+  <rect x="218" y="284" width="62" height="4" fill="#ffee66" opacity="0.5" rx="2"/>
+
+  <!-- Double note (lanes 3+4 at same time) -->
+  <rect x="212" y="420" width="74" height="24" fill="#ffd700" rx="6" opacity="0.15"/>
+  <rect x="216" y="424" width="66" height="16" fill="#ffd700" rx="4"/>
+  <rect x="218" y="424" width="62" height="4" fill="#ffee66" opacity="0.5" rx="2"/>
+  <rect x="311" y="420" width="74" height="24" fill="#44ff66" rx="6" opacity="0.15"/>
+  <rect x="315" y="424" width="66" height="16" fill="#44ff66" rx="4"/>
+  <rect x="317" y="424" width="62" height="4" fill="#88ff99" opacity="0.5" rx="2"/>
+
+  <!-- Falling notes — Lane 4 (green) -->
+  <rect x="311" y="180" width="74" height="24" fill="#44ff66" rx="6" opacity="0.15"/>
+  <rect x="315" y="184" width="66" height="16" fill="#44ff66" rx="4"/>
+  <rect x="317" y="184" width="62" height="4" fill="#88ff99" opacity="0.5" rx="2"/>
+
+  <rect x="311" y="340" width="74" height="24" fill="#44ff66" rx="6" opacity="0.15"/>
+  <rect x="315" y="344" width="66" height="16" fill="#44ff66" rx="4"/>
+  <rect x="317" y="344" width="62" height="4" fill="#88ff99" opacity="0.5" rx="2"/>
+
+  <!-- Hit flash on lane 1 (pink) -->
+  <rect x="4" y="0" width="95" height="600" fill="#ffd700" opacity="0.08"/>
+
+  <!-- Grade popup -->
+  <text font-size="18" font-weight="bold" fill="#ffd700" text-anchor="middle" x="51" y="490">PERFECT!</text>
+
+  <!-- Combo display -->
+  <text font-size="28" font-weight="bold" fill="#ffd700" text-anchor="middle" x="200" y="460" opacity="0.9">24x</text>
+  <text font-size="12" font-weight="bold" fill="#ff66aa" text-anchor="middle" x="200" y="478">2x MULTI</text>
+
+  <!-- Score at top -->
+  <text font-size="14" font-weight="bold" fill="#e0e0e0" text-anchor="middle" x="200" y="20" opacity="0.7">SCORE</text>
+  <text font-size="22" font-weight="bold" fill="#ffd700" text-anchor="middle" x="200" y="44">12,400</text>
+
+  <!-- Touch zones at bottom -->
+  <rect x="4" y="550" width="95" height="50" fill="#ff66aa" opacity="0.08"/>
+  <rect x="103" y="550" width="95" height="50" fill="#44ffdd" opacity="0.08"/>
+  <rect x="202" y="550" width="95" height="50" fill="#ffd700" opacity="0.08"/>
+  <rect x="301" y="550" width="95" height="50" fill="#44ff66" opacity="0.08"/>
+  <text font-size="16" font-weight="bold" fill="#ff66aa" text-anchor="middle" x="51" y="580" opacity="0.3">D</text>
+  <text font-size="16" font-weight="bold" fill="#44ffdd" text-anchor="middle" x="150" y="580" opacity="0.3">F</text>
+  <text font-size="16" font-weight="bold" fill="#ffd700" text-anchor="middle" x="249" y="580" opacity="0.3">J</text>
+  <text font-size="16" font-weight="bold" fill="#44ff66" text-anchor="middle" x="348" y="580" opacity="0.3">K</text>
+
+  <!-- Particle effects near hit zone -->
+  <circle cx="45" cy="510" r="2" fill="#ffd700" opacity="0.8"/>
+  <circle cx="58" cy="505" r="2" fill="#ffd700" opacity="0.6"/>
+  <circle cx="40" cy="500" r="3" fill="#ffd700" opacity="0.4"/>
+  <circle cx="62" cy="498" r="2" fill="#ffd700" opacity="0.3"/>
+  <circle cx="48" cy="495" r="2" fill="#ffd700" opacity="0.2"/>
+
+  <!-- Border -->
+  <rect width="400" height="600" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

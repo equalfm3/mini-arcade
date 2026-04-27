@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 340" width="620" height="340">
+  <defs>
+    <style>text{font-family:monospace;font-size:11px;}</style>
+  </defs>
+  <rect width="620" height="340" fill="#0a0a16" rx="6"/>
+
+  <text fill="#44ff66" font-size="13" font-weight="bold" x="20" y="25">solitaire/</text>
+
+  <text fill="#888" x="20" y="50">├── index.html</text>
+  <text fill="#555" x="220" y="50">Entry point — GAME config + arcade.js loader</text>
+
+  <text fill="#888" x="20" y="70">├── style.css</text>
+  <text fill="#555" x="220" y="70">Accent color (#44ff66), wider layout (700px)</text>
+
+  <text fill="#888" x="20" y="90">├── game.js</text>
+  <text fill="#555" x="220" y="90">Orchestrator — deals, moves, auto-complete, win</text>
+
+  <text fill="#44ff66" x="20" y="115">├── src/</text>
+
+  <text fill="#888" x="20" y="135">│   ├── config.js</text>
+  <text fill="#555" x="220" y="135">Card sizes, layout positions, colors, suits</text>
+
+  <text fill="#888" x="20" y="155">│   ├── deck.js</text>
+  <text fill="#555" x="220" y="155">52-card creation, Fisher-Yates shuffle</text>
+
+  <text fill="#888" x="20" y="175">│   ├── tableau.js</text>
+  <text fill="#555" x="220" y="175">7 columns, stacking rules, face-up/down</text>
+
+  <text fill="#888" x="20" y="195">│   ├── foundation.js</text>
+  <text fill="#555" x="220" y="195">4 piles, Ace→King by suit validation</text>
+
+  <text fill="#888" x="20" y="215">│   ├── stock.js</text>
+  <text fill="#555" x="220" y="215">Stock + waste piles, draw-1 mechanic</text>
+
+  <text fill="#888" x="20" y="235">│   ├── drag.js</text>
+  <text fill="#555" x="220" y="235">Mouse/touch drag, tap-to-select, double-tap</text>
+
+  <text fill="#888" x="20" y="255">│   └── renderer.js</text>
+  <text fill="#555" x="220" y="255">Canvas card drawing, retro pixel style</text>
+
+  <text fill="#44ff66" x="20" y="280">├── assets/</text>
+  <text fill="#555" x="220" y="280">SVG images for README documentation</text>
+
+  <text fill="#888" x="20" y="300">└── README.md</text>
+  <text fill="#555" x="220" y="300">Full docs with embedded SVG diagrams</text>
+
+  <rect width="620" height="340" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

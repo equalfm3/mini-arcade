@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 420" width="380" height="420">
+  <rect width="380" height="420" fill="#0a0a16" rx="6"/>
+
+  <!-- HUD bar -->
+  <rect x="10" y="10" width="360" height="30" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="3"/>
+  <text font-family="monospace" font-size="10" fill="#22cc44" x="20" y="30">⏱ Reaction Time</text>
+  <text font-family="monospace" font-size="9" fill="#666" x="220" y="30">Last</text>
+  <text font-family="monospace" font-size="9" fill="#22cc44" x="255" y="30">187ms</text>
+  <text font-family="monospace" font-size="9" fill="#666" x="300" y="30">Best</text>
+  <text font-family="monospace" font-size="9" fill="#ffd700" x="335" y="30">152ms</text>
+
+  <!-- Phase 1: Wait (red) -->
+  <rect x="10" y="50" width="170" height="160" fill="#cc2222" rx="6"/>
+  <text font-family="monospace" font-size="8" fill="#fff" x="20" y="68" opacity="0.5">PHASE 1</text>
+  <text font-family="monospace" font-size="16" fill="#fff" x="30" y="120" font-weight="bold">Tap to</text>
+  <text font-family="monospace" font-size="16" fill="#fff" x="40" y="142" font-weight="bold">Start</text>
+  <text font-family="monospace" font-size="9" fill="#fff" x="30" y="190" opacity="0.6">Test your reaction</text>
+
+  <!-- Phase 2: Ready (red, waiting) -->
+  <rect x="200" y="50" width="170" height="160" fill="#cc2222" rx="6"/>
+  <text font-family="monospace" font-size="8" fill="#fff" x="210" y="68" opacity="0.5">PHASE 2</text>
+  <text font-family="monospace" font-size="14" fill="#fff" x="215" y="125" font-weight="bold">Wait for</text>
+  <text font-family="monospace" font-size="14" fill="#fff" x="220" y="147" font-weight="bold">green…</text>
+  <text font-family="monospace" font-size="9" fill="#fff" x="215" y="190" opacity="0.6">1.5–5s random delay</text>
+
+  <!-- Phase 3: Go! (green) -->
+  <rect x="10" y="225" width="170" height="160" fill="#22cc44" rx="6"/>
+  <text font-family="monospace" font-size="8" fill="#fff" x="20" y="243" opacity="0.5">PHASE 3</text>
+  <text font-family="monospace" font-size="28" fill="#fff" x="45" y="310" font-weight="bold">TAP!</text>
+  <text font-family="monospace" font-size="9" fill="#fff" x="30" y="365" opacity="0.6">Tap as fast as you can</text>
+
+  <!-- Phase 4: Result (blue) -->
+  <rect x="200" y="225" width="170" height="160" fill="#1a3a6a" rx="6"/>
+  <text font-family="monospace" font-size="8" fill="#fff" x="210" y="243" opacity="0.5">PHASE 4</text>
+  <text font-family="monospace" font-size="24" fill="#ffd700" x="225" y="305" font-weight="bold">187 ms</text>
+  <text font-family="monospace" font-size="14" fill="#ffd700" x="240" y="330">Lightning!</text>
+  <text font-family="monospace" font-size="9" fill="#fff" x="215" y="365" opacity="0.6">Tap to try again</text>
+
+  <!-- Arrows between phases -->
+  <line x1="180" y1="130" x2="198" y2="130" stroke="#ffd700" stroke-width="1.5"/>
+  <polygon points="198,126 206,130 198,134" fill="#ffd700"/>
+
+  <line x1="95" y1="210" x2="95" y2="223" stroke="#ffd700" stroke-width="1.5"/>
+  <polygon points="91,223 95,231 99,223" fill="#ffd700"/>
+
+  <line x1="180" y1="305" x2="198" y2="305" stroke="#ffd700" stroke-width="1.5"/>
+  <polygon points="198,301 206,305 198,309" fill="#ffd700"/>
+
+  <!-- Footer -->
+  <text font-family="monospace" font-size="8" fill="#444" x="100" y="410">Four phases of a reaction time test</text>
+
+  <rect width="380" height="420" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+    <marker id="dim-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ffd700"/>
+    </marker>
+  </defs>
+  <rect width="600" height="300" fill="#0a0a16" rx="6"/>
+
+  <text fill="#ff8844" font-size="14" font-weight="bold" x="20" y="25">Overhang Calculation</text>
+
+  <!-- Previous block (bottom) -->
+  <rect x="120" y="180" width="180" height="30" fill="hsl(24,70%,55%)"/>
+  <polygon points="120,180 130,170 310,170 300,180" fill="hsl(24,70%,70%)"/>
+  <polygon points="300,180 310,170 310,200 300,210" fill="hsl(24,70%,43%)"/>
+  <text fill="#888" font-size="9" x="175" y="200">Previous block</text>
+
+  <!-- Current block (offset to the right) -->
+  <rect x="180" y="148" width="180" height="30" fill="hsl(36,70%,55%)" opacity="0.7"/>
+  <polygon points="180,148 190,138 370,138 360,148" fill="hsl(36,70%,70%)" opacity="0.7"/>
+  <polygon points="360,148 370,138 370,168 360,178" fill="hsl(36,70%,43%)" opacity="0.7"/>
+  <text fill="#888" font-size="9" x="230" y="167">Current block</text>
+
+  <!-- Overlap region highlight -->
+  <rect x="180" y="148" width="120" height="30" fill="none" stroke="#44ff66" stroke-width="2" stroke-dasharray="4,2"/>
+  <text fill="#44ff66" font-size="9" x="205" y="145">Overlap (kept)</text>
+
+  <!-- Overhang region highlight -->
+  <rect x="300" y="148" width="60" height="30" fill="none" stroke="#ff4444" stroke-width="2" stroke-dasharray="4,2"/>
+  <text fill="#ff4444" font-size="9" x="305" y="145">Overhang</text>
+
+  <!-- Dimension lines -->
+  <!-- Previous block width -->
+  <line x1="120" y1="225" x2="300" y2="225" stroke="#ffd700" stroke-width="1" marker-start="url(#dim-arrow)" marker-end="url(#dim-arrow)"/>
+  <text fill="#ffd700" font-size="9" x="185" y="240">prevW</text>
+
+  <!-- Current block width -->
+  <line x1="180" y1="130" x2="360" y2="130" stroke="#ffd700" stroke-width="1" marker-start="url(#dim-arrow)" marker-end="url(#dim-arrow)"/>
+  <text fill="#ffd700" font-size="9" x="250" y="127">curW</text>
+
+  <!-- Formulas -->
+  <text fill="#e0e0e0" font-size="11" x="20" y="265">overlapLeft  = max(curX, prevX)</text>
+  <text fill="#e0e0e0" font-size="11" x="20" y="282">overlapRight = min(curX+curW, prevX+prevW)</text>
+
+  <text fill="#44ff66" font-size="11" x="370" y="265">newWidth = overlapRight - overlapLeft</text>
+  <text fill="#ff4444" font-size="11" x="370" y="282">overhang = curW - newWidth</text>
+
+  <!-- Perfect placement note -->
+  <rect x="20" y="50" width="560" height="55" fill="#12121f" stroke="#ffd700" stroke-width="1" rx="4"/>
+  <text fill="#ffd700" font-size="11" font-weight="bold" x="30" y="70">Perfect Placement</text>
+  <text fill="#888" font-size="10" x="30" y="88">If |curX - prevX| ≤ 5px AND |curRight - prevRight| ≤ 5px → snap to perfect</text>
+  <text fill="#888" font-size="10" x="30" y="100">Block grows +4px wider as a bonus reward</text>
+
+  <!-- Border -->
+  <rect width="600" height="300" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

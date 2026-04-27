@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 140" width="600" height="140">
+  <rect width="600" height="140" fill="#0a0a16" rx="6"/>
+  <defs><style>text{font-family:monospace;}</style></defs>
+
+  <!-- Desktop section -->
+  <text fill="#888" font-size="10" x="30" y="22">DESKTOP</text>
+
+  <!-- Arrow keys -->
+  <g transform="translate(60, 35)">
+    <!-- Up -->
+    <rect x="35" y="0" width="30" height="28" fill="#1a1a2e" stroke="#2a2a40" stroke-width="2" rx="3"/>
+    <text fill="#e0e0e0" font-size="14" x="44" y="20">▲</text>
+    <!-- Left -->
+    <rect x="0" y="32" width="30" height="28" fill="#1a1a2e" stroke="#2a2a40" stroke-width="2" rx="3"/>
+    <text fill="#e0e0e0" font-size="14" x="8" y="52">◄</text>
+    <!-- Down -->
+    <rect x="35" y="32" width="30" height="28" fill="#1a1a2e" stroke="#2a2a40" stroke-width="2" rx="3"/>
+    <text fill="#e0e0e0" font-size="14" x="44" y="52">▼</text>
+    <!-- Right -->
+    <rect x="70" y="32" width="30" height="28" fill="#1a1a2e" stroke="#2a2a40" stroke-width="2" rx="3"/>
+    <text fill="#e0e0e0" font-size="14" x="78" y="52">►</text>
+  </g>
+
+  <!-- Pause key -->
+  <g transform="translate(60, 105)">
+    <rect x="0" y="0" width="50" height="22" fill="#1a1a2e" stroke="#2a2a40" stroke-width="2" rx="3"/>
+    <text fill="#ffd700" font-size="8" x="10" y="15">ESC</text>
+    <text fill="#666" font-size="8" x="60" y="15">Pause</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="230" y1="15" x2="230" y2="125" stroke="#2a2a40" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Mobile section -->
+  <text fill="#888" font-size="10" x="260" y="22">MOBILE</text>
+
+  <!-- Swipe gesture -->
+  <g transform="translate(280, 40)">
+    <circle cx="30" cy="30" r="25" fill="none" stroke="#2a2a40" stroke-width="1.5"/>
+    <!-- Swipe arrows -->
+    <line x1="30" y1="12" x2="30" y2="5" stroke="#44ff66" stroke-width="2" marker-end="url(#arrowG)"/>
+    <line x1="30" y1="48" x2="30" y2="55" stroke="#44ff66" stroke-width="2"/>
+    <line x1="12" y1="30" x2="5" y2="30" stroke="#44ff66" stroke-width="2"/>
+    <line x1="48" y1="30" x2="55" y2="30" stroke="#44ff66" stroke-width="2"/>
+    <text fill="#44ff66" font-size="8" x="26" y="0">↑</text>
+    <text fill="#44ff66" font-size="8" x="26" y="70">↓</text>
+    <text fill="#44ff66" font-size="8" x="-4" y="34">←</text>
+    <text fill="#44ff66" font-size="8" x="58" y="34">→</text>
+    <text fill="#888" font-size="9" x="8" y="85">Swipe</text>
+  </g>
+
+  <!-- D-pad -->
+  <g transform="translate(430, 35)">
+    <rect x="30" y="0" width="25" height="25" fill="#1a1a2e" stroke="#44ff66" stroke-width="1.5" rx="2"/>
+    <text fill="#44ff66" font-size="12" x="37" y="18">▲</text>
+    <rect x="0" y="28" width="25" height="25" fill="#1a1a2e" stroke="#44ff66" stroke-width="1.5" rx="2"/>
+    <text fill="#44ff66" font-size="12" x="6" y="46">◄</text>
+    <rect x="30" y="28" width="25" height="25" fill="#1a1a2e" stroke="#44ff66" stroke-width="1.5" rx="2"/>
+    <text fill="#44ff66" font-size="12" x="37" y="46">▼</text>
+    <rect x="60" y="28" width="25" height="25" fill="#1a1a2e" stroke="#44ff66" stroke-width="1.5" rx="2"/>
+    <text fill="#44ff66" font-size="12" x="66" y="46">►</text>
+    <text fill="#888" font-size="9" x="18" y="75">D-Pad</text>
+  </g>
+
+  <rect width="600" height="140" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

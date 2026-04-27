@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" width="600" height="120">
+  <rect width="600" height="120" fill="#0a0a16" rx="6"/>
+  <defs><style>text{font-family:monospace;font-size:9px;}</style></defs>
+
+  <!-- Brick row colors -->
+  <text fill="#888" font-size="10" x="20" y="16">BRICK ROWS</text>
+
+  <rect x="20" y="24" width="40" height="30" fill="#ff4444" rx="2"/>
+  <text fill="#aaa" x="20" y="68">Row 1</text>
+  <text fill="#555" x="20" y="80">#ff4444</text>
+
+  <rect x="80" y="24" width="40" height="30" fill="#ff8844" rx="2"/>
+  <text fill="#aaa" x="80" y="68">Row 2</text>
+  <text fill="#555" x="80" y="80">#ff8844</text>
+
+  <rect x="140" y="24" width="40" height="30" fill="#ffd700" rx="2"/>
+  <text fill="#aaa" x="140" y="68">Row 3</text>
+  <text fill="#555" x="140" y="80">#ffd700</text>
+
+  <rect x="200" y="24" width="40" height="30" fill="#44ff66" rx="2"/>
+  <text fill="#aaa" x="200" y="68">Row 4</text>
+  <text fill="#555" x="200" y="80">#44ff66</text>
+
+  <rect x="260" y="24" width="40" height="30" fill="#44aaff" rx="2"/>
+  <text fill="#aaa" x="260" y="68">Row 5</text>
+  <text fill="#555" x="260" y="80">#44aaff</text>
+
+  <rect x="320" y="24" width="40" height="30" fill="#c084fc" rx="2"/>
+  <text fill="#aaa" x="320" y="68">Row 6</text>
+  <text fill="#555" x="320" y="80">#c084fc</text>
+
+  <!-- Paddle, Ball, Background -->
+  <line x1="385" y1="20" x2="385" y2="100" stroke="#2a2a40" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <rect x="410" y="24" width="40" height="30" fill="#e0e0e0" rx="2"/>
+  <text fill="#aaa" x="410" y="68">Paddle</text>
+  <text fill="#555" x="410" y="80">#e0e0e0</text>
+
+  <rect x="470" y="24" width="40" height="30" fill="#ffffff" rx="2"/>
+  <circle cx="490" cy="39" r="5" fill="#0a0a16"/>
+  <text fill="#aaa" x="470" y="68">Ball</text>
+  <text fill="#555" x="470" y="80">#ffffff</text>
+
+  <rect x="530" y="24" width="40" height="30" fill="#0e0e1a" rx="2" stroke="#2a2a40" stroke-width="1"/>
+  <text fill="#aaa" x="530" y="68">BG</text>
+  <text fill="#555" x="530" y="80">#0e0e1a</text>
+
+  <!-- Rainbow gradient bar -->
+  <text fill="#888" font-size="8" x="20" y="98">Top (60pts)</text>
+  <linearGradient id="brickGrad" x1="0" y1="0" x2="1" y2="0" xmlns="http://www.w3.org/2000/svg">
+    <stop offset="0%" stop-color="#ff4444"/>
+    <stop offset="20%" stop-color="#ff8844"/>
+    <stop offset="40%" stop-color="#ffd700"/>
+    <stop offset="60%" stop-color="#44ff66"/>
+    <stop offset="80%" stop-color="#44aaff"/>
+    <stop offset="100%" stop-color="#c084fc"/>
+  </linearGradient>
+  <rect x="90" y="90" width="420" height="10" fill="url(#brickGrad)" rx="2"/>
+  <text fill="#888" font-size="8" x="520" y="98">Bottom (10pts)</text>
+
+  <rect width="600" height="120" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

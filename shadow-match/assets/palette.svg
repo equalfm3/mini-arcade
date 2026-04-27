@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+  <rect width="600" height="200" fill="#0a0a16" rx="6"/>
+
+  <text font-size="12" fill="#8866ee" x="300" y="22" text-anchor="middle" font-weight="bold">COLOR PALETTE</text>
+
+  <!-- Row 1: UI Colors -->
+  <text font-size="9" fill="#666" x="20" y="50">UI</text>
+
+  <rect x="50" y="38" width="50" height="24" fill="#0a0a16" stroke="#2a2a40" stroke-width="1" rx="2"/>
+  <text font-size="7" fill="#666" x="75" y="72" text-anchor="middle">#0a0a16</text>
+  <text font-size="7" fill="#666" x="75" y="80" text-anchor="middle">BG</text>
+
+  <rect x="110" y="38" width="50" height="24" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="2"/>
+  <text font-size="7" fill="#666" x="135" y="72" text-anchor="middle">#12121f</text>
+  <text font-size="7" fill="#666" x="135" y="80" text-anchor="middle">Panel</text>
+
+  <rect x="170" y="38" width="50" height="24" fill="#2a2a40" stroke="#2a2a40" stroke-width="1" rx="2"/>
+  <text font-size="7" fill="#666" x="195" y="72" text-anchor="middle">#2a2a40</text>
+  <text font-size="7" fill="#666" x="195" y="80" text-anchor="middle">Border</text>
+
+  <rect x="230" y="38" width="50" height="24" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="2"/>
+  <text font-size="7" fill="#666" x="255" y="72" text-anchor="middle">#1a1a2e</text>
+  <text font-size="7" fill="#666" x="255" y="80" text-anchor="middle">Shadow</text>
+
+  <!-- Row 2: Shadow Colors -->
+  <text font-size="9" fill="#666" x="20" y="110">Shadow</text>
+
+  <rect x="80" y="98" width="50" height="24" fill="#2a2a50" stroke="#6644cc" stroke-width="1.5" rx="2"/>
+  <text font-size="7" fill="#888" x="105" y="132" text-anchor="middle">#2a2a50</text>
+  <text font-size="7" fill="#888" x="105" y="140" text-anchor="middle">Cell</text>
+
+  <rect x="140" y="98" width="50" height="24" fill="#6644cc" rx="2"/>
+  <text font-size="7" fill="#888" x="165" y="132" text-anchor="middle">#6644cc</text>
+  <text font-size="7" fill="#888" x="165" y="140" text-anchor="middle">Glow</text>
+
+  <rect x="200" y="98" width="50" height="24" fill="#8866ee" rx="2"/>
+  <text font-size="7" fill="#888" x="225" y="132" text-anchor="middle">#8866ee</text>
+  <text font-size="7" fill="#888" x="225" y="140" text-anchor="middle">Accent</text>
+
+  <!-- Row 3: Option Colors -->
+  <text font-size="9" fill="#666" x="20" y="170">Options</text>
+
+  <rect x="80" y="158" width="50" height="24" fill="#44aaff" rx="2"/>
+  <text font-size="7" fill="#fff" x="105" y="192" text-anchor="middle">#44aaff</text>
+
+  <rect x="140" y="158" width="50" height="24" fill="#44ff66" rx="2"/>
+  <text font-size="7" fill="#fff" x="165" y="192" text-anchor="middle">#44ff66</text>
+
+  <rect x="200" y="158" width="50" height="24" fill="#ffd700" rx="2"/>
+  <text font-size="7" fill="#fff" x="225" y="192" text-anchor="middle">#ffd700</text>
+
+  <rect x="260" y="158" width="50" height="24" fill="#ff66aa" rx="2"/>
+  <text font-size="7" fill="#fff" x="285" y="192" text-anchor="middle">#ff66aa</text>
+
+  <!-- Row 3 continued: Feedback -->
+  <text font-size="9" fill="#666" x="350" y="110">Feedback</text>
+
+  <rect x="420" y="98" width="50" height="24" fill="#44ff66" rx="2"/>
+  <text font-size="7" fill="#fff" x="445" y="132" text-anchor="middle">#44ff66</text>
+  <text font-size="7" fill="#888" x="445" y="140" text-anchor="middle">Correct</text>
+
+  <rect x="480" y="98" width="50" height="24" fill="#ff4444" rx="2"/>
+  <text font-size="7" fill="#fff" x="505" y="132" text-anchor="middle">#ff4444</text>
+  <text font-size="7" fill="#888" x="505" y="140" text-anchor="middle">Wrong</text>
+
+  <!-- Timer colors -->
+  <text font-size="9" fill="#666" x="350" y="170">Timer</text>
+
+  <rect x="420" y="158" width="40" height="24" fill="#44ff66" rx="2"/>
+  <text font-size="7" fill="#fff" x="440" y="192" text-anchor="middle">Safe</text>
+
+  <rect x="465" y="158" width="40" height="24" fill="#ffd700" rx="2"/>
+  <text font-size="7" fill="#fff" x="485" y="192" text-anchor="middle">Warn</text>
+
+  <rect x="510" y="158" width="40" height="24" fill="#ff4444" rx="2"/>
+  <text font-size="7" fill="#fff" x="530" y="192" text-anchor="middle">Danger</text>
+
+  <rect width="600" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

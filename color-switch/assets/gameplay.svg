@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 500" width="380" height="500">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+  <!-- Background -->
+  <rect width="380" height="500" fill="#0a0a16" rx="6"/>
+
+  <!-- Stars -->
+  <rect x="30" y="40" width="2" height="2" fill="#fff" opacity="0.3"/>
+  <rect x="120" y="80" width="1" height="1" fill="#fff" opacity="0.4"/>
+  <rect x="280" y="30" width="2" height="2" fill="#fff" opacity="0.25"/>
+  <rect x="340" y="120" width="1" height="1" fill="#fff" opacity="0.35"/>
+  <rect x="60" y="200" width="2" height="2" fill="#fff" opacity="0.3"/>
+  <rect x="310" y="250" width="1" height="1" fill="#fff" opacity="0.4"/>
+  <rect x="50" y="350" width="2" height="2" fill="#fff" opacity="0.2"/>
+  <rect x="330" y="400" width="1" height="1" fill="#fff" opacity="0.35"/>
+
+  <!-- HUD bar -->
+  <rect x="20" y="10" width="340" height="28" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="3"/>
+  <text fill="#666" font-size="10" x="30" y="28">SCORE</text>
+  <text fill="#ffd700" font-size="10" x="80" y="28">8</text>
+  <text fill="#666" font-size="10" x="260" y="28">BEST</text>
+  <text fill="#ffd700" font-size="10" x="300" y="28">15</text>
+
+  <!-- Top ring obstacle (partially off screen) -->
+  <g transform="translate(190, 70)">
+    <path d="M 0,-55 A 55,55 0 0,1 55,0" stroke="#ff4444" stroke-width="14" fill="none"/>
+    <path d="M 55,0 A 55,55 0 0,1 0,55" stroke="#ffd700" stroke-width="14" fill="none"/>
+    <path d="M 0,55 A 55,55 0 0,1 -55,0" stroke="#44ff66" stroke-width="14" fill="none"/>
+    <path d="M -55,0 A 55,55 0 0,1 0,-55" stroke="#c084fc" stroke-width="14" fill="none"/>
+  </g>
+
+  <!-- Color switch star between obstacles -->
+  <g transform="translate(190, 180)">
+    <polygon points="0,-12 4,-4 12,-4 6,2 8,10 0,6 -8,10 -6,2 -12,-4 -4,-4" fill="#ff4444"/>
+    <circle cx="0" cy="0" r="3" fill="#ffffff"/>
+  </g>
+
+  <!-- Middle ring obstacle (rotated ~30°) -->
+  <g transform="translate(190, 280) rotate(30)">
+    <path d="M 0,-55 A 55,55 0 0,1 55,0" stroke="#ff4444" stroke-width="14" fill="none"/>
+    <path d="M 55,0 A 55,55 0 0,1 0,55" stroke="#ffd700" stroke-width="14" fill="none"/>
+    <path d="M 0,55 A 55,55 0 0,1 -55,0" stroke="#44ff66" stroke-width="14" fill="none"/>
+    <path d="M -55,0 A 55,55 0 0,1 0,-55" stroke="#c084fc" stroke-width="14" fill="none"/>
+  </g>
+
+  <!-- Ball (green, approaching the green arc of middle ring) -->
+  <circle cx="190" cy="340" r="12" fill="#44ff66"/>
+  <circle cx="187" cy="337" r="5" fill="rgba(255,255,255,0.3)"/>
+
+  <!-- Color switch star below -->
+  <g transform="translate(190, 400)">
+    <polygon points="0,-12 4,-4 12,-4 6,2 8,10 0,6 -8,10 -6,2 -12,-4 -4,-4" fill="#ffd700"/>
+    <circle cx="0" cy="0" r="3" fill="#ffffff"/>
+  </g>
+
+  <!-- Bottom cross obstacle -->
+  <g transform="translate(190, 460) rotate(15)">
+    <rect x="0" y="-7" width="50" height="14" fill="#ff4444" rx="7"/>
+    <rect x="0" y="-7" width="50" height="14" fill="#ffd700" rx="7" transform="rotate(90)"/>
+    <rect x="-50" y="-7" width="50" height="14" fill="#44ff66" rx="7" transform="rotate(180)"/>
+    <rect x="-50" y="-7" width="50" height="14" fill="#c084fc" rx="7" transform="rotate(270)"/>
+  </g>
+
+  <!-- Border -->
+  <rect width="380" height="500" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

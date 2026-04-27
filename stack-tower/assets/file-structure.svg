@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 260" width="620" height="260">
+  <defs>
+    <style>text{font-family:monospace;font-size:12px;}</style>
+  </defs>
+  <rect width="620" height="260" fill="#0a0a16" rx="6"/>
+
+  <text fill="#ff8844" font-size="14" font-weight="bold" x="20" y="30">stack-tower/</text>
+
+  <text fill="#ffd700" x="30" y="55">├── index.html</text>
+  <text fill="#666" x="250" y="55">Entry point — GAME config + arcade.js loader</text>
+
+  <text fill="#ffd700" x="30" y="78">├── style.css</text>
+  <text fill="#666" x="250" y="78">Accent color override (--c-game: #ff8844)</text>
+
+  <text fill="#ffd700" x="30" y="101">├── game.js</text>
+  <text fill="#666" x="250" y="101">Orchestrator — wires modules, runs Engine</text>
+
+  <text fill="#ff8844" x="30" y="124">├── src/</text>
+
+  <text fill="#44ff66" x="50" y="147">├── config.js</text>
+  <text fill="#666" x="250" y="147">Block sizes, speed, colors, camera, tolerance</text>
+
+  <text fill="#44ff66" x="50" y="170">├── blocks.js</text>
+  <text fill="#666" x="250" y="170">Stack, sliding block, overhang, perfect detect</text>
+
+  <text fill="#44ff66" x="50" y="193">└── renderer.js</text>
+  <text fill="#666" x="250" y="193">Isometric drawing, camera, falling pieces</text>
+
+  <text fill="#ff8844" x="30" y="216">├── assets/</text>
+  <text fill="#666" x="250" y="216">SVG images for README documentation</text>
+
+  <text fill="#ffd700" x="30" y="239">└── README.md</text>
+  <text fill="#666" x="250" y="239">Full documentation with embedded SVGs</text>
+
+  <!-- Border -->
+  <rect width="620" height="260" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

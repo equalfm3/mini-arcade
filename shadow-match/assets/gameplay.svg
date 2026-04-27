@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 600" width="440" height="600">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+  <rect width="440" height="600" fill="#0a0a16" rx="6"/>
+
+  <!-- HUD bar -->
+  <rect x="10" y="8" width="420" height="28" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="3"/>
+  <text font-size="10" fill="#666" x="20" y="26">SCORE</text>
+  <text font-size="10" fill="#ffd700" x="65" y="26">320</text>
+  <text font-size="10" fill="#666" x="130" y="26">LEVEL</text>
+  <text font-size="10" fill="#ffd700" x="175" y="26">4</text>
+  <!-- Hearts -->
+  <text font-size="12" fill="#ff4444" x="370" y="27">♥♥</text>
+  <text font-size="12" fill="#442222" x="396" y="27">♥</text>
+
+  <!-- Shadow area label -->
+  <text font-size="9" fill="#666" x="220" y="55" text-anchor="middle">WHICH SHAPE MATCHES?</text>
+
+  <!-- Question mark in shadow area -->
+  <text font-size="48" fill="#1a1a2e" x="220" y="140" text-anchor="middle" font-weight="bold">?</text>
+
+  <!-- Timer bar -->
+  <rect x="30" y="225" width="380" height="10" fill="#1a1a2e" rx="2"/>
+  <rect x="30" y="225" width="250" height="10" fill="#ffd700" rx="2"/>
+  <rect x="30" y="225" width="380" height="10" fill="none" stroke="#2a2a40" stroke-width="1" rx="2"/>
+
+  <!-- Option grid: 2x2 -->
+  <!-- Option 1 (top-left) — L-tetromino -->
+  <rect x="15" y="255" width="200" height="155" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+  <text font-size="11" fill="#666" x="22" y="270">1</text>
+  <g transform="translate(75, 300)">
+    <rect x="0" y="0" width="20" height="20" fill="#44aaff" rx="1"/>
+    <rect x="0" y="0" width="20" height="3" fill="#fff" opacity="0.15"/>
+    <rect x="0" y="23" width="20" height="20" fill="#44aaff" rx="1"/>
+    <rect x="0" y="23" width="20" height="3" fill="#fff" opacity="0.15"/>
+    <rect x="0" y="46" width="20" height="20" fill="#44aaff" rx="1"/>
+    <rect x="0" y="46" width="20" height="3" fill="#fff" opacity="0.15"/>
+    <rect x="23" y="46" width="20" height="20" fill="#44aaff" rx="1"/>
+    <rect x="23" y="46" width="20" height="3" fill="#fff" opacity="0.15"/>
+  </g>
+
+  <!-- Option 2 (top-right) — J-tetromino (mirror of L) -->
+  <rect x="225" y="255" width="200" height="155" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+  <text font-size="11" fill="#666" x="232" y="270">2</text>
+  <g transform="translate(285, 300)">
+    <rect x="23" y="0" width="20" height="20" fill="#44ff66" rx="1"/>
+    <rect x="23" y="0" width="20" height="3" fill="#fff" opacity="0.15"/>
+    <rect x="23" y="23" width="20" height="20" fill="#44ff66" rx="1"/>
+    <rect x="23" y="23" width="20" height="3" fill="#fff" opacity="0.15"/>
+    <rect x="0" y="46" width="20" height="20" fill="#44ff66" rx="1"/>
+    <rect x="0" y="46" width="20" height="3" fill="#fff" opacity="0.15"/>
+    <rect x="23" y="46" width="20" height="20" fill="#44ff66" rx="1"/>
+    <rect x="23" y="46" width="20" height="3" fill="#fff" opacity="0.15"/>
+  </g>
+
+  <!-- Option 3 (bottom-left) — rotated L -->
+  <rect x="15" y="420" width="200" height="155" fill="#12121f" stroke="#44ff66" stroke-width="2" rx="3"/>
+  <text font-size="11" fill="#44ff66" x="22" y="435">3 ✓</text>
+  <g transform="translate(60, 470)">
+    <rect x="0" y="0" width="20" height="20" fill="#ffd700" rx="1"/>
+    <rect x="0" y="0" width="20" height="3" fill="#fff" opacity="0.15"/>
+    <rect x="23" y="0" width="20" height="20" fill="#ffd700" rx="1"/>
+    <rect x="23" y="0" width="20" height="3" fill="#fff" opacity="0.15"/>
+    <rect x="46" y="0" width="20" height="20" fill="#ffd700" rx="1"/>
+    <rect x="46" y="0" width="20" height="3" fill="#fff" opacity="0.15"/>
+    <rect x="46" y="23" width="20" height="20" fill="#ffd700" rx="1"/>
+    <rect x="46" y="23" width="20" height="3" fill="#fff" opacity="0.15"/>
+  </g>
+  <!-- Green glow effect -->
+  <rect x="15" y="420" width="200" height="155" fill="rgba(68,255,102,0.05)" rx="3"/>
+
+  <!-- Option 4 (bottom-right) — 3-cell only (cell removed) -->
+  <rect x="225" y="420" width="200" height="155" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="3"/>
+  <text font-size="11" fill="#666" x="232" y="435">4</text>
+  <g transform="translate(295, 470)">
+    <rect x="0" y="0" width="20" height="20" fill="#ff66aa" rx="1"/>
+    <rect x="0" y="0" width="20" height="3" fill="#fff" opacity="0.15"/>
+    <rect x="0" y="23" width="20" height="20" fill="#ff66aa" rx="1"/>
+    <rect x="0" y="23" width="20" height="3" fill="#fff" opacity="0.15"/>
+    <rect x="23" y="23" width="20" height="20" fill="#ff66aa" rx="1"/>
+    <rect x="23" y="23" width="20" height="3" fill="#fff" opacity="0.15"/>
+  </g>
+
+  <!-- Score popup -->
+  <text font-size="18" fill="#44ff66" x="220" y="210" text-anchor="middle" font-weight="bold" opacity="0.7">+220</text>
+
+  <rect width="440" height="600" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

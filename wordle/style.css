@@ -1,0 +1,245 @@
+/* Wordle — Game Styles */
+
+:root {
+  --c-game: #538d4e;
+}
+
+/* ---- Wrapper ---- */
+.wrd-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 0 32px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* ---- Grid ---- */
+.wrd-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.wrd-row {
+  display: flex;
+  gap: 6px;
+}
+
+/* ---- Tile ---- */
+.wrd-tile {
+  width: 58px;
+  height: 58px;
+  position: relative;
+  perspective: 400px;
+}
+
+.wrd-tile-front,
+.wrd-tile-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-pixel, monospace);
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 4px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: transform 0.5s ease;
+}
+
+.wrd-tile-front {
+  background: #12121f;
+  border: 2px solid #2a2a40;
+}
+
+.wrd-tile-back {
+  background: #3a3a4c;
+  border: 2px solid transparent;
+  transform: rotateX(180deg);
+}
+
+/* Filled (letter typed but not submitted) */
+.wrd-tile-filled .wrd-tile-front {
+  border-color: #3a3a55;
+}
+
+/* Flip animation */
+.wrd-tile-flip .wrd-tile-front {
+  transform: rotateX(180deg);
+}
+
+.wrd-tile-flip .wrd-tile-back {
+  transform: rotateX(0deg);
+}
+
+/* Result states (applied to back face via data-state) */
+.wrd-tile[data-state="correct"] .wrd-tile-back {
+  background: #538d4e;
+  border-color: #538d4e;
+}
+
+.wrd-tile[data-state="present"] .wrd-tile-back {
+  background: #b59f3b;
+  border-color: #b59f3b;
+}
+
+.wrd-tile[data-state="absent"] .wrd-tile-back {
+  background: #3a3a4c;
+  border-color: #3a3a4c;
+}
+
+/* Pop animation when typing */
+.wrd-tile-pop {
+  animation: wrd-pop 0.1s ease;
+}
+
+@keyframes wrd-pop {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Bounce animation for win */
+.wrd-tile-bounce {
+  animation: wrd-bounce 0.5s ease;
+}
+
+@keyframes wrd-bounce {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-20px); }
+  50%  { transform: translateY(0); }
+  70%  { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+/* Shake animation for invalid word */
+.wrd-row-shake {
+  animation: wrd-shake 0.5s ease;
+}
+
+@keyframes wrd-shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 50%, 90% { transform: translateX(-6px); }
+  30%, 70% { transform: translateX(6px); }
+}
+
+/* ---- Status message ---- */
+.wrd-status {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: var(--font-pixel, monospace);
+  font-size: 0.9rem;
+  color: #888;
+  height: 1.4em;
+  line-height: 1.4em;
+  overflow: hidden;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.wrd-status-error { color: #ff4444; }
+.wrd-status-win   { color: #538d4e; }
+.wrd-status-lose  { color: #b59f3b; }
+
+/* ---- Keyboard ---- */
+.wrd-keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.wrd-kb-row {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  width: 100%;
+}
+
+.wrd-key {
+  flex: 1;
+  max-width: 42px;
+  height: 52px;
+  border: none;
+  border-radius: 4px;
+  background: #818384;
+  color: #ffffff;
+  font-family: var(--font-pixel, monospace);
+  font-size: 0.85rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+  padding: 0;
+}
+
+.wrd-key:active {
+  opacity: 0.8;
+}
+
+.wrd-key-wide {
+  flex: 1.5;
+  max-width: 65px;
+  font-size: 0.75rem;
+}
+
+/* Key states */
+.wrd-key-correct {
+  background: #538d4e;
+}
+
+.wrd-key-present {
+  background: #b59f3b;
+}
+
+.wrd-key-absent {
+  background: #3a3a4c;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 400px) {
+  .wrd-tile {
+    width: 48px;
+    height: 48px;
+  }
+
+  .wrd-tile-front,
+  .wrd-tile-back {
+    font-size: 1.4rem;
+  }
+
+  .wrd-grid {
+    gap: 4px;
+  }
+
+  .wrd-row {
+    gap: 4px;
+  }
+
+  .wrd-key {
+    height: 46px;
+    font-size: 0.75rem;
+  }
+
+  .wrd-kb-row {
+    gap: 3px;
+  }
+}

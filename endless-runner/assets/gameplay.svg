@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220" width="600" height="220">
+  <defs>
+    <style>text { font-family: monospace; }</style>
+  </defs>
+  <!-- Background -->
+  <rect width="600" height="220" fill="#0e0e1a" rx="6"/>
+
+  <!-- Stars -->
+  <g fill="#ffffff" opacity="0.3">
+    <rect x="30" y="15" width="2" height="2"/><rect x="90" y="30" width="2" height="2"/>
+    <rect x="160" y="10" width="2" height="2"/><rect x="250" y="25" width="2" height="2"/>
+    <rect x="340" y="18" width="2" height="2"/><rect x="420" y="35" width="2" height="2"/>
+    <rect x="500" y="12" width="2" height="2"/><rect x="560" y="28" width="2" height="2"/>
+  </g>
+
+  <!-- Mountains -->
+  <g fill="#161625">
+    <polygon points="0,170 50,130 100,170"/>
+    <polygon points="80,170 140,120 200,170"/>
+    <polygon points="180,170 230,135 280,170"/>
+    <polygon points="300,170 360,125 420,170"/>
+    <polygon points="400,170 450,140 500,170"/>
+    <polygon points="480,170 540,130 600,170"/>
+  </g>
+
+  <!-- Hills -->
+  <g fill="#1a1a2e">
+    <polygon points="20,170 60,150 100,170"/>
+    <polygon points="100,170 150,145 200,170"/>
+    <polygon points="220,170 260,150 300,170"/>
+    <polygon points="340,170 380,148 420,170"/>
+    <polygon points="440,170 490,152 540,170"/>
+  </g>
+
+  <!-- Clouds -->
+  <g fill="#1e1e30" opacity="0.6">
+    <rect x="80" y="50" width="40" height="8"/>
+    <rect x="88" y="44" width="15" height="7"/>
+    <rect x="100" y="42" width="18" height="9"/>
+    <rect x="300" y="40" width="50" height="10"/>
+    <rect x="310" y="33" width="18" height="8"/>
+    <rect x="325" y="30" width="20" height="11"/>
+    <rect x="480" y="55" width="35" height="7"/>
+    <rect x="488" y="50" width="12" height="6"/>
+  </g>
+
+  <!-- Ground -->
+  <rect x="0" y="170" width="600" height="50" fill="#2a2a40"/>
+  <rect x="0" y="170" width="600" height="2" fill="#3a3a55"/>
+  <g fill="#333350">
+    <rect x="10" y="178" width="8" height="2"/><rect x="40" y="185" width="6" height="2"/>
+    <rect x="80" y="178" width="8" height="2"/><rect x="120" y="185" width="6" height="2"/>
+    <rect x="160" y="178" width="8" height="2"/><rect x="200" y="185" width="6" height="2"/>
+    <rect x="240" y="178" width="8" height="2"/><rect x="280" y="185" width="6" height="2"/>
+    <rect x="320" y="178" width="8" height="2"/><rect x="360" y="185" width="6" height="2"/>
+    <rect x="400" y="178" width="8" height="2"/><rect x="440" y="185" width="6" height="2"/>
+    <rect x="480" y="178" width="8" height="2"/><rect x="520" y="185" width="6" height="2"/>
+    <rect x="560" y="178" width="8" height="2"/>
+  </g>
+
+  <!-- Player (running, mid-stride) -->
+  <g shape-rendering="crispEdges">
+    <rect x="48" y="122" width="32" height="12" fill="#e0e0e0"/>
+    <rect x="50" y="134" width="28" height="28" fill="#e0e0e0"/>
+    <rect x="72" y="125" width="4" height="4" fill="#ff4444"/>
+    <rect x="50" y="156" width="28" height="6" fill="#aaaaaa"/>
+    <rect x="78" y="142" width="6" height="3" fill="#e0e0e0"/>
+    <rect x="52" y="162" width="4" height="8" fill="#e0e0e0"/>
+    <rect x="70" y="162" width="4" height="4" fill="#e0e0e0"/>
+  </g>
+
+  <!-- Small cactus (passed) -->
+  <g shape-rendering="crispEdges" opacity="0.5">
+    <rect x="20" y="142" width="8" height="28" fill="#44ff66"/>
+    <rect x="14" y="150" width="6" height="10" fill="#44ff66"/>
+    <rect x="28" y="154" width="6" height="8" fill="#44ff66"/>
+  </g>
+
+  <!-- Large cactus (approaching) -->
+  <g shape-rendering="crispEdges">
+    <rect x="200" y="130" width="10" height="40" fill="#44ff66"/>
+    <rect x="194" y="140" width="7" height="14" fill="#44ff66"/>
+    <rect x="210" y="146" width="7" height="12" fill="#44ff66"/>
+    <rect x="200" y="130" width="2" height="40" fill="#22aa44"/>
+    <rect x="202" y="127" width="2" height="4" fill="#44ff66"/>
+  </g>
+
+  <!-- Double cactus -->
+  <g shape-rendering="crispEdges">
+    <rect x="340" y="142" width="8" height="28" fill="#44ff66"/>
+    <rect x="334" y="150" width="6" height="10" fill="#44ff66"/>
+    <rect x="348" y="154" width="6" height="8" fill="#44ff66"/>
+    <rect x="356" y="142" width="8" height="28" fill="#44ff66"/>
+    <rect x="350" y="150" width="6" height="10" fill="#44ff66"/>
+    <rect x="364" y="154" width="6" height="8" fill="#44ff66"/>
+  </g>
+
+  <!-- Bird (high altitude — duck under) -->
+  <g shape-rendering="crispEdges">
+    <rect x="484" y="106" width="22" height="10" fill="#c084fc"/>
+    <rect x="498" y="104" width="8" height="10" fill="#c084fc"/>
+    <rect x="506" y="107" width="4" height="3" fill="#ffd700"/>
+    <rect x="500" y="105" width="3" height="3" fill="#ffffff"/>
+    <rect x="501" y="106" width="2" height="2" fill="#0a0a16"/>
+    <rect x="486" y="100" width="14" height="6" fill="#8844cc"/>
+    <rect x="480" y="106" width="6" height="4" fill="#c084fc"/>
+  </g>
+
+  <!-- Score display -->
+  <g>
+    <text fill="#666" font-size="10" x="520" y="18">SCORE</text>
+    <text fill="#ffd700" font-size="12" x="560" y="18" font-weight="bold">1450</text>
+  </g>
+
+  <!-- Border -->
+  <rect width="600" height="220" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

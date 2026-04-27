@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <style>
+      .bg { fill: #0e0e1a; }
+      .title { font-family: monospace; font-size: 44px; font-weight: bold; fill: #ff4444; }
+      .sub { font-family: monospace; font-size: 14px; fill: #666666; }
+    </style>
+  </defs>
+  <!-- Background -->
+  <rect class="bg" width="800" height="200" rx="8"/>
+
+  <!-- Subtle diagonal slash marks -->
+  <g stroke="#161625" stroke-width="1" opacity="0.5">
+    <line x1="50" y1="200" x2="150" y2="0"/>
+    <line x1="150" y1="200" x2="250" y2="0"/>
+    <line x1="250" y1="200" x2="350" y2="0"/>
+    <line x1="650" y1="200" x2="750" y2="0"/>
+    <line x1="700" y1="200" x2="800" y2="0"/>
+  </g>
+
+  <!-- Fruits pixel art on left side -->
+  <g shape-rendering="crispEdges">
+    <!-- Watermelon (green circle) -->
+    <circle cx="80" cy="60" r="28" fill="#44ff66"/>
+    <circle cx="80" cy="60" r="28" fill="#22aa44" clip-path="inset(50% 0 0 0)"/>
+    <circle cx="73" cy="52" r="12" fill="#88ffaa" opacity="0.5"/>
+    <circle cx="71" cy="49" r="5" fill="rgba(255,255,255,0.4)"/>
+    <!-- Watermelon stripes -->
+    <line x1="60" y1="50" x2="60" y2="70" stroke="#22aa44" stroke-width="2"/>
+    <line x1="70" y1="42" x2="70" y2="78" stroke="#22aa44" stroke-width="2"/>
+    <line x1="90" y1="42" x2="90" y2="78" stroke="#22aa44" stroke-width="2"/>
+    <line x1="100" y1="50" x2="100" y2="70" stroke="#22aa44" stroke-width="2"/>
+
+    <!-- Orange -->
+    <circle cx="160" cy="100" r="24" fill="#ff8844"/>
+    <circle cx="153" cy="92" r="10" fill="#ffaa77" opacity="0.5"/>
+    <circle cx="151" cy="89" r="4" fill="rgba(255,255,255,0.4)"/>
+    <!-- Stem -->
+    <rect x="158" y="74" width="4" height="8" fill="#44aa44"/>
+
+    <!-- Apple (red) -->
+    <circle cx="70" cy="140" r="24" fill="#ff4444"/>
+    <circle cx="63" cy="132" r="10" fill="#ff7777" opacity="0.5"/>
+    <circle cx="61" cy="129" r="4" fill="rgba(255,255,255,0.4)"/>
+    <!-- Stem -->
+    <rect x="68" y="114" width="4" height="8" fill="#44aa44"/>
+    <ellipse cx="76" cy="118" rx="5" ry="3" fill="#44aa44" transform="rotate(20 76 118)"/>
+
+    <!-- Banana (yellow) -->
+    <ellipse cx="180" cy="50" rx="22" ry="14" fill="#ffd700" transform="rotate(-20 180 50)"/>
+    <ellipse cx="175" cy="44" rx="10" ry="6" fill="#ffee66" opacity="0.5" transform="rotate(-20 175 44)"/>
+
+    <!-- Grape (purple) -->
+    <circle cx="170" cy="155" r="20" fill="#c084fc"/>
+    <circle cx="164" cy="148" r="8" fill="#d4aaff" opacity="0.5"/>
+    <circle cx="162" cy="146" r="3" fill="rgba(255,255,255,0.4)"/>
+
+    <!-- Blade trail (white slash) -->
+    <line x1="40" y1="170" x2="210" y2="30" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+    <line x1="42" y1="168" x2="212" y2="28" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Sliced halves flying apart -->
+    <!-- Left half of a red fruit -->
+    <g transform="translate(230, 90) rotate(-15)">
+      <clipPath id="leftHalf">
+        <rect x="-20" y="-20" width="20" height="40"/>
+      </clipPath>
+      <circle cx="0" cy="0" r="16" fill="#ffcccc" clip-path="url(#leftHalf)"/>
+      <circle cx="0" cy="0" r="16" fill="none" stroke="#ff4444" stroke-width="3" clip-path="url(#leftHalf)"/>
+    </g>
+    <!-- Right half -->
+    <g transform="translate(260, 80) rotate(15)">
+      <clipPath id="rightHalf">
+        <rect x="0" y="-20" width="20" height="40"/>
+      </clipPath>
+      <circle cx="0" cy="0" r="16" fill="#ffcccc" clip-path="url(#rightHalf)"/>
+      <circle cx="0" cy="0" r="16" fill="none" stroke="#ff4444" stroke-width="3" clip-path="url(#rightHalf)"/>
+    </g>
+
+    <!-- Bomb -->
+    <circle cx="240" cy="155" r="18" fill="#333333"/>
+    <circle cx="234" cy="148" r="7" fill="#555555"/>
+    <line x1="240" y1="137" x2="244" y2="125" stroke="#888" stroke-width="2"/>
+    <circle cx="244" cy="123" r="3" fill="#ff4444"/>
+    <line x1="234" y1="149" x2="246" y2="161" stroke="#ff4444" stroke-width="2"/>
+    <line x1="246" y1="149" x2="234" y2="161" stroke="#ff4444" stroke-width="2"/>
+  </g>
+
+  <!-- Pixel icon (fruit-ninja from icons.js) -->
+  <g transform="translate(310, 28)" shape-rendering="crispEdges">
+    <!-- stem: tt -->
+    <rect x="10.5" y="1.5" width="1.5" height="1.5" fill="#aa6633"/>
+    <rect x="12" y="1.5" width="1.5" height="1.5" fill="#aa6633"/>
+    <rect x="9" y="3" width="1.5" height="1.5" fill="#aa6633"/>
+    <rect x="10.5" y="3" width="1.5" height="1.5" fill="#aa6633"/>
+    <rect x="7.5" y="4.5" width="1.5" height="1.5" fill="#aa6633"/>
+    <rect x="9" y="4.5" width="1.5" height="1.5" fill="#aa6633"/>
+    <!-- apple body: r -->
+    <rect x="6" y="6" width="9" height="1.5" fill="#ff4444"/>
+    <rect x="4.5" y="7.5" width="12" height="1.5" fill="#ff4444"/>
+    <rect x="3" y="9" width="13.5" height="1.5" fill="#ff4444"/>
+    <rect x="4.5" y="9" width="3" height="1.5" fill="#cc2222"/>
+    <rect x="3" y="10.5" width="13.5" height="1.5" fill="#ff4444"/>
+    <rect x="3" y="10.5" width="6" height="1.5" fill="#cc2222"/>
+    <rect x="3" y="12" width="13.5" height="1.5" fill="#ff4444"/>
+    <rect x="4.5" y="12" width="3" height="1.5" fill="#cc2222"/>
+    <rect x="4.5" y="13.5" width="12" height="1.5" fill="#ff4444"/>
+    <rect x="6" y="15" width="9" height="1.5" fill="#ff4444"/>
+    <!-- blade slash: dd -->
+    <rect x="3" y="19.5" width="1.5" height="1.5" fill="#666"/>
+    <rect x="4.5" y="19.5" width="1.5" height="1.5" fill="#666"/>
+    <rect x="13.5" y="19.5" width="1.5" height="1.5" fill="#666"/>
+    <rect x="15" y="19.5" width="1.5" height="1.5" fill="#666"/>
+    <rect x="4.5" y="21" width="1.5" height="1.5" fill="#666"/>
+    <rect x="6" y="21" width="1.5" height="1.5" fill="#666"/>
+    <rect x="12" y="21" width="1.5" height="1.5" fill="#666"/>
+    <rect x="13.5" y="21" width="1.5" height="1.5" fill="#666"/>
+    <rect x="6" y="22.5" width="9" height="1.5" fill="#666"/>
+  </g>
+
+  <!-- Title -->
+  <text class="title" x="370" y="85">FRUIT NINJA</text>
+  <text class="sub" x="370" y="112">Slice · Combo · Survive</text>
+
+  <!-- Score HUD mock -->
+  <g transform="translate(370, 130)">
+    <rect width="280" height="30" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="2"/>
+    <text font-family="monospace" font-size="9" fill="#666" x="10" y="19">SCORE</text>
+    <text font-family="monospace" font-size="9" fill="#ffd700" x="55" y="19">42</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="90" y="19">BEST</text>
+    <text font-family="monospace" font-size="9" fill="#ffd700" x="125" y="19">128</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="170" y="19">LIVES</text>
+    <!-- Hearts -->
+    <g transform="translate(210, 10)">
+      <text font-family="monospace" font-size="12" fill="#ff4444" x="0" y="8">♥ ♥ ♥</text>
+    </g>
+  </g>
+
+  <!-- Border -->
+  <rect width="800" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+</svg>

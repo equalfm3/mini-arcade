@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 180" width="600" height="180">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+  <rect width="600" height="180" fill="#0a0a16" rx="6"/>
+
+  <!-- Row 1: Player colors -->
+  <text fill="#888" font-size="10" x="20" y="25">PLAYER</text>
+  <g transform="translate(20, 35)">
+    <rect width="40" height="40" fill="#44ff66" rx="3"/>
+    <text fill="#e0e0e0" font-size="7" x="2" y="52">Body</text>
+    <text fill="#666" font-size="7" x="2" y="62">#44ff66</text>
+  </g>
+  <g transform="translate(80, 35)">
+    <rect width="40" height="40" fill="#22aa44" rx="3"/>
+    <text fill="#e0e0e0" font-size="7" x="2" y="52">Dark</text>
+    <text fill="#666" font-size="7" x="2" y="62">#22aa44</text>
+  </g>
+  <g transform="translate(140, 35)">
+    <rect width="40" height="40" fill="#88ffaa" rx="3"/>
+    <text fill="#e0e0e0" font-size="7" x="2" y="52">Nose</text>
+    <text fill="#666" font-size="7" x="2" y="62">#88ffaa</text>
+  </g>
+
+  <!-- Row 1: Platform colors -->
+  <text fill="#888" font-size="10" x="240" y="25">PLATFORMS</text>
+  <g transform="translate(240, 35)">
+    <rect width="40" height="40" fill="#44ff66" rx="3"/>
+    <text fill="#e0e0e0" font-size="7" x="2" y="52">Normal</text>
+    <text fill="#666" font-size="7" x="2" y="62">#44ff66</text>
+  </g>
+  <g transform="translate(300, 35)">
+    <rect width="40" height="40" fill="#44aaff" rx="3"/>
+    <text fill="#e0e0e0" font-size="7" x="2" y="52">Moving</text>
+    <text fill="#666" font-size="7" x="2" y="62">#44aaff</text>
+  </g>
+  <g transform="translate(360, 35)">
+    <rect width="40" height="40" fill="#ff8844" rx="3"/>
+    <text fill="#e0e0e0" font-size="7" x="2" y="52">Breaking</text>
+    <text fill="#666" font-size="7" x="2" y="62">#ff8844</text>
+  </g>
+  <g transform="translate(420, 35)">
+    <rect width="40" height="40" fill="#ffd700" rx="3"/>
+    <text fill="#e0e0e0" font-size="7" x="2" y="52">Spring</text>
+    <text fill="#666" font-size="7" x="2" y="62">#ffd700</text>
+  </g>
+  <g transform="translate(480, 35)">
+    <rect width="40" height="40" fill="#ff4444" rx="3"/>
+    <text fill="#e0e0e0" font-size="7" x="2" y="52">Broken</text>
+    <text fill="#666" font-size="7" x="2" y="62">#ff4444</text>
+  </g>
+
+  <!-- Row 2: Background colors -->
+  <text fill="#888" font-size="10" x="20" y="115">BACKGROUND</text>
+  <g transform="translate(20, 125)">
+    <rect width="40" height="40" fill="#0e0e1a" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <text fill="#e0e0e0" font-size="7" x="2" y="52">Sky</text>
+    <text fill="#666" font-size="7" x="2" y="62">#0e0e1a</text>
+  </g>
+  <g transform="translate(80, 125)">
+    <rect width="40" height="40" fill="#161625" rx="3"/>
+    <text fill="#e0e0e0" font-size="7" x="2" y="52">Grid</text>
+    <text fill="#666" font-size="7" x="2" y="62">#161625</text>
+  </g>
+  <g transform="translate(140, 125)">
+    <rect width="40" height="40" fill="#ffd700" rx="3"/>
+    <text fill="#e0e0e0" font-size="7" x="2" y="52">HUD</text>
+    <text fill="#666" font-size="7" x="2" y="62">#ffd700</text>
+  </g>
+
+  <rect width="600" height="180" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

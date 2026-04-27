@@ -1,0 +1,259 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 520" width="380" height="520">
+  <defs>
+    <style>text { font-family: monospace; }</style>
+  </defs>
+  <rect width="380" height="520" fill="#0a0a16" rx="8"/>
+
+  <!-- HUD bar -->
+  <rect x="15" y="10" width="350" height="32" fill="#12121f" stroke="#2a2a40" stroke-width="2"/>
+  <!-- Pixel icon (tetris) -->
+  <g transform="translate(22, 14)" shape-rendering="crispEdges">
+    <rect x="4.8" y="1.2" width="2.4" height="1.2" fill="#44aaff"/>
+    <rect x="4.8" y="2.4" width="2.4" height="1.2" fill="#44aaff"/>
+    <rect x="4.8" y="3.6" width="4.8" height="1.2" fill="#44aaff"/>
+    <rect x="4.8" y="4.8" width="4.8" height="1.2" fill="#44aaff"/>
+    <rect x="2.4" y="7.2" width="4.8" height="2.4" fill="#ff8844"/>
+    <rect x="9.6" y="10.8" width="2.4" height="1.2" fill="#ff4444"/>
+    <rect x="8.4" y="12" width="2.4" height="2.4" fill="#ff4444"/>
+    <rect x="7.2" y="15.6" width="2.4" height="1.2" fill="#44ff66"/>
+    <rect x="7.2" y="16.8" width="4.8" height="1.2" fill="#44ff66"/>
+  </g>
+  <text font-size="11" fill="#e0e0e0" x="46" y="32" font-weight="bold">Tetris</text>
+  <text font-size="8" fill="#666" x="200" y="30">Score</text>
+  <text font-size="10" fill="#ffd700" x="235" y="30">1800</text>
+  <text font-size="8" fill="#666" x="290" y="30">Lines</text>
+  <text font-size="10" fill="#ffd700" x="325" y="30">12</text>
+
+  <!--
+    Board: 10 cols × 20 rows
+    SVG cell = 24px, board starts at (15, 50)
+    Col c pixel x = 15 + c*24 + 1 = 16 + c*24
+    Row r pixel y = 50 + r*23 + 1 = 51 + r*23
+    Cell drawn as 22×22 rect (1px padding each side)
+    
+    Grid map (. = empty, letters = piece color):
+    Row 0-14: empty
+    Row 15:   . . . . . . . . . .
+    Row 16:   . . . . . . . . . .
+    Row 17:   J J . . . . . . . .
+    Row 18:   J . S S O O L . Z Z
+    Row 19:   J I I I I O O L L Z
+    
+    Pieces placed (all valid stacks, no floating):
+    - I-piece horizontal: row 19, cols 1-4 (cyan)
+    - O-piece: rows 18-19, cols 4-5 (yellow)  
+    - L-piece: rows 18-19, col 7 + row 19 cols 7-8 → actually L at rows 18-19 cols 6-8:
+      row 18 col 7, row 19 cols 6-7-8... wait let me use a simpler L:
+      L-piece (rotation 2): row 19 cols 7-8, row 18 col 7 → that's only 3 cells.
+      
+    Let me redo more carefully:
+    
+    Row 19: J  I  I  I  I  O  O  L  L  L    (10 cells, full row)
+    Row 18: J  .  S  S  .  O  O  L  Z  Z
+    Row 17: J  J  .  S  .  .  .  .  .  Z
+    
+    Pieces:
+    - J-piece (rotation 3): cols 0-1, rows 17-19 → (0,17)(1,17)(0,18)(0,19) — J shape ✓
+    - I-piece flat: row 19, cols 1-4 (cyan) ✓
+    - S-piece: (2,18)(3,18)(3,17) — wait S needs 4 cells.
+      S-piece rotation 0: (1,17)(2,17) top, (0,18)(1,18) bottom — no that's Z.
+      S-piece rotation 0: col+1,row / col+2,row / col,row+1 / col+1,row+1
+      So S at cols 2-3: (3,17)(2,18)(3,18) — only 3 visible, need 4th.
+      S rotation 0: (c+1,r)(c+2,r)(c,r+1)(c+1,r+1) → at c=2,r=17: (3,17)(4,17)(2,18)(3,18) — but col 4 row 17 should be empty for the T-piece ghost.
+      
+    Let me simplify. I'll design the board state first as a clean grid, then verify the active piece fits.
+    
+    FINAL BOARD STATE:
+    Row 19: I  I  I  I  O  O  Z  Z  L  L    (full — 10 cells)
+    Row 18: .  .  .  .  O  O  .  Z  .  L
+    Row 17: .  .  .  .  .  .  .  .  .  L
+    
+    Pieces:
+    - I flat: row 19, cols 0-3 (cyan) ✓
+    - O: rows 18-19, cols 4-5 (yellow) ✓
+    - Z rotation 0: (6,19)(7,19)(7,18)(8,18)... no Z is (c,r)(c+1,r)(c+1,r+1)(c+2,r+1)
+      Z at c=6,r=18: (6,18)(7,18)(7,19)(8,19) — but I have Z at (6,19)(7,19) and (7,18).
+      Actually: Z rotation 1 (vertical): (c+1,r)(c,r+1)(c+1,r+1)(c,r+2)
+      At c=6,r=17: (7,17)(6,18)(7,18)(6,19) — that puts cells at col 6-7 rows 17-19.
+      But I want row 17 mostly empty for the ghost.
+      
+    OK let me just do a very simple clean board:
+    
+    Row 19: I  I  I  I  O  O  .  .  .  .    (6 filled, 4 empty on right)
+    Row 18: .  .  .  .  O  O  .  .  .  .    (2 filled)
+    
+    Active piece: T-piece rotation 0 at col 3, falling.
+    T rotation 0: (col+1,row)(col,row+1)(col+1,row+1)(col+2,row+1)
+    At col=3: cells (4,r)(3,r+1)(4,r+1)(5,r+1)
+    
+    Ghost lands at: row 17-18 → (4,17)(3,18)(4,18)(5,18)
+    Row 18 cols 3,4,5 are empty ✓, row 17 col 4 is empty ✓
+    The T sits on top of: row 18 col 4 touches row 19 col 4 (O-piece) ✓
+    And cols 3,5 at row 18 rest on row 19 which has I at col 3 and O at col 5 ✓
+    
+    This works! Simple and valid.
+  -->
+
+  <!-- Board -->
+  <rect x="15" y="50" width="240" height="460" fill="#0e0e1a" stroke="#2a2a40" stroke-width="2"/>
+
+  <!-- Grid lines -->
+  <g stroke="#161625" stroke-width="0.5" fill="none">
+    <line x1="39" y1="50" x2="39" y2="510"/>
+    <line x1="63" y1="50" x2="63" y2="510"/>
+    <line x1="87" y1="50" x2="87" y2="510"/>
+    <line x1="111" y1="50" x2="111" y2="510"/>
+    <line x1="135" y1="50" x2="135" y2="510"/>
+    <line x1="159" y1="50" x2="159" y2="510"/>
+    <line x1="183" y1="50" x2="183" y2="510"/>
+    <line x1="207" y1="50" x2="207" y2="510"/>
+    <line x1="231" y1="50" x2="231" y2="510"/>
+    <line x1="15" y1="73" x2="255" y2="73"/>
+    <line x1="15" y1="96" x2="255" y2="96"/>
+    <line x1="15" y1="119" x2="255" y2="119"/>
+    <line x1="15" y1="142" x2="255" y2="142"/>
+    <line x1="15" y1="165" x2="255" y2="165"/>
+    <line x1="15" y1="188" x2="255" y2="188"/>
+    <line x1="15" y1="211" x2="255" y2="211"/>
+    <line x1="15" y1="234" x2="255" y2="234"/>
+    <line x1="15" y1="257" x2="255" y2="257"/>
+    <line x1="15" y1="280" x2="255" y2="280"/>
+    <line x1="15" y1="303" x2="255" y2="303"/>
+    <line x1="15" y1="326" x2="255" y2="326"/>
+    <line x1="15" y1="349" x2="255" y2="349"/>
+    <line x1="15" y1="372" x2="255" y2="372"/>
+    <line x1="15" y1="395" x2="255" y2="395"/>
+    <line x1="15" y1="418" x2="255" y2="418"/>
+    <line x1="15" y1="441" x2="255" y2="441"/>
+    <line x1="15" y1="464" x2="255" y2="464"/>
+    <line x1="15" y1="487" x2="255" y2="487"/>
+  </g>
+
+  <!--
+    Locked pieces — cell positions:
+    col c → x = 16 + c*24, row r → y = 51 + r*23
+    Cell size: 22×22
+    
+    Row 19 (y = 51 + 19*23 = 488):
+      col 0 (x=16):  I cyan
+      col 1 (x=40):  I cyan
+      col 2 (x=64):  I cyan
+      col 3 (x=88):  I cyan
+      col 4 (x=112): O yellow
+      col 5 (x=136): O yellow
+      col 6 (x=160): empty
+      col 7 (x=184): empty
+      col 8 (x=208): empty
+      col 9 (x=232): empty
+    
+    Row 18 (y = 51 + 18*23 = 465):
+      col 4 (x=112): O yellow
+      col 5 (x=136): O yellow
+      rest empty
+  -->
+
+  <g shape-rendering="crispEdges">
+    <!-- Row 19: I I I I O O . . . . -->
+    <rect x="16" y="488" width="22" height="22" fill="#00e5ff"/>
+    <rect x="40" y="488" width="22" height="22" fill="#00e5ff"/>
+    <rect x="64" y="488" width="22" height="22" fill="#00e5ff"/>
+    <rect x="88" y="488" width="22" height="22" fill="#00e5ff"/>
+    <rect x="112" y="488" width="22" height="22" fill="#ffeb3b"/>
+    <rect x="136" y="488" width="22" height="22" fill="#ffeb3b"/>
+    <!-- Highlights -->
+    <rect x="16" y="488" width="22" height="3" fill="#fff" opacity="0.2"/>
+    <rect x="40" y="488" width="22" height="3" fill="#fff" opacity="0.2"/>
+    <rect x="64" y="488" width="22" height="3" fill="#fff" opacity="0.2"/>
+    <rect x="88" y="488" width="22" height="3" fill="#fff" opacity="0.2"/>
+    <rect x="112" y="488" width="22" height="3" fill="#fff" opacity="0.2"/>
+    <rect x="136" y="488" width="22" height="3" fill="#fff" opacity="0.2"/>
+    <!-- Shadows -->
+    <rect x="16" y="507" width="22" height="3" fill="#000" opacity="0.2"/>
+    <rect x="40" y="507" width="22" height="3" fill="#000" opacity="0.2"/>
+    <rect x="64" y="507" width="22" height="3" fill="#000" opacity="0.2"/>
+    <rect x="88" y="507" width="22" height="3" fill="#000" opacity="0.2"/>
+    <rect x="112" y="507" width="22" height="3" fill="#000" opacity="0.2"/>
+    <rect x="136" y="507" width="22" height="3" fill="#000" opacity="0.2"/>
+
+    <!-- Row 18: . . . . O O . . . . -->
+    <rect x="112" y="465" width="22" height="22" fill="#ffeb3b"/>
+    <rect x="136" y="465" width="22" height="22" fill="#ffeb3b"/>
+    <rect x="112" y="465" width="22" height="3" fill="#fff" opacity="0.2"/>
+    <rect x="136" y="465" width="22" height="3" fill="#fff" opacity="0.2"/>
+    <rect x="112" y="484" width="22" height="3" fill="#000" opacity="0.2"/>
+    <rect x="136" y="484" width="22" height="3" fill="#000" opacity="0.2"/>
+  </g>
+
+  <!--
+    Active T-piece (rotation 0): 
+      (col+1, row) on top, (col, row+1)(col+1, row+1)(col+2, row+1) on bottom
+    Currently at col=3, row=8 (mid-screen, falling)
+    Cells: (4,8) (3,9) (4,9) (5,9)
+    Pixel: col 4 row 8 → x=112, y=51+8*23=235
+           col 3 row 9 → x=88,  y=51+9*23=258
+           col 4 row 9 → x=112, y=258
+           col 5 row 9 → x=136, y=258
+  -->
+  <g shape-rendering="crispEdges">
+    <rect x="112" y="235" width="22" height="22" fill="#ab47bc"/>
+    <rect x="88" y="258" width="22" height="22" fill="#ab47bc"/>
+    <rect x="112" y="258" width="22" height="22" fill="#ab47bc"/>
+    <rect x="136" y="258" width="22" height="22" fill="#ab47bc"/>
+    <!-- Highlights -->
+    <rect x="112" y="235" width="22" height="4" fill="#fff" opacity="0.3"/>
+    <rect x="88" y="258" width="22" height="4" fill="#fff" opacity="0.3"/>
+    <rect x="112" y="258" width="22" height="4" fill="#fff" opacity="0.3"/>
+    <rect x="136" y="258" width="22" height="4" fill="#fff" opacity="0.3"/>
+  </g>
+
+  <!--
+    Ghost T-piece: same shape, drops straight down to landing position.
+    T at col=3 drops until blocked. 
+    Check: (4,r) top, (3,r+1)(4,r+1)(5,r+1) bottom.
+    Row 17: all empty at cols 3,4,5 ✓
+    Row 18: col 3 empty ✓, col 4 has O ✗ — blocked!
+    So ghost lands at row 16-17: (4,16)(3,17)(4,17)(5,17)
+    Row 17 cols 3,4,5 all empty ✓
+    Row 16 col 4 empty ✓
+    Below row 17: row 18 col 4 has O — supports the piece ✓
+    
+    Pixel: col 4 row 16 → x=112, y=51+16*23=419
+           col 3 row 17 → x=88,  y=51+17*23=442
+           col 4 row 17 → x=112, y=442
+           col 5 row 17 → x=136, y=442
+  -->
+  <g shape-rendering="crispEdges" opacity="0.25">
+    <rect x="112" y="419" width="22" height="22" fill="#ab47bc"/>
+    <rect x="88" y="442" width="22" height="22" fill="#ab47bc"/>
+    <rect x="112" y="442" width="22" height="22" fill="#ab47bc"/>
+    <rect x="136" y="442" width="22" height="22" fill="#ab47bc"/>
+  </g>
+  <g shape-rendering="crispEdges" fill="none" stroke="#ab47bc" stroke-width="1" opacity="0.4">
+    <rect x="112" y="419" width="22" height="22"/>
+    <rect x="88" y="442" width="22" height="22"/>
+    <rect x="112" y="442" width="22" height="22"/>
+    <rect x="136" y="442" width="22" height="22"/>
+  </g>
+
+  <!-- Sidebar: NEXT piece -->
+  <rect x="265" y="50" width="100" height="80" fill="#0e0e1a" stroke="#2a2a40" stroke-width="1.5" rx="4"/>
+  <text fill="#888" font-size="9" x="293" y="66">NEXT</text>
+  <!-- Next: S-piece -->
+  <g transform="translate(283, 76)" shape-rendering="crispEdges">
+    <rect x="14" y="0" width="14" height="14" fill="#66bb6a"/>
+    <rect x="28" y="0" width="14" height="14" fill="#66bb6a"/>
+    <rect x="0" y="14" width="14" height="14" fill="#66bb6a"/>
+    <rect x="14" y="14" width="14" height="14" fill="#66bb6a"/>
+    <rect x="14" y="0" width="14" height="3" fill="#fff" opacity="0.25"/>
+    <rect x="28" y="0" width="14" height="3" fill="#fff" opacity="0.25"/>
+    <rect x="0" y="14" width="14" height="3" fill="#fff" opacity="0.25"/>
+    <rect x="14" y="14" width="14" height="3" fill="#fff" opacity="0.25"/>
+  </g>
+
+  <!-- Level display -->
+  <rect x="265" y="145" width="100" height="40" fill="#0e0e1a" stroke="#2a2a40" stroke-width="1.5" rx="4"/>
+  <text fill="#888" font-size="9" x="290" y="162">LEVEL</text>
+  <text fill="#ffd700" font-size="16" x="303" y="180">2</text>
+
+  <rect width="380" height="520" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+</svg>

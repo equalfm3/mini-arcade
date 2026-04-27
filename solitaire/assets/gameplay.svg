@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="700" height="500">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+  <rect width="700" height="500" fill="#0a0a16" rx="6"/>
+
+  <!-- Stock pile (2 face-down cards stacked) -->
+  <rect x="20" y="10" width="60" height="84" fill="#2a4a6a" rx="4"/>
+  <rect x="20" y="10" width="60" height="84" fill="none" stroke="#3a3a5a" rx="4"/>
+  <rect x="23" y="13" width="54" height="78" fill="none" stroke="#1a3a5a" rx="2"/>
+  <rect x="21" y="11" width="60" height="84" fill="#2a4a6a" rx="4"/>
+  <rect x="21" y="11" width="60" height="84" fill="none" stroke="#3a3a5a" rx="4"/>
+  <rect x="24" y="14" width="54" height="78" fill="none" stroke="#1a3a5a" rx="2"/>
+
+  <!-- Waste pile — 5 of Hearts -->
+  <rect x="100" y="10" width="60" height="84" fill="#1a1a2e" rx="4"/>
+  <rect x="100" y="10" width="60" height="84" fill="none" stroke="#3a3a5a" rx="4"/>
+  <text font-size="12" font-weight="bold" fill="#ff4444" x="106" y="24">5</text>
+  <text font-size="10" fill="#ff4444" x="106" y="36">♥</text>
+  <text font-size="24" fill="#ff4444" text-anchor="middle" x="130" y="60">♥</text>
+
+  <!-- Foundation piles -->
+  <!-- F1: A♠ -->
+  <rect x="334" y="10" width="60" height="84" fill="#1a1a2e" rx="4"/>
+  <rect x="334" y="10" width="60" height="84" fill="none" stroke="#3a3a5a" rx="4"/>
+  <text font-size="12" font-weight="bold" fill="#e0e0e0" x="340" y="24">A</text>
+  <text font-size="10" fill="#e0e0e0" x="340" y="36">♠</text>
+  <text font-size="24" fill="#e0e0e0" text-anchor="middle" x="364" y="60">♠</text>
+
+  <!-- F2: 2♥ -->
+  <rect x="410" y="10" width="60" height="84" fill="#1a1a2e" rx="4"/>
+  <rect x="410" y="10" width="60" height="84" fill="none" stroke="#3a3a5a" rx="4"/>
+  <text font-size="12" font-weight="bold" fill="#ff4444" x="416" y="24">2</text>
+  <text font-size="10" fill="#ff4444" x="416" y="36">♥</text>
+  <text font-size="24" fill="#ff4444" text-anchor="middle" x="440" y="60">♥</text>
+
+  <!-- F3: empty (diamonds placeholder) -->
+  <rect x="486" y="10" width="60" height="84" fill="none" stroke="#2a2a40" stroke-width="2" stroke-dasharray="4,4" rx="4"/>
+  <text font-size="20" fill="#2a2a40" text-anchor="middle" x="516" y="58">♦</text>
+
+  <!-- F4: empty (clubs placeholder) -->
+  <rect x="562" y="10" width="60" height="84" fill="none" stroke="#2a2a40" stroke-width="2" stroke-dasharray="4,4" rx="4"/>
+  <text font-size="20" fill="#2a2a40" text-anchor="middle" x="592" y="58">♣</text>
+
+  <!-- Tableau columns -->
+  <!-- Col 1: K♠ face-up -->
+  <rect x="20" y="110" width="60" height="84" fill="#1a1a2e" rx="4"/>
+  <rect x="20" y="110" width="60" height="84" fill="none" stroke="#3a3a5a" rx="4"/>
+  <text font-size="12" font-weight="bold" fill="#e0e0e0" x="26" y="124">K</text>
+  <text font-size="10" fill="#e0e0e0" x="26" y="136">♠</text>
+  <text font-size="24" fill="#e0e0e0" text-anchor="middle" x="50" y="160">♠</text>
+
+  <!-- Col 2: 1 face-down + Q♦ -->
+  <rect x="96" y="110" width="60" height="84" fill="#2a4a6a" rx="4"/>
+  <rect x="96" y="110" width="60" height="84" fill="none" stroke="#3a3a5a" rx="4"/>
+  <rect x="96" y="128" width="60" height="84" fill="#1a1a2e" rx="4"/>
+  <rect x="96" y="128" width="60" height="84" fill="none" stroke="#3a3a5a" rx="4"/>
+  <text font-size="12" font-weight="bold" fill="#ff4444" x="102" y="142">Q</text>
+  <text font-size="10" fill="#ff4444" x="102" y="154">♦</text>
+  <text font-size="24" fill="#ff4444" text-anchor="middle" x="126" y="178">♦</text>
+
+  <!-- Col 3: 2 face-down + J♣ -->
+  <rect x="172" y="110" width="60" height="84" fill="#2a4a6a" rx="4"/>
+  <rect x="172" y="114" width="60" height="84" fill="#2a4a6a" rx="4"/>
+  <rect x="172" y="114" width="60" height="84" fill="none" stroke="#3a3a5a" rx="4"/>
+  <rect x="172" y="146" width="60" height="84" fill="#1a1a2e" rx="4"/>
+  <rect x="172" y="146" width="60" height="84" fill="none" stroke="#3a3a5a" rx="4"/>
+  <text font-size="12" font-weight="bold" fill="#e0e0e0" x="178" y="160">J</text>
+  <text font-size="10" fill="#e0e0e0" x="178" y="172">♣</text>
+  <text font-size="24" fill="#e0e0e0" text-anchor="middle" x="202" y="196">♣</text>
+
+  <!-- Col 4: 3 face-down + 10♥ -->
+  <rect x="248" y="110" width="60" height="84" fill="#2a4a6a" rx="4"/>
+  <rect x="248" y="114" width="60" height="84" fill="#2a4a6a" rx="4"/>
+  <rect x="248" y="118" width="60" height="84" fill="#2a4a6a" rx="4"/>
+  <rect x="248" y="118" width="60" height="84" fill="none" stroke="#3a3a5a" rx="4"/>
+  <rect x="248" y="164" width="60" height="84" fill="#1a1a2e" rx="4"/>
+  <rect x="248" y="164" width="60" height="84" fill="none" stroke="#3a3a5a" rx="4"/>
+  <text font-size="12" font-weight="bold" fill="#ff4444" x="254" y="178">10</text>
+  <text font-size="10" fill="#ff4444" x="254" y="190">♥</text>
+  <text font-size="24" fill="#ff4444" text-anchor="middle" x="278" y="214">♥</text>
+
+  <!-- Col 5: 4 face-down + 9♠ + 8♦ -->
+  <rect x="324" y="110" width="60" height="84" fill="#2a4a6a" rx="4"/>
+  <rect x="324" y="114" width="60" height="84" fill="#2a4a6a" rx="4"/>
+  <rect x="324" y="118" width="60" height="84" fill="#2a4a6a" rx="4"/>
+  <rect x="324" y="122" width="60" height="84" fill="#2a4a6a" rx="4"/>
+  <rect x="324" y="122" width="60" height="84" fill="none" stroke="#3a3a5a" rx="4"/>
+  <rect x="324" y="182" width="60" height="84" fill="#1a1a2e" rx="4"/>
+  <rect x="324" y="182" width="60" height="84" fill="none" stroke="#3a3a5a" rx="4"/>
+  <text font-size="12" font-weight="bold" fill="#e0e0e0" x="330" y="196">9</text>
+  <text font-size="10" fill="#e0e0e0" x="330" y="208">♠</text>
+  <text font-size="24" fill="#e0e0e0" text-anchor="middle" x="354" y="232">♠</text>
+  <rect x="324" y="200" width="60" height="84" fill="#1a1a2e" rx="4"/>
+  <rect x="324" y="200" width="60" height="84" fill="none" stroke="#3a3a5a" rx="4"/>
+  <text font-size="12" font-weight="bold" fill="#ff4444" x="330" y="214">8</text>
+  <text font-size="10" fill="#ff4444" x="330" y="226">♦</text>
+  <text font-size="24" fill="#ff4444" text-anchor="middle" x="354" y="250">♦</text>
+
+  <!-- Col 6: 5 face-down + 7♣ -->
+  <rect x="400" y="110" width="60" height="84" fill="#2a4a6a" rx="4"/>
+  <rect x="400" y="114" width="60" height="84" fill="#2a4a6a" rx="4"/>
+  <rect x="400" y="118" width="60" height="84" fill="#2a4a6a" rx="4"/>
+  <rect x="400" y="122" width="60" height="84" fill="#2a4a6a" rx="4"/>
+  <rect x="400" y="126" width="60" height="84" fill="#2a4a6a" rx="4"/>
+  <rect x="400" y="126" width="60" height="84" fill="none" stroke="#3a3a5a" rx="4"/>
+  <rect x="400" y="200" width="60" height="84" fill="#1a1a2e" rx="4"/>
+  <rect x="400" y="200" width="60" height="84" fill="none" stroke="#3a3a5a" rx="4"/>
+  <text font-size="12" font-weight="bold" fill="#e0e0e0" x="406" y="214">7</text>
+  <text font-size="10" fill="#e0e0e0" x="406" y="226">♣</text>
+  <text font-size="24" fill="#e0e0e0" text-anchor="middle" x="430" y="250">♣</text>
+
+  <!-- Col 7: 6 face-down + 6♥ -->
+  <rect x="476" y="110" width="60" height="84" fill="#2a4a6a" rx="4"/>
+  <rect x="476" y="114" width="60" height="84" fill="#2a4a6a" rx="4"/>
+  <rect x="476" y="118" width="60" height="84" fill="#2a4a6a" rx="4"/>
+  <rect x="476" y="122" width="60" height="84" fill="#2a4a6a" rx="4"/>
+  <rect x="476" y="126" width="60" height="84" fill="#2a4a6a" rx="4"/>
+  <rect x="476" y="130" width="60" height="84" fill="#2a4a6a" rx="4"/>
+  <rect x="476" y="130" width="60" height="84" fill="none" stroke="#3a3a5a" rx="4"/>
+  <rect x="476" y="218" width="60" height="84" fill="#1a1a2e" rx="4"/>
+  <rect x="476" y="218" width="60" height="84" fill="none" stroke="#3a3a5a" rx="4"/>
+  <text font-size="12" font-weight="bold" fill="#ff4444" x="482" y="232">6</text>
+  <text font-size="10" fill="#ff4444" x="482" y="244">♥</text>
+  <text font-size="24" fill="#ff4444" text-anchor="middle" x="506" y="268">♥</text>
+
+  <!-- Labels -->
+  <text font-size="9" fill="#444" x="20" y="490">STOCK</text>
+  <text font-size="9" fill="#444" x="100" y="490">WASTE</text>
+  <text font-size="9" fill="#444" x="334" y="490">FOUNDATIONS</text>
+
+  <rect width="700" height="500" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

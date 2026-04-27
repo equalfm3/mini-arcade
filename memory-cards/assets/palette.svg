@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="500" height="120">
+  <rect width="500" height="120" fill="#0a0a16" rx="6"/>
+  <defs><style>text{font-family:monospace;}</style></defs>
+
+  <text fill="#888" font-size="10" x="15" y="14">12 Pixel Art Symbols — Card Front Colors</text>
+
+  <!-- Row 1: 6 symbols -->
+  <g transform="translate(12, 22)">
+    <!-- Star -->
+    <rect x="0" y="0" width="72" height="36" fill="#ffd70015" stroke="#ffd700" stroke-width="1" rx="3"/>
+    <rect x="4" y="4" width="12" height="12" fill="#ffd700" rx="1"/>
+    <text fill="#ffd700" font-size="7" x="20" y="10">star</text>
+    <text fill="#888" font-size="6" x="20" y="20">#ffd700</text>
+
+    <!-- Heart -->
+    <rect x="78" y="0" width="72" height="36" fill="#ff444415" stroke="#ff4444" stroke-width="1" rx="3"/>
+    <rect x="82" y="4" width="12" height="12" fill="#ff4444" rx="1"/>
+    <text fill="#ff4444" font-size="7" x="98" y="10">heart</text>
+    <text fill="#888" font-size="6" x="98" y="20">#ff4444</text>
+
+    <!-- Diamond -->
+    <rect x="156" y="0" width="72" height="36" fill="#44ffdd15" stroke="#44ffdd" stroke-width="1" rx="3"/>
+    <rect x="160" y="4" width="12" height="12" fill="#44ffdd" rx="1"/>
+    <text fill="#44ffdd" font-size="7" x="176" y="10">diamond</text>
+    <text fill="#888" font-size="6" x="176" y="20">#44ffdd</text>
+
+    <!-- Bolt -->
+    <rect x="234" y="0" width="72" height="36" fill="#ffeb3b15" stroke="#ffeb3b" stroke-width="1" rx="3"/>
+    <rect x="238" y="4" width="12" height="12" fill="#ffeb3b" rx="1"/>
+    <text fill="#ffeb3b" font-size="7" x="254" y="10">bolt</text>
+    <text fill="#888" font-size="6" x="254" y="20">#ffeb3b</text>
+
+    <!-- Note -->
+    <rect x="312" y="0" width="72" height="36" fill="#c084fc15" stroke="#c084fc" stroke-width="1" rx="3"/>
+    <rect x="316" y="4" width="12" height="12" fill="#c084fc" rx="1"/>
+    <text fill="#c084fc" font-size="7" x="332" y="10">note</text>
+    <text fill="#888" font-size="6" x="332" y="20">#c084fc</text>
+
+    <!-- Flame -->
+    <rect x="390" y="0" width="72" height="36" fill="#ff884415" stroke="#ff8844" stroke-width="1" rx="3"/>
+    <rect x="394" y="4" width="12" height="12" fill="#ff8844" rx="1"/>
+    <text fill="#ff8844" font-size="7" x="410" y="10">flame</text>
+    <text fill="#888" font-size="6" x="410" y="20">#ff8844</text>
+  </g>
+
+  <!-- Row 2: 6 symbols -->
+  <g transform="translate(12, 64)">
+    <!-- Clover -->
+    <rect x="0" y="0" width="72" height="36" fill="#44ff6615" stroke="#44ff66" stroke-width="1" rx="3"/>
+    <rect x="4" y="4" width="12" height="12" fill="#44ff66" rx="1"/>
+    <text fill="#44ff66" font-size="7" x="20" y="10">clover</text>
+    <text fill="#888" font-size="6" x="20" y="20">#44ff66</text>
+
+    <!-- Crown -->
+    <rect x="78" y="0" width="72" height="36" fill="#ffd70015" stroke="#ffd700" stroke-width="1" rx="3"/>
+    <rect x="82" y="4" width="12" height="12" fill="#ffd700" rx="1"/>
+    <text fill="#ffd700" font-size="7" x="98" y="10">crown</text>
+    <text fill="#888" font-size="6" x="98" y="20">#ffd700</text>
+
+    <!-- Moon -->
+    <rect x="156" y="0" width="72" height="36" fill="#44aaff15" stroke="#44aaff" stroke-width="1" rx="3"/>
+    <rect x="160" y="4" width="12" height="12" fill="#44aaff" rx="1"/>
+    <text fill="#44aaff" font-size="7" x="176" y="10">moon</text>
+    <text fill="#888" font-size="6" x="176" y="20">#44aaff</text>
+
+    <!-- Skull -->
+    <rect x="234" y="0" width="72" height="36" fill="#e0e0e015" stroke="#e0e0e0" stroke-width="1" rx="3"/>
+    <rect x="238" y="4" width="12" height="12" fill="#e0e0e0" rx="1"/>
+    <text fill="#e0e0e0" font-size="7" x="254" y="10">skull</text>
+    <text fill="#888" font-size="6" x="254" y="20">#e0e0e0</text>
+
+    <!-- Potion -->
+    <rect x="312" y="0" width="72" height="36" fill="#ff66aa15" stroke="#ff66aa" stroke-width="1" rx="3"/>
+    <rect x="316" y="4" width="12" height="12" fill="#ff66aa" rx="1"/>
+    <text fill="#ff66aa" font-size="7" x="332" y="10">potion</text>
+    <text fill="#888" font-size="6" x="332" y="20">#ff66aa</text>
+
+    <!-- Shield -->
+    <rect x="390" y="0" width="72" height="36" fill="#44aaff15" stroke="#44aaff" stroke-width="1" rx="3"/>
+    <rect x="394" y="4" width="12" height="12" fill="#44aaff" rx="1"/>
+    <text fill="#44aaff" font-size="7" x="410" y="10">shield</text>
+    <text fill="#888" font-size="6" x="410" y="20">#44aaff</text>
+  </g>
+
+  <!-- Card back swatch -->
+  <g transform="translate(12, 104)">
+    <rect x="0" y="0" width="100" height="12" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="2"/>
+    <text fill="#888" font-size="6" x="4" y="9">Card back #1a1a2e</text>
+    <rect x="108" y="0" width="100" height="12" fill="#0a0a16" stroke="#2a2a40" stroke-width="1" rx="2"/>
+    <text fill="#888" font-size="6" x="112" y="9">Border #2a2a40</text>
+  </g>
+
+  <rect width="500" height="120" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

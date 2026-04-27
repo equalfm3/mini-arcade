@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160" width="500" height="160">
+  <rect width="500" height="160" fill="#0a0a16" rx="6"/>
+  <defs>
+    <style>text{font-family:monospace;}</style>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ff66aa"/>
+    </marker>
+  </defs>
+
+  <text fill="#888" font-size="10" x="15" y="16">Fisher-Yates Shuffle — pairs → shuffled cards</text>
+
+  <!-- Step 1: Initial array (8 pairs, ordered) — pixel art icons -->
+  <text fill="#666" font-size="8" x="15" y="36">BEFORE: 8 pairs in order (medium grid)</text>
+  <g transform="translate(15, 40)">
+    <!-- Star pair -->
+    <rect x="0" y="0" width="28" height="22" fill="#ffd70022" stroke="#ffd700" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#ffd700" x="5" y="14">★</text>
+    <rect x="30" y="0" width="28" height="22" fill="#ffd70022" stroke="#ffd700" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#ffd700" x="35" y="14">★</text>
+
+    <!-- Heart pair -->
+    <rect x="62" y="0" width="28" height="22" fill="#ff444422" stroke="#ff4444" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#ff4444" x="67" y="14">♥</text>
+    <rect x="92" y="0" width="28" height="22" fill="#ff444422" stroke="#ff4444" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#ff4444" x="97" y="14">♥</text>
+
+    <!-- Diamond pair -->
+    <rect x="124" y="0" width="28" height="22" fill="#44ffdd22" stroke="#44ffdd" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#44ffdd" x="129" y="14">◆</text>
+    <rect x="154" y="0" width="28" height="22" fill="#44ffdd22" stroke="#44ffdd" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#44ffdd" x="159" y="14">◆</text>
+
+    <!-- Bolt pair -->
+    <rect x="186" y="0" width="28" height="22" fill="#ffeb3b22" stroke="#ffeb3b" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#ffeb3b" x="191" y="14">⚡</text>
+    <rect x="216" y="0" width="28" height="22" fill="#ffeb3b22" stroke="#ffeb3b" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#ffeb3b" x="221" y="14">⚡</text>
+
+    <!-- Note pair -->
+    <rect x="248" y="0" width="28" height="22" fill="#c084fc22" stroke="#c084fc" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#c084fc" x="253" y="14">♪</text>
+    <rect x="278" y="0" width="28" height="22" fill="#c084fc22" stroke="#c084fc" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#c084fc" x="283" y="14">♪</text>
+
+    <!-- Flame pair -->
+    <rect x="310" y="0" width="28" height="22" fill="#ff884422" stroke="#ff8844" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#ff8844" x="315" y="14">🔥</text>
+    <rect x="340" y="0" width="28" height="22" fill="#ff884422" stroke="#ff8844" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#ff8844" x="345" y="14">🔥</text>
+
+    <!-- Clover pair -->
+    <rect x="372" y="0" width="28" height="22" fill="#44ff6622" stroke="#44ff66" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#44ff66" x="377" y="14">♣</text>
+    <rect x="402" y="0" width="28" height="22" fill="#44ff6622" stroke="#44ff66" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#44ff66" x="407" y="14">♣</text>
+
+    <!-- Crown pair -->
+    <rect x="434" y="0" width="28" height="22" fill="#ffd70022" stroke="#ffd700" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#ffd700" x="439" y="14">♛</text>
+    <rect x="464" y="0" width="28" height="22" fill="#ffd70022" stroke="#ffd700" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#ffd700" x="469" y="14">♛</text>
+  </g>
+
+  <!-- Shuffle arrows -->
+  <g transform="translate(15, 72)">
+    <text fill="#666" font-size="8" x="0" y="0">SHUFFLE: for i = n-1 → 1: pick random j ≤ i, swap arr[i] ↔ arr[j]</text>
+
+    <!-- Example swap arrows -->
+    <line x1="50" y1="8" x2="430" y2="8" stroke="#ff66aa" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+    <text fill="#ff66aa" font-size="7" x="200" y="7">swap</text>
+
+    <!-- Step indicators -->
+    <rect x="0" y="14" width="90" height="18" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="2"/>
+    <text fill="#ff66aa" font-size="7" x="6" y="26">i=15, j=3 → swap</text>
+
+    <rect x="100" y="14" width="90" height="18" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="2"/>
+    <text fill="#ff66aa" font-size="7" x="106" y="26">i=14, j=7 → swap</text>
+
+    <rect x="200" y="14" width="90" height="18" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="2"/>
+    <text fill="#ff66aa" font-size="7" x="206" y="26">i=13, j=1 → swap</text>
+
+    <text fill="#666" font-size="9" x="300" y="26">. . .</text>
+
+    <rect x="340" y="14" width="90" height="18" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="2"/>
+    <text fill="#ff66aa" font-size="7" x="346" y="26">i=1, j=0 → swap</text>
+  </g>
+
+  <!-- Step 3: Shuffled result -->
+  <text fill="#666" font-size="8" x="15" y="110">AFTER: randomly shuffled</text>
+  <g transform="translate(15, 114)">
+    <rect x="0" y="0" width="28" height="22" fill="#ff884422" stroke="#ff8844" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#ff8844" x="5" y="14">🔥</text>
+    <rect x="30" y="0" width="28" height="22" fill="#44ff6622" stroke="#44ff66" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#44ff66" x="35" y="14">♣</text>
+    <rect x="62" y="0" width="28" height="22" fill="#ffd70022" stroke="#ffd700" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#ffd700" x="67" y="14">★</text>
+    <rect x="92" y="0" width="28" height="22" fill="#ff444422" stroke="#ff4444" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#ff4444" x="97" y="14">♥</text>
+    <rect x="124" y="0" width="28" height="22" fill="#44ffdd22" stroke="#44ffdd" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#44ffdd" x="129" y="14">◆</text>
+    <rect x="154" y="0" width="28" height="22" fill="#c084fc22" stroke="#c084fc" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#c084fc" x="159" y="14">♪</text>
+    <rect x="186" y="0" width="28" height="22" fill="#ff884422" stroke="#ff8844" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#ff8844" x="191" y="14">🔥</text>
+    <rect x="216" y="0" width="28" height="22" fill="#ffd70022" stroke="#ffd700" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#ffd700" x="221" y="14">★</text>
+    <rect x="248" y="0" width="28" height="22" fill="#ffeb3b22" stroke="#ffeb3b" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#ffeb3b" x="253" y="14">⚡</text>
+    <rect x="278" y="0" width="28" height="22" fill="#ff444422" stroke="#ff4444" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#ff4444" x="283" y="14">♥</text>
+    <rect x="310" y="0" width="28" height="22" fill="#ffd70022" stroke="#ffd700" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#ffd700" x="315" y="14">♛</text>
+    <rect x="340" y="0" width="28" height="22" fill="#44ffdd22" stroke="#44ffdd" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#44ffdd" x="345" y="14">◆</text>
+    <rect x="372" y="0" width="28" height="22" fill="#c084fc22" stroke="#c084fc" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#c084fc" x="377" y="14">♪</text>
+    <rect x="402" y="0" width="28" height="22" fill="#ffeb3b22" stroke="#ffeb3b" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#ffeb3b" x="407" y="14">⚡</text>
+    <rect x="434" y="0" width="28" height="22" fill="#44ff6622" stroke="#44ff66" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#44ff66" x="439" y="14">♣</text>
+    <rect x="464" y="0" width="28" height="22" fill="#ffd70022" stroke="#ffd700" stroke-width="1" rx="2"/>
+    <text font-size="6" fill="#ffd700" x="469" y="14">♛</text>
+  </g>
+
+  <text fill="#666" font-size="7" x="15" y="150">O(n) time · unbiased · every permutation equally likely</text>
+
+  <rect width="500" height="160" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" width="560" height="300">
+  <rect width="560" height="300" fill="#0a0a16" rx="6"/>
+  <defs>
+    <style>text{font-family:monospace;}</style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8866ee"/>
+    </marker>
+  </defs>
+
+  <text font-size="12" fill="#8866ee" x="280" y="22" text-anchor="middle" font-weight="bold">GAME STATE MACHINE</text>
+
+  <!-- IDLE box -->
+  <rect x="20" y="110" width="80" height="40" fill="#12121f" stroke="#44aaff" stroke-width="2" rx="4"/>
+  <text fill="#44aaff" font-size="11" x="38" y="135" font-weight="bold">IDLE</text>
+
+  <!-- SHOWING box -->
+  <rect x="150" y="50" width="100" height="40" fill="#12121f" stroke="#6644cc" stroke-width="2" rx="4"/>
+  <text fill="#6644cc" font-size="10" x="163" y="75" font-weight="bold">SHOWING</text>
+
+  <!-- CHOOSING box -->
+  <rect x="300" y="50" width="100" height="40" fill="#12121f" stroke="#ffd700" stroke-width="2" rx="4"/>
+  <text fill="#ffd700" font-size="10" x="308" y="75" font-weight="bold">CHOOSING</text>
+
+  <!-- FEEDBACK box -->
+  <rect x="300" y="150" width="100" height="40" fill="#12121f" stroke="#44ff66" stroke-width="2" rx="4"/>
+  <text fill="#44ff66" font-size="10" x="308" y="175" font-weight="bold">FEEDBACK</text>
+
+  <!-- LEVEL UP box -->
+  <rect x="150" y="150" width="100" height="40" fill="#12121f" stroke="#8866ee" stroke-width="2" rx="4"/>
+  <text fill="#8866ee" font-size="10" x="160" y="175" font-weight="bold">LEVEL UP</text>
+
+  <!-- PAUSED box -->
+  <rect x="230" y="230" width="100" height="40" fill="#12121f" stroke="#ffd700" stroke-width="2" rx="4"/>
+  <text fill="#ffd700" font-size="11" x="248" y="255" font-weight="bold">PAUSED</text>
+
+  <!-- OVER box -->
+  <rect x="460" y="110" width="80" height="40" fill="#12121f" stroke="#ff4444" stroke-width="2" rx="4"/>
+  <text fill="#ff4444" font-size="11" x="478" y="135" font-weight="bold">OVER</text>
+
+  <!-- Arrows -->
+  <!-- idle → showing (Start) -->
+  <line x1="100" y1="120" x2="148" y2="80" stroke="#8866ee" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="105" y="95">Start</text>
+
+  <!-- showing → choosing (Timer expires) -->
+  <line x1="250" y1="70" x2="298" y2="70" stroke="#8866ee" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="255" y="63">Time up</text>
+
+  <!-- choosing → feedback (Pick / Timeout) -->
+  <line x1="350" y1="90" x2="350" y2="148" stroke="#8866ee" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="356" y="120">Pick</text>
+
+  <!-- feedback → levelup (Correct) -->
+  <line x1="300" y1="170" x2="252" y2="170" stroke="#8866ee" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="255" y="163">Correct</text>
+
+  <!-- feedback → showing (Wrong, lives > 0) -->
+  <path d="M 300 160 Q 200 120 200 92" fill="none" stroke="#8866ee" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="225" y="118">Wrong</text>
+
+  <!-- levelup → showing (Next round) -->
+  <line x1="200" y1="150" x2="200" y2="92" stroke="#8866ee" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="205" y="125">Next</text>
+
+  <!-- feedback → over (No lives) -->
+  <line x1="400" y1="165" x2="458" y2="140" stroke="#8866ee" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="415" y="145">0 lives</text>
+
+  <!-- over → idle (Play Again) -->
+  <path d="M 500 150 Q 500 250 280 270 Q 60 250 60 152" fill="none" stroke="#8866ee" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="260" y="290">Play Again</text>
+
+  <!-- playing → paused (Esc) -->
+  <path d="M 340 90 Q 340 230 332 238" fill="none" stroke="#8866ee" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="345" y="210">Esc</text>
+
+  <!-- paused → playing (Resume) -->
+  <path d="M 280 230 Q 280 100 302 92" fill="none" stroke="#8866ee" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="260" y="210">Resume</text>
+
+  <rect width="560" height="300" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

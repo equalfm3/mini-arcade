@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" width="600" height="120">
+  <rect width="600" height="120" fill="#0a0a16" rx="6"/>
+  <defs><style>text{font-family:monospace;font-size:8px;}</style></defs>
+
+  <!-- Tile swatches -->
+  <!-- 2 -->
+  <rect x="10" y="12" width="42" height="42" fill="#eee4da" rx="3"/>
+  <text fill="#776e65" font-size="16" font-weight="bold" x="25" y="40" text-anchor="middle">2</text>
+  <text fill="#aaa" x="10" y="68">2</text>
+  <text fill="#555" x="10" y="78">#eee4da</text>
+
+  <!-- 4 -->
+  <rect x="60" y="12" width="42" height="42" fill="#ede0c8" rx="3"/>
+  <text fill="#776e65" font-size="16" font-weight="bold" x="75" y="40" text-anchor="middle">4</text>
+  <text fill="#aaa" x="60" y="68">4</text>
+  <text fill="#555" x="60" y="78">#ede0c8</text>
+
+  <!-- 8 -->
+  <rect x="110" y="12" width="42" height="42" fill="#f2b179" rx="3"/>
+  <text fill="#f9f6f2" font-size="16" font-weight="bold" x="125" y="40" text-anchor="middle">8</text>
+  <text fill="#aaa" x="110" y="68">8</text>
+  <text fill="#555" x="110" y="78">#f2b179</text>
+
+  <!-- 16 -->
+  <rect x="160" y="12" width="42" height="42" fill="#f59563" rx="3"/>
+  <text fill="#f9f6f2" font-size="14" font-weight="bold" x="175" y="39" text-anchor="middle">16</text>
+  <text fill="#aaa" x="160" y="68">16</text>
+  <text fill="#555" x="160" y="78">#f59563</text>
+
+  <!-- 32 -->
+  <rect x="210" y="12" width="42" height="42" fill="#f67c5f" rx="3"/>
+  <text fill="#f9f6f2" font-size="14" font-weight="bold" x="225" y="39" text-anchor="middle">32</text>
+  <text fill="#aaa" x="210" y="68">32</text>
+  <text fill="#555" x="210" y="78">#f67c5f</text>
+
+  <!-- 64 -->
+  <rect x="260" y="12" width="42" height="42" fill="#f65e3b" rx="3"/>
+  <text fill="#f9f6f2" font-size="14" font-weight="bold" x="275" y="39" text-anchor="middle">64</text>
+  <text fill="#aaa" x="260" y="68">64</text>
+  <text fill="#555" x="260" y="78">#f65e3b</text>
+
+  <!-- 128 -->
+  <rect x="310" y="12" width="42" height="42" fill="#edcf72" rx="3"/>
+  <text fill="#f9f6f2" font-size="12" font-weight="bold" x="325" y="38" text-anchor="middle">128</text>
+  <text fill="#aaa" x="310" y="68">128</text>
+  <text fill="#555" x="310" y="78">#edcf72</text>
+
+  <!-- 256 -->
+  <rect x="360" y="12" width="42" height="42" fill="#edcc61" rx="3"/>
+  <text fill="#f9f6f2" font-size="12" font-weight="bold" x="375" y="38" text-anchor="middle">256</text>
+  <text fill="#aaa" x="360" y="68">256</text>
+  <text fill="#555" x="360" y="78">#edcc61</text>
+
+  <!-- 512 -->
+  <rect x="410" y="12" width="42" height="42" fill="#edc850" rx="3"/>
+  <text fill="#f9f6f2" font-size="12" font-weight="bold" x="425" y="38" text-anchor="middle">512</text>
+  <text fill="#aaa" x="410" y="68">512</text>
+  <text fill="#555" x="410" y="78">#edc850</text>
+
+  <!-- 1024 -->
+  <rect x="460" y="12" width="42" height="42" fill="#edc53f" rx="3"/>
+  <text fill="#f9f6f2" font-size="10" font-weight="bold" x="475" y="38" text-anchor="middle">1024</text>
+  <text fill="#aaa" x="460" y="68">1024</text>
+  <text fill="#555" x="460" y="78">#edc53f</text>
+
+  <!-- 2048 -->
+  <rect x="510" y="12" width="42" height="42" fill="#edc22e" rx="3"/>
+  <text fill="#f9f6f2" font-size="10" font-weight="bold" x="525" y="38" text-anchor="middle">2048</text>
+  <text fill="#aaa" x="510" y="68">2048</text>
+  <text fill="#555" x="510" y="78">#edc22e</text>
+
+  <!-- Super -->
+  <rect x="560" y="12" width="30" height="42" fill="#3c3a32" rx="3"/>
+  <text fill="#f9f6f2" font-size="7" font-weight="bold" x="569" y="38" text-anchor="middle">4K+</text>
+  <text fill="#aaa" x="560" y="68">Super</text>
+  <text fill="#555" x="560" y="78">#3c3a32</text>
+
+  <!-- Grid + empty cell -->
+  <g transform="translate(10, 88)">
+    <rect width="30" height="22" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="2"/>
+    <text fill="#888" font-size="7" x="4" y="14">Grid</text>
+    <text fill="#555" font-size="7" x="38" y="14">#12121f</text>
+
+    <rect x="110" y="0" width="30" height="22" fill="#1a1a2e" rx="2"/>
+    <text fill="#888" font-size="7" x="148" y="14">Empty</text>
+    <text fill="#555" font-size="7" x="185" y="14">#1a1a2e</text>
+  </g>
+
+  <rect width="600" height="120" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

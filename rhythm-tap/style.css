@@ -1,0 +1,8 @@
+:root {
+  --c-game: #ff66aa;
+}
+
+/* Rhythm Tap — wider canvas for 4 lanes */
+.game-area {
+  max-width: 420px;
+}

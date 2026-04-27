@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" width="600" height="160">
+  <defs>
+    <style>text { font-family: monospace; }</style>
+  </defs>
+  <rect width="600" height="160" fill="#0a0a16" rx="6"/>
+
+  <!-- Row 1: Player + Obstacle colors -->
+  <text fill="#888" font-size="10" x="20" y="22">PLAYER &amp; OBSTACLES</text>
+
+  <!-- Player Body -->
+  <rect x="20" y="32" width="40" height="40" fill="#e0e0e0" rx="3"/>
+  <text fill="#888" font-size="8" x="20" y="84">Player</text>
+  <text fill="#666" font-size="7" x="20" y="93">#e0e0e0</text>
+
+  <!-- Player Dark -->
+  <rect x="75" y="32" width="40" height="40" fill="#aaaaaa" rx="3"/>
+  <text fill="#888" font-size="8" x="75" y="84">Dark</text>
+  <text fill="#666" font-size="7" x="75" y="93">#aaaaaa</text>
+
+  <!-- Player Eye -->
+  <rect x="130" y="32" width="40" height="40" fill="#ff4444" rx="3"/>
+  <text fill="#888" font-size="8" x="130" y="84">Eye</text>
+  <text fill="#666" font-size="7" x="130" y="93">#ff4444</text>
+
+  <!-- Cactus -->
+  <rect x="200" y="32" width="40" height="40" fill="#44ff66" rx="3"/>
+  <text fill="#888" font-size="8" x="200" y="84">Cactus</text>
+  <text fill="#666" font-size="7" x="200" y="93">#44ff66</text>
+
+  <!-- Cactus Dark -->
+  <rect x="255" y="32" width="40" height="40" fill="#22aa44" rx="3"/>
+  <text fill="#888" font-size="8" x="255" y="84">Cactus Dk</text>
+  <text fill="#666" font-size="7" x="255" y="93">#22aa44</text>
+
+  <!-- Bird -->
+  <rect x="325" y="32" width="40" height="40" fill="#c084fc" rx="3"/>
+  <text fill="#888" font-size="8" x="325" y="84">Bird</text>
+  <text fill="#666" font-size="7" x="325" y="93">#c084fc</text>
+
+  <!-- Bird Dark -->
+  <rect x="380" y="32" width="40" height="40" fill="#8844cc" rx="3"/>
+  <text fill="#888" font-size="8" x="380" y="84">Bird Dk</text>
+  <text fill="#666" font-size="7" x="380" y="93">#8844cc</text>
+
+  <!-- Row 2: Background colors -->
+  <text fill="#888" font-size="10" x="20" y="112">BACKGROUND</text>
+
+  <rect x="20" y="120" width="40" height="25" fill="#0e0e1a" rx="3" stroke="#2a2a40" stroke-width="1"/>
+  <text fill="#666" font-size="7" x="20" y="155">#0e0e1a</text>
+
+  <rect x="75" y="120" width="40" height="25" fill="#161625" rx="3"/>
+  <text fill="#666" font-size="7" x="75" y="155">#161625</text>
+
+  <rect x="130" y="120" width="40" height="25" fill="#1a1a2e" rx="3"/>
+  <text fill="#666" font-size="7" x="130" y="155">#1a1a2e</text>
+
+  <rect x="185" y="120" width="40" height="25" fill="#1e1e30" rx="3"/>
+  <text fill="#666" font-size="7" x="185" y="155">#1e1e30</text>
+
+  <rect x="240" y="120" width="40" height="25" fill="#2a2a40" rx="3"/>
+  <text fill="#666" font-size="7" x="240" y="155">#2a2a40</text>
+
+  <rect x="295" y="120" width="40" height="25" fill="#3a3a55" rx="3"/>
+  <text fill="#666" font-size="7" x="295" y="155">#3a3a55</text>
+
+  <rect x="350" y="120" width="40" height="25" fill="#ffd700" rx="3"/>
+  <text fill="#666" font-size="7" x="350" y="155">#ffd700</text>
+
+  <!-- Border -->
+  <rect width="600" height="160" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

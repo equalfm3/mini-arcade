@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 340" width="440" height="340">
+  <rect width="440" height="340" fill="#0a0a16" rx="6"/>
+
+  <!-- HUD bar -->
+  <g transform="translate(20, 12)">
+    <rect width="400" height="28" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="3"/>
+    <text font-family="monospace" font-size="9" fill="#666" x="10" y="18">WPM</text>
+    <text font-family="monospace" font-size="9" fill="#44aaff" x="40" y="18" font-weight="bold">65</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="80" y="18">ACC</text>
+    <text font-family="monospace" font-size="9" fill="#44ff66" x="110" y="18" font-weight="bold">94%</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="280" y="18">TIME</text>
+    <text font-family="monospace" font-size="9" fill="#ffd700" x="315" y="18" font-weight="bold">37</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="345" y="18">WORDS</text>
+    <text font-family="monospace" font-size="9" fill="#fff" x="385" y="18" font-weight="bold">28</text>
+  </g>
+
+  <!-- Word display area -->
+  <rect x="20" y="52" width="400" height="160" fill="#0e0e1a" stroke="#2a2a40" stroke-width="1.5" rx="4"/>
+
+  <!-- Line 1 (done words — dimmed) -->
+  <text font-family="monospace" font-size="13" y="80" x="32">
+    <tspan fill="#444">the quick brown fox jumps over</tspan>
+  </text>
+
+  <!-- Line 2 (current line with active word) -->
+  <text font-family="monospace" font-size="13" y="112" x="32">
+    <tspan fill="#444">the lazy dog and </tspan>
+  </text>
+  <!-- Current word highlight background -->
+  <rect x="168" y="98" width="52" height="20" fill="#1a2a3a" rx="3"/>
+  <!-- Current word with character coloring -->
+  <text font-family="monospace" font-size="13" y="112" x="172">
+    <tspan fill="#44ff66">t</tspan>
+    <tspan fill="#44ff66">h</tspan>
+    <tspan fill="#ff4444">a</tspan>
+    <tspan fill="#fff">n</tspan>
+  </text>
+  <!-- Cursor underline -->
+  <rect x="196" y="114" width="8" height="2" fill="#ffd700"/>
+  <!-- Rest of line -->
+  <text font-family="monospace" font-size="13" y="112" x="224">
+    <tspan fill="#888">some could</tspan>
+  </text>
+
+  <!-- Line 3 (upcoming) -->
+  <text font-family="monospace" font-size="13" y="144" x="32">
+    <tspan fill="#888">them see other people into year</tspan>
+  </text>
+
+  <!-- Line 4 (upcoming) -->
+  <text font-family="monospace" font-size="13" y="176" x="32">
+    <tspan fill="#888">your good make time just know</tspan>
+  </text>
+
+  <!-- Input display -->
+  <rect x="20" y="224" width="400" height="40" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="4"/>
+  <text font-family="monospace" font-size="10" fill="#666" x="32" y="249">Type:</text>
+  <text font-family="monospace" font-size="14" x="80" y="250">
+    <tspan fill="#44ff66">t</tspan>
+    <tspan fill="#44ff66">h</tspan>
+    <tspan fill="#ff4444">a</tspan>
+    <tspan fill="#888">n</tspan>
+  </text>
+
+  <!-- Stats bar -->
+  <rect x="20" y="276" width="400" height="40" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="4"/>
+  <g transform="translate(20, 276)">
+    <text font-family="monospace" font-size="7" fill="#666" x="30" y="15" text-anchor="middle">WPM</text>
+    <text font-family="monospace" font-size="11" fill="#fff" x="30" y="30" text-anchor="middle" font-weight="bold">65</text>
+    <text font-family="monospace" font-size="7" fill="#666" x="130" y="15" text-anchor="middle">ACCURACY</text>
+    <text font-family="monospace" font-size="11" fill="#fff" x="130" y="30" text-anchor="middle" font-weight="bold">94%</text>
+    <text font-family="monospace" font-size="7" fill="#666" x="250" y="15" text-anchor="middle">WORDS</text>
+    <text font-family="monospace" font-size="11" fill="#fff" x="250" y="30" text-anchor="middle" font-weight="bold">28</text>
+    <text font-family="monospace" font-size="7" fill="#666" x="360" y="15" text-anchor="middle">CHARS</text>
+    <text font-family="monospace" font-size="11" fill="#fff" x="360" y="30" text-anchor="middle" font-weight="bold">142/151</text>
+  </g>
+
+  <!-- Border -->
+  <rect width="440" height="340" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

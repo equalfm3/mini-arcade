@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" width="600" height="160">
+  <rect width="600" height="160" fill="#0a0a16" rx="6"/>
+
+  <!-- Color swatches -->
+  <g transform="translate(30, 25)">
+    <!-- Correct -->
+    <rect x="0" y="0" width="60" height="40" fill="#44ff66" rx="4"/>
+    <text font-family="monospace" font-size="8" fill="#fff" x="6" y="55">Correct</text>
+    <text font-family="monospace" font-size="7" fill="#666" x="6" y="67">#44ff66</text>
+
+    <!-- Wrong -->
+    <rect x="80" y="0" width="60" height="40" fill="#ff4444" rx="4"/>
+    <text font-family="monospace" font-size="8" fill="#fff" x="86" y="55">Wrong</text>
+    <text font-family="monospace" font-size="7" fill="#666" x="86" y="67">#ff4444</text>
+
+    <!-- Cursor -->
+    <rect x="160" y="0" width="60" height="40" fill="#ffd700" rx="4"/>
+    <text font-family="monospace" font-size="8" fill="#fff" x="166" y="55">Cursor</text>
+    <text font-family="monospace" font-size="7" fill="#666" x="166" y="67">#ffd700</text>
+
+    <!-- Current word -->
+    <rect x="240" y="0" width="60" height="40" fill="#1a2a3a" rx="4"/>
+    <text font-family="monospace" font-size="8" fill="#fff" x="246" y="55">Current</text>
+    <text font-family="monospace" font-size="7" fill="#666" x="246" y="67">#1a2a3a</text>
+
+    <!-- Upcoming -->
+    <rect x="320" y="0" width="60" height="40" fill="#888888" rx="4"/>
+    <text font-family="monospace" font-size="8" fill="#fff" x="326" y="55">Upcoming</text>
+    <text font-family="monospace" font-size="7" fill="#666" x="326" y="67">#888888</text>
+
+    <!-- Done -->
+    <rect x="400" y="0" width="60" height="40" fill="#444444" rx="4"/>
+    <text font-family="monospace" font-size="8" fill="#fff" x="406" y="55">Done</text>
+    <text font-family="monospace" font-size="7" fill="#666" x="406" y="67">#444444</text>
+
+    <!-- Accent -->
+    <rect x="480" y="0" width="60" height="40" fill="#44aaff" rx="4"/>
+    <text font-family="monospace" font-size="8" fill="#fff" x="486" y="55">Accent</text>
+    <text font-family="monospace" font-size="7" fill="#666" x="486" y="67">#44aaff</text>
+  </g>
+
+  <!-- Row 2: Rating colors -->
+  <g transform="translate(30, 100)">
+    <text font-family="monospace" font-size="8" fill="#666" x="0" y="10">WPM Ratings:</text>
+    <rect x="90" y="0" width="40" height="16" fill="#ff44ff" rx="2"/>
+    <text font-family="monospace" font-size="7" fill="#fff" x="93" y="11">100+</text>
+    <rect x="135" y="0" width="40" height="16" fill="#ffd700" rx="2"/>
+    <text font-family="monospace" font-size="7" fill="#000" x="142" y="11">80+</text>
+    <rect x="180" y="0" width="40" height="16" fill="#ff8844" rx="2"/>
+    <text font-family="monospace" font-size="7" fill="#fff" x="187" y="11">60+</text>
+    <rect x="225" y="0" width="40" height="16" fill="#44ff66" rx="2"/>
+    <text font-family="monospace" font-size="7" fill="#000" x="232" y="11">40+</text>
+    <rect x="270" y="0" width="40" height="16" fill="#44aaff" rx="2"/>
+    <text font-family="monospace" font-size="7" fill="#fff" x="277" y="11">25+</text>
+    <rect x="315" y="0" width="40" height="16" fill="#aaaaaa" rx="2"/>
+    <text font-family="monospace" font-size="7" fill="#000" x="322" y="11">15+</text>
+    <rect x="360" y="0" width="40" height="16" fill="#888888" rx="2"/>
+    <text font-family="monospace" font-size="7" fill="#fff" x="370" y="11">0+</text>
+  </g>
+
+  <!-- Border -->
+  <rect width="600" height="160" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

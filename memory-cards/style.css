@@ -1,0 +1,107 @@
+/* Memory Cards — Game-specific styles */
+
+:root {
+  --c-game: #ff66aa;
+}
+
+.card-grid {
+  display: grid;
+  gap: 8px;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 8px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.card {
+  width: 72px;
+  height: 72px;
+  perspective: 600px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease;
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #2a2a40;
+}
+
+.card-back {
+  background: #1a1a2e;
+  color: #666;
+  font-family: var(--font-pixel, monospace);
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.card-back:hover {
+  background: #222240;
+  border-color: #3a3a55;
+}
+
+.card-front {
+  transform: rotateY(180deg);
+  background: #12121f;
+  padding: 10px;
+}
+
+.card-front svg {
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.card.matched .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card.matched .card-front {
+  opacity: 0.6;
+  box-shadow: 0 0 12px rgba(255, 102, 170, 0.4);
+}
+
+.card.matched {
+  cursor: default;
+}
+
+/* Responsive — smaller cards on narrow screens */
+@media (max-width: 400px) {
+  .card-grid {
+    gap: 5px;
+    padding: 5px;
+  }
+
+  .card {
+    width: 58px;
+    height: 58px;
+  }
+
+  .card-front {
+    padding: 6px;
+  }
+}

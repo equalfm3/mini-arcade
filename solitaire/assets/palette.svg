@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" width="600" height="160">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+  <rect width="600" height="160" fill="#0a0a16" rx="6"/>
+
+  <!-- Row 1: Card colors -->
+  <text font-size="11" fill="#666" x="20" y="25">CARD COLORS</text>
+
+  <rect x="20" y="35" width="50" height="30" fill="#1a1a2e" rx="3"/>
+  <text font-size="8" fill="#888" x="22" y="80">Face</text>
+  <text font-size="7" fill="#555" x="22" y="90">#1a1a2e</text>
+
+  <rect x="85" y="35" width="50" height="30" fill="#2a4a6a" rx="3"/>
+  <text font-size="8" fill="#888" x="87" y="80">Back</text>
+  <text font-size="7" fill="#555" x="87" y="90">#2a4a6a</text>
+
+  <rect x="150" y="35" width="50" height="30" fill="#3a3a5a" rx="3"/>
+  <text font-size="8" fill="#888" x="152" y="80">Border</text>
+  <text font-size="7" fill="#555" x="152" y="90">#3a3a5a</text>
+
+  <rect x="215" y="35" width="50" height="30" fill="#ffd700" rx="3"/>
+  <text font-size="8" fill="#888" x="217" y="80">Highlight</text>
+  <text font-size="7" fill="#555" x="217" y="90">#ffd700</text>
+
+  <rect x="280" y="35" width="50" height="30" fill="#44ff66" rx="3"/>
+  <text font-size="8" fill="#888" x="282" y="80">Selected</text>
+  <text font-size="7" fill="#555" x="282" y="90">#44ff66</text>
+
+  <!-- Row 2: Suit colors -->
+  <text font-size="11" fill="#666" x="20" y="115">SUIT COLORS</text>
+
+  <rect x="20" y="125" width="50" height="24" fill="#e0e0e0" rx="3"/>
+  <text font-size="10" fill="#0a0a16" text-anchor="middle" x="45" y="141">♠ ♣</text>
+
+  <rect x="85" y="125" width="50" height="24" fill="#ff4444" rx="3"/>
+  <text font-size="10" fill="#fff" text-anchor="middle" x="110" y="141">♥ ♦</text>
+
+  <rect x="150" y="125" width="50" height="24" fill="#0a0a16" rx="3" stroke="#2a2a40"/>
+  <text font-size="8" fill="#888" x="152" y="141">BG</text>
+
+  <rect x="215" y="125" width="50" height="24" fill="#2a2a40" rx="3"/>
+  <text font-size="8" fill="#888" x="217" y="141">Slot</text>
+
+  <!-- Hex labels for suits -->
+  <text font-size="7" fill="#555" x="20" y="155">#e0e0e0</text>
+  <text font-size="7" fill="#555" x="85" y="155">#ff4444</text>
+  <text font-size="7" fill="#555" x="150" y="155">#0a0a16</text>
+  <text font-size="7" fill="#555" x="215" y="155">#2a2a40</text>
+
+  <rect width="600" height="160" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

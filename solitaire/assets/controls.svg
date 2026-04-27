@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+  <rect width="600" height="200" fill="#0a0a16" rx="6"/>
+
+  <!-- Desktop section -->
+  <text font-size="14" font-weight="bold" fill="#44ff66" x="30" y="30">DESKTOP</text>
+
+  <!-- Mouse icon -->
+  <rect x="30" y="45" width="30" height="40" fill="#1a1a2e" stroke="#3a3a5a" rx="8"/>
+  <line x1="45" y1="45" x2="45" y2="65" stroke="#3a3a5a"/>
+  <line x1="30" y1="65" x2="60" y2="65" stroke="#3a3a5a"/>
+  <text font-size="9" fill="#e0e0e0" x="70" y="58">Click &amp; drag cards</text>
+  <text font-size="9" fill="#e0e0e0" x="70" y="72">Double-click → foundation</text>
+
+  <!-- Keyboard -->
+  <rect x="30" y="95" width="40" height="24" fill="#1a1a2e" stroke="#3a3a5a" rx="3"/>
+  <text font-size="10" fill="#e0e0e0" text-anchor="middle" x="50" y="111">Esc</text>
+  <text font-size="9" fill="#e0e0e0" x="80" y="111">Pause / Restart</text>
+
+  <!-- Mobile section -->
+  <text font-size="14" font-weight="bold" fill="#44ff66" x="320" y="30">MOBILE</text>
+
+  <!-- Touch icon -->
+  <circle cx="340" cy="65" r="12" fill="none" stroke="#3a3a5a" stroke-width="2"/>
+  <circle cx="340" cy="62" r="3" fill="#44ff66"/>
+  <text font-size="9" fill="#e0e0e0" x="360" y="58">Tap to select, tap destination</text>
+  <text font-size="9" fill="#e0e0e0" x="360" y="72">Drag cards to move</text>
+
+  <!-- Double-tap -->
+  <circle cx="340" cy="105" r="12" fill="none" stroke="#3a3a5a" stroke-width="2"/>
+  <text font-size="8" fill="#44ff66" text-anchor="middle" x="340" y="108">2×</text>
+  <text font-size="9" fill="#e0e0e0" x="360" y="108">Double-tap → auto-move to foundation</text>
+
+  <!-- Stock tap -->
+  <rect x="325" y="125" width="30" height="30" fill="#2a4a6a" stroke="#3a3a5a" rx="3"/>
+  <text font-size="9" fill="#e0e0e0" x="360" y="145">Tap stock pile to draw</text>
+
+  <rect width="600" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

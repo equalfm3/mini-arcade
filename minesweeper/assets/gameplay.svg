@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 420" width="380" height="420">
+  <defs>
+    <style>text { font-family: monospace; }</style>
+  </defs>
+  <!-- Outer frame -->
+  <rect width="380" height="420" fill="#0a0a16" rx="8"/>
+
+  <!-- HUD bar -->
+  <rect x="15" y="10" width="350" height="30" fill="#12121f" stroke="#2a2a40" stroke-width="2"/>
+  <!-- Pixel icon placeholder -->
+  <g transform="translate(22, 14)" shape-rendering="crispEdges">
+    <rect x="0" y="0" width="13" height="1" fill="#666"/>
+    <rect x="0" y="1" width="1" height="1" fill="#666"/>
+    <rect x="1" y="1" width="2" height="1" fill="#e0e0e0"/>
+    <rect x="3" y="1" width="1" height="1" fill="#666"/>
+    <rect x="4" y="1" width="2" height="1" fill="#e0e0e0"/>
+    <rect x="6" y="1" width="1" height="1" fill="#666"/>
+    <rect x="7" y="1" width="2" height="1" fill="#e0e0e0"/>
+    <rect x="9" y="1" width="1" height="1" fill="#666"/>
+    <rect x="10" y="1" width="2" height="1" fill="#e0e0e0"/>
+    <rect x="0" y="4" width="13" height="1" fill="#666"/>
+    <rect x="0" y="5" width="1" height="1" fill="#666"/>
+    <rect x="1" y="5" width="2" height="1" fill="#e0e0e0"/>
+    <rect x="3" y="5" width="2" height="2" fill="#ff4444"/>
+    <rect x="5" y="5" width="1" height="1" fill="#666"/>
+    <rect x="6" y="5" width="2" height="1" fill="#e0e0e0"/>
+    <rect x="8" y="5" width="1" height="1" fill="#666"/>
+    <rect x="9" y="5" width="1" height="1" fill="#44aaff"/>
+    <rect x="10" y="5" width="2" height="1" fill="#e0e0e0"/>
+    <rect x="0" y="8" width="13" height="1" fill="#666"/>
+    <rect x="0" y="9" width="1" height="1" fill="#666"/>
+    <rect x="1" y="9" width="2" height="1" fill="#e0e0e0"/>
+    <rect x="3" y="9" width="1" height="1" fill="#666"/>
+    <rect x="4" y="9" width="2" height="1" fill="#e0e0e0"/>
+    <rect x="6" y="9" width="2" height="2" fill="#ff4444"/>
+    <rect x="8" y="9" width="1" height="1" fill="#666"/>
+    <rect x="9" y="9" width="2" height="1" fill="#e0e0e0"/>
+    <rect x="0" y="12" width="13" height="1" fill="#666"/>
+  </g>
+  <text font-size="10" fill="#e0e0e0" x="40" y="30" font-weight="bold">Minesweeper</text>
+  <text font-size="8" fill="#666" x="230" y="28">Mines</text>
+  <text font-size="9" fill="#ffd700" x="265" y="28">7</text>
+  <text font-size="8" fill="#666" x="300" y="28">Time</text>
+  <text font-size="9" fill="#ffd700" x="330" y="28">42</text>
+
+  <!-- 9x9 Grid — realistic mid-game state -->
+  <!-- Grid background -->
+  <g transform="translate(17, 50)">
+    <rect width="346" height="280" fill="#2a2a40" rx="3"/>
+
+    <!--
+      Realistic mid-game state for 9x9 easy (10 mines):
+      Grid layout (M=mine, numbers=neighbor count, 0=empty):
+      
+      0 0 0 1 M 1 0 0 0
+      0 0 0 1 1 1 0 0 0
+      1 1 0 0 0 0 0 0 0
+      M 1 0 0 0 1 1 1 0
+      1 1 0 0 0 1 M 1 0
+      0 0 0 1 1 2 1 1 0
+      0 0 0 1 M 1 0 0 0
+      1 1 1 2 1 1 0 0 0
+      M 1 M 1 0 0 0 0 0
+      
+      Player clicked somewhere in the right side, flood fill revealed
+      a large connected region. Left/top-left area still hidden.
+      3 flags placed near revealed numbers.
+      
+      Revealed: rows 0-1 cols 5-8, rows 2-5 cols 2-8, rows 6-8 cols 5-8,
+                row 2 cols 0-1, row 3 col 1, row 7 cols 0-4, etc.
+      Actually let me do a cleaner layout:
+      
+      Revealed region (flood fill from col 7, row 0):
+      - (5,0)(6,0)(7,0)(8,0) — 1,0,0,0
+      - (5,1)(6,1)(7,1)(8,1) — 1,0,0,0
+      - (2,2)(3,2)(4,2)(5,2)(6,2)(7,2)(8,2) — 0,0,0,0,0,0,0
+      - (2,3)(3,3)(4,3)(5,3)(6,3)(7,3)(8,3) — 0,0,0,1,1,1,0
+      - (2,4)(3,4)(4,4)(5,4)(7,4)(8,4) — 0,0,0,1,1,0
+      - (2,5)(3,5)(4,5)(5,5)(6,5)(7,5)(8,5) — 0,1,1,2,1,1,0
+      - (5,6)(6,6)(7,6)(8,6) — 1,0,0,0
+      - (5,7)(6,7)(7,7)(8,7) — 1,0,0,0
+      - (4,8)(5,8)(6,8)(7,8)(8,8) — 0,0,0,0,0
+      Also border numbers: (0,2)=1,(1,2)=1,(1,3)=1,(0,4)=1,(1,4)=1
+      
+      Hidden: (0,0)(1,0)(2,0)(3,0)(4,0) — top-left block
+              (0,1)(1,1)(2,1)(3,1)(4,1)
+              (0,3)(0,5)(1,5)(0,6)(1,6)(2,6)(3,6)(4,6)
+              (0,7)(1,7)(2,7)(3,7)(4,7)
+              (0,8)(1,8)(2,8)(3,8)
+      
+      Flags on: (0,3) near the 1s, (4,0) near the 1, (4,6) near the 1
+    -->
+
+    <!-- Cell size: 30x30 with 2px gap = ~38px per cell, but let's use 36px cells + 2px gap -->
+    <!-- Actually: 346px / 9 cols ≈ 38px. Let's use 36px cells with 2px gaps -->
+    <!-- Positions: col*38+3, row*31+3, cell=36x29 -->
+    <!-- Better: use consistent sizing. 346/9 = 38.4. Use 36px cells, 2px gap -->
+    <!-- x = col * 38 + 3, y = row * 31 + 2, w=36, h=29 -->
+
+    <!-- Row 0 -->
+    <rect x="3" y="2" width="36" height="29" fill="#1e2a3a"/><!-- (0,0) hidden -->
+    <rect x="41" y="2" width="36" height="29" fill="#1e2a3a"/><!-- (1,0) hidden -->
+    <rect x="79" y="2" width="36" height="29" fill="#1e2a3a"/><!-- (2,0) hidden -->
+    <rect x="117" y="2" width="36" height="29" fill="#1e2a3a"/><!-- (3,0) hidden -->
+    <rect x="155" y="2" width="36" height="29" fill="#1e2a3a"/><!-- (4,0) flagged -->
+    <text font-size="12" x="166" y="21">🚩</text>
+    <rect x="193" y="2" width="36" height="29" fill="#0e0e1a"/><!-- (5,0) = 1 -->
+    <text font-size="14" fill="#44aaff" x="207" y="21">1</text>
+    <rect x="231" y="2" width="36" height="29" fill="#0e0e1a"/><!-- (6,0) = 0 -->
+    <rect x="269" y="2" width="36" height="29" fill="#0e0e1a"/><!-- (7,0) = 0 -->
+    <rect x="307" y="2" width="36" height="29" fill="#0e0e1a"/><!-- (8,0) = 0 -->
+
+    <!-- Row 1 -->
+    <rect x="3" y="33" width="36" height="29" fill="#1e2a3a"/><!-- (0,1) hidden -->
+    <rect x="41" y="33" width="36" height="29" fill="#1e2a3a"/><!-- (1,1) hidden -->
+    <rect x="79" y="33" width="36" height="29" fill="#1e2a3a"/><!-- (2,1) hidden -->
+    <rect x="117" y="33" width="36" height="29" fill="#1e2a3a"/><!-- (3,1) hidden -->
+    <rect x="155" y="33" width="36" height="29" fill="#1e2a3a"/><!-- (4,1) hidden -->
+    <rect x="193" y="33" width="36" height="29" fill="#0e0e1a"/><!-- (5,1) = 1 -->
+    <text font-size="14" fill="#44aaff" x="207" y="52">1</text>
+    <rect x="231" y="33" width="36" height="29" fill="#0e0e1a"/><!-- (6,1) = 0 -->
+    <rect x="269" y="33" width="36" height="29" fill="#0e0e1a"/><!-- (7,1) = 0 -->
+    <rect x="307" y="33" width="36" height="29" fill="#0e0e1a"/><!-- (8,1) = 0 -->
+
+    <!-- Row 2 -->
+    <rect x="3" y="64" width="36" height="29" fill="#0e0e1a"/><!-- (0,2) = 1 -->
+    <text font-size="14" fill="#44aaff" x="17" y="83">1</text>
+    <rect x="41" y="64" width="36" height="29" fill="#0e0e1a"/><!-- (1,2) = 1 -->
+    <text font-size="14" fill="#44aaff" x="55" y="83">1</text>
+    <rect x="79" y="64" width="36" height="29" fill="#0e0e1a"/><!-- (2,2) = 0 -->
+    <rect x="117" y="64" width="36" height="29" fill="#0e0e1a"/><!-- (3,2) = 0 -->
+    <rect x="155" y="64" width="36" height="29" fill="#0e0e1a"/><!-- (4,2) = 0 -->
+    <rect x="193" y="64" width="36" height="29" fill="#0e0e1a"/><!-- (5,2) = 0 -->
+    <rect x="231" y="64" width="36" height="29" fill="#0e0e1a"/><!-- (6,2) = 0 -->
+    <rect x="269" y="64" width="36" height="29" fill="#0e0e1a"/><!-- (7,2) = 0 -->
+    <rect x="307" y="64" width="36" height="29" fill="#0e0e1a"/><!-- (8,2) = 0 -->
+
+    <!-- Row 3 -->
+    <rect x="3" y="95" width="36" height="29" fill="#1e2a3a"/><!-- (0,3) flagged -->
+    <text font-size="12" x="14" y="114">🚩</text>
+    <rect x="41" y="95" width="36" height="29" fill="#0e0e1a"/><!-- (1,3) = 1 -->
+    <text font-size="14" fill="#44aaff" x="55" y="114">1</text>
+    <rect x="79" y="95" width="36" height="29" fill="#0e0e1a"/><!-- (2,3) = 0 -->
+    <rect x="117" y="95" width="36" height="29" fill="#0e0e1a"/><!-- (3,3) = 0 -->
+    <rect x="155" y="95" width="36" height="29" fill="#0e0e1a"/><!-- (4,3) = 0 -->
+    <rect x="193" y="95" width="36" height="29" fill="#0e0e1a"/><!-- (5,3) = 1 -->
+    <text font-size="14" fill="#44aaff" x="207" y="114">1</text>
+    <rect x="231" y="95" width="36" height="29" fill="#0e0e1a"/><!-- (6,3) = 1 -->
+    <text font-size="14" fill="#44aaff" x="245" y="114">1</text>
+    <rect x="269" y="95" width="36" height="29" fill="#0e0e1a"/><!-- (7,3) = 1 -->
+    <text font-size="14" fill="#44aaff" x="283" y="114">1</text>
+    <rect x="307" y="95" width="36" height="29" fill="#0e0e1a"/><!-- (8,3) = 0 -->
+
+    <!-- Row 4 -->
+    <rect x="3" y="126" width="36" height="29" fill="#0e0e1a"/><!-- (0,4) = 1 -->
+    <text font-size="14" fill="#44aaff" x="17" y="145">1</text>
+    <rect x="41" y="126" width="36" height="29" fill="#0e0e1a"/><!-- (1,4) = 1 -->
+    <text font-size="14" fill="#44aaff" x="55" y="145">1</text>
+    <rect x="79" y="126" width="36" height="29" fill="#0e0e1a"/><!-- (2,4) = 0 -->
+    <rect x="117" y="126" width="36" height="29" fill="#0e0e1a"/><!-- (3,4) = 0 -->
+    <rect x="155" y="126" width="36" height="29" fill="#0e0e1a"/><!-- (4,4) = 0 -->
+    <rect x="193" y="126" width="36" height="29" fill="#0e0e1a"/><!-- (5,4) = 1 -->
+    <text font-size="14" fill="#44aaff" x="207" y="145">1</text>
+    <rect x="231" y="126" width="36" height="29" fill="#1e2a3a"/><!-- (6,4) hidden (mine) -->
+    <rect x="269" y="126" width="36" height="29" fill="#0e0e1a"/><!-- (7,4) = 1 -->
+    <text font-size="14" fill="#44aaff" x="283" y="145">1</text>
+    <rect x="307" y="126" width="36" height="29" fill="#0e0e1a"/><!-- (8,4) = 0 -->
+
+    <!-- Row 5 -->
+    <rect x="3" y="157" width="36" height="29" fill="#0e0e1a"/><!-- (0,5) = 0 -->
+    <rect x="41" y="157" width="36" height="29" fill="#0e0e1a"/><!-- (1,5) = 0 -->
+    <rect x="79" y="157" width="36" height="29" fill="#0e0e1a"/><!-- (2,5) = 0 -->
+    <rect x="117" y="157" width="36" height="29" fill="#0e0e1a"/><!-- (3,5) = 1 -->
+    <text font-size="14" fill="#44aaff" x="131" y="176">1</text>
+    <rect x="155" y="157" width="36" height="29" fill="#0e0e1a"/><!-- (4,5) = 1 -->
+    <text font-size="14" fill="#44aaff" x="169" y="176">1</text>
+    <rect x="193" y="157" width="36" height="29" fill="#0e0e1a"/><!-- (5,5) = 2 -->
+    <text font-size="14" fill="#44ff66" x="207" y="176">2</text>
+    <rect x="231" y="157" width="36" height="29" fill="#0e0e1a"/><!-- (6,5) = 1 -->
+    <text font-size="14" fill="#44aaff" x="245" y="176">1</text>
+    <rect x="269" y="157" width="36" height="29" fill="#0e0e1a"/><!-- (7,5) = 1 -->
+    <text font-size="14" fill="#44aaff" x="283" y="176">1</text>
+    <rect x="307" y="157" width="36" height="29" fill="#0e0e1a"/><!-- (8,5) = 0 -->
+
+    <!-- Row 6 -->
+    <rect x="3" y="188" width="36" height="29" fill="#1e2a3a"/><!-- (0,6) hidden -->
+    <rect x="41" y="188" width="36" height="29" fill="#1e2a3a"/><!-- (1,6) hidden -->
+    <rect x="79" y="188" width="36" height="29" fill="#1e2a3a"/><!-- (2,6) hidden -->
+    <rect x="117" y="188" width="36" height="29" fill="#1e2a3a"/><!-- (3,6) hidden -->
+    <rect x="155" y="188" width="36" height="29" fill="#1e2a3a"/><!-- (4,6) flagged -->
+    <text font-size="12" x="166" y="207">🚩</text>
+    <rect x="193" y="188" width="36" height="29" fill="#0e0e1a"/><!-- (5,6) = 1 -->
+    <text font-size="14" fill="#44aaff" x="207" y="207">1</text>
+    <rect x="231" y="188" width="36" height="29" fill="#0e0e1a"/><!-- (6,6) = 0 -->
+    <rect x="269" y="188" width="36" height="29" fill="#0e0e1a"/><!-- (7,6) = 0 -->
+    <rect x="307" y="188" width="36" height="29" fill="#0e0e1a"/><!-- (8,6) = 0 -->
+
+    <!-- Row 7 -->
+    <rect x="3" y="219" width="36" height="29" fill="#1e2a3a"/><!-- (0,7) hidden -->
+    <rect x="41" y="219" width="36" height="29" fill="#1e2a3a"/><!-- (1,7) hidden -->
+    <rect x="79" y="219" width="36" height="29" fill="#1e2a3a"/><!-- (2,7) hidden -->
+    <rect x="117" y="219" width="36" height="29" fill="#1e2a3a"/><!-- (3,7) hidden -->
+    <rect x="155" y="219" width="36" height="29" fill="#1e2a3a"/><!-- (4,7) hidden -->
+    <rect x="193" y="219" width="36" height="29" fill="#0e0e1a"/><!-- (5,7) = 1 -->
+    <text font-size="14" fill="#44aaff" x="207" y="238">1</text>
+    <rect x="231" y="219" width="36" height="29" fill="#0e0e1a"/><!-- (6,7) = 0 -->
+    <rect x="269" y="219" width="36" height="29" fill="#0e0e1a"/><!-- (7,7) = 0 -->
+    <rect x="307" y="219" width="36" height="29" fill="#0e0e1a"/><!-- (8,7) = 0 -->
+
+    <!-- Row 8 -->
+    <rect x="3" y="250" width="36" height="29" fill="#1e2a3a"/><!-- (0,8) hidden -->
+    <rect x="41" y="250" width="36" height="29" fill="#1e2a3a"/><!-- (1,8) hidden -->
+    <rect x="79" y="250" width="36" height="29" fill="#1e2a3a"/><!-- (2,8) hidden -->
+    <rect x="117" y="250" width="36" height="29" fill="#1e2a3a"/><!-- (3,8) hidden -->
+    <rect x="155" y="250" width="36" height="29" fill="#0e0e1a"/><!-- (4,8) = 0 -->
+    <rect x="193" y="250" width="36" height="29" fill="#0e0e1a"/><!-- (5,8) = 0 -->
+    <rect x="231" y="250" width="36" height="29" fill="#0e0e1a"/><!-- (6,8) = 0 -->
+    <rect x="269" y="250" width="36" height="29" fill="#0e0e1a"/><!-- (7,8) = 0 -->
+    <rect x="307" y="250" width="36" height="29" fill="#0e0e1a"/><!-- (8,8) = 0 -->
+  </g>
+
+  <!-- Controls below grid -->
+  <!-- Difficulty buttons -->
+  <g transform="translate(60, 345)">
+    <rect x="0" y="0" width="60" height="22" fill="#ffd700" rx="3"/>
+    <text font-size="9" fill="#0a0a16" x="10" y="15" font-weight="bold">EASY</text>
+    <rect x="68" y="0" width="80" height="22" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <text font-size="9" fill="#888" x="78" y="15">MEDIUM</text>
+    <rect x="156" y="0" width="60" height="22" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <text font-size="9" fill="#888" x="170" y="15">HARD</text>
+  </g>
+
+  <!-- Flag mode toggle -->
+  <g transform="translate(105, 378)">
+    <rect x="0" y="0" width="120" height="24" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <text font-size="10" fill="#888" x="12" y="16">🚩 Flag Mode</text>
+  </g>
+
+  <!-- Border -->
+  <rect width="380" height="420" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+</svg>

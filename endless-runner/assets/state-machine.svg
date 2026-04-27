@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" width="560" height="300">
+  <rect width="560" height="300" fill="#0a0a16" rx="6"/>
+  <defs>
+    <style>text{font-family:monospace;}</style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ffd700"/>
+    </marker>
+  </defs>
+
+  <text fill="#888" font-size="12" x="20" y="22">GAME STATES</text>
+
+  <!-- IDLE box -->
+  <rect x="30" y="60" width="90" height="40" fill="#12121f" stroke="#44aaff" stroke-width="2" rx="4"/>
+  <text fill="#44aaff" font-size="11" x="50" y="85" font-weight="bold">IDLE</text>
+
+  <!-- PLAYING box -->
+  <rect x="200" y="60" width="110" height="40" fill="#12121f" stroke="#44ff66" stroke-width="2" rx="4"/>
+  <text fill="#44ff66" font-size="11" x="215" y="85" font-weight="bold">PLAYING</text>
+
+  <!-- PAUSED box -->
+  <rect x="200" y="140" width="110" height="40" fill="#12121f" stroke="#ffd700" stroke-width="2" rx="4"/>
+  <text fill="#ffd700" font-size="11" x="217" y="165" font-weight="bold">PAUSED</text>
+
+  <!-- OVER box -->
+  <rect x="400" y="60" width="100" height="40" fill="#12121f" stroke="#ff4444" stroke-width="2" rx="4"/>
+  <text fill="#ff4444" font-size="11" x="423" y="85" font-weight="bold">OVER</text>
+
+  <!-- idle → playing -->
+  <line x1="120" y1="80" x2="198" y2="80" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="135" y="74">Start</text>
+
+  <!-- playing → paused -->
+  <line x1="240" y1="100" x2="240" y2="138" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="246" y="122">Esc</text>
+
+  <!-- paused → playing -->
+  <line x1="280" y1="140" x2="280" y2="102" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="286" y="122">Resume</text>
+
+  <!-- playing → over -->
+  <line x1="310" y1="80" x2="398" y2="80" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="330" y="74">Collision</text>
+
+  <!-- paused → idle (restart) -->
+  <path d="M 200 160 Q 75 160 75 102" fill="none" stroke="#ffd700" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="100" y="155">Restart</text>
+
+  <!-- over → idle (play again) -->
+  <path d="M 450 100 Q 450 220 255 220 Q 75 220 75 102" fill="none" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="220" y="235">Play Again</text>
+
+  <!-- Player states section -->
+  <text fill="#888" font-size="12" x="30" y="270">PLAYER STATES</text>
+
+  <!-- RUN -->
+  <rect x="30" y="278" width="60" height="16" fill="#12121f" stroke="#44ff66" stroke-width="1" rx="2"/>
+  <text fill="#44ff66" font-size="8" x="44" y="290">RUN</text>
+
+  <!-- arrow -->
+  <text fill="#ffd700" font-size="10" x="96" y="290">→</text>
+
+  <!-- JUMP -->
+  <rect x="110" y="278" width="60" height="16" fill="#12121f" stroke="#44aaff" stroke-width="1" rx="2"/>
+  <text fill="#44aaff" font-size="8" x="122" y="290">JUMP</text>
+
+  <!-- arrow -->
+  <text fill="#ffd700" font-size="10" x="176" y="290">→</text>
+
+  <!-- RUN (land) -->
+  <rect x="190" y="278" width="60" height="16" fill="#12121f" stroke="#44ff66" stroke-width="1" rx="2"/>
+  <text fill="#44ff66" font-size="8" x="204" y="290">RUN</text>
+
+  <!-- Separate duck path -->
+  <text fill="#ffd700" font-size="10" x="270" y="290">|</text>
+
+  <!-- RUN -->
+  <rect x="290" y="278" width="60" height="16" fill="#12121f" stroke="#44ff66" stroke-width="1" rx="2"/>
+  <text fill="#44ff66" font-size="8" x="304" y="290">RUN</text>
+
+  <text fill="#ffd700" font-size="10" x="356" y="290">→</text>
+
+  <!-- DUCK -->
+  <rect x="370" y="278" width="60" height="16" fill="#12121f" stroke="#ffd700" stroke-width="1" rx="2"/>
+  <text fill="#ffd700" font-size="8" x="383" y="290">DUCK</text>
+
+  <text fill="#ffd700" font-size="10" x="436" y="290">→</text>
+
+  <!-- RUN (release) -->
+  <rect x="450" y="278" width="60" height="16" fill="#12121f" stroke="#44ff66" stroke-width="1" rx="2"/>
+  <text fill="#44ff66" font-size="8" x="464" y="290">RUN</text>
+
+  <!-- Border -->
+  <rect width="560" height="300" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

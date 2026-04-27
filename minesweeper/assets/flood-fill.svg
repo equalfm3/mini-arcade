@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" width="500" height="200">
+  <rect width="500" height="200" fill="#0a0a16" rx="6"/>
+  <defs><style>text{font-family:monospace;}</style></defs>
+
+  <!-- Step 1: Click on empty cell -->
+  <text fill="#888" font-size="9" x="20" y="16">STEP 1: Click empty cell</text>
+  <g transform="translate(15, 22)">
+    <!-- 5x5 grid, all hidden except clicked cell -->
+    <rect width="130" height="130" fill="#2a2a40" rx="2"/>
+    <!-- All hidden -->
+    <rect x="2" y="2" width="24" height="24" fill="#1e2a3a"/>
+    <rect x="28" y="2" width="24" height="24" fill="#1e2a3a"/>
+    <rect x="54" y="2" width="24" height="24" fill="#1e2a3a"/>
+    <rect x="80" y="2" width="24" height="24" fill="#1e2a3a"/>
+    <rect x="106" y="2" width="24" height="24" fill="#1e2a3a"/>
+
+    <rect x="2" y="28" width="24" height="24" fill="#1e2a3a"/>
+    <rect x="28" y="28" width="24" height="24" fill="#1e2a3a"/>
+    <rect x="54" y="28" width="24" height="24" fill="#1e2a3a"/>
+    <rect x="80" y="28" width="24" height="24" fill="#1e2a3a"/>
+    <rect x="106" y="28" width="24" height="24" fill="#1e2a3a"/>
+
+    <rect x="2" y="54" width="24" height="24" fill="#1e2a3a"/>
+    <rect x="28" y="54" width="24" height="24" fill="#1e2a3a"/>
+    <!-- Clicked cell highlighted -->
+    <rect x="54" y="54" width="24" height="24" fill="#ffd700" opacity="0.4"/>
+    <circle cx="66" cy="66" r="3" fill="#ffd700"/>
+    <rect x="80" y="54" width="24" height="24" fill="#1e2a3a"/>
+    <rect x="106" y="54" width="24" height="24" fill="#1e2a3a"/>
+
+    <rect x="2" y="80" width="24" height="24" fill="#1e2a3a"/>
+    <rect x="28" y="80" width="24" height="24" fill="#1e2a3a"/>
+    <rect x="54" y="80" width="24" height="24" fill="#1e2a3a"/>
+    <rect x="80" y="80" width="24" height="24" fill="#1e2a3a"/>
+    <rect x="106" y="80" width="24" height="24" fill="#1e2a3a"/>
+
+    <rect x="2" y="106" width="24" height="24" fill="#1e2a3a"/>
+    <rect x="28" y="106" width="24" height="24" fill="#1e2a3a"/>
+    <rect x="54" y="106" width="24" height="24" fill="#1e2a3a"/>
+    <rect x="80" y="106" width="24" height="24" fill="#1e2a3a"/>
+    <rect x="106" y="106" width="24" height="24" fill="#1e2a3a"/>
+  </g>
+
+  <!-- Arrow -->
+  <text fill="#ffd700" font-size="18" x="155" y="92">→</text>
+
+  <!-- Step 2: BFS expands through 0-cells -->
+  <text fill="#888" font-size="9" x="175" y="16">STEP 2: BFS expands (0-cells)</text>
+  <g transform="translate(175, 22)">
+    <rect width="130" height="130" fill="#2a2a40" rx="2"/>
+    <!-- Underlying grid: mine at (4,0), numbers around it, 0s elsewhere -->
+    <!-- Row 0 -->
+    <rect x="2" y="2" width="24" height="24" fill="#0e0e1a"/><!-- 0 -->
+    <rect x="28" y="2" width="24" height="24" fill="#0e0e1a"/><!-- 0 -->
+    <rect x="54" y="2" width="24" height="24" fill="#0e0e1a"/><!-- 0 -->
+    <rect x="80" y="2" width="24" height="24" fill="#0e0e1a" opacity="0.5"/><!-- 1 expanding -->
+    <text font-size="11" fill="#44aaff" x="88" y="18" opacity="0.5">1</text>
+    <rect x="106" y="2" width="24" height="24" fill="#1e2a3a"/><!-- mine hidden -->
+
+    <!-- Row 1 -->
+    <rect x="2" y="28" width="24" height="24" fill="#0e0e1a"/><!-- 0 -->
+    <rect x="28" y="28" width="24" height="24" fill="#0e0e1a"/><!-- 0 -->
+    <rect x="54" y="28" width="24" height="24" fill="#0e0e1a"/><!-- 0 -->
+    <rect x="80" y="28" width="24" height="24" fill="#0e0e1a" opacity="0.5"/><!-- 1 expanding -->
+    <text font-size="11" fill="#44aaff" x="88" y="44" opacity="0.5">1</text>
+    <rect x="106" y="28" width="24" height="24" fill="#0e0e1a" opacity="0.5"/><!-- 1 -->
+    <text font-size="11" fill="#44aaff" x="114" y="44" opacity="0.5">1</text>
+
+    <!-- Row 2 -->
+    <rect x="2" y="54" width="24" height="24" fill="#0e0e1a"/><!-- 0 -->
+    <rect x="28" y="54" width="24" height="24" fill="#0e0e1a"/><!-- 0 -->
+    <!-- BFS origin -->
+    <rect x="54" y="54" width="24" height="24" fill="#ffd700" opacity="0.3"/>
+    <rect x="80" y="54" width="24" height="24" fill="#0e0e1a"/><!-- 0 -->
+    <rect x="106" y="54" width="24" height="24" fill="#0e0e1a"/><!-- 0 -->
+
+    <!-- Row 3 -->
+    <rect x="2" y="80" width="24" height="24" fill="#0e0e1a"/><!-- 0 -->
+    <rect x="28" y="80" width="24" height="24" fill="#0e0e1a"/><!-- 0 -->
+    <rect x="54" y="80" width="24" height="24" fill="#0e0e1a"/><!-- 0 -->
+    <rect x="80" y="80" width="24" height="24" fill="#0e0e1a"/><!-- 0 -->
+    <rect x="106" y="80" width="24" height="24" fill="#0e0e1a"/><!-- 0 -->
+
+    <!-- Row 4 -->
+    <rect x="2" y="106" width="24" height="24" fill="#0e0e1a"/><!-- 0 -->
+    <rect x="28" y="106" width="24" height="24" fill="#0e0e1a"/><!-- 0 -->
+    <rect x="54" y="106" width="24" height="24" fill="#0e0e1a"/><!-- 0 -->
+    <rect x="80" y="106" width="24" height="24" fill="#0e0e1a"/><!-- 0 -->
+    <rect x="106" y="106" width="24" height="24" fill="#0e0e1a"/><!-- 0 -->
+
+    <!-- BFS expansion arrows -->
+    <g stroke="#ffd700" stroke-width="1" fill="none" opacity="0.6">
+      <line x1="66" y1="54" x2="66" y2="30"/>
+      <line x1="66" y1="78" x2="66" y2="102"/>
+      <line x1="54" y1="66" x2="30" y2="66"/>
+      <line x1="78" y1="66" x2="102" y2="66"/>
+      <line x1="56" y1="56" x2="32" y2="32"/>
+      <line x1="76" y1="56" x2="100" y2="32"/>
+      <line x1="56" y1="76" x2="32" y2="100"/>
+      <line x1="76" y1="76" x2="100" y2="100"/>
+    </g>
+  </g>
+
+  <!-- Arrow -->
+  <text fill="#ffd700" font-size="18" x="315" y="92">→</text>
+
+  <!-- Step 3: Final result -->
+  <text fill="#888" font-size="9" x="335" y="16">STEP 3: Stops at numbers</text>
+  <g transform="translate(335, 22)">
+    <rect width="130" height="130" fill="#2a2a40" rx="2"/>
+    <!-- Row 0 -->
+    <rect x="2" y="2" width="24" height="24" fill="#0e0e1a"/>
+    <rect x="28" y="2" width="24" height="24" fill="#0e0e1a"/>
+    <rect x="54" y="2" width="24" height="24" fill="#0e0e1a"/>
+    <rect x="80" y="2" width="24" height="24" fill="#0e0e1a"/>
+    <text font-size="12" fill="#44aaff" x="88" y="18">1</text>
+    <rect x="106" y="2" width="24" height="24" fill="#1e2a3a"/><!-- mine stays hidden -->
+
+    <!-- Row 1 -->
+    <rect x="2" y="28" width="24" height="24" fill="#0e0e1a"/>
+    <rect x="28" y="28" width="24" height="24" fill="#0e0e1a"/>
+    <rect x="54" y="28" width="24" height="24" fill="#0e0e1a"/>
+    <rect x="80" y="28" width="24" height="24" fill="#0e0e1a"/>
+    <text font-size="12" fill="#44aaff" x="88" y="44">1</text>
+    <rect x="106" y="28" width="24" height="24" fill="#0e0e1a"/>
+    <text font-size="12" fill="#44aaff" x="114" y="44">1</text>
+
+    <!-- Row 2 -->
+    <rect x="2" y="54" width="24" height="24" fill="#0e0e1a"/>
+    <rect x="28" y="54" width="24" height="24" fill="#0e0e1a"/>
+    <rect x="54" y="54" width="24" height="24" fill="#0e0e1a"/>
+    <rect x="80" y="54" width="24" height="24" fill="#0e0e1a"/>
+    <rect x="106" y="54" width="24" height="24" fill="#0e0e1a"/>
+
+    <!-- Row 3 -->
+    <rect x="2" y="80" width="24" height="24" fill="#0e0e1a"/>
+    <rect x="28" y="80" width="24" height="24" fill="#0e0e1a"/>
+    <rect x="54" y="80" width="24" height="24" fill="#0e0e1a"/>
+    <rect x="80" y="80" width="24" height="24" fill="#0e0e1a"/>
+    <rect x="106" y="80" width="24" height="24" fill="#0e0e1a"/>
+
+    <!-- Row 4 -->
+    <rect x="2" y="106" width="24" height="24" fill="#0e0e1a"/>
+    <rect x="28" y="106" width="24" height="24" fill="#0e0e1a"/>
+    <rect x="54" y="106" width="24" height="24" fill="#0e0e1a"/>
+    <rect x="80" y="106" width="24" height="24" fill="#0e0e1a"/>
+    <rect x="106" y="106" width="24" height="24" fill="#0e0e1a"/>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(15, 162)">
+    <rect x="0" y="0" width="12" height="12" fill="#0e0e1a" stroke="#2a2a40" stroke-width="1"/>
+    <text fill="#888" font-size="8" x="16" y="10">Revealed (0 neighbors)</text>
+
+    <rect x="150" y="0" width="12" height="12" fill="#0e0e1a" stroke="#2a2a40" stroke-width="1"/>
+    <text fill="#44aaff" font-size="10" x="153" y="11">1</text>
+    <text fill="#888" font-size="8" x="166" y="10">Number border (revealed, stops BFS)</text>
+
+    <rect x="370" y="0" width="12" height="12" fill="#1e2a3a"/>
+    <text fill="#888" font-size="8" x="386" y="10">Hidden (mine)</text>
+  </g>
+
+  <text fill="#666" font-size="8" x="15" y="190">BFS reveals all connected 0-cells, then reveals their numbered neighbors but does not expand past them.</text>
+
+  <rect width="500" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

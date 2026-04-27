@@ -1,0 +1,10 @@
+/* Snake — Game-specific styles */
+
+:root {
+  --c-game: #44ff66;
+}
+
+.btn-action {
+  font-size: 0.7rem;
+  padding: var(--sp-3) var(--sp-6);
+}

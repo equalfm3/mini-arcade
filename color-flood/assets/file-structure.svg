@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 280" width="620" height="280">
+  <defs>
+    <style>text{font-family:monospace;font-size:12px;}</style>
+  </defs>
+  <rect width="620" height="280" fill="#0a0a16" rx="6"/>
+
+  <text fill="#44aaff" font-size="14" font-weight="bold" x="20" y="30">color-flood/</text>
+
+  <text fill="#ffd700" x="40" y="55">index.html</text>
+  <text fill="#666" x="220" y="55">Entry point — GAME config + arcade.js loader</text>
+
+  <text fill="#ffd700" x="40" y="80">style.css</text>
+  <text fill="#666" x="220" y="80">Game-specific CSS — grid, picker, animations</text>
+
+  <text fill="#ffd700" x="40" y="105">game.js</text>
+  <text fill="#666" x="220" y="105">Orchestrator — wires modules, handles game flow</text>
+
+  <text fill="#44aaff" x="40" y="135">src/</text>
+
+  <text fill="#44ff66" x="60" y="160">config.js</text>
+  <text fill="#666" x="220" y="160">Grid 14×14, 6 colors, max 25 moves, timing</text>
+
+  <text fill="#44ff66" x="60" y="185">board.js</text>
+  <text fill="#666" x="220" y="185">Grid state, BFS flood fill, territory tracking</text>
+
+  <text fill="#44ff66" x="60" y="210">renderer.js</text>
+  <text fill="#666" x="220" y="210">DOM grid, color picker, progress bar, animation</text>
+
+  <text fill="#44aaff" x="40" y="240">assets/</text>
+  <text fill="#666" x="220" y="240">SVG images for README documentation</text>
+
+  <text fill="#ffd700" x="40" y="265">README.md</text>
+  <text fill="#666" x="220" y="265">Rich documentation with embedded SVG assets</text>
+
+  <rect width="620" height="280" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

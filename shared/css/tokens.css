@@ -1,0 +1,48 @@
+/* ============================================
+   tokens.css — Design tokens (colors, fonts, spacing)
+   Single source of truth for the entire arcade.
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  /* ---- Palette ---- */
+  --c-bg:          #0a0a16;
+  --c-bg-surface:  #12121f;
+  --c-bg-raised:   #1a1a2e;
+  --c-border:      #2a2a40;
+  --c-border-hi:   #3a3a55;
+
+  --c-text:        #d4d4d4;
+  --c-text-dim:    #777;
+  --c-text-bright: #fff;
+
+  --c-accent:      #ffd700;
+  --c-accent-dim:  #b8960a;
+  --c-danger:      #ff4444;
+  --c-success:     #44ff66;
+  --c-info:        #44aaff;
+
+  /* Game-specific accent overrides (set per-game in game style.css) */
+  --c-game:        var(--c-accent);
+
+  /* ---- Typography ---- */
+  --font-pixel:    'Press Start 2P', monospace;
+  --font-system:   system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* ---- Spacing scale (4px base) ---- */
+  --sp-1: 0.25rem;   /* 4px  */
+  --sp-2: 0.5rem;    /* 8px  */
+  --sp-3: 0.75rem;   /* 12px */
+  --sp-4: 1rem;      /* 16px */
+  --sp-5: 1.25rem;   /* 20px */
+  --sp-6: 1.5rem;    /* 24px */
+  --sp-8: 2rem;      /* 32px */
+
+  /* ---- Pixel border thickness ---- */
+  --px-border: 3px;
+
+  /* ---- Layout ---- */
+  --game-max-w: 480px;
+  --header-h: 3.5rem;
+}

@@ -1,0 +1,85 @@
+/* Minesweeper — Game-specific styles */
+
+:root {
+  --c-game: #ffd700;
+}
+
+.mine-grid {
+  display: grid;
+  gap: 2px;
+  background: #2a2a40;
+  border: 3px solid #2a2a40;
+  padding: 2px;
+  width: fit-content;
+  margin: 0 auto;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.mine-cell {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-pixel, monospace);
+  font-size: 0.6rem;
+  cursor: pointer;
+  transition: background 0.1s;
+  touch-action: manipulation;
+}
+
+.mine-cell.hidden {
+  background: #1e2a3a;
+}
+
+.mine-cell.hidden:hover {
+  background: #2a3a4a;
+}
+
+.mine-cell.revealed {
+  background: #0e0e1a;
+  cursor: default;
+}
+
+.mine-cell.flagged {
+  background: #1e2a3a;
+}
+
+.mine-cell.mine {
+  background: #3a1010;
+}
+
+.mine-cell.mine-hit {
+  background: #ff4444;
+}
+
+/* Number colors */
+.mine-cell.n1 { color: #44aaff; }
+.mine-cell.n2 { color: #44ff66; }
+.mine-cell.n3 { color: #ff4444; }
+.mine-cell.n4 { color: #8844cc; }
+.mine-cell.n5 { color: #ff8844; }
+.mine-cell.n6 { color: #44ffdd; }
+.mine-cell.n7 { color: #e0e0e0; }
+.mine-cell.n8 { color: #888888; }
+
+/* Difficulty buttons */
+.diff-buttons {
+  display: flex;
+  gap: var(--sp-2, 8px);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: var(--sp-2, 8px);
+}
+
+/* Flag mode toggle */
+.flag-toggle {
+  margin-top: var(--sp-2, 8px);
+}
+
+.flag-toggle.active {
+  background: var(--c-game);
+  color: var(--c-bg, #0a0a16);
+  border-color: var(--c-game);
+}

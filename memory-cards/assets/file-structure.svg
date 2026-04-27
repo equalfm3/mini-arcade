@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 300" width="620" height="300">
+  <rect width="620" height="300" fill="#0a0a16" rx="6"/>
+  <defs><style>text{font-family:monospace;font-size:11px;} .dim{fill:#555;font-size:9px;} .lines{fill:#444;font-size:9px;}</style></defs>
+
+  <!-- Folder icon -->
+  <rect x="25" y="18" width="16" height="4" fill="#ff66aa" rx="1"/>
+  <rect x="20" y="22" width="24" height="14" fill="#ff66aa" rx="2"/>
+  <text fill="#ff66aa" font-size="13" x="50" y="35" font-weight="bold">memory-cards/</text>
+
+  <!-- index.html -->
+  <rect x="40" y="50" width="14" height="16" fill="#ff8844" rx="1"/>
+  <text fill="#ff8844" font-size="7" x="42" y="61">&lt;/&gt;</text>
+  <text fill="#e0e0e0" x="60" y="63">index.html</text>
+  <text class="lines" x="160" y="63">~18 lines</text>
+  <text class="dim" x="220" y="63">Entry point</text>
+
+  <!-- style.css -->
+  <rect x="40" y="72" width="14" height="16" fill="#44aaff" rx="1"/>
+  <text fill="#44aaff" font-size="7" x="43" y="83">#</text>
+  <text fill="#e0e0e0" x="60" y="85">style.css</text>
+  <text class="lines" x="160" y="85">~80 lines</text>
+  <text class="dim" x="220" y="85">Card grid, flip animations, responsive</text>
+
+  <!-- game.js -->
+  <rect x="40" y="94" width="14" height="16" fill="#ffd700" rx="1"/>
+  <text fill="#ffd700" font-size="7" x="43" y="105">JS</text>
+  <text fill="#e0e0e0" x="60" y="107">game.js</text>
+  <text class="lines" x="160" y="107">~120 lines</text>
+  <text class="dim" x="220" y="107">Orchestrator, size selection, match logic</text>
+
+  <!-- src folder -->
+  <rect x="45" y="128" width="14" height="4" fill="#c084fc" rx="1"/>
+  <rect x="40" y="132" width="22" height="12" fill="#c084fc" rx="2"/>
+  <text fill="#c084fc" font-size="12" x="68" y="143" font-weight="bold">src/</text>
+
+  <!-- config.js -->
+  <rect x="60" y="158" width="14" height="16" fill="#44ff66" rx="1"/>
+  <text fill="#44ff66" font-size="7" x="63" y="169">JS</text>
+  <text fill="#e0e0e0" x="80" y="171">config.js</text>
+  <text class="lines" x="180" y="171">~30 lines</text>
+  <text class="dim" x="240" y="171">Grid size presets, timing</text>
+
+  <!-- symbols.js -->
+  <rect x="60" y="180" width="14" height="16" fill="#44ff66" rx="1"/>
+  <text fill="#44ff66" font-size="7" x="63" y="191">JS</text>
+  <text fill="#e0e0e0" x="80" y="193">symbols.js</text>
+  <text class="lines" x="180" y="193">~250 lines</text>
+  <text class="dim" x="240" y="193">12 pixel art 16×16 icons</text>
+
+  <!-- deck.js -->
+  <rect x="60" y="202" width="14" height="16" fill="#44ff66" rx="1"/>
+  <text fill="#44ff66" font-size="7" x="63" y="213">JS</text>
+  <text fill="#e0e0e0" x="80" y="215">deck.js</text>
+  <text class="lines" x="180" y="215">~70 lines</text>
+  <text class="dim" x="240" y="215">Card pairs, shuffle, match tracking</text>
+
+  <!-- renderer.js -->
+  <rect x="60" y="224" width="14" height="16" fill="#44ff66" rx="1"/>
+  <text fill="#44ff66" font-size="7" x="63" y="235">JS</text>
+  <text fill="#e0e0e0" x="80" y="237">renderer.js</text>
+  <text class="lines" x="180" y="237">~70 lines</text>
+  <text class="dim" x="240" y="237">DOM grid, SVG card fronts</text>
+
+  <!-- Tree lines -->
+  <g stroke="#2a2a40" stroke-width="1" fill="none">
+    <line x1="35" y1="45" x2="35" y2="115"/>
+    <line x1="35" y1="58" x2="40" y2="58"/>
+    <line x1="35" y1="80" x2="40" y2="80"/>
+    <line x1="35" y1="102" x2="40" y2="102"/>
+    <line x1="35" y1="115" x2="35" y2="138"/>
+    <line x1="35" y1="138" x2="40" y2="138"/>
+    <line x1="55" y1="155" x2="55" y2="242"/>
+    <line x1="55" y1="166" x2="60" y2="166"/>
+    <line x1="55" y1="188" x2="60" y2="188"/>
+    <line x1="55" y1="210" x2="60" y2="210"/>
+    <line x1="55" y1="232" x2="60" y2="232"/>
+  </g>
+
+  <!-- Load order -->
+  <g transform="translate(20, 262)">
+    <text fill="#888" font-size="9" x="0" y="10">Load order:</text>
+    <rect x="80" y="0" width="55" height="16" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="2"/>
+    <text fill="#888" font-size="8" x="86" y="11">shared/*</text>
+    <text fill="#ffd700" font-size="10" x="140" y="11">→</text>
+    <rect x="152" y="0" width="48" height="16" fill="#12121f" stroke="#44ff66" stroke-width="1" rx="2"/>
+    <text fill="#44ff66" font-size="8" x="158" y="11">config</text>
+    <text fill="#ffd700" font-size="10" x="205" y="11">→</text>
+    <rect x="218" y="0" width="58" height="16" fill="#12121f" stroke="#44ff66" stroke-width="1" rx="2"/>
+    <text fill="#44ff66" font-size="8" x="224" y="11">symbols</text>
+    <text fill="#ffd700" font-size="10" x="281" y="11">→</text>
+    <rect x="294" y="0" width="42" height="16" fill="#12121f" stroke="#44ff66" stroke-width="1" rx="2"/>
+    <text fill="#44ff66" font-size="8" x="302" y="11">deck</text>
+    <text fill="#ffd700" font-size="10" x="341" y="11">→</text>
+    <rect x="354" y="0" width="62" height="16" fill="#12121f" stroke="#44ff66" stroke-width="1" rx="2"/>
+    <text fill="#44ff66" font-size="8" x="360" y="11">renderer</text>
+    <text fill="#ffd700" font-size="10" x="421" y="11">→</text>
+    <rect x="434" y="0" width="60" height="16" fill="#12121f" stroke="#ffd700" stroke-width="1" rx="2"/>
+    <text fill="#ffd700" font-size="8" x="440" y="11">game.js</text>
+  </g>
+
+  <rect width="620" height="300" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

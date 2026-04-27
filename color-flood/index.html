@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Color Flood — Mini Arcade</title>
+  <link rel="stylesheet" href="../shared/css/game.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script>var GAME = {
+    id: 'color-flood',
+    title: 'Color Flood',
+    stats: [
+      { id: 'moves', label: 'Moves', value: '0/25' },
+      { id: 'cells', label: 'Cells', value: '0/196' },
+      { id: 'streak', label: 'Streak', value: '0' }
+    ],
+    src: ['src/config.js', 'src/board.js', 'src/renderer.js']
+  };</script>
+  <script src="../shared/arcade.js"></script>
+</body>
+</html>

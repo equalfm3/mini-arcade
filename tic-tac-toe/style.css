@@ -1,0 +1,135 @@
+/* Tic-Tac-Toe — Game Styles */
+
+:root {
+  --c-game: #ff4444;
+}
+
+/* ---- Status message ---- */
+.ttt-status {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: var(--font-pixel, monospace);
+  font-size: 0.9rem;
+  color: #888;
+  height: 1.4em;
+  line-height: 1.4em;
+  overflow: hidden;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.ttt-status-player { color: #ff4444; }
+.ttt-status-thinking { color: #44aaff; }
+.ttt-status-win { color: #ffd700; }
+.ttt-status-lose { color: #ff4444; }
+.ttt-status-draw { color: #888888; }
+
+/* ---- Grid ---- */
+.ttt-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 12px;
+  padding-bottom: 28px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* ---- Cell ---- */
+.ttt-cell {
+  width: 100px;
+  height: 100px;
+  background: #12121f;
+  border: 2px solid #2a2a40;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease, border-color 0.15s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ttt-cell:hover {
+  background: #1a1a2e;
+  border-color: #3a3a50;
+}
+
+.ttt-cell-x {
+  cursor: default;
+}
+
+.ttt-cell-o {
+  cursor: default;
+}
+
+.ttt-cell-x:hover,
+.ttt-cell-o:hover {
+  background: #12121f;
+  border-color: #2a2a40;
+}
+
+/* ---- Win highlight ---- */
+.ttt-cell-win {
+  background: rgba(255, 215, 0, 0.1);
+  border-color: #ffd700;
+}
+
+/* ---- Disabled state ---- */
+.ttt-disabled .ttt-cell {
+  cursor: default;
+  pointer-events: none;
+}
+
+/* ---- SVG marks ---- */
+.ttt-mark {
+  display: block;
+  width: 80%;
+  height: 80%;
+  animation: ttt-mark-appear 0.2s ease-out;
+}
+
+@keyframes ttt-mark-appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ---- Win line SVG overlay ---- */
+.ttt-win-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+@keyframes ttt-draw-line {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 380px) {
+  .ttt-cell {
+    width: 80px;
+    height: 80px;
+  }
+
+  .ttt-grid {
+    gap: 6px;
+    padding: 8px;
+  }
+}

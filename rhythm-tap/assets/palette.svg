@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" width="600" height="160">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+  <rect width="600" height="160" fill="#0a0a16" rx="6"/>
+
+  <!-- Lane Colors -->
+  <text font-size="11" font-weight="bold" fill="#888" x="20" y="25">LANE COLORS</text>
+
+  <!-- Pink (Lane 1) -->
+  <rect x="20" y="35" width="50" height="50" fill="#ff66aa" rx="4"/>
+  <text font-size="8" fill="#e0e0e0" x="20" y="100">Lane 1</text>
+  <text font-size="8" fill="#888" x="20" y="112">#ff66aa</text>
+
+  <!-- Cyan (Lane 2) -->
+  <rect x="85" y="35" width="50" height="50" fill="#44ffdd" rx="4"/>
+  <text font-size="8" fill="#e0e0e0" x="85" y="100">Lane 2</text>
+  <text font-size="8" fill="#888" x="85" y="112">#44ffdd</text>
+
+  <!-- Gold (Lane 3) -->
+  <rect x="150" y="35" width="50" height="50" fill="#ffd700" rx="4"/>
+  <text font-size="8" fill="#e0e0e0" x="150" y="100">Lane 3</text>
+  <text font-size="8" fill="#888" x="150" y="112">#ffd700</text>
+
+  <!-- Green (Lane 4) -->
+  <rect x="215" y="35" width="50" height="50" fill="#44ff66" rx="4"/>
+  <text font-size="8" fill="#e0e0e0" x="215" y="100">Lane 4</text>
+  <text font-size="8" fill="#888" x="215" y="112">#44ff66</text>
+
+  <!-- Grade Colors -->
+  <text font-size="11" font-weight="bold" fill="#888" x="320" y="25">GRADE COLORS</text>
+
+  <!-- Perfect -->
+  <rect x="320" y="35" width="50" height="50" fill="#ffd700" rx="4"/>
+  <text font-size="8" fill="#e0e0e0" x="320" y="100">Perfect</text>
+  <text font-size="8" fill="#888" x="320" y="112">#ffd700</text>
+
+  <!-- Great -->
+  <rect x="385" y="35" width="50" height="50" fill="#44ff66" rx="4"/>
+  <text font-size="8" fill="#e0e0e0" x="385" y="100">Great</text>
+  <text font-size="8" fill="#888" x="385" y="112">#44ff66</text>
+
+  <!-- Good -->
+  <rect x="450" y="35" width="50" height="50" fill="#44aaff" rx="4"/>
+  <text font-size="8" fill="#e0e0e0" x="450" y="100">Good</text>
+  <text font-size="8" fill="#888" x="450" y="112">#44aaff</text>
+
+  <!-- Miss -->
+  <rect x="515" y="35" width="50" height="50" fill="#ff4444" rx="4"/>
+  <text font-size="8" fill="#e0e0e0" x="515" y="100">Miss</text>
+  <text font-size="8" fill="#888" x="515" y="112">#ff4444</text>
+
+  <!-- Background -->
+  <text font-size="11" font-weight="bold" fill="#888" x="20" y="140">BG</text>
+  <rect x="45" y="128" width="30" height="18" fill="#0a0a16" stroke="#2a2a40" stroke-width="1" rx="2"/>
+  <text font-size="8" fill="#888" x="82" y="141">#0a0a16</text>
+
+  <!-- Hit zone -->
+  <text font-size="11" font-weight="bold" fill="#888" x="170" y="140">HIT ZONE</text>
+  <rect x="240" y="128" width="30" height="18" fill="#333355" rx="2"/>
+  <text font-size="8" fill="#888" x="278" y="141">#333355</text>
+
+  <!-- Border -->
+  <rect width="600" height="160" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

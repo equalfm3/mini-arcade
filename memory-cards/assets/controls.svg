@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 80" width="500" height="80">
+  <rect width="500" height="80" fill="#0a0a16" rx="6"/>
+  <defs><style>text{font-family:monospace;}</style></defs>
+
+  <!-- Desktop section -->
+  <text fill="#888" font-size="10" x="30" y="16">DESKTOP</text>
+
+  <!-- Left click -->
+  <g transform="translate(40, 24)">
+    <!-- Mouse outline -->
+    <rect x="0" y="0" width="34" height="44" fill="#1a1a2e" stroke="#2a2a40" stroke-width="2" rx="10"/>
+    <!-- Left button highlighted -->
+    <rect x="2" y="2" width="14" height="18" fill="#ff66aa" rx="8" opacity="0.6"/>
+    <!-- Divider -->
+    <line x1="17" y1="2" x2="17" y2="20" stroke="#2a2a40" stroke-width="1"/>
+    <!-- Scroll wheel -->
+    <rect x="14" y="22" width="6" height="7" fill="#2a2a40" rx="2"/>
+    <text fill="#ff66aa" font-size="9" x="42" y="14">Click</text>
+    <text fill="#888" font-size="8" x="42" y="26">Flip a card</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="230" y1="10" x2="230" y2="70" stroke="#2a2a40" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Mobile section -->
+  <text fill="#888" font-size="10" x="250" y="16">MOBILE</text>
+
+  <!-- Tap -->
+  <g transform="translate(260, 28)">
+    <circle cx="15" cy="15" r="14" fill="none" stroke="#ff66aa" stroke-width="2"/>
+    <circle cx="15" cy="15" r="4" fill="#ff66aa"/>
+    <text fill="#ff66aa" font-size="9" x="38" y="12">Tap</text>
+    <text fill="#888" font-size="8" x="38" y="24">Flip a card</text>
+  </g>
+
+  <rect width="500" height="80" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

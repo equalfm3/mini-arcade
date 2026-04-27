@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 135" width="500" height="135">
+  <rect width="500" height="135" fill="#0a0a16" rx="6"/>
+  <defs><style>text{font-family:monospace;font-size:8px;}</style></defs>
+
+  <!-- Number colors row -->
+  <text fill="#888" font-size="9" x="15" y="16">Number Colors</text>
+
+  <rect x="15" y="22" width="28" height="28" fill="#44aaff" rx="2"/>
+  <text fill="#fff" font-size="14" x="24" y="42" font-weight="bold">1</text>
+  <text fill="#555" x="15" y="62">#44aaff</text>
+
+  <rect x="50" y="22" width="28" height="28" fill="#44ff66" rx="2"/>
+  <text fill="#fff" font-size="14" x="59" y="42" font-weight="bold">2</text>
+  <text fill="#555" x="50" y="62">#44ff66</text>
+
+  <rect x="85" y="22" width="28" height="28" fill="#ff4444" rx="2"/>
+  <text fill="#fff" font-size="14" x="94" y="42" font-weight="bold">3</text>
+  <text fill="#555" x="85" y="62">#ff4444</text>
+
+  <rect x="120" y="22" width="28" height="28" fill="#8844cc" rx="2"/>
+  <text fill="#fff" font-size="14" x="129" y="42" font-weight="bold">4</text>
+  <text fill="#555" x="120" y="62">#8844cc</text>
+
+  <rect x="155" y="22" width="28" height="28" fill="#ff8844" rx="2"/>
+  <text fill="#fff" font-size="14" x="164" y="42" font-weight="bold">5</text>
+  <text fill="#555" x="155" y="62">#ff8844</text>
+
+  <rect x="190" y="22" width="28" height="28" fill="#44ffdd" rx="2"/>
+  <text fill="#0a0a16" font-size="14" x="199" y="42" font-weight="bold">6</text>
+  <text fill="#555" x="190" y="62">#44ffdd</text>
+
+  <rect x="225" y="22" width="28" height="28" fill="#e0e0e0" rx="2"/>
+  <text fill="#0a0a16" font-size="14" x="234" y="42" font-weight="bold">7</text>
+  <text fill="#555" x="225" y="62">#e0e0e0</text>
+
+  <rect x="260" y="22" width="28" height="28" fill="#888888" rx="2"/>
+  <text fill="#fff" font-size="14" x="269" y="42" font-weight="bold">8</text>
+  <text fill="#555" x="260" y="62">#888888</text>
+
+  <!-- Cell states row -->
+  <text fill="#888" font-size="9" x="15" y="82">Cell States</text>
+
+  <rect x="15" y="88" width="28" height="22" fill="#1e2a3a" rx="2"/>
+  <text fill="#aaa" x="15" y="120">Hidden</text>
+
+  <rect x="60" y="88" width="28" height="22" fill="#0e0e1a" rx="2"/>
+  <text fill="#aaa" x="55" y="120">Revealed</text>
+
+  <rect x="110" y="88" width="28" height="22" fill="#1e2a3a" rx="2"/>
+  <text font-size="10" x="116" y="103">🚩</text>
+  <text fill="#aaa" x="108" y="120">Flagged</text>
+
+  <rect x="160" y="88" width="28" height="22" fill="#3a1010" rx="2"/>
+  <text font-size="10" x="166" y="103">💣</text>
+  <text fill="#aaa" x="162" y="120">Mine</text>
+
+  <rect x="210" y="88" width="28" height="22" fill="#ff4444" rx="2"/>
+  <text font-size="10" x="216" y="103">💣</text>
+  <text fill="#aaa" x="205" y="120">Mine Hit</text>
+
+  <!-- Grid/border colors -->
+  <rect x="290" y="88" width="28" height="22" fill="#2a2a40" rx="2"/>
+  <text fill="#aaa" x="288" y="120">Grid bg</text>
+
+  <rect x="340" y="88" width="28" height="22" fill="#0e0e1a" stroke="#2a2a40" stroke-width="1" rx="2"/>
+  <text fill="#aaa" x="340" y="120">Board</text>
+
+  <rect x="390" y="88" width="28" height="22" fill="#ffd700" rx="2"/>
+  <text fill="#aaa" x="388" y="120">Accent</text>
+
+  <rect width="500" height="135" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

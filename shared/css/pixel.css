@@ -1,0 +1,61 @@
+/* ============================================
+   pixel.css — 8-bit pixel border system
+   Stepped corners that mimic pixel art edges.
+   Apply .pixel-border to any element.
+   ============================================ */
+
+/* ---- Pixel border via clip-path ---- */
+.pixel-border {
+  --pb: var(--px-border);
+  position: relative;
+  background: var(--c-bg-raised);
+  clip-path: polygon(
+    0%    var(--pb),
+    var(--pb) var(--pb),
+    var(--pb) 0%,
+    calc(100% - var(--pb)) 0%,
+    calc(100% - var(--pb)) var(--pb),
+    100%  var(--pb),
+    100%  calc(100% - var(--pb)),
+    calc(100% - var(--pb)) calc(100% - var(--pb)),
+    calc(100% - var(--pb)) 100%,
+    var(--pb) 100%,
+    var(--pb) calc(100% - var(--pb)),
+    0%    calc(100% - var(--pb))
+  );
+}
+
+/* Outline version — uses box-shadow to fake a pixel outline */
+.pixel-outline {
+  box-shadow:
+    /* top edge */
+    var(--px-border) 0 0 0 var(--c-border),
+    calc(-1 * var(--px-border)) 0 0 0 var(--c-border),
+    /* bottom edge */
+    0 var(--px-border) 0 0 var(--c-border),
+    0 calc(-1 * var(--px-border)) 0 0 var(--c-border),
+    /* corners */
+    var(--px-border) var(--px-border) 0 0 var(--c-border),
+    calc(-1 * var(--px-border)) var(--px-border) 0 0 var(--c-border),
+    var(--px-border) calc(-1 * var(--px-border)) 0 0 var(--c-border),
+    calc(-1 * var(--px-border)) calc(-1 * var(--px-border)) 0 0 var(--c-border);
+}
+
+/* Highlighted version */
+.pixel-outline-hi {
+  box-shadow:
+    var(--px-border) 0 0 0 var(--c-game),
+    calc(-1 * var(--px-border)) 0 0 0 var(--c-game),
+    0 var(--px-border) 0 0 var(--c-game),
+    0 calc(-1 * var(--px-border)) 0 0 var(--c-game),
+    var(--px-border) var(--px-border) 0 0 var(--c-game),
+    calc(-1 * var(--px-border)) var(--px-border) 0 0 var(--c-game),
+    var(--px-border) calc(-1 * var(--px-border)) 0 0 var(--c-game),
+    calc(-1 * var(--px-border)) calc(-1 * var(--px-border)) 0 0 var(--c-game);
+}
+
+/* Inset pixel border — for game boards, grids */
+.pixel-inset {
+  border: var(--px-border) solid var(--c-border);
+  image-rendering: pixelated;
+}
