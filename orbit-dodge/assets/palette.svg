@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 140" width="600" height="140">
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+  <rect width="600" height="140" fill="#0a0a16" rx="6"/>
+
+  <!-- Player Blue -->
+  <rect x="30" y="25" width="50" height="50" fill="#44aaff" rx="4"/>
+  <text fill="#e0e0e0" font-size="9" x="55" y="95" text-anchor="middle">Player</text>
+  <text fill="#888" font-size="8" x="55" y="110" text-anchor="middle">#44aaff</text>
+
+  <!-- Projectile Red -->
+  <rect x="110" y="25" width="50" height="50" fill="#ff4444" rx="4"/>
+  <text fill="#e0e0e0" font-size="9" x="135" y="95" text-anchor="middle">Projectile</text>
+  <text fill="#888" font-size="8" x="135" y="110" text-anchor="middle">#ff4444</text>
+
+  <!-- Arc Orange -->
+  <rect x="190" y="25" width="50" height="50" fill="#ff8844" rx="4"/>
+  <text fill="#e0e0e0" font-size="9" x="215" y="95" text-anchor="middle">Arc</text>
+  <text fill="#888" font-size="8" x="215" y="110" text-anchor="middle">#ff8844</text>
+
+  <!-- Star Gold -->
+  <rect x="270" y="25" width="50" height="50" fill="#ffd700" rx="4"/>
+  <text fill="#e0e0e0" font-size="9" x="295" y="95" text-anchor="middle">Star</text>
+  <text fill="#888" font-size="8" x="295" y="110" text-anchor="middle">#ffd700</text>
+
+  <!-- Orbit Glow -->
+  <rect x="350" y="25" width="50" height="50" fill="#44aaff" opacity="0.25" rx="4"/>
+  <rect x="350" y="25" width="50" height="50" fill="none" stroke="#44aaff" stroke-width="1" rx="4" opacity="0.5"/>
+  <text fill="#e0e0e0" font-size="9" x="375" y="95" text-anchor="middle">Orbit</text>
+  <text fill="#888" font-size="8" x="375" y="110" text-anchor="middle">rgba glow</text>
+
+  <!-- Background -->
+  <rect x="430" y="25" width="50" height="50" fill="#0a0a16" rx="4" stroke="#2a2a40" stroke-width="1"/>
+  <text fill="#e0e0e0" font-size="9" x="455" y="95" text-anchor="middle">Background</text>
+  <text fill="#888" font-size="8" x="455" y="110" text-anchor="middle">#0a0a16</text>
+
+  <!-- White -->
+  <rect x="510" y="25" width="50" height="50" fill="#ffffff" rx="4"/>
+  <text fill="#e0e0e0" font-size="9" x="535" y="95" text-anchor="middle">Highlight</text>
+  <text fill="#888" font-size="8" x="535" y="110" text-anchor="middle">#ffffff</text>
+
+  <!-- Border -->
+  <rect width="600" height="140" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <style>
+      .bg { fill: #0a0a16; }
+      .title { font-family: monospace; font-size: 48px; font-weight: bold; fill: #44aaff; }
+      .sub { font-family: monospace; font-size: 14px; fill: #666666; }
+    </style>
+  </defs>
+  <!-- Background -->
+  <rect class="bg" width="800" height="200" rx="8"/>
+
+  <!-- Background stars -->
+  <g fill="#ffffff" opacity="0.3">
+    <rect x="50" y="30" width="2" height="2"/><rect x="120" y="80" width="1" height="1"/>
+    <rect x="200" y="15" width="2" height="2"/><rect x="350" y="45" width="1" height="1"/>
+    <rect x="500" y="25" width="2" height="2"/><rect x="620" y="70" width="1" height="1"/>
+    <rect x="700" y="35" width="2" height="2"/><rect x="750" y="120" width="1" height="1"/>
+    <rect x="80" y="150" width="1" height="1"/><rect x="180" y="170" width="2" height="2"/>
+    <rect x="650" y="160" width="2" height="2"/><rect x="550" y="140" width="1" height="1"/>
+  </g>
+
+  <!-- Orbit ring on left -->
+  <g transform="translate(140, 100)">
+    <!-- Orbit ring glow -->
+    <circle cx="0" cy="0" r="65" fill="none" stroke="rgba(68,170,255,0.25)" stroke-width="2"/>
+    <circle cx="0" cy="0" r="65" fill="none" stroke="rgba(68,170,255,0.08)" stroke-width="8"/>
+    <!-- Center dot -->
+    <circle cx="0" cy="0" r="3" fill="#2a2a40"/>
+
+    <!-- Player dot (at top of orbit) -->
+    <circle cx="0" cy="-65" r="6" fill="#44aaff"/>
+    <circle cx="0" cy="-65" r="6" fill="#44aaff" opacity="0.4" filter="url(#none)"/>
+    <circle cx="0" cy="-65" r="2.5" fill="#ffffff"/>
+
+    <!-- Trail dots -->
+    <circle cx="12" cy="-64" r="4.5" fill="#44aaff" opacity="0.35"/>
+    <circle cx="23" cy="-60" r="3.5" fill="#44aaff" opacity="0.25"/>
+    <circle cx="33" cy="-55" r="2.5" fill="#44aaff" opacity="0.15"/>
+
+    <!-- Projectile obstacle (red, coming from bottom-right) -->
+    <circle cx="45" cy="50" r="5" fill="#ff4444"/>
+    <circle cx="45" cy="50" r="2" fill="#ffcccc"/>
+
+    <!-- Another projectile -->
+    <circle cx="-55" cy="-20" r="5" fill="#ff4444"/>
+    <circle cx="-55" cy="-20" r="2" fill="#ffcccc"/>
+
+    <!-- Arc obstacle on orbit -->
+    <path d="M -56,-35 A 65,65 0 0,1 -35,-56" fill="none" stroke="#ff8844" stroke-width="8" stroke-linecap="round"/>
+    <path d="M -56,-35 A 65,65 0 0,1 -35,-56" fill="none" stroke="rgba(255,200,100,0.6)" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Gold star on orbit -->
+    <polygon points="50,40 52,44 56,44 53,47 54,51 50,48 46,51 47,47 44,44 48,44" fill="#ffd700"/>
+  </g>
+
+  <!-- Pixel icon (orbit-dodge from icons.js) -->
+  <g transform="translate(260, 30)" shape-rendering="crispEdges">
+    <!-- Row 1: .....####....... -->
+    <rect x="7.5" y="1.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="9" y="1.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="10.5" y="1.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="12" y="1.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <!-- Row 2: ...##....##..... -->
+    <rect x="4.5" y="3" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="6" y="3" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="13.5" y="3" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="15" y="3" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <!-- Row 3-4: ..#........#.... -->
+    <rect x="3" y="4.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="16.5" y="4.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="3" y="6" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="16.5" y="6" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <!-- Row 5-8: .#...yyyy...#... (center block) -->
+    <rect x="1.5" y="7.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="7.5" y="7.5" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="9" y="7.5" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="10.5" y="7.5" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="12" y="7.5" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="18" y="7.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <!-- Row 6 -->
+    <rect x="1.5" y="9" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="7.5" y="9" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="9" y="9" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="10.5" y="9" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="12" y="9" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="18" y="9" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <!-- Row 7 -->
+    <rect x="1.5" y="10.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="7.5" y="10.5" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="9" y="10.5" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="10.5" y="10.5" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="12" y="10.5" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="18" y="10.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <!-- Row 8: .#.r.yyyy...#... -->
+    <rect x="1.5" y="12" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="4.5" y="12" width="1.5" height="1.5" fill="#ff4444"/>
+    <rect x="7.5" y="12" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="9" y="12" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="10.5" y="12" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="12" y="12" width="1.5" height="1.5" fill="#ffd700"/>
+    <rect x="18" y="12" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <!-- Row 9-10 -->
+    <rect x="3" y="13.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="16.5" y="13.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="3" y="15" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="16.5" y="15" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <!-- Row 11 -->
+    <rect x="4.5" y="16.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="6" y="16.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="13.5" y="16.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="15" y="16.5" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <!-- Row 12 -->
+    <rect x="7.5" y="18" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="9" y="18" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="10.5" y="18" width="1.5" height="1.5" fill="#e0e0e0"/>
+    <rect x="12" y="18" width="1.5" height="1.5" fill="#e0e0e0"/>
+  </g>
+
+  <!-- Title -->
+  <text class="title" x="320" y="95">ORBIT DODGE</text>
+  <text class="sub" x="320" y="125">Orbit · Reverse · Survive</text>
+
+  <!-- Score HUD mock -->
+  <g transform="translate(320, 145)">
+    <rect width="240" height="30" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="2"/>
+    <text font-family="monospace" font-size="9" fill="#666" x="10" y="19">SCORE</text>
+    <text font-family="monospace" font-size="9" fill="#ffd700" x="55" y="19">1250</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="120" y="19">BEST</text>
+    <text font-family="monospace" font-size="9" fill="#ffd700" x="160" y="19">3400</text>
+  </g>
+
+  <!-- Border -->
+  <rect width="800" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+</svg>
