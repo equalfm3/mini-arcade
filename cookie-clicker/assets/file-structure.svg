@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 260" width="620" height="260">
+  <rect width="620" height="260" fill="#0a0a16" rx="6"/>
+  <defs><style>text{font-family:monospace;font-size:11px;}</style></defs>
+
+  <!-- File tree -->
+  <text fill="#f4a460" x="20" y="30" font-weight="bold">cookie-clicker/</text>
+
+  <text fill="#888" x="30" y="52">├──</text><text fill="#44aaff" x="65" y="52">index.html</text>
+  <text fill="#666" x="220" y="52">Entry point — GAME config + arcade.js loader</text>
+
+  <text fill="#888" x="30" y="72">├──</text><text fill="#44aaff" x="65" y="72">style.css</text>
+  <text fill="#666" x="220" y="72">Cookie button, shop layout, floating text</text>
+
+  <text fill="#888" x="30" y="92">├──</text><text fill="#44aaff" x="65" y="92">game.js</text>
+  <text fill="#666" x="220" y="92">Orchestrator — click handler, game loop, save/load</text>
+
+  <text fill="#888" x="30" y="116">├──</text><text fill="#f4a460" x="65" y="116">src/</text>
+
+  <text fill="#888" x="50" y="136">│  ├──</text><text fill="#44aaff" x="105" y="136">config.js</text>
+  <text fill="#666" x="220" y="136">Upgrade tiers, costs, CPS values, colors</text>
+
+  <text fill="#888" x="50" y="156">│  ├──</text><text fill="#44aaff" x="105" y="156">economy.js</text>
+  <text fill="#666" x="220" y="156">Cookie count, CPS, click value, save/load</text>
+
+  <text fill="#888" x="50" y="176">│  ├──</text><text fill="#44aaff" x="105" y="176">upgrades.js</text>
+  <text fill="#666" x="220" y="176">Auto-clicker tiers, click multipliers, costs</text>
+
+  <text fill="#888" x="50" y="196">│  └──</text><text fill="#44aaff" x="105" y="196">renderer.js</text>
+  <text fill="#666" x="220" y="196">DOM builder — cookie button, shop, floaters</text>
+
+  <text fill="#888" x="30" y="220">├──</text><text fill="#f4a460" x="65" y="220">assets/</text>
+  <text fill="#666" x="220" y="220">SVG images for README</text>
+
+  <text fill="#888" x="30" y="240">└──</text><text fill="#44aaff" x="65" y="240">README.md</text>
+  <text fill="#666" x="220" y="240">Full documentation with embedded SVGs</text>
+
+  <rect width="620" height="260" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

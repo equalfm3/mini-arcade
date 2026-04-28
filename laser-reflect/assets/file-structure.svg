@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 220" width="680" height="220">
+  <rect width="680" height="220" fill="#0a0a16" rx="8"/>
+  <rect x="2" y="2" width="676" height="216" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+
+  <text x="20" y="30" fill="#ff4444" font-family="monospace" font-weight="bold" font-size="13">laser-reflect/</text>
+
+  <text x="30" y="55" fill="#888" font-family="monospace" font-size="11">index.html</text>
+  <text x="250" y="55" fill="#555" font-family="monospace" font-size="10">Entry point — GAME config + arcade.js loader</text>
+
+  <text x="30" y="75" fill="#888" font-family="monospace" font-size="11">style.css</text>
+  <text x="250" y="75" fill="#555" font-family="monospace" font-size="10">Accent color (#ff4444)</text>
+
+  <text x="30" y="95" fill="#888" font-family="monospace" font-size="11">game.js</text>
+  <text x="250" y="95" fill="#555" font-family="monospace" font-size="10">Orchestrator — click handling, level progression</text>
+
+  <text x="30" y="120" fill="#ff4444" font-family="monospace" font-size="11">src/</text>
+
+  <text x="50" y="140" fill="#888" font-family="monospace" font-size="11">config.js</text>
+  <text x="250" y="140" fill="#555" font-family="monospace" font-size="10">Grid size, colors, laser settings</text>
+
+  <text x="50" y="160" fill="#888" font-family="monospace" font-size="11">levels.js</text>
+  <text x="250" y="160" fill="#555" font-family="monospace" font-size="10">10 puzzle levels with emitter, target, walls</text>
+
+  <text x="50" y="180" fill="#888" font-family="monospace" font-size="11">laser.js</text>
+  <text x="250" y="180" fill="#555" font-family="monospace" font-size="10">Laser path tracing + mirror reflection</text>
+
+  <text x="50" y="200" fill="#888" font-family="monospace" font-size="11">mirrors.js</text>
+  <text x="250" y="200" fill="#555" font-family="monospace" font-size="10">Mirror placement, rotation, board state</text>
+</svg>

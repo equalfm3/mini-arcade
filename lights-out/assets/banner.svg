@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <rect width="800" height="200" fill="#0a0a16" rx="8"/>
+  <rect x="2" y="2" width="796" height="196" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+
+  <!-- Mini grid preview -->
+  <g transform="translate(80,50)">
+    <!-- 5x5 grid of lights -->
+    <rect x="0" y="0" width="24" height="24" fill="#ffd700" rx="3"/>
+    <rect x="28" y="0" width="24" height="24" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <rect x="56" y="0" width="24" height="24" fill="#ffd700" rx="3"/>
+    <rect x="84" y="0" width="24" height="24" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <rect x="112" y="0" width="24" height="24" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="3"/>
+
+    <rect x="0" y="28" width="24" height="24" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <rect x="28" y="28" width="24" height="24" fill="#ffd700" rx="3"/>
+    <rect x="56" y="28" width="24" height="24" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <rect x="84" y="28" width="24" height="24" fill="#ffd700" rx="3"/>
+    <rect x="112" y="28" width="24" height="24" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="3"/>
+
+    <rect x="0" y="56" width="24" height="24" fill="#ffd700" rx="3"/>
+    <rect x="28" y="56" width="24" height="24" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <rect x="56" y="56" width="24" height="24" fill="#ffd700" rx="3"/>
+    <rect x="84" y="56" width="24" height="24" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <rect x="112" y="56" width="24" height="24" fill="#ffd700" rx="3"/>
+
+    <rect x="0" y="84" width="24" height="24" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <rect x="28" y="84" width="24" height="24" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <rect x="56" y="84" width="24" height="24" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <rect x="84" y="84" width="24" height="24" fill="#ffd700" rx="3"/>
+    <rect x="112" y="84" width="24" height="24" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="3"/>
+  </g>
+
+  <!-- Title -->
+  <text x="460" y="75" fill="#ffd700" font-family="monospace" font-weight="bold" font-size="42" text-anchor="middle">LIGHTS OUT</text>
+  <text x="460" y="105" fill="#888" font-family="monospace" font-size="14" text-anchor="middle">Toggle lights to turn them all off</text>
+
+  <!-- HUD -->
+  <g transform="translate(460,140)">
+    <rect x="-120" y="-12" width="80" height="30" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+    <text x="-80" y="-1" fill="#888" font-family="monospace" font-size="8" text-anchor="middle">MOVES</text>
+    <text x="-80" y="12" fill="#ffd700" font-family="monospace" font-weight="bold" font-size="12" text-anchor="middle">12</text>
+    <rect x="40" y="-12" width="80" height="30" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+    <text x="80" y="-1" fill="#888" font-family="monospace" font-size="8" text-anchor="middle">LEVEL</text>
+    <text x="80" y="12" fill="#ffd700" font-family="monospace" font-weight="bold" font-size="12" text-anchor="middle">4</text>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320">
+  <rect width="320" height="320" fill="#12121f" rx="8"/>
+  <rect x="2" y="2" width="316" height="316" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+
+  <!-- 5x5 grid -->
+  <g transform="translate(4,4)">
+    <!-- Row 0 -->
+    <rect x="4" y="4" width="58" height="58" fill="#ffd700" rx="6"/>
+    <rect x="66" y="4" width="58" height="58" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="6"/>
+    <rect x="128" y="4" width="58" height="58" fill="#ffd700" rx="6"/>
+    <rect x="190" y="4" width="58" height="58" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="6"/>
+    <rect x="252" y="4" width="58" height="58" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="6"/>
+
+    <!-- Row 1 -->
+    <rect x="4" y="66" width="58" height="58" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="6"/>
+    <rect x="66" y="66" width="58" height="58" fill="#ffd700" rx="6"/>
+    <rect x="128" y="66" width="58" height="58" fill="#ffd700" rx="6"/>
+    <rect x="190" y="66" width="58" height="58" fill="#ffd700" rx="6"/>
+    <rect x="252" y="66" width="58" height="58" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="6"/>
+
+    <!-- Row 2 -->
+    <rect x="4" y="128" width="58" height="58" fill="#ffd700" rx="6"/>
+    <rect x="66" y="128" width="58" height="58" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="6"/>
+    <rect x="128" y="128" width="58" height="58" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="6"/>
+    <rect x="190" y="128" width="58" height="58" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="6"/>
+    <rect x="252" y="128" width="58" height="58" fill="#ffd700" rx="6"/>
+
+    <!-- Row 3 -->
+    <rect x="4" y="190" width="58" height="58" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="6"/>
+    <rect x="66" y="190" width="58" height="58" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="6"/>
+    <rect x="128" y="190" width="58" height="58" fill="#ffd700" rx="6"/>
+    <rect x="190" y="190" width="58" height="58" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="6"/>
+    <rect x="252" y="190" width="58" height="58" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="6"/>
+
+    <!-- Row 4 -->
+    <rect x="4" y="252" width="58" height="58" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="6"/>
+    <rect x="66" y="252" width="58" height="58" fill="#ffd700" rx="6"/>
+    <rect x="128" y="252" width="58" height="58" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="6"/>
+    <rect x="190" y="252" width="58" height="58" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="6"/>
+    <rect x="252" y="252" width="58" height="58" fill="#ffd700" rx="6"/>
+  </g>
+
+  <!-- Click indicator -->
+  <circle cx="157" cy="157" r="8" fill="none" stroke="#ffffff44" stroke-width="2" stroke-dasharray="3,3"/>
+</svg>

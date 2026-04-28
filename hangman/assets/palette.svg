@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" width="600" height="160">
+  <rect width="600" height="160" fill="#0a0a16" rx="6"/>
+
+  <!-- Row 1 -->
+  <g transform="translate(20, 20)">
+    <!-- Accent / Category -->
+    <rect width="80" height="40" fill="#c084fc" rx="4"/>
+    <text font-family="monospace" font-size="8" fill="#0a0a16" x="40" y="25" text-anchor="middle">#c084fc</text>
+    <text font-family="monospace" font-size="9" fill="#888" x="40" y="58" text-anchor="middle">Accent</text>
+
+    <!-- Correct -->
+    <rect x="100" width="80" height="40" fill="#44ff66" rx="4"/>
+    <text font-family="monospace" font-size="8" fill="#0a0a16" x="140" y="25" text-anchor="middle">#44ff66</text>
+    <text font-family="monospace" font-size="9" fill="#888" x="140" y="58" text-anchor="middle">Correct</text>
+
+    <!-- Wrong -->
+    <rect x="200" width="80" height="40" fill="#ff4444" rx="4"/>
+    <text font-family="monospace" font-size="8" fill="#0a0a16" x="240" y="25" text-anchor="middle">#ff4444</text>
+    <text font-family="monospace" font-size="9" fill="#888" x="240" y="58" text-anchor="middle">Wrong</text>
+
+    <!-- Gallows -->
+    <rect x="300" width="80" height="40" fill="#888888" rx="4"/>
+    <text font-family="monospace" font-size="8" fill="#0a0a16" x="340" y="25" text-anchor="middle">#888888</text>
+    <text font-family="monospace" font-size="9" fill="#888" x="340" y="58" text-anchor="middle">Gallows</text>
+
+    <!-- Body -->
+    <rect x="400" width="80" height="40" fill="#e0e0e0" rx="4"/>
+    <text font-family="monospace" font-size="8" fill="#0a0a16" x="440" y="25" text-anchor="middle">#e0e0e0</text>
+    <text font-family="monospace" font-size="9" fill="#888" x="440" y="58" text-anchor="middle">Body</text>
+
+    <!-- Background -->
+    <rect x="500" width="80" height="40" fill="#0a0a16" stroke="#2a2a40" stroke-width="1" rx="4"/>
+    <text font-family="monospace" font-size="8" fill="#888" x="540" y="25" text-anchor="middle">#0a0a16</text>
+    <text font-family="monospace" font-size="9" fill="#888" x="540" y="58" text-anchor="middle">Background</text>
+  </g>
+
+  <!-- Row 2 -->
+  <g transform="translate(20, 90)">
+    <!-- Key BG -->
+    <rect width="80" height="40" fill="#1e1e30" stroke="#2a2a40" stroke-width="1" rx="4"/>
+    <text font-family="monospace" font-size="8" fill="#888" x="40" y="25" text-anchor="middle">#1e1e30</text>
+    <text font-family="monospace" font-size="9" fill="#888" x="40" y="58" text-anchor="middle">Key BG</text>
+
+    <!-- Key Used Correct -->
+    <rect x="100" width="80" height="40" fill="#2a6e2a" rx="4"/>
+    <text font-family="monospace" font-size="8" fill="#ccc" x="140" y="25" text-anchor="middle">#2a6e2a</text>
+    <text font-family="monospace" font-size="9" fill="#888" x="140" y="58" text-anchor="middle">Key ✓</text>
+
+    <!-- Key Used Wrong -->
+    <rect x="200" width="80" height="40" fill="#6e2a2a" rx="4"/>
+    <text font-family="monospace" font-size="8" fill="#ccc" x="240" y="25" text-anchor="middle">#6e2a2a</text>
+    <text font-family="monospace" font-size="9" fill="#888" x="240" y="58" text-anchor="middle">Key ✗</text>
+
+    <!-- Blank line -->
+    <rect x="300" width="80" height="40" fill="#444466" rx="4"/>
+    <text font-family="monospace" font-size="8" fill="#ccc" x="340" y="25" text-anchor="middle">#444466</text>
+    <text font-family="monospace" font-size="9" fill="#888" x="340" y="58" text-anchor="middle">Blank</text>
+
+    <!-- Key Border -->
+    <rect x="400" width="80" height="40" fill="#2a2a40" rx="4"/>
+    <text font-family="monospace" font-size="8" fill="#ccc" x="440" y="25" text-anchor="middle">#2a2a40</text>
+    <text font-family="monospace" font-size="9" fill="#888" x="440" y="58" text-anchor="middle">Border</text>
+
+    <!-- Letter text -->
+    <rect x="500" width="80" height="40" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="4"/>
+    <text font-family="monospace" font-size="14" fill="#ffffff" font-weight="bold" x="540" y="28" text-anchor="middle">A</text>
+    <text font-family="monospace" font-size="9" fill="#888" x="540" y="58" text-anchor="middle">Letter</text>
+  </g>
+
+  <!-- Border -->
+  <rect width="600" height="160" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

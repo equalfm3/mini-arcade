@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <style>
+      .bg { fill: #0e0e1a; }
+      .title { font-family: monospace; font-size: 44px; font-weight: bold; fill: #f4a460; }
+      .sub { font-family: monospace; font-size: 14px; fill: #666666; }
+      .grid { stroke: #161625; stroke-width: 0.5; }
+    </style>
+  </defs>
+  <!-- Background -->
+  <rect class="bg" width="800" height="200" rx="8"/>
+  <!-- Subtle grid -->
+  <g class="grid" fill="none">
+    <line x1="0" y1="20" x2="800" y2="20"/><line x1="0" y1="40" x2="800" y2="40"/>
+    <line x1="0" y1="60" x2="800" y2="60"/><line x1="0" y1="80" x2="800" y2="80"/>
+    <line x1="0" y1="100" x2="800" y2="100"/><line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="140" x2="800" y2="140"/><line x1="0" y1="160" x2="800" y2="160"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+  </g>
+
+  <!-- Big pixel cookie on the left -->
+  <g transform="translate(40, 20)" shape-rendering="crispEdges">
+    <!-- Cookie circle (16x16 scaled to 10px per pixel = 160px) -->
+    <rect x="40" y="0" width="10" height="10" fill="#c87533"/>
+    <rect x="50" y="0" width="10" height="10" fill="#c87533"/>
+    <rect x="60" y="0" width="10" height="10" fill="#c87533"/>
+    <rect x="70" y="0" width="10" height="10" fill="#c87533"/>
+    <rect x="80" y="0" width="10" height="10" fill="#c87533"/>
+    <rect x="90" y="0" width="10" height="10" fill="#c87533"/>
+
+    <rect x="20" y="10" width="10" height="10" fill="#c87533"/>
+    <rect x="30" y="10" width="10" height="10" fill="#c87533"/>
+    <rect x="40" y="10" width="10" height="10" fill="#e8a050"/>
+    <rect x="50" y="10" width="10" height="10" fill="#e8a050"/>
+    <rect x="60" y="10" width="10" height="10" fill="#e8a050"/>
+    <rect x="70" y="10" width="10" height="10" fill="#e8a050"/>
+    <rect x="80" y="10" width="10" height="10" fill="#e8a050"/>
+    <rect x="90" y="10" width="10" height="10" fill="#e8a050"/>
+    <rect x="100" y="10" width="10" height="10" fill="#c87533"/>
+    <rect x="110" y="10" width="10" height="10" fill="#c87533"/>
+
+    <rect x="20" y="20" width="10" height="10" fill="#c87533"/>
+    <rect x="30" y="20" width="10" height="10" fill="#e8a050"/>
+    <rect x="40" y="20" width="10" height="10" fill="#e8a050"/>
+    <rect x="50" y="20" width="10" height="10" fill="#8b5a2b"/>
+    <rect x="60" y="20" width="10" height="10" fill="#8b5a2b"/>
+    <rect x="70" y="20" width="10" height="10" fill="#e8a050"/>
+    <rect x="80" y="20" width="10" height="10" fill="#e8a050"/>
+    <rect x="90" y="20" width="10" height="10" fill="#e8a050"/>
+    <rect x="100" y="20" width="10" height="10" fill="#e8a050"/>
+    <rect x="110" y="20" width="10" height="10" fill="#c87533"/>
+
+    <rect x="10" y="30" width="10" height="10" fill="#c87533"/>
+    <rect x="20" y="30" width="10" height="10" fill="#e8a050"/>
+    <rect x="30" y="30" width="10" height="10" fill="#e8a050"/>
+    <rect x="40" y="30" width="10" height="10" fill="#e8a050"/>
+    <rect x="50" y="30" width="10" height="10" fill="#e8a050"/>
+    <rect x="60" y="30" width="10" height="10" fill="#e8a050"/>
+    <rect x="70" y="30" width="10" height="10" fill="#8b5a2b"/>
+    <rect x="80" y="30" width="10" height="10" fill="#e8a050"/>
+    <rect x="90" y="30" width="10" height="10" fill="#e8a050"/>
+    <rect x="100" y="30" width="10" height="10" fill="#e8a050"/>
+    <rect x="110" y="30" width="10" height="10" fill="#e8a050"/>
+    <rect x="120" y="30" width="10" height="10" fill="#c87533"/>
+
+    <rect x="10" y="40" width="10" height="10" fill="#c87533"/>
+    <rect x="20" y="40" width="10" height="10" fill="#e8a050"/>
+    <rect x="30" y="40" width="10" height="10" fill="#8b5a2b"/>
+    <rect x="40" y="40" width="10" height="10" fill="#e8a050"/>
+    <rect x="50" y="40" width="10" height="10" fill="#e8a050"/>
+    <rect x="60" y="40" width="10" height="10" fill="#e8a050"/>
+    <rect x="70" y="40" width="10" height="10" fill="#e8a050"/>
+    <rect x="80" y="40" width="10" height="10" fill="#e8a050"/>
+    <rect x="90" y="40" width="10" height="10" fill="#e8a050"/>
+    <rect x="100" y="40" width="10" height="10" fill="#e8a050"/>
+    <rect x="110" y="40" width="10" height="10" fill="#e8a050"/>
+    <rect x="120" y="40" width="10" height="10" fill="#c87533"/>
+
+    <rect x="10" y="50" width="10" height="10" fill="#c87533"/>
+    <rect x="20" y="50" width="10" height="10" fill="#e8a050"/>
+    <rect x="30" y="50" width="10" height="10" fill="#e8a050"/>
+    <rect x="40" y="50" width="10" height="10" fill="#e8a050"/>
+    <rect x="50" y="50" width="10" height="10" fill="#e8a050"/>
+    <rect x="60" y="50" width="10" height="10" fill="#8b5a2b"/>
+    <rect x="70" y="50" width="10" height="10" fill="#e8a050"/>
+    <rect x="80" y="50" width="10" height="10" fill="#e8a050"/>
+    <rect x="90" y="50" width="10" height="10" fill="#8b5a2b"/>
+    <rect x="100" y="50" width="10" height="10" fill="#e8a050"/>
+    <rect x="110" y="50" width="10" height="10" fill="#e8a050"/>
+    <rect x="120" y="50" width="10" height="10" fill="#c87533"/>
+
+    <rect x="10" y="60" width="10" height="10" fill="#c87533"/>
+    <rect x="20" y="60" width="10" height="10" fill="#e8a050"/>
+    <rect x="30" y="60" width="10" height="10" fill="#e8a050"/>
+    <rect x="40" y="60" width="10" height="10" fill="#e8a050"/>
+    <rect x="50" y="60" width="10" height="10" fill="#e8a050"/>
+    <rect x="60" y="60" width="10" height="10" fill="#e8a050"/>
+    <rect x="70" y="60" width="10" height="10" fill="#e8a050"/>
+    <rect x="80" y="60" width="10" height="10" fill="#e8a050"/>
+    <rect x="90" y="60" width="10" height="10" fill="#e8a050"/>
+    <rect x="100" y="60" width="10" height="10" fill="#e8a050"/>
+    <rect x="110" y="60" width="10" height="10" fill="#e8a050"/>
+    <rect x="120" y="60" width="10" height="10" fill="#c87533"/>
+
+    <rect x="10" y="70" width="10" height="10" fill="#c87533"/>
+    <rect x="20" y="70" width="10" height="10" fill="#e8a050"/>
+    <rect x="30" y="70" width="10" height="10" fill="#e8a050"/>
+    <rect x="40" y="70" width="10" height="10" fill="#8b5a2b"/>
+    <rect x="50" y="70" width="10" height="10" fill="#e8a050"/>
+    <rect x="60" y="70" width="10" height="10" fill="#e8a050"/>
+    <rect x="70" y="70" width="10" height="10" fill="#e8a050"/>
+    <rect x="80" y="70" width="10" height="10" fill="#e8a050"/>
+    <rect x="90" y="70" width="10" height="10" fill="#e8a050"/>
+    <rect x="100" y="70" width="10" height="10" fill="#e8a050"/>
+    <rect x="110" y="70" width="10" height="10" fill="#e8a050"/>
+    <rect x="120" y="70" width="10" height="10" fill="#c87533"/>
+
+    <rect x="20" y="80" width="10" height="10" fill="#c87533"/>
+    <rect x="30" y="80" width="10" height="10" fill="#e8a050"/>
+    <rect x="40" y="80" width="10" height="10" fill="#e8a050"/>
+    <rect x="50" y="80" width="10" height="10" fill="#e8a050"/>
+    <rect x="60" y="80" width="10" height="10" fill="#e8a050"/>
+    <rect x="70" y="80" width="10" height="10" fill="#8b5a2b"/>
+    <rect x="80" y="80" width="10" height="10" fill="#e8a050"/>
+    <rect x="90" y="80" width="10" height="10" fill="#e8a050"/>
+    <rect x="100" y="80" width="10" height="10" fill="#e8a050"/>
+    <rect x="110" y="80" width="10" height="10" fill="#c87533"/>
+
+    <rect x="20" y="90" width="10" height="10" fill="#c87533"/>
+    <rect x="30" y="90" width="10" height="10" fill="#c87533"/>
+    <rect x="40" y="90" width="10" height="10" fill="#e8a050"/>
+    <rect x="50" y="90" width="10" height="10" fill="#e8a050"/>
+    <rect x="60" y="90" width="10" height="10" fill="#e8a050"/>
+    <rect x="70" y="90" width="10" height="10" fill="#e8a050"/>
+    <rect x="80" y="90" width="10" height="10" fill="#e8a050"/>
+    <rect x="90" y="90" width="10" height="10" fill="#e8a050"/>
+    <rect x="100" y="90" width="10" height="10" fill="#c87533"/>
+    <rect x="110" y="90" width="10" height="10" fill="#c87533"/>
+
+    <rect x="40" y="100" width="10" height="10" fill="#c87533"/>
+    <rect x="50" y="100" width="10" height="10" fill="#c87533"/>
+    <rect x="60" y="100" width="10" height="10" fill="#c87533"/>
+    <rect x="70" y="100" width="10" height="10" fill="#c87533"/>
+    <rect x="80" y="100" width="10" height="10" fill="#c87533"/>
+    <rect x="90" y="100" width="10" height="10" fill="#c87533"/>
+  </g>
+
+  <!-- Floating +1 particles -->
+  <text font-family="monospace" font-size="16" fill="#ffd700" opacity="0.8" x="100" y="25">+1</text>
+  <text font-family="monospace" font-size="14" fill="#ffd700" opacity="0.5" x="170" y="40">+1</text>
+  <text font-family="monospace" font-size="12" fill="#ffd700" opacity="0.3" x="130" y="15">+1</text>
+
+  <!-- Pixel icon -->
+  <g transform="translate(280, 30)" shape-rendering="crispEdges">
+    <rect x="6" y="0" width="1.5" height="1.5" fill="#c87533"/>
+    <rect x="7.5" y="0" width="1.5" height="1.5" fill="#c87533"/>
+    <rect x="9" y="0" width="1.5" height="1.5" fill="#c87533"/>
+    <rect x="10.5" y="0" width="1.5" height="1.5" fill="#c87533"/>
+    <rect x="3" y="1.5" width="1.5" height="1.5" fill="#c87533"/>
+    <rect x="4.5" y="1.5" width="1.5" height="1.5" fill="#e8a050"/>
+    <rect x="6" y="1.5" width="1.5" height="1.5" fill="#e8a050"/>
+    <rect x="7.5" y="1.5" width="1.5" height="1.5" fill="#8b5a2b"/>
+    <rect x="9" y="1.5" width="1.5" height="1.5" fill="#e8a050"/>
+    <rect x="10.5" y="1.5" width="1.5" height="1.5" fill="#e8a050"/>
+    <rect x="12" y="1.5" width="1.5" height="1.5" fill="#c87533"/>
+    <rect x="3" y="3" width="1.5" height="1.5" fill="#e8a050"/>
+    <rect x="4.5" y="3" width="1.5" height="1.5" fill="#e8a050"/>
+    <rect x="6" y="3" width="1.5" height="1.5" fill="#e8a050"/>
+    <rect x="7.5" y="3" width="1.5" height="1.5" fill="#e8a050"/>
+    <rect x="9" y="3" width="1.5" height="1.5" fill="#e8a050"/>
+    <rect x="10.5" y="3" width="1.5" height="1.5" fill="#8b5a2b"/>
+    <rect x="12" y="3" width="1.5" height="1.5" fill="#c87533"/>
+    <rect x="4.5" y="7.5" width="1.5" height="1.5" fill="#c87533"/>
+    <rect x="6" y="7.5" width="1.5" height="1.5" fill="#c87533"/>
+    <rect x="7.5" y="7.5" width="1.5" height="1.5" fill="#c87533"/>
+    <rect x="9" y="7.5" width="1.5" height="1.5" fill="#c87533"/>
+  </g>
+
+  <!-- Title -->
+  <text class="title" x="320" y="90">COOKIE CLICKER</text>
+  <text class="sub" x="320" y="118">Click · Buy · Grow</text>
+
+  <!-- HUD mock -->
+  <g transform="translate(320, 138)">
+    <rect width="300" height="30" fill="#12121f" stroke="#2a2a40" stroke-width="2" rx="2"/>
+    <text font-family="monospace" font-size="9" fill="#666" x="10" y="19">COOKIES</text>
+    <text font-family="monospace" font-size="9" fill="#ffd700" x="65" y="19">1.2M</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="120" y="19">CPS</text>
+    <text font-family="monospace" font-size="9" fill="#ffd700" x="150" y="19">8,547</text>
+    <text font-family="monospace" font-size="9" fill="#666" x="210" y="19">CLICK</text>
+    <text font-family="monospace" font-size="9" fill="#ffd700" x="250" y="19">×10</text>
+  </g>
+
+  <!-- Upgrade shop preview on right -->
+  <g transform="translate(660, 30)">
+    <rect width="120" height="140" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <text font-family="monospace" font-size="8" fill="#f0e0c0" x="10" y="14">Upgrades</text>
+    <!-- Items -->
+    <rect x="4" y="20" width="112" height="18" fill="#1a1a30" stroke="#f4a460" stroke-width="0.5" rx="2"/>
+    <text font-family="monospace" font-size="7" fill="#f0e0c0" x="8" y="32">👆 Cursor     ×24</text>
+    <rect x="4" y="42" width="112" height="18" fill="#1a1a30" stroke="#f4a460" stroke-width="0.5" rx="2"/>
+    <text font-family="monospace" font-size="7" fill="#f0e0c0" x="8" y="54">👵 Grandma    ×12</text>
+    <rect x="4" y="64" width="112" height="18" fill="#1a1a30" stroke="#f4a460" stroke-width="0.5" rx="2"/>
+    <text font-family="monospace" font-size="7" fill="#f0e0c0" x="8" y="76">🌾 Farm        ×8</text>
+    <rect x="4" y="86" width="112" height="18" fill="#0e0e18" stroke="#2a2a40" stroke-width="0.5" rx="2" opacity="0.5"/>
+    <text font-family="monospace" font-size="7" fill="#666" x="8" y="98">⛏️ Mine        ×3</text>
+    <rect x="4" y="108" width="112" height="18" fill="#0e0e18" stroke="#2a2a40" stroke-width="0.5" rx="2" opacity="0.3"/>
+    <text font-family="monospace" font-size="7" fill="#444" x="8" y="120">🏭 Factory     ×0</text>
+  </g>
+
+  <!-- Border -->
+  <rect width="800" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+</svg>

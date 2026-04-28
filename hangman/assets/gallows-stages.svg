@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 200" width="700" height="200">
+  <rect width="700" height="200" fill="#0a0a16" rx="6"/>
+
+  <!-- Stage 0: Empty gallows -->
+  <g transform="translate(10, 10) scale(0.55)">
+    <rect width="80" height="20" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="2" x="0" y="0"/>
+    <text font-family="monospace" font-size="11" fill="#888" x="40" y="14" text-anchor="middle">Stage 0</text>
+    <line x1="10" y1="170" x2="70" y2="170" stroke="#888888" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="170" x2="25" y2="40" stroke="#888888" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="40" x2="60" y2="40" stroke="#888888" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="60" x2="40" y2="40" stroke="#888888" stroke-width="2" stroke-linecap="round"/>
+    <line x1="60" y1="40" x2="60" y2="55" stroke="#888888" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Stage 1: Head -->
+  <g transform="translate(110, 10) scale(0.55)">
+    <rect width="80" height="20" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="2" x="0" y="0"/>
+    <text font-family="monospace" font-size="11" fill="#888" x="40" y="14" text-anchor="middle">Stage 1</text>
+    <line x1="10" y1="170" x2="70" y2="170" stroke="#888888" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="170" x2="25" y2="40" stroke="#888888" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="40" x2="60" y2="40" stroke="#888888" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="60" x2="40" y2="40" stroke="#888888" stroke-width="2" stroke-linecap="round"/>
+    <line x1="60" y1="40" x2="60" y2="55" stroke="#888888" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="60" cy="70" r="15" fill="none" stroke="#e0e0e0" stroke-width="2.5"/>
+  </g>
+
+  <!-- Stage 2: Body -->
+  <g transform="translate(210, 10) scale(0.55)">
+    <rect width="80" height="20" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="2" x="0" y="0"/>
+    <text font-family="monospace" font-size="11" fill="#888" x="40" y="14" text-anchor="middle">Stage 2</text>
+    <line x1="10" y1="170" x2="70" y2="170" stroke="#888888" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="170" x2="25" y2="40" stroke="#888888" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="40" x2="60" y2="40" stroke="#888888" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="60" x2="40" y2="40" stroke="#888888" stroke-width="2" stroke-linecap="round"/>
+    <line x1="60" y1="40" x2="60" y2="55" stroke="#888888" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="60" cy="70" r="15" fill="none" stroke="#e0e0e0" stroke-width="2.5"/>
+    <line x1="60" y1="85" x2="60" y2="125" stroke="#e0e0e0" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Stage 3: Left arm -->
+  <g transform="translate(310, 10) scale(0.55)">
+    <rect width="80" height="20" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="2" x="0" y="0"/>
+    <text font-family="monospace" font-size="11" fill="#888" x="40" y="14" text-anchor="middle">Stage 3</text>
+    <line x1="10" y1="170" x2="70" y2="170" stroke="#888888" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="170" x2="25" y2="40" stroke="#888888" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="40" x2="60" y2="40" stroke="#888888" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="60" x2="40" y2="40" stroke="#888888" stroke-width="2" stroke-linecap="round"/>
+    <line x1="60" y1="40" x2="60" y2="55" stroke="#888888" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="60" cy="70" r="15" fill="none" stroke="#e0e0e0" stroke-width="2.5"/>
+    <line x1="60" y1="85" x2="60" y2="125" stroke="#e0e0e0" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="60" y1="95" x2="42" y2="115" stroke="#e0e0e0" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Stage 4: Right arm -->
+  <g transform="translate(410, 10) scale(0.55)">
+    <rect width="80" height="20" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="2" x="0" y="0"/>
+    <text font-family="monospace" font-size="11" fill="#888" x="40" y="14" text-anchor="middle">Stage 4</text>
+    <line x1="10" y1="170" x2="70" y2="170" stroke="#888888" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="170" x2="25" y2="40" stroke="#888888" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="40" x2="60" y2="40" stroke="#888888" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="60" x2="40" y2="40" stroke="#888888" stroke-width="2" stroke-linecap="round"/>
+    <line x1="60" y1="40" x2="60" y2="55" stroke="#888888" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="60" cy="70" r="15" fill="none" stroke="#e0e0e0" stroke-width="2.5"/>
+    <line x1="60" y1="85" x2="60" y2="125" stroke="#e0e0e0" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="60" y1="95" x2="42" y2="115" stroke="#e0e0e0" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="60" y1="95" x2="78" y2="115" stroke="#e0e0e0" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Stage 5: Left leg -->
+  <g transform="translate(510, 10) scale(0.55)">
+    <rect width="80" height="20" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="2" x="0" y="0"/>
+    <text font-family="monospace" font-size="11" fill="#888" x="40" y="14" text-anchor="middle">Stage 5</text>
+    <line x1="10" y1="170" x2="70" y2="170" stroke="#888888" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="170" x2="25" y2="40" stroke="#888888" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="40" x2="60" y2="40" stroke="#888888" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="60" x2="40" y2="40" stroke="#888888" stroke-width="2" stroke-linecap="round"/>
+    <line x1="60" y1="40" x2="60" y2="55" stroke="#888888" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="60" cy="70" r="15" fill="none" stroke="#e0e0e0" stroke-width="2.5"/>
+    <line x1="60" y1="85" x2="60" y2="125" stroke="#e0e0e0" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="60" y1="95" x2="42" y2="115" stroke="#e0e0e0" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="60" y1="95" x2="78" y2="115" stroke="#e0e0e0" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="60" y1="125" x2="42" y2="155" stroke="#e0e0e0" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Stage 6: Right leg (HANGED) -->
+  <g transform="translate(610, 10) scale(0.55)">
+    <rect width="80" height="20" fill="#12121f" stroke="#ff4444" stroke-width="1" rx="2" x="0" y="0"/>
+    <text font-family="monospace" font-size="11" fill="#ff4444" x="40" y="14" text-anchor="middle">Stage 6</text>
+    <line x1="10" y1="170" x2="70" y2="170" stroke="#888888" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="170" x2="25" y2="40" stroke="#888888" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="40" x2="60" y2="40" stroke="#888888" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="60" x2="40" y2="40" stroke="#888888" stroke-width="2" stroke-linecap="round"/>
+    <line x1="60" y1="40" x2="60" y2="55" stroke="#888888" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="60" cy="70" r="15" fill="none" stroke="#e0e0e0" stroke-width="2.5"/>
+    <!-- X eyes -->
+    <line x1="53" y1="64" x2="58" y2="69" stroke="#ff4444" stroke-width="2"/>
+    <line x1="58" y1="64" x2="53" y2="69" stroke="#ff4444" stroke-width="2"/>
+    <line x1="62" y1="64" x2="67" y2="69" stroke="#ff4444" stroke-width="2"/>
+    <line x1="67" y1="64" x2="62" y2="69" stroke="#ff4444" stroke-width="2"/>
+    <line x1="60" y1="85" x2="60" y2="125" stroke="#e0e0e0" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="60" y1="95" x2="42" y2="115" stroke="#e0e0e0" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="60" y1="95" x2="78" y2="115" stroke="#e0e0e0" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="60" y1="125" x2="42" y2="155" stroke="#e0e0e0" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="60" y1="125" x2="78" y2="155" stroke="#e0e0e0" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Border -->
+  <rect width="700" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

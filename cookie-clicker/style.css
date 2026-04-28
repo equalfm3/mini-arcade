@@ -1,1 +1,263 @@
 /* Cookie Clicker — Game Styles */
+
+:root {
+  --c-game: #f4a460;
+}
+
+/* Layout */
+.cc-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+  padding: 8px 0;
+}
+
+/* Cookie section */
+.cc-cookie-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.cc-counter {
+  font-family: monospace;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffd700;
+  text-align: center;
+  text-shadow: 0 0 12px rgba(255, 215, 0, 0.4);
+}
+
+.cc-cps {
+  font-family: monospace;
+  font-size: 13px;
+  color: #888;
+  text-align: center;
+}
+
+.cc-click-info {
+  font-family: monospace;
+  font-size: 12px;
+  color: #aaa;
+  text-align: center;
+}
+
+/* Cookie button */
+.cc-cookie-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.cc-cookie-btn {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: none;
+  background: radial-gradient(circle at 40% 35%, #e8a050, #c87533 60%, #8b5a2b);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 4px 20px rgba(200, 117, 51, 0.5),
+    inset 0 -4px 8px rgba(0, 0, 0, 0.3),
+    inset 0 4px 8px rgba(255, 255, 255, 0.15);
+  transition: transform 0.08s ease;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.cc-cookie-btn:hover {
+  transform: scale(1.04);
+}
+
+.cc-cookie-btn:active {
+  transform: scale(0.95);
+}
+
+.cc-cookie-art {
+  font-size: 72px;
+  line-height: 1;
+  pointer-events: none;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* Bounce animation */
+.cc-bounce {
+  animation: cc-bounce-anim 0.15s ease;
+}
+
+@keyframes cc-bounce-anim {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(0.88); }
+  70%  { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+
+/* Floating text */
+.cc-floater {
+  position: absolute;
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffd700;
+  pointer-events: none;
+  text-shadow: 0 0 6px rgba(255, 215, 0, 0.6);
+  white-space: nowrap;
+  z-index: 10;
+  transform: translateX(-50%);
+}
+
+/* Shop section */
+.cc-shop-section {
+  width: 100%;
+  max-width: 360px;
+}
+
+.cc-shop-title {
+  font-family: monospace;
+  font-size: 16px;
+  color: #f0e0c0;
+  margin: 0 0 8px 0;
+  text-align: center;
+}
+
+.cc-shop-subtitle {
+  font-family: monospace;
+  font-size: 13px;
+  color: #f0e0c0;
+  margin: 12px 0 6px 0;
+  text-align: center;
+}
+
+.cc-shop-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 280px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #2a2a40 #0e0e18;
+}
+
+/* Shop item */
+.cc-shop-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  background: #12121f;
+  border: 1px solid #2a2a40;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: monospace;
+  color: #f0e0c0;
+  text-align: left;
+  transition: background 0.15s, border-color 0.15s, opacity 0.15s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.cc-shop-item.affordable {
+  background: #1a1a30;
+  border-color: #f4a460;
+}
+
+.cc-shop-item.affordable:hover {
+  background: #222240;
+}
+
+.cc-shop-item.dimmed {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.cc-shop-item.purchased {
+  opacity: 0.5;
+  cursor: default;
+  border-color: #44ff66;
+}
+
+.cc-shop-icon {
+  font-size: 22px;
+  width: 30px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.cc-shop-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.cc-shop-name {
+  font-size: 13px;
+  font-weight: bold;
+  color: #f0e0c0;
+}
+
+.cc-shop-cost {
+  font-size: 11px;
+  color: #f4a460;
+}
+
+.cc-shop-cps {
+  font-size: 10px;
+  color: #888;
+}
+
+.cc-shop-owned {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffd700;
+  min-width: 28px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.cc-click-status {
+  font-size: 14px;
+}
+
+/* Scrollbar styling for webkit */
+.cc-shop-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cc-shop-list::-webkit-scrollbar-track {
+  background: #0e0e18;
+  border-radius: 3px;
+}
+
+.cc-shop-list::-webkit-scrollbar-thumb {
+  background: #2a2a40;
+  border-radius: 3px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .cc-counter {
+    font-size: 22px;
+  }
+
+  .cc-cookie-btn {
+    width: 120px;
+    height: 120px;
+  }
+
+  .cc-cookie-art {
+    font-size: 56px;
+  }
+
+  .cc-shop-section {
+    max-width: 100%;
+  }
+}

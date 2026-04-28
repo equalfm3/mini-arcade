@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 120" width="800" height="120">
+  <rect width="800" height="120" fill="#0a0a16" rx="8"/>
+  <rect x="2" y="2" width="796" height="116" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+
+  <text x="400" y="25" fill="#edc22e" font-family="monospace" font-weight="bold" font-size="12" text-anchor="middle">TILE COLORS</text>
+
+  <!-- Color swatches -->
+  <g transform="translate(40,40)">
+    <rect x="0" y="0" width="60" height="40" fill="#eee4da" rx="4"/>
+    <text x="30" y="25" fill="#776e65" font-family="monospace" font-weight="bold" font-size="12" text-anchor="middle">2</text>
+    <text x="30" y="55" fill="#666" font-family="monospace" font-size="7" text-anchor="middle">#eee4da</text>
+
+    <rect x="70" y="0" width="60" height="40" fill="#ede0c8" rx="4"/>
+    <text x="100" y="25" fill="#776e65" font-family="monospace" font-weight="bold" font-size="12" text-anchor="middle">4</text>
+    <text x="100" y="55" fill="#666" font-family="monospace" font-size="7" text-anchor="middle">#ede0c8</text>
+
+    <rect x="140" y="0" width="60" height="40" fill="#f2b179" rx="4"/>
+    <text x="170" y="25" fill="#f9f6f2" font-family="monospace" font-weight="bold" font-size="12" text-anchor="middle">8</text>
+    <text x="170" y="55" fill="#666" font-family="monospace" font-size="7" text-anchor="middle">#f2b179</text>
+
+    <rect x="210" y="0" width="60" height="40" fill="#f59563" rx="4"/>
+    <text x="240" y="25" fill="#f9f6f2" font-family="monospace" font-weight="bold" font-size="12" text-anchor="middle">16</text>
+    <text x="240" y="55" fill="#666" font-family="monospace" font-size="7" text-anchor="middle">#f59563</text>
+
+    <rect x="280" y="0" width="60" height="40" fill="#f67c5f" rx="4"/>
+    <text x="310" y="25" fill="#f9f6f2" font-family="monospace" font-weight="bold" font-size="12" text-anchor="middle">32</text>
+    <text x="310" y="55" fill="#666" font-family="monospace" font-size="7" text-anchor="middle">#f67c5f</text>
+
+    <rect x="350" y="0" width="60" height="40" fill="#f65e3b" rx="4"/>
+    <text x="380" y="25" fill="#f9f6f2" font-family="monospace" font-weight="bold" font-size="12" text-anchor="middle">64</text>
+    <text x="380" y="55" fill="#666" font-family="monospace" font-size="7" text-anchor="middle">#f65e3b</text>
+
+    <rect x="420" y="0" width="60" height="40" fill="#edcf72" rx="4"/>
+    <text x="450" y="25" fill="#f9f6f2" font-family="monospace" font-weight="bold" font-size="11" text-anchor="middle">128</text>
+    <text x="450" y="55" fill="#666" font-family="monospace" font-size="7" text-anchor="middle">#edcf72</text>
+
+    <rect x="490" y="0" width="60" height="40" fill="#edcc61" rx="4"/>
+    <text x="520" y="25" fill="#f9f6f2" font-family="monospace" font-weight="bold" font-size="11" text-anchor="middle">256</text>
+    <text x="520" y="55" fill="#666" font-family="monospace" font-size="7" text-anchor="middle">#edcc61</text>
+
+    <rect x="560" y="0" width="60" height="40" fill="#edc850" rx="4"/>
+    <text x="590" y="25" fill="#f9f6f2" font-family="monospace" font-weight="bold" font-size="11" text-anchor="middle">512</text>
+    <text x="590" y="55" fill="#666" font-family="monospace" font-size="7" text-anchor="middle">#edc850</text>
+
+    <rect x="630" y="0" width="60" height="40" fill="#edc22e" rx="4"/>
+    <text x="660" y="25" fill="#f9f6f2" font-family="monospace" font-weight="bold" font-size="10" text-anchor="middle">2048</text>
+    <text x="660" y="55" fill="#666" font-family="monospace" font-size="7" text-anchor="middle">#edc22e</text>
+  </g>
+</svg>

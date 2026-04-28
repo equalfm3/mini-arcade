@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 100" width="600" height="100">
+  <rect width="600" height="100" fill="#0a0a16" rx="8"/>
+  <rect x="2" y="2" width="596" height="96" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+
+  <g transform="translate(30,25)">
+    <rect x="0" y="0" width="60" height="40" fill="#ff4444" rx="4"/>
+    <text x="30" y="55" fill="#666" font-family="monospace" font-size="8" text-anchor="middle">Laser</text>
+
+    <rect x="80" y="0" width="60" height="40" fill="#44aaff" rx="4"/>
+    <text x="110" y="55" fill="#666" font-family="monospace" font-size="8" text-anchor="middle">Fixed</text>
+
+    <rect x="160" y="0" width="60" height="40" fill="#44ff66" rx="4"/>
+    <text x="190" y="55" fill="#666" font-family="monospace" font-size="8" text-anchor="middle">Placed</text>
+
+    <rect x="240" y="0" width="60" height="40" fill="#ffd700" rx="4"/>
+    <text x="270" y="55" fill="#666" font-family="monospace" font-size="8" text-anchor="middle">Target</text>
+
+    <rect x="320" y="0" width="60" height="40" fill="#666666" rx="4"/>
+    <text x="350" y="55" fill="#666" font-family="monospace" font-size="8" text-anchor="middle">Wall</text>
+
+    <rect x="400" y="0" width="60" height="40" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+    <text x="430" y="55" fill="#666" font-family="monospace" font-size="8" text-anchor="middle">Empty</text>
+
+    <rect x="480" y="0" width="60" height="40" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="4"/>
+    <text x="510" y="55" fill="#666" font-family="monospace" font-size="8" text-anchor="middle">Grid BG</text>
+  </g>
+</svg>

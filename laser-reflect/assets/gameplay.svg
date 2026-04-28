@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#12121f" rx="8"/>
+  <rect x="2" y="2" width="396" height="396" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+
+  <!-- 8x8 grid (cell size ~44px, offset 12) -->
+  <g transform="translate(12,12)">
+    <!-- Grid cells -->
+    <rect x="0" y="0" width="376" height="376" fill="none"/>
+
+    <!-- Draw some cells -->
+    <rect x="1" y="1" width="45" height="45" fill="#1a1a2e"/>
+    <rect x="48" y="1" width="45" height="45" fill="#1a1a2e"/>
+    <rect x="95" y="1" width="45" height="45" fill="#1a1a2e"/>
+    <rect x="142" y="1" width="45" height="45" fill="#1a1a2e"/>
+    <rect x="189" y="1" width="45" height="45" fill="#1a1a2e"/>
+    <rect x="236" y="1" width="45" height="45" fill="#1a1a2e"/>
+    <rect x="283" y="1" width="45" height="45" fill="#1a1a2e"/>
+    <rect x="330" y="1" width="45" height="45" fill="#1a1a2e"/>
+
+    <!-- Walls (gray blocks) -->
+    <rect x="189" y="95" width="45" height="45" fill="#666"/>
+    <rect x="189" y="142" width="45" height="45" fill="#666"/>
+    <rect x="189" y="189" width="45" height="45" fill="#666"/>
+
+    <!-- Emitter (red circle at 0,4) -->
+    <circle cx="23" cy="213" r="10" fill="#ff4444"/>
+    <line x1="33" y1="213" x2="43" y2="213" stroke="#ff4444" stroke-width="2"/>
+
+    <!-- Target (gold ring at 7,4) -->
+    <circle cx="353" cy="213" r="10" fill="none" stroke="#ffd700" stroke-width="3"/>
+    <circle cx="353" cy="213" r="4" fill="#ffd700"/>
+
+    <!-- Player mirror at (3,4) - '/' -->
+    <line x1="148" y1="230" x2="180" y2="198" stroke="#44ff66" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Player mirror at (3,1) - '\' -->
+    <line x1="148" y1="8" x2="180" y2="40" stroke="#44ff66" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Fixed mirror at (6,1) - '/' -->
+    <line x1="289" y1="40" x2="321" y2="8" stroke="#44aaff" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Laser path: emitter(0,4) → right → mirror(3,4) → up → mirror(3,1) → right → mirror(6,1) → down... -->
+    <line x1="23" y1="213" x2="165" y2="213" stroke="#ff4444" stroke-width="3" opacity="0.9"/>
+    <line x1="165" y1="213" x2="165" y2="24" stroke="#ff4444" stroke-width="3" opacity="0.9"/>
+    <line x1="165" y1="24" x2="306" y2="24" stroke="#ff4444" stroke-width="3" opacity="0.9"/>
+    <line x1="306" y1="24" x2="306" y2="213" stroke="#ff4444" stroke-width="3" opacity="0.9"/>
+
+    <!-- Mirror count -->
+    <text x="4" y="372" fill="#888" font-family="monospace" font-size="10">Mirrors: 0</text>
+  </g>
+</svg>

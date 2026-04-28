@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 100" width="500" height="100">
+  <rect width="500" height="100" fill="#0a0a16" rx="8"/>
+  <rect x="2" y="2" width="496" height="96" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+
+  <g transform="translate(30,25)">
+    <rect x="0" y="0" width="60" height="40" fill="#ffd700" rx="4"/>
+    <text x="30" y="55" fill="#666" font-family="monospace" font-size="8" text-anchor="middle">Light ON</text>
+
+    <rect x="80" y="0" width="60" height="40" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+    <text x="110" y="55" fill="#666" font-family="monospace" font-size="8" text-anchor="middle">Light OFF</text>
+
+    <rect x="160" y="0" width="60" height="40" fill="#ffee88" rx="4"/>
+    <text x="190" y="55" fill="#666" font-family="monospace" font-size="8" text-anchor="middle">Glow</text>
+
+    <rect x="240" y="0" width="60" height="40" fill="#2a2a40" rx="4"/>
+    <text x="270" y="55" fill="#666" font-family="monospace" font-size="8" text-anchor="middle">Border</text>
+
+    <rect x="320" y="0" width="60" height="40" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="4"/>
+    <text x="350" y="55" fill="#666" font-family="monospace" font-size="8" text-anchor="middle">Grid BG</text>
+  </g>
+</svg>

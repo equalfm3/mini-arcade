@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#12121f" rx="8"/>
+  <rect x="2" y="2" width="396" height="396" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+
+  <!-- Hex grid centered at 200,200 -->
+  <g transform="translate(200,200)">
+    <!-- Ring 0: center -->
+    <polygon points="0,-35 30,-17 30,17 0,35 -30,17 -30,-17" fill="#f2b179" stroke="#2a2a40" stroke-width="2"/>
+    <text x="0" y="4" fill="#f9f6f2" font-family="monospace" font-weight="bold" font-size="14" text-anchor="middle">8</text>
+
+    <!-- Ring 1: 6 cells -->
+    <!-- E -->
+    <polygon points="57,-35 87,-17 87,17 57,35 27,17 27,-17" fill="#eee4da" stroke="#2a2a40" stroke-width="2"/>
+    <text x="57" y="4" fill="#776e65" font-family="monospace" font-weight="bold" font-size="14" text-anchor="middle">2</text>
+    <!-- NE -->
+    <polygon points="28,-65 58,-47 58,-13 28,5 -2,-13 -2,-47" fill="#ede0c8" stroke="#2a2a40" stroke-width="2"/>
+    <text x="28" y="-26" fill="#776e65" font-family="monospace" font-weight="bold" font-size="14" text-anchor="middle">4</text>
+    <!-- NW -->
+    <polygon points="-28,-65 2,-47 2,-13 -28,5 -58,-13 -58,-47" fill="#1a1a2e" stroke="#2a2a40" stroke-width="2"/>
+    <!-- W -->
+    <polygon points="-57,-35 -27,-17 -27,17 -57,35 -87,17 -87,-17" fill="#f59563" stroke="#2a2a40" stroke-width="2"/>
+    <text x="-57" y="4" fill="#f9f6f2" font-family="monospace" font-weight="bold" font-size="14" text-anchor="middle">16</text>
+    <!-- SW -->
+    <polygon points="-28,55 2,73 2,107 -28,125 -58,107 -58,73" fill="#eee4da" stroke="#2a2a40" stroke-width="2"/>
+    <text x="-28" y="93" fill="#776e65" font-family="monospace" font-weight="bold" font-size="14" text-anchor="middle">2</text>
+    <!-- SE -->
+    <polygon points="28,55 58,73 58,107 28,125 -2,107 -2,73" fill="#1a1a2e" stroke="#2a2a40" stroke-width="2"/>
+
+    <!-- Ring 2: 12 cells (outer ring) -->
+    <!-- E-E -->
+    <polygon points="114,-35 144,-17 144,17 114,35 84,17 84,-17" fill="#1a1a2e" stroke="#2a2a40" stroke-width="2"/>
+    <!-- E-NE -->
+    <polygon points="85,-65 115,-47 115,-13 85,5 55,-13 55,-47" fill="#ede0c8" stroke="#2a2a40" stroke-width="2"/>
+    <text x="85" y="-26" fill="#776e65" font-family="monospace" font-weight="bold" font-size="14" text-anchor="middle">4</text>
+    <!-- NE-NE -->
+    <polygon points="57,-95 87,-77 87,-43 57,-25 27,-43 27,-77" fill="#1a1a2e" stroke="#2a2a40" stroke-width="2"/>
+    <!-- NW-NW -->
+    <polygon points="-57,-95 -27,-77 -27,-43 -57,-25 -87,-43 -87,-77" fill="#eee4da" stroke="#2a2a40" stroke-width="2"/>
+    <text x="-57" y="-56" fill="#776e65" font-family="monospace" font-weight="bold" font-size="14" text-anchor="middle">2</text>
+    <!-- NW-W -->
+    <polygon points="-85,-65 -55,-47 -55,-13 -85,5 -115,-13 -115,-47" fill="#1a1a2e" stroke="#2a2a40" stroke-width="2"/>
+    <!-- W-W -->
+    <polygon points="-114,-35 -84,-17 -84,17 -114,35 -144,17 -144,-17" fill="#f67c5f" stroke="#2a2a40" stroke-width="2"/>
+    <text x="-114" y="4" fill="#f9f6f2" font-family="monospace" font-weight="bold" font-size="14" text-anchor="middle">32</text>
+    <!-- W-SW -->
+    <polygon points="-85,55 -55,73 -55,107 -85,125 -115,107 -115,73" fill="#1a1a2e" stroke="#2a2a40" stroke-width="2"/>
+    <!-- SW-SW -->
+    <polygon points="-57,85 -27,103 -27,137 -57,155 -87,137 -87,103" fill="#1a1a2e" stroke="#2a2a40" stroke-width="2"/>
+    <!-- SE-SW -->
+    <polygon points="0,85 30,103 30,137 0,155 -30,137 -30,103" fill="#f2b179" stroke="#2a2a40" stroke-width="2"/>
+    <text x="0" y="123" fill="#f9f6f2" font-family="monospace" font-weight="bold" font-size="14" text-anchor="middle">8</text>
+    <!-- SE-SE -->
+    <polygon points="57,85 87,103 87,137 57,155 27,137 27,103" fill="#1a1a2e" stroke="#2a2a40" stroke-width="2"/>
+    <!-- SE-E -->
+    <polygon points="85,55 115,73 115,107 85,125 55,107 55,73" fill="#eee4da" stroke="#2a2a40" stroke-width="2"/>
+    <text x="85" y="93" fill="#776e65" font-family="monospace" font-weight="bold" font-size="14" text-anchor="middle">2</text>
+    <!-- N -->
+    <polygon points="0,-95 30,-77 30,-43 0,-25 -30,-43 -30,-77" fill="#edcf72" stroke="#2a2a40" stroke-width="2"/>
+    <text x="0" y="-56" fill="#f9f6f2" font-family="monospace" font-weight="bold" font-size="12" text-anchor="middle">128</text>
+  </g>
+
+  <!-- Direction labels -->
+  <text x="370" y="200" fill="#444" font-family="monospace" font-size="10" text-anchor="middle">E</text>
+  <text x="310" y="80" fill="#444" font-family="monospace" font-size="10" text-anchor="middle">NE</text>
+  <text x="90" y="80" fill="#444" font-family="monospace" font-size="10" text-anchor="middle">NW</text>
+  <text x="30" y="200" fill="#444" font-family="monospace" font-size="10" text-anchor="middle">W</text>
+  <text x="90" y="320" fill="#444" font-family="monospace" font-size="10" text-anchor="middle">SW</text>
+  <text x="310" y="320" fill="#444" font-family="monospace" font-size="10" text-anchor="middle">SE</text>
+</svg>

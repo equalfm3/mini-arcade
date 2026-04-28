@@ -1,1 +1,5 @@
 /* Hangman — Game Styles */
+
+:root {
+  --c-game: #c084fc;
+}

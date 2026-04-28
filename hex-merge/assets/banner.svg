@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <rect width="800" height="200" fill="#0a0a16" rx="8"/>
+  <rect x="2" y="2" width="796" height="196" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+
+  <!-- Hex grid preview -->
+  <g transform="translate(150,100)">
+    <!-- Empty hexes -->
+    <polygon points="0,-35 30,-17 30,17 0,35 -30,17 -30,-17" fill="#1a1a2e" stroke="#2a2a40" stroke-width="2"/>
+    <polygon points="52,-35 82,-17 82,17 52,35 22,17 22,-17" fill="#eee4da" stroke="#2a2a40" stroke-width="2"/>
+    <text x="52" y="4" fill="#776e65" font-family="monospace" font-weight="bold" font-size="14" text-anchor="middle">2</text>
+    <polygon points="-52,-35 -22,-17 -22,17 -52,35 -82,17 -82,-17" fill="#f2b179" stroke="#2a2a40" stroke-width="2"/>
+    <text x="-52" y="4" fill="#f9f6f2" font-family="monospace" font-weight="bold" font-size="14" text-anchor="middle">8</text>
+    <polygon points="26,-65 56,-47 56,-13 26,5 -4,-13 -4,-47" fill="#ede0c8" stroke="#2a2a40" stroke-width="2"/>
+    <text x="26" y="-26" fill="#776e65" font-family="monospace" font-weight="bold" font-size="14" text-anchor="middle">4</text>
+    <polygon points="-26,-65 4,-47 4,-13 -26,5 -56,-13 -56,-47" fill="#1a1a2e" stroke="#2a2a40" stroke-width="2"/>
+    <polygon points="26,55 56,73 56,107 26,125 -4,107 -4,73" fill="#edc22e" stroke="#2a2a40" stroke-width="2"/>
+    <text x="26" y="93" fill="#f9f6f2" font-family="monospace" font-weight="bold" font-size="11" text-anchor="middle">2048</text>
+    <polygon points="-26,55 4,73 4,107 -26,125 -56,107 -56,73" fill="#f59563" stroke="#2a2a40" stroke-width="2"/>
+    <text x="-26" y="93" fill="#f9f6f2" font-family="monospace" font-weight="bold" font-size="14" text-anchor="middle">16</text>
+  </g>
+
+  <!-- Title -->
+  <text x="450" y="75" fill="#edc22e" font-family="monospace" font-weight="bold" font-size="42" text-anchor="middle">HEX MERGE</text>
+  <text x="450" y="105" fill="#888" font-family="monospace" font-size="14" text-anchor="middle">Hexagonal 2048 — Slide in 6 directions</text>
+
+  <!-- HUD mockup -->
+  <g transform="translate(450,140)">
+    <rect x="-120" y="-12" width="80" height="30" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+    <text x="-80" y="-1" fill="#888" font-family="monospace" font-size="8" text-anchor="middle">SCORE</text>
+    <text x="-80" y="12" fill="#edc22e" font-family="monospace" font-weight="bold" font-size="12" text-anchor="middle">4096</text>
+    <rect x="40" y="-12" width="80" height="30" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" rx="4"/>
+    <text x="80" y="-1" fill="#888" font-family="monospace" font-size="8" text-anchor="middle">BEST</text>
+    <text x="80" y="12" fill="#edc22e" font-family="monospace" font-weight="bold" font-size="12" text-anchor="middle">8192</text>
+  </g>
+</svg>

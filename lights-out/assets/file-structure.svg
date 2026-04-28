@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 200" width="680" height="200">
+  <rect width="680" height="200" fill="#0a0a16" rx="8"/>
+  <rect x="2" y="2" width="676" height="196" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+
+  <text x="20" y="30" fill="#ffd700" font-family="monospace" font-weight="bold" font-size="13">lights-out/</text>
+
+  <text x="30" y="55" fill="#888" font-family="monospace" font-size="11">index.html</text>
+  <text x="250" y="55" fill="#555" font-family="monospace" font-size="10">Entry point — GAME config + arcade.js loader</text>
+
+  <text x="30" y="75" fill="#888" font-family="monospace" font-size="11">style.css</text>
+  <text x="250" y="75" fill="#555" font-family="monospace" font-size="10">Accent color (#ffd700)</text>
+
+  <text x="30" y="95" fill="#888" font-family="monospace" font-size="11">game.js</text>
+  <text x="250" y="95" fill="#555" font-family="monospace" font-size="10">Orchestrator — click handling, level progression</text>
+
+  <text x="30" y="120" fill="#ffd700" font-family="monospace" font-size="11">src/</text>
+
+  <text x="50" y="140" fill="#888" font-family="monospace" font-size="11">config.js</text>
+  <text x="250" y="140" fill="#555" font-family="monospace" font-size="10">Grid size, colors, level difficulty curve</text>
+
+  <text x="50" y="160" fill="#888" font-family="monospace" font-size="11">board.js</text>
+  <text x="250" y="160" fill="#555" font-family="monospace" font-size="10">Toggle logic, puzzle generation, win detection</text>
+
+  <text x="50" y="180" fill="#888" font-family="monospace" font-size="11">renderer.js</text>
+  <text x="250" y="180" fill="#555" font-family="monospace" font-size="10">Canvas grid drawing, glow effects, flash animation</text>
+</svg>

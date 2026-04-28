@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 240" width="680" height="240">
+  <rect width="680" height="240" fill="#0a0a16" rx="8"/>
+  <rect x="2" y="2" width="676" height="236" fill="none" stroke="#2a2a40" stroke-width="2" rx="8"/>
+
+  <text x="20" y="30" fill="#44ffdd" font-family="monospace" font-weight="bold" font-size="13">gravity-well/</text>
+
+  <text x="30" y="55" fill="#888" font-family="monospace" font-size="11">index.html</text>
+  <text x="250" y="55" fill="#555" font-family="monospace" font-size="10">Entry point — GAME config + arcade.js loader</text>
+
+  <text x="30" y="75" fill="#888" font-family="monospace" font-size="11">style.css</text>
+  <text x="250" y="75" fill="#555" font-family="monospace" font-size="10">Accent color (#44ffdd)</text>
+
+  <text x="30" y="95" fill="#888" font-family="monospace" font-size="11">game.js</text>
+  <text x="250" y="95" fill="#555" font-family="monospace" font-size="10">Orchestrator — aiming, launch, orbit detection</text>
+
+  <text x="30" y="120" fill="#44ffdd" font-family="monospace" font-size="11">src/</text>
+
+  <text x="50" y="140" fill="#888" font-family="monospace" font-size="11">config.js</text>
+  <text x="250" y="140" fill="#555" font-family="monospace" font-size="10">Physics constants, planet data, 8 levels</text>
+
+  <text x="50" y="160" fill="#888" font-family="monospace" font-size="11">physics.js</text>
+  <text x="250" y="160" fill="#555" font-family="monospace" font-size="10">Gravity calculation, collision, orbit distance</text>
+
+  <text x="50" y="180" fill="#888" font-family="monospace" font-size="11">satellite.js</text>
+  <text x="250" y="180" fill="#555" font-family="monospace" font-size="10">Satellite state, launch, thrust, trail</text>
+
+  <text x="50" y="200" fill="#888" font-family="monospace" font-size="11">planets.js</text>
+  <text x="250" y="200" fill="#555" font-family="monospace" font-size="10">Planet rendering, gravity fields, orbit rings</text>
+
+  <text x="50" y="220" fill="#888" font-family="monospace" font-size="11">renderer.js</text>
+  <text x="250" y="220" fill="#555" font-family="monospace" font-size="10">Background stars, satellite, aim line, fuel bar</text>
+</svg>
