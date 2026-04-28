@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Mini Arcade — 46 browser games, zero dependencies" width="800"/>
+  <img src="assets/banner.svg" alt="Mini Arcade — 45 browser games, zero dependencies" width="800"/>
 </p>
 
 <p align="center">
-  A collection of 46 small, fun web games — playable in the browser on desktop and mobile.<br/>
+  A collection of 45 small, fun web games — playable in the browser on desktop and mobile.<br/>
   No dependencies, no build step. Just open and play.
 </p>
 
@@ -39,11 +39,10 @@
 | 14 | [Space Invaders](./space-invaders) | Shoot the descending alien waves |
 | 15 | [Doodle Jump](./doodle-jump) | Endless vertical platformer |
 | 16 | [Pac-Man](./pac-man) | Eat pellets, avoid ghosts, clear the maze |
-| 17 | [Frogger](./frogger) | Guide the frog across traffic and rivers |
-| 18 | [Asteroids](./asteroids) | Rotate, thrust, and shoot drifting rocks |
-| 19 | [Connect Four](./connect-four) | Drop discs to get four in a row vs AI |
-| 20 | [Sudoku](./sudoku) | Fill the 9×9 grid with logic |
-| 21 | [Hangman](./hangman) | Guess the word letter by letter |
+| 17 | [Asteroids](./asteroids) | Rotate, thrust, and shoot drifting rocks |
+| 18 | [Connect Four](./connect-four) | Drop discs to get four in a row vs AI |
+| 19 | [Sudoku](./sudoku) | Fill the 9×9 grid with logic |
+| 20 | [Hangman](./hangman) | Guess the word letter by letter |
 
 ### Modern Hits
 
@@ -182,8 +181,7 @@ mini-arcade/
 ├── space-invaders/         │
 ├── doodle-jump/            ┘
 ├── pac-man/                │
-├── frogger/                │  + New Classics (6)
-├── asteroids/              │
+├── asteroids/              │  + New Classics (5)
 ├── connect-four/           │
 ├── sudoku/                 │
 ├── hangman/                ┘

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <defs>
+    <style>text { font-family: monospace; }</style>
+  </defs>
+  <rect width="600" height="200" fill="#0a0a16" rx="6"/>
+
+  <!-- Desktop controls -->
+  <text font-size="12" fill="#44aaff" font-weight="bold" x="80" y="25" text-anchor="middle">Desktop</text>
+
+  <!-- Arrow keys -->
+  <g transform="translate(40, 40)">
+    <!-- Up -->
+    <rect x="28" y="0" width="24" height="24" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <text font-size="10" fill="#e0e0e0" x="40" y="16" text-anchor="middle">↑</text>
+    <!-- Left -->
+    <rect x="0" y="28" width="24" height="24" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <text font-size="10" fill="#e0e0e0" x="12" y="44" text-anchor="middle">←</text>
+    <!-- Down -->
+    <rect x="28" y="28" width="24" height="24" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <text font-size="10" fill="#e0e0e0" x="40" y="44" text-anchor="middle">↓</text>
+    <!-- Right -->
+    <rect x="56" y="28" width="24" height="24" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <text font-size="10" fill="#e0e0e0" x="68" y="44" text-anchor="middle">→</text>
+    <text font-size="8" fill="#888" x="40" y="72" text-anchor="middle">Navigate</text>
+  </g>
+
+  <!-- Number keys -->
+  <g transform="translate(20, 120)">
+    <rect x="0" y="0" width="20" height="20" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="2"/>
+    <text font-size="9" fill="#e0e0e0" x="10" y="14" text-anchor="middle">1</text>
+    <rect x="22" y="0" width="20" height="20" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="2"/>
+    <text font-size="9" fill="#e0e0e0" x="32" y="14" text-anchor="middle">2</text>
+    <text font-size="9" fill="#888" x="56" y="14">...</text>
+    <rect x="70" y="0" width="20" height="20" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="2"/>
+    <text font-size="9" fill="#e0e0e0" x="80" y="14" text-anchor="middle">9</text>
+    <text font-size="8" fill="#888" x="50" y="36" text-anchor="middle">Enter digit</text>
+  </g>
+
+  <!-- Esc key -->
+  <g transform="translate(20, 165)">
+    <rect x="0" y="0" width="36" height="20" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="2"/>
+    <text font-size="8" fill="#e0e0e0" x="18" y="14" text-anchor="middle">Esc</text>
+    <text font-size="8" fill="#888" x="50" y="14">Pause</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="300" y1="15" x2="300" y2="185" stroke="#2a2a40" stroke-width="1"/>
+
+  <!-- Mobile controls -->
+  <text font-size="12" fill="#44aaff" font-weight="bold" x="450" y="25" text-anchor="middle">Mobile</text>
+
+  <!-- Tap cell -->
+  <g transform="translate(340, 45)">
+    <rect width="40" height="40" fill="#12121f" stroke="#ffd700" stroke-width="2" rx="2"/>
+    <text font-size="14" fill="#44aaff" x="20" y="26" text-anchor="middle">7</text>
+    <!-- Finger tap indicator -->
+    <circle cx="20" cy="20" r="8" fill="none" stroke="#ffd700" stroke-width="1" stroke-dasharray="3,2"/>
+    <text font-size="8" fill="#888" x="20" y="58" text-anchor="middle">Tap cell</text>
+  </g>
+
+  <!-- Number pad -->
+  <g transform="translate(410, 45)">
+    <rect width="30" height="30" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <text font-size="12" fill="#e0e0e0" x="15" y="20" text-anchor="middle">1</text>
+    <rect x="34" y="0" width="30" height="30" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <text font-size="12" fill="#e0e0e0" x="49" y="20" text-anchor="middle">2</text>
+    <rect x="68" y="0" width="30" height="30" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <text font-size="12" fill="#e0e0e0" x="83" y="20" text-anchor="middle">3</text>
+    <text font-size="8" fill="#888" x="49" y="48" text-anchor="middle">Tap number</text>
+  </g>
+
+  <!-- Action buttons -->
+  <g transform="translate(340, 110)">
+    <rect width="60" height="24" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <text font-size="8" fill="#e0e0e0" x="30" y="16" text-anchor="middle">⌫ Erase</text>
+    <rect x="68" width="60" height="24" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <text font-size="8" fill="#e0e0e0" x="98" y="16" text-anchor="middle">✏ Notes</text>
+    <rect x="136" width="60" height="24" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <text font-size="8" fill="#e0e0e0" x="166" y="16" text-anchor="middle">↩ Undo</text>
+    <text font-size="8" fill="#888" x="98" y="46" text-anchor="middle">Action buttons</text>
+  </g>
+
+  <!-- Difficulty -->
+  <g transform="translate(370, 160)">
+    <rect width="40" height="18" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <text font-size="7" fill="#888" x="20" y="12" text-anchor="middle">Easy</text>
+    <rect x="44" width="50" height="18" fill="#44aaff" rx="3"/>
+    <text font-size="7" fill="#0a0a16" x="69" y="12" text-anchor="middle">Medium</text>
+    <rect x="98" width="40" height="18" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="3"/>
+    <text font-size="7" fill="#888" x="118" y="12" text-anchor="middle">Hard</text>
+  </g>
+
+  <rect width="600" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

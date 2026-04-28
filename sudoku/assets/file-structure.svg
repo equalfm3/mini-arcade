@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 260" width="620" height="260">
+  <defs>
+    <style>text { font-family: monospace; font-size: 11px; }</style>
+  </defs>
+  <rect width="620" height="260" fill="#0a0a16" rx="6"/>
+
+  <g transform="translate(20, 20)">
+    <text fill="#ffd700" y="0">sudoku/</text>
+    <text fill="#888" x="300" y="0">Game folder</text>
+
+    <text fill="#44aaff" x="20" y="24">├── index.html</text>
+    <text fill="#666" x="300" y="24">Entry point — GAME config + arcade.js loader</text>
+
+    <text fill="#44aaff" x="20" y="48">├── style.css</text>
+    <text fill="#666" x="300" y="48">Grid layout, cell states, number pad, responsive</text>
+
+    <text fill="#44aaff" x="20" y="72">├── game.js</text>
+    <text fill="#666" x="300" y="72">Orchestrator — input, state, undo, win detection</text>
+
+    <text fill="#ffd700" x="20" y="96">├── src/</text>
+    <text fill="#888" x="300" y="96">Game-specific modules</text>
+
+    <text fill="#44aaff" x="40" y="120">│   ├── config.js</text>
+    <text fill="#666" x="300" y="120">Difficulty presets, colors, cell size</text>
+
+    <text fill="#44aaff" x="40" y="144">│   ├── solver.js</text>
+    <text fill="#666" x="300" y="144">Backtracking solver, conflict detection</text>
+
+    <text fill="#44aaff" x="40" y="168">│   ├── generator.js</text>
+    <text fill="#666" x="300" y="168">Puzzle generation with unique solution</text>
+
+    <text fill="#44aaff" x="40" y="192">│   └── renderer.js</text>
+    <text fill="#666" x="300" y="192">DOM grid, number pad, pencil marks</text>
+
+    <text fill="#ffd700" x="20" y="216">└── assets/</text>
+    <text fill="#888" x="300" y="216">SVG images for README</text>
+  </g>
+
+  <rect width="620" height="260" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

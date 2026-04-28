@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 440" width="480" height="440">
+  <rect width="480" height="440" fill="#0a0a16" rx="6"/>
+
+  <!-- HUD bar -->
+  <g transform="translate(20, 15)">
+    <rect width="440" height="28" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="3"/>
+    <text font-family="monospace" font-size="10" fill="#666" x="12" y="18">WINS</text>
+    <text font-family="monospace" font-size="10" fill="#ffd700" x="52" y="18">3</text>
+    <text font-family="monospace" font-size="10" fill="#666" x="120" y="18">DRAWS</text>
+    <text font-family="monospace" font-size="10" fill="#ffd700" x="172" y="18">1</text>
+    <text font-family="monospace" font-size="10" fill="#666" x="280" y="18">DIFFICULTY</text>
+    <text font-family="monospace" font-size="10" fill="#ffd700" x="360" y="18">Medium</text>
+  </g>
+
+  <!-- Column hover indicator -->
+  <polygon points="175,55 185,55 180,63" fill="#ffffff" opacity="0.5"/>
+
+  <!-- Blue board -->
+  <rect x="20" y="70" width="440" height="350" fill="#1a5fb4" rx="6"/>
+
+  <!-- Grid of holes — 7 columns × 6 rows, cell=58px, padding=12 -->
+  <!-- Row 0 (top) — mostly empty -->
+  <circle cx="51" cy="99" r="24" fill="#0a0a16"/>
+  <circle cx="113" cy="99" r="24" fill="#0a0a16"/>
+  <circle cx="175" cy="99" r="24" fill="#0a0a16"/>
+  <circle cx="237" cy="99" r="24" fill="#0a0a16"/>
+  <circle cx="299" cy="99" r="24" fill="#0a0a16"/>
+  <circle cx="361" cy="99" r="24" fill="#0a0a16"/>
+  <circle cx="423" cy="99" r="24" fill="#0a0a16"/>
+
+  <!-- Row 1 -->
+  <circle cx="51" cy="157" r="24" fill="#0a0a16"/>
+  <circle cx="113" cy="157" r="24" fill="#0a0a16"/>
+  <circle cx="175" cy="157" r="24" fill="#0a0a16"/>
+  <circle cx="237" cy="157" r="24" fill="#0a0a16"/>
+  <circle cx="299" cy="157" r="24" fill="#0a0a16"/>
+  <circle cx="361" cy="157" r="24" fill="#0a0a16"/>
+  <circle cx="423" cy="157" r="24" fill="#0a0a16"/>
+
+  <!-- Row 2 -->
+  <circle cx="51" cy="215" r="24" fill="#0a0a16"/>
+  <circle cx="113" cy="215" r="24" fill="#0a0a16"/>
+  <circle cx="175" cy="215" r="24" fill="#0a0a16"/>
+  <circle cx="237" cy="215" r="24" fill="#ffd700"/>
+  <circle cx="299" cy="215" r="24" fill="#0a0a16"/>
+  <circle cx="361" cy="215" r="24" fill="#0a0a16"/>
+  <circle cx="423" cy="215" r="24" fill="#0a0a16"/>
+
+  <!-- Row 3 -->
+  <circle cx="51" cy="273" r="24" fill="#0a0a16"/>
+  <circle cx="113" cy="273" r="24" fill="#ff4444"/>
+  <circle cx="175" cy="273" r="24" fill="#ffd700"/>
+  <circle cx="237" cy="273" r="24" fill="#ff4444"/>
+  <circle cx="299" cy="273" r="24" fill="#ffd700"/>
+  <circle cx="361" cy="273" r="24" fill="#0a0a16"/>
+  <circle cx="423" cy="273" r="24" fill="#0a0a16"/>
+
+  <!-- Row 4 -->
+  <circle cx="51" cy="331" r="24" fill="#ffd700"/>
+  <circle cx="113" cy="331" r="24" fill="#ff4444"/>
+  <circle cx="175" cy="331" r="24" fill="#ff4444"/>
+  <circle cx="237" cy="331" r="24" fill="#ffd700"/>
+  <circle cx="299" cy="331" r="24" fill="#ff4444"/>
+  <circle cx="361" cy="331" r="24" fill="#ffd700"/>
+  <circle cx="423" cy="331" r="24" fill="#0a0a16"/>
+
+  <!-- Row 5 (bottom) -->
+  <circle cx="51" cy="389" r="24" fill="#ff4444"/>
+  <circle cx="113" cy="389" r="24" fill="#ffd700"/>
+  <circle cx="175" cy="389" r="24" fill="#ff4444"/>
+  <circle cx="237" cy="389" r="24" fill="#ff4444"/>
+  <circle cx="299" cy="389" r="24" fill="#ffd700"/>
+  <circle cx="361" cy="389" r="24" fill="#ff4444"/>
+  <circle cx="423" cy="389" r="24" fill="#ffd700"/>
+
+  <!-- Disc highlights (3D effect on some discs) -->
+  <circle cx="109" cy="269" r="10" fill="#ff6666" opacity="0.25"/>
+  <circle cx="171" cy="269" r="10" fill="#ffeb3b" opacity="0.25"/>
+  <circle cx="233" cy="269" r="10" fill="#ff6666" opacity="0.25"/>
+  <circle cx="109" cy="327" r="10" fill="#ff6666" opacity="0.25"/>
+  <circle cx="171" cy="327" r="10" fill="#ff6666" opacity="0.25"/>
+  <circle cx="233" cy="327" r="10" fill="#ffeb3b" opacity="0.25"/>
+
+  <!-- Ghost disc (hover preview) -->
+  <circle cx="175" cy="215" r="24" fill="#ff4444" opacity="0.3"/>
+
+  <!-- Border -->
+  <rect width="480" height="440" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

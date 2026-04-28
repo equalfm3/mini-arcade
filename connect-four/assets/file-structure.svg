@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 280" width="620" height="280">
+  <rect width="620" height="280" fill="#0a0a16" rx="6"/>
+  <defs>
+    <style>
+      .dir { fill: #ffd700; font-family: monospace; font-size: 12px; font-weight: bold; }
+      .file { fill: #e0e0e0; font-family: monospace; font-size: 11px; }
+      .desc { fill: #666666; font-family: monospace; font-size: 10px; }
+      .line { stroke: #2a2a40; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Root -->
+  <text class="dir" x="20" y="30">connect-four/</text>
+
+  <!-- index.html -->
+  <line class="line" x1="30" y1="38" x2="30" y2="52"/>
+  <line class="line" x1="30" y1="52" x2="40" y2="52"/>
+  <text class="file" x="44" y="56">index.html</text>
+  <text class="desc" x="240" y="56">Entry point — GAME config + arcade.js loader</text>
+
+  <!-- style.css -->
+  <line class="line" x1="30" y1="52" x2="30" y2="74"/>
+  <line class="line" x1="30" y1="74" x2="40" y2="74"/>
+  <text class="file" x="44" y="78">style.css</text>
+  <text class="desc" x="240" y="78">Accent color (blue board theme)</text>
+
+  <!-- game.js -->
+  <line class="line" x1="30" y1="74" x2="30" y2="96"/>
+  <line class="line" x1="30" y1="96" x2="40" y2="96"/>
+  <text class="file" x="44" y="100">game.js</text>
+  <text class="desc" x="240" y="100">Orchestrator — turns, AI, difficulty, Engine</text>
+
+  <!-- src/ -->
+  <line class="line" x1="30" y1="96" x2="30" y2="118"/>
+  <line class="line" x1="30" y1="118" x2="40" y2="118"/>
+  <text class="dir" x="44" y="122">src/</text>
+
+  <!-- src/config.js -->
+  <line class="line" x1="54" y1="128" x2="54" y2="142"/>
+  <line class="line" x1="54" y1="142" x2="64" y2="142"/>
+  <text class="file" x="68" y="146">config.js</text>
+  <text class="desc" x="240" y="146">Board 7×6, disc colors, AI depth, animation</text>
+
+  <!-- src/board.js -->
+  <line class="line" x1="54" y1="142" x2="54" y2="164"/>
+  <line class="line" x1="54" y1="164" x2="64" y2="164"/>
+  <text class="file" x="68" y="168">board.js</text>
+  <text class="desc" x="240" y="168">Grid state, drop, win/draw detection</text>
+
+  <!-- src/ai.js -->
+  <line class="line" x1="54" y1="164" x2="54" y2="186"/>
+  <line class="line" x1="54" y1="186" x2="64" y2="186"/>
+  <text class="file" x="68" y="190">ai.js</text>
+  <text class="desc" x="240" y="190">Minimax + alpha-beta, 3 difficulty levels</text>
+
+  <!-- src/renderer.js -->
+  <line class="line" x1="54" y1="186" x2="54" y2="208"/>
+  <line class="line" x1="54" y1="208" x2="64" y2="208"/>
+  <text class="file" x="68" y="212">renderer.js</text>
+  <text class="desc" x="240" y="212">Canvas board, disc drop animation, win glow</text>
+
+  <!-- assets/ -->
+  <line class="line" x1="30" y1="118" x2="30" y2="230"/>
+  <line class="line" x1="30" y1="230" x2="40" y2="230"/>
+  <text class="dir" x="44" y="234">assets/</text>
+  <text class="desc" x="240" y="234">SVG images for README documentation</text>
+
+  <!-- README.md -->
+  <line class="line" x1="30" y1="230" x2="30" y2="252"/>
+  <line class="line" x1="30" y1="252" x2="40" y2="252"/>
+  <text class="file" x="44" y="256">README.md</text>
+  <text class="desc" x="240" y="256">Full documentation with embedded SVGs</text>
+
+  <!-- Border -->
+  <rect width="620" height="280" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

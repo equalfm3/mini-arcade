@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" width="600" height="120">
+  <rect width="600" height="120" fill="#0a0a16" rx="6"/>
+
+  <!-- Board Blue -->
+  <g transform="translate(20, 20)">
+    <rect width="70" height="50" fill="#1a5fb4" rx="4"/>
+    <text font-family="monospace" font-size="10" fill="#1a5fb4" x="35" y="75" text-anchor="middle">Board</text>
+    <text font-family="monospace" font-size="8" fill="#666" x="35" y="90" text-anchor="middle">#1a5fb4</text>
+  </g>
+
+  <!-- Player Red -->
+  <g transform="translate(110, 20)">
+    <rect width="70" height="50" fill="#ff4444" rx="4"/>
+    <text font-family="monospace" font-size="10" fill="#ff4444" x="35" y="75" text-anchor="middle">Player</text>
+    <text font-family="monospace" font-size="8" fill="#666" x="35" y="90" text-anchor="middle">#ff4444</text>
+  </g>
+
+  <!-- AI Yellow -->
+  <g transform="translate(200, 20)">
+    <rect width="70" height="50" fill="#ffd700" rx="4"/>
+    <text font-family="monospace" font-size="10" fill="#ffd700" x="35" y="75" text-anchor="middle">AI</text>
+    <text font-family="monospace" font-size="8" fill="#666" x="35" y="90" text-anchor="middle">#ffd700</text>
+  </g>
+
+  <!-- Win Highlight -->
+  <g transform="translate(290, 20)">
+    <rect width="70" height="50" fill="#ffffff" rx="4"/>
+    <text font-family="monospace" font-size="10" fill="#ffffff" x="35" y="75" text-anchor="middle">Win</text>
+    <text font-family="monospace" font-size="8" fill="#666" x="35" y="90" text-anchor="middle">#ffffff</text>
+  </g>
+
+  <!-- Empty Hole -->
+  <g transform="translate(380, 20)">
+    <rect width="70" height="50" fill="#0a0a16" stroke="#2a2a40" stroke-width="1" rx="4"/>
+    <text font-family="monospace" font-size="10" fill="#888" x="35" y="75" text-anchor="middle">Hole</text>
+    <text font-family="monospace" font-size="8" fill="#666" x="35" y="90" text-anchor="middle">#0a0a16</text>
+  </g>
+
+  <!-- Grid Line -->
+  <g transform="translate(470, 20)">
+    <rect width="70" height="50" fill="#2266cc" rx="4"/>
+    <text font-family="monospace" font-size="10" fill="#2266cc" x="35" y="75" text-anchor="middle">Grid</text>
+    <text font-family="monospace" font-size="8" fill="#666" x="35" y="90" text-anchor="middle">#2266cc</text>
+  </g>
+
+  <!-- Border -->
+  <rect width="600" height="120" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

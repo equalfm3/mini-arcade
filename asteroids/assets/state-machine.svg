@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 250" width="500" height="250">
+  <rect width="500" height="250" fill="#0a0a16" rx="6"/>
+  <defs>
+    <style>text{font-family:monospace;}</style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ffd700"/>
+    </marker>
+  </defs>
+
+  <!-- IDLE box -->
+  <rect x="30" y="90" width="90" height="40" fill="#12121f" stroke="#ffffff" stroke-width="2" rx="4"/>
+  <text fill="#ffffff" font-size="11" x="50" y="115" font-weight="bold">IDLE</text>
+
+  <!-- PLAYING box -->
+  <rect x="190" y="90" width="110" height="40" fill="#12121f" stroke="#44ff66" stroke-width="2" rx="4"/>
+  <text fill="#44ff66" font-size="11" x="205" y="115" font-weight="bold">PLAYING</text>
+
+  <!-- PAUSED box -->
+  <rect x="190" y="20" width="110" height="40" fill="#12121f" stroke="#ffd700" stroke-width="2" rx="4"/>
+  <text fill="#ffd700" font-size="11" x="207" y="45" font-weight="bold">PAUSED</text>
+
+  <!-- OVER box -->
+  <rect x="370" y="90" width="100" height="40" fill="#12121f" stroke="#ff4444" stroke-width="2" rx="4"/>
+  <text fill="#ff4444" font-size="11" x="393" y="115" font-weight="bold">OVER</text>
+
+  <!-- Arrows -->
+  <!-- idle → playing -->
+  <line x1="120" y1="110" x2="188" y2="110" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="130" y="105">Start</text>
+
+  <!-- playing → paused -->
+  <line x1="230" y1="90" x2="230" y2="62" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="236" y="80">Esc/P</text>
+
+  <!-- paused → playing -->
+  <line x1="270" y1="60" x2="270" y2="88" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="276" y="80">Resume</text>
+
+  <!-- playing → over -->
+  <line x1="300" y1="110" x2="368" y2="110" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="310" y="105">0 lives</text>
+
+  <!-- paused → idle (restart) -->
+  <path d="M 190 40 Q 75 40 75 88" fill="none" stroke="#ffd700" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="100" y="35">Restart</text>
+
+  <!-- over → idle (play again) -->
+  <path d="M 420 130 Q 420 200 245 200 Q 75 200 75 132" fill="none" stroke="#ffd700" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text fill="#888" font-size="8" x="200" y="215">Play Again</text>
+
+  <rect width="500" height="250" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

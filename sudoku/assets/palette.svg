@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" width="600" height="120">
+  <defs>
+    <style>text { font-family: monospace; }</style>
+  </defs>
+  <rect width="600" height="120" fill="#0a0a16" rx="6"/>
+
+  <!-- Color swatches -->
+  <g transform="translate(20, 20)">
+    <!-- Background -->
+    <rect x="0" y="0" width="60" height="50" fill="#12121f" stroke="#2a2a40" stroke-width="1" rx="4"/>
+    <text font-size="7" fill="#888" x="30" y="68" text-anchor="middle">Cell BG</text>
+    <text font-size="6" fill="#555" x="30" y="80" text-anchor="middle">#12121f</text>
+
+    <!-- Given text -->
+    <rect x="75" y="0" width="60" height="50" fill="#e0e0e0" rx="4"/>
+    <text font-size="7" fill="#888" x="105" y="68" text-anchor="middle">Given</text>
+    <text font-size="6" fill="#555" x="105" y="80" text-anchor="middle">#e0e0e0</text>
+
+    <!-- Player text -->
+    <rect x="150" y="0" width="60" height="50" fill="#44aaff" rx="4"/>
+    <text font-size="7" fill="#888" x="180" y="68" text-anchor="middle">Player</text>
+    <text font-size="6" fill="#555" x="180" y="80" text-anchor="middle">#44aaff</text>
+
+    <!-- Error -->
+    <rect x="225" y="0" width="60" height="50" fill="#ff4444" rx="4"/>
+    <text font-size="7" fill="#888" x="255" y="68" text-anchor="middle">Error</text>
+    <text font-size="6" fill="#555" x="255" y="80" text-anchor="middle">#ff4444</text>
+
+    <!-- Selected -->
+    <rect x="300" y="0" width="60" height="50" fill="#ffd700" rx="4"/>
+    <text font-size="7" fill="#888" x="330" y="68" text-anchor="middle">Selected</text>
+    <text font-size="6" fill="#555" x="330" y="80" text-anchor="middle">#ffd700</text>
+
+    <!-- Pencil -->
+    <rect x="375" y="0" width="60" height="50" fill="#666688" rx="4"/>
+    <text font-size="7" fill="#888" x="405" y="68" text-anchor="middle">Pencil</text>
+    <text font-size="6" fill="#555" x="405" y="80" text-anchor="middle">#666688</text>
+
+    <!-- Thick border -->
+    <rect x="450" y="0" width="60" height="50" fill="#4a4a60" rx="4"/>
+    <text font-size="7" fill="#888" x="480" y="68" text-anchor="middle">Box Border</text>
+    <text font-size="6" fill="#555" x="480" y="80" text-anchor="middle">#4a4a60</text>
+  </g>
+
+  <rect width="600" height="120" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>

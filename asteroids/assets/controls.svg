@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <rect width="600" height="200" fill="#0a0a16" rx="6"/>
+  <defs>
+    <style>text{font-family:monospace;}</style>
+  </defs>
+
+  <!-- Desktop section -->
+  <text fill="#ffffff" font-size="14" font-weight="bold" x="120" y="25" text-anchor="middle">Desktop</text>
+
+  <!-- Arrow keys cluster -->
+  <g transform="translate(60, 40)">
+    <!-- Up arrow -->
+    <rect x="35" y="0" width="30" height="26" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="3"/>
+    <text fill="#ffffff" font-size="14" x="50" y="18" text-anchor="middle">↑</text>
+    <!-- Left arrow -->
+    <rect x="0" y="30" width="30" height="26" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="3"/>
+    <text fill="#ffffff" font-size="14" x="15" y="48" text-anchor="middle">←</text>
+    <!-- Down arrow (not used but shown) -->
+    <rect x="35" y="30" width="30" height="26" fill="#12121f" stroke="#1a1a2a" stroke-width="1" rx="3" opacity="0.4"/>
+    <text fill="#666" font-size="14" x="50" y="48" text-anchor="middle">↓</text>
+    <!-- Right arrow -->
+    <rect x="70" y="30" width="30" height="26" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="3"/>
+    <text fill="#ffffff" font-size="14" x="85" y="48" text-anchor="middle">→</text>
+  </g>
+
+  <!-- Labels -->
+  <text fill="#aaaaaa" font-size="9" x="95" y="115" text-anchor="middle">Thrust</text>
+  <text fill="#aaaaaa" font-size="9" x="60" y="130" text-anchor="middle">Rotate L</text>
+  <text fill="#aaaaaa" font-size="9" x="145" y="130" text-anchor="middle">Rotate R</text>
+
+  <!-- Space bar -->
+  <rect x="40" y="145" width="120" height="26" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="3"/>
+  <text fill="#ffffff" font-size="10" x="100" y="162" text-anchor="middle">SPACE</text>
+  <text fill="#aaaaaa" font-size="9" x="100" y="185" text-anchor="middle">Shoot</text>
+
+  <!-- Shift key -->
+  <rect x="170" y="70" width="50" height="26" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="3"/>
+  <text fill="#ffffff" font-size="10" x="195" y="88" text-anchor="middle">SHIFT</text>
+  <text fill="#aaaaaa" font-size="9" x="195" y="112" text-anchor="middle">Hyperspace</text>
+
+  <!-- Esc key -->
+  <rect x="170" y="40" width="50" height="22" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="3"/>
+  <text fill="#ffffff" font-size="9" x="195" y="55" text-anchor="middle">ESC / P</text>
+  <text fill="#aaaaaa" font-size="9" x="195" y="30" text-anchor="middle">Pause</text>
+
+  <!-- Divider -->
+  <line x1="300" y1="15" x2="300" y2="185" stroke="#2a2a40" stroke-width="1"/>
+
+  <!-- Mobile section -->
+  <text fill="#ffffff" font-size="14" font-weight="bold" x="450" y="25" text-anchor="middle">Mobile</text>
+
+  <!-- D-pad -->
+  <g transform="translate(360, 50)">
+    <rect x="30" y="0" width="28" height="28" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="3"/>
+    <text fill="#ffffff" font-size="14" x="44" y="20" text-anchor="middle">▲</text>
+    <rect x="0" y="32" width="28" height="28" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="3"/>
+    <text fill="#ffffff" font-size="14" x="14" y="52" text-anchor="middle">◄</text>
+    <rect x="60" y="32" width="28" height="28" fill="#12121f" stroke="#2a2a40" stroke-width="1.5" rx="3"/>
+    <text fill="#ffffff" font-size="14" x="74" y="52" text-anchor="middle">►</text>
+    <rect x="30" y="32" width="28" height="28" fill="#12121f" stroke="#1a1a2a" stroke-width="1" rx="3" opacity="0.4"/>
+    <text fill="#666" font-size="14" x="44" y="52" text-anchor="middle">▼</text>
+  </g>
+  <text fill="#aaaaaa" font-size="9" x="404" y="125" text-anchor="middle">D-Pad</text>
+
+  <!-- Fire button -->
+  <rect x="490" y="60" width="70" height="40" fill="#12121f" stroke="#ffffff" stroke-width="1.5" rx="6"/>
+  <text fill="#ffffff" font-size="12" font-weight="bold" x="525" y="85" text-anchor="middle">FIRE</text>
+  <text fill="#aaaaaa" font-size="9" x="525" y="125" text-anchor="middle">Shoot</text>
+
+  <!-- Mobile note -->
+  <text fill="#666666" font-size="9" x="450" y="165" text-anchor="middle">Up = Thrust</text>
+  <text fill="#666666" font-size="9" x="450" y="180" text-anchor="middle">Left/Right = Rotate</text>
+
+  <!-- Border -->
+  <rect width="600" height="200" fill="none" stroke="#2a2a40" stroke-width="2" rx="6"/>
+</svg>
